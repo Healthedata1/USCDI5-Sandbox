@@ -14,7 +14,7 @@
 [`race`]: SearchParameter-us-core-race.html
 [`role`]: SearchParameter-us-core-careteam-role.html
 [$docref operation]: OperationDefinition-docref.html
-[$expand]: {{ site.data.fhir.path }}valueset-operation-expand.html  "An operation used to create a simple collection of codes suitable for use for data entry or validation"
+[$expand]: {{site.data.fhir.path}}valueset-operation-expand.html  "An operation used to create a simple collection of codes suitable for use for data entry or validation"
 [2015 Edition Common Clinical Data Set (CCDS)]: https://www.healthit.gov/sites/default/files/ccds_reference_document_v1_1.pdf
 [21st Century Cures Act for accessing patient data]: https://www.federalregister.gov/d/2020-07419/p-1177
 [34133-9]: http://s.details.loinc.org/LOINC/34133-9.html?sections=Comprehensive

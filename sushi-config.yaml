@@ -43,7 +43,7 @@ dependencies:
   #   uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
   #   version: 0.18.0
   #   id: vsac
-  # hl7.fhir.uv.sdc: 3.0.0
+  hl7.fhir.uv.sdc: 3.0.0
   # us.cdc.phinvads:
   #   id: uscdcphinvads
   #   uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
