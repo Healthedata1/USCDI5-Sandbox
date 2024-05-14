@@ -63,6 +63,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "Immunization/imm-1"
+        },
+        "description": "This is a imm 1 example for the *US Core Immunization Profile*.",
+        "name": "Imm 1 Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+      },
+      {
+        "reference": {
           "reference": "ValueSet/us-core-clinical-note-type"
         },
         "description": "The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",

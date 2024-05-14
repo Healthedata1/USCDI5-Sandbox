@@ -25,6 +25,7 @@ The following data elements must always be present ([Mandatory] definition) or m
 2. a flag to indicate whether the vaccine was reported by someone other than the person who administered the vaccine.
 3. the encounter the immunization was part of
 4. where the vaccine was administered
+5. <span class="bg-success" markdown="1">vaccine lot number</span><!-- new-content -->
 
 **Profile Specific Implementation Guidance:**
 
