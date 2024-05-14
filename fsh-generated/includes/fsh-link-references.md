@@ -1,0 +1,1 @@
+[USCoreClinicalNoteType]: ValueSet-us-core-clinical-note-type.html
