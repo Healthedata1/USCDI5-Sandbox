@@ -267,8 +267,8 @@
       "uses" : {
       },
       "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",

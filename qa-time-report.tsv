@@ -1,9 +1,9 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json	8387	-	0	0	0	0	0	0	5	55	0	0	0	0	0	0	0	1	0	0	116	98	0	0	0	4	0	1
-input/examples/imm-1.json	1638	13	0	0	0	0	0	0	0	83	0	0	0	0	0	0	0	0	0	0	24	36	0	0	0	0	0	0
-input/examples/medicationdispense-example.json	3011	11	1	0	0	0	0	0	0	546	0	0	0	0	0	0	0	0	0	0	30	41	0	0	0	0	0	0
-input/examples/medicationrequest-coded-oral-axid.json	4894	11	0	0	0	0	0	0	1	66	0	0	0	0	0	0	0	0	0	0	34	40	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-immunization.json	8076	20	0	0	0	0	0	75	0	63	0	0	1	0	0	0	0	2	0	0	332	2194	0	0	0	12	0	1
-input/resources/StructureDefinition-us-core-medicationdispense.json	13968	17	0	0	0	0	0	61	0	511	0	0	0	0	0	0	0	0	0	0	368	789	0	0	0	13	0	0
-input/resources/StructureDefinition-us-core-medicationrequest.json	22288	12	0	0	0	0	0	62	0	54	0	0	0	0	0	0	0	1	0	0	511	845	0	0	0	20	1	2
-input/resources/ValueSet-us-core-clinical-note-type.json	1875	10	0	0	0	0	0	0	0	1833	0	0	0	0	0	0	0	0	0	0	18	31627	0	0	0	0	0	0
+/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json	8387	-	0	0	0	0	0	0	5	60	0	0	0	0	0	0	0	0	0	0	115	92	0	0	0	4	0	1
+input/examples/imm-1.json	1638	14	1	0	0	0	0	0	0	71	0	0	0	0	0	0	0	0	0	0	17	35	0	0	0	0	0	0
+input/examples/medicationdispense-example.json	3011	14	0	0	0	0	0	0	0	509	0	0	0	0	0	0	0	0	0	0	25	45	0	0	0	0	0	0
+input/examples/medicationrequest-coded-oral-axid.json	4894	25	0	0	0	0	0	0	1	61	0	0	0	0	0	0	0	0	0	0	24	42	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-immunization.json	8076	14	0	0	0	0	0	106	0	64	0	0	0	0	0	0	0	2	0	0	308	1928	0	0	0	18	0	1
+input/resources/StructureDefinition-us-core-medicationdispense.json	13970	26	0	0	0	0	0	84	0	569	0	0	0	0	0	0	0	1	0	0	390	925	0	0	0	16	1	4
+input/resources/StructureDefinition-us-core-medicationrequest.json	22288	27	0	0	0	0	0	87	0	49	0	0	1	0	0	0	0	1	0	0	500	850	0	0	0	22	0	1
+input/resources/ValueSet-us-core-clinical-note-type.json	1875	16	0	0	0	0	0	0	0	2052	0	0	0	0	0	0	0	0	0	0	16	31993	0	0	0	1	0	0
