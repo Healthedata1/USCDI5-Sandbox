@@ -274,6 +274,7 @@
 [StructureDefinitions]: {{site.data.fhir.path}}structuredefinition.html
 [Suppressed Data]: general-guidance.html#suppressed-data
 [Surgical Operation Note (11504-8)]: https://loinc.org/11504-8.html
+[Emergency Department Note (34111-5)]: https://loinc.org/34111-5.html
 [Terminology Binding Extensible]: {{site.data.fhir.path}}terminologies.html#extensible
 [Terminology]: terminology.html "Terminology Page"
 [timezone extension]: {{site.data.fhir.path}}extension-tz-code.html
