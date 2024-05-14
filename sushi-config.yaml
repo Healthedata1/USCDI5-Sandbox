@@ -1,0 +1,135 @@
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
+# │                                                                                                │
+# │  This file was generated from your existing project files and will be used for SUSHI           │
+# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# ╭──────────────────ImplementationGuide-hl7.fhir.us.subscriptions-backport.json───────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: uscdi5-sandbox
+extension:
+
+  - url: >-
+      http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: trial-use
+  - url: 'http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm'
+    valueInteger: 0
+canonical: http://www.fhir.org/guides/uscdi5-sandbox
+version: 0.0.0
+name: UCSDI5Sandbox
+title: UCSDI5 Sandbox
+status: active
+publisher:
+  name: Health eData Inc
+contact:
+  - telecom:
+      - system: email
+        value: 'mailto:ehaas@healthedatainc.com'
+description: This is a sandbox IG for drafting USCDI5 profiles,examples and documentation of US Core for Version 8
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.us.core:
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore
+
+  hl7.fhir.uv.smart-app-launch: 2.0.0
+  us.nlm.vsac:
+    uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
+    version: 0.18.0
+    id: vsac
+  hl7.fhir.uv.sdc: 3.0.0
+  us.cdc.phinvads:
+    id: uscdcphinvads
+    uri: 'http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads'
+    version: 0.12.0
+  hl7.fhir.uv.extensions: 5.1.0-cibuild #5.1.0-ballot1  # <<<< If your WG is not in the older list, you need to add an explicit dependency to the current version of the extensions pack
+
+
+
+
+
+pages:
+  index.md:
+    title: Home
+    extension:
+      - url: >-
+          http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: draft 
+
+  # background.md:
+  # # specification.md:
+  # #   exchanging-clinical-data.md:
+
+  guidance.md:
+    # uscdi.md:
+    #   title: USCDI
+    # general-guidance.md:
+    clinical-notes.md:
+
+  downloads.md:
+    title: Downloads
+
+  ImplementationGuide.md:
+    title: ImplementationGuide Resource
+
+  changes.md:
+    title: Change Log
+
+
+parameters:
+  path-expansion-params: '../../input/_resources/exp-params.json'  # for using US ed of SNOMED
+  show-inherited-invariants: true
+  usage-stats-opt-out: true
+  path-output: output #docs
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+    - input/intro-notes
+  #path-pages:
+    #- input/pagecontent
+    #- fsh-generated/includes
+#- code: path-liquid #yes
+  #  value: #path #A relative path that contains liquid templates for generating narrative
+  path-liquid: input/images/liquid
+  excludexml: true
+  excludejson: false
+  excludettl: true
+  excludemap: true
+  # custom parameter also possible too
+  #foo: bar
+  # no-narrative:
+  #   - '*/*'  # does not seems to work
+  #   - 'Patient/*'
+  # no-validate:
+  #   - '*/*'  # does not seems to work
+  #   - 'StructureDefinition/*'
+  # version-comparison:
+  #   - 4.0.0
+  #   - 3.1.1
+  #   - 2.0.0
+  #   - 1.0.1
+  # ipa-comparison:
+  #   - '{current}'
+  propagate-status: true
+copyrightYear: 2020+
+releaseLabel: CI Build
+
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  IG Home: index.html
+  General Guidance: #guidance.html
+        Clinical Notes: clinical-notes.html
+  #Table of Contents: toc.html
+  Artifact Index: artifacts.html
+  Downloads: downloads.html
+  Change Log: changes.html
+  IG Page: 'ImplementationGuide.html'

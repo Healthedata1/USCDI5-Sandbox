@@ -1,0 +1,22 @@
+.DS_Store
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/template
+/temp
+/.idea
+*.sh
+/input/data
+/input/draft
+/_gencontinuous.bat
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+/_updatePublisher.bat
+/_updatePublisher.sh
+# /resources-yaml
+# /examples-yaml
+/scripts
+# /.github
+
