@@ -1,5 +1,12 @@
 [
   {
+    "id" : "us-core-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
+    "version" : "0.0.0",
+    "name" : "USCoreImmunizationProfile"
+  },
+  {
     "id" : "us-core-clinical-note-type",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",

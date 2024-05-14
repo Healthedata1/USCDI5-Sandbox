@@ -1,105 +1,151 @@
 {
-  "date" : "Tue, 14 May, 2024 19:38:55 +0000",
+  "date" : "Tue, 14 May, 2024 20:21:53 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json",
-      "size" : 4410,
+      "size" : 5381,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 30
+          "start" : 59,
+          "length" : 26
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 50,
-          "length" : 5
+          "start" : 60,
+          "length" : 7
         },
         {
           "activity" : "generateNarratives",
-          "start" : 50,
-          "length" : 75
+          "start" : 60,
+          "length" : 73
         },
         {
           "activity" : "validate",
-          "start" : 53,
-          "length" : 1111
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 54,
-          "length" : 1
+          "start" : 64,
+          "length" : 743
         },
         {
           "activity" : "generate1",
-          "start" : 54,
+          "start" : 65,
           "length" : 101
         },
         {
           "activity" : "generate2",
-          "start" : 56,
-          "length" : 78
+          "start" : 71,
+          "length" : 83
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 110,
-          "length" : 3
+          "start" : 132,
+          "length" : 4
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 113,
+          "start" : 136,
           "length" : 3
         }
       ]
     },
     {
-      "name" : "input/resources/ValueSet-us-core-clinical-note-type.json",
-      "size" : 1788,
+      "name" : "input/resources/StructureDefinition-us-core-immunization.json",
+      "size" : 7913,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 50,
-          "length" : 25
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 21
         },
         {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 20
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 89
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 60,
+          "length" : 97
+        },
+        {
+          "activity" : "validate",
+          "start" : 63,
+          "length" : 981
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 65,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 65,
+          "length" : 327
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 3889
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 132,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 136,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/ValueSet-us-core-clinical-note-type.json",
+      "size" : 1875,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 24
+        },
+        {
           "activity" : "checkR4R4B",
-          "start" : 50,
+          "start" : 60,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 51,
-          "length" : 1958
+          "start" : 60,
+          "length" : 2618
         },
         {
           "activity" : "validate",
-          "start" : 53,
-          "length" : 574
+          "start" : 62,
+          "length" : 828
         },
         {
           "activity" : "generate1",
-          "start" : 54,
-          "length" : 18
+          "start" : 65,
+          "length" : 19
         },
         {
           "activity" : "generate2",
-          "start" : 56,
-          "length" : 33799
+          "start" : 75,
+          "length" : 32656
         },
         {
-          "activity" : "makeDependencies",
-          "start" : 90,
-          "length" : 1
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 113,
+          "activity" : "generateValidationPack",
+          "start" : 132,
           "length" : 1
         }
       ]

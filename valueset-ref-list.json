@@ -1,6 +1,51 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
+      "version" : "20230715",
+      "status" : "active",
+      "name" : "CVXVaccinesAdministeredVaccineSet",
+      "title" : "CVX Vaccines Administered Vaccine Set",
+      "description" : null,
+      "systems" : ["http://hl7.org/fhir/sid/cvx"],
+      "oids" : ["2.16.840.1.113762.1.4.1010.6"],
+      "sources" : ["2.16.840.1.113762.1.4.1010.6"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusCodes",
+      "title" : "Immunization Status Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.295"],
+      "sources" : ["2.16.840.1.113883.4.642.3.295"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusReasonCodes",
+      "title" : "Immunization Status Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.992"],
+      "sources" : ["2.16.840.1.113883.4.642.3.992"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
       "version" : "0.0.0",
       "status" : "active",

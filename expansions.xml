@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9852c004-227a-4db1-9fae-310c0d2031c3"/>
+  <id value="1a1e5f9e-22d5-4ee2-9aea-cc6f3968ee2c"/>
   <meta>
-    <lastUpdated value="2024-05-14T19:38:55.558+00:00"/>
+    <lastUpdated value="2024-05-14T20:21:53.577+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
-            <p>This value set contains 9 concepts.</p>
+            <p>This value set contains 10 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -99,6 +99,14 @@
                 <td>http://loinc.org</td>
                 <td>Surgical operation note</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-34111-5"> </a>  
+                  <a href="https://loinc.org/34111-5/">34111-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Emergency department Note</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -110,9 +118,9 @@
         <experimental value="false"/>
         <date value="2024-05-14"/>
         <expansion>
-          <identifier value="urn:uuid:8b57bcb6-a83e-48e8-b94c-c5b6a21dd713"/>
-          <timestamp value="2024-05-14T19:39:34+00:00"/>
-          <total value="9"/>
+          <identifier value="urn:uuid:b7b1ee6f-78e6-469a-91a6-05b4f2e2b949"/>
+          <timestamp value="2024-05-14T20:22:41+00:00"/>
+          <total value="10"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -182,6 +190,11 @@
             <system value="http://loinc.org"/>
             <code value="11504-8"/>
             <display value="Surgical operation note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="34111-5"/>
+            <display value="Emergency department Note"/>
           </contains>
         </expansion>
       </ValueSet>
