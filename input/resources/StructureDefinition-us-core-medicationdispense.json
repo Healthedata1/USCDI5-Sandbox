@@ -256,8 +256,8 @@
                 "mustSupport": true
             },
             {
-                "id": "MedicationRequest.dosageInstruction.route",
-                "path": "MedicationRequest.dosageInstruction.route",
+                "id": "MedicationDispense.dosageInstruction.route",
+                "path": "MedicationDispense.dosageInstruction.route",
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
