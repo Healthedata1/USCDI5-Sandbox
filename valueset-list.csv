@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type,0.0.0,active,,USCoreClinicalNoteType,US Core Clinical Note Type,"The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",,"LOINC"

@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Clinical Notes - UCSDI5 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UCSDI5 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="guidance.html"><b>Guidance</b></a></li><li><b>Clinical Notes</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Clinical Notes</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+
+<p>​This section provides implementers with important definitions, requirements, and guidance on creating, using, and sharing Clinical Notes.</p>
+
+<h3 id="clinical-notes">Clinical Notes</h3>
+
+<p>Clinical notes are a key component in communicating a patient’s current status. In the context of this implementation guide, the term “clinical notes” refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes to support transitions of care, care planning, quality reporting, billing, and even handwritten notes by providers. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on exposing clinical notes stored in existing systems.</p>
+
+<p>This implementation guide defines how systems exchange <span class="bg-success">nine</span>  <!-- new-content --> “Common Clinical Notes” and three DiagnosticReport categories.</p>
+
+<p>Servers <strong>SHALL</strong> support, at <em>minimum</em>, these <span class="bg-success">nine</span>  <!-- new-content --> “Common Clinical Notes”:</p>
+
+<ol>
+  <li><a href="https://loinc.org/11488-4.html">Consultation Note (11488-4)</a></li>
+  <li><a href="https://loinc.org/18842-5.html">Discharge Summary (18842-5)</a></li>
+  <li><a href="https://loinc.org/34117-2.html">History &amp; Physical Note (34117-2)</a></li>
+  <li><span class="bg-success"><a href="https://loinc.org/28570-0.html">Procedures Note (28570-0)</a> </span>  <!-- new-content --></li>
+  <li><a href="https://loinc.org/11506-3.html">Progress Note (11506-3)</a></li>
+  <li><a href="https://loinc.org/18748-4.html">Imaging Narrative (18748-4)</a></li>
+  <li><a href="https://loinc.org/11502-2.html">Laboratory Report Narrative (11502-2)</a></li>
+  <li><a href="https://loinc.org/11526-1.html">Pathology Report Narrative (11526-1)</a></li>
+  <li><span class="bg-success">[Surgical Operation Note (11504-8)]</span>  <!-- new-content --></li>
+</ol>
+
+<p>Servers <strong>SHALL</strong> support, at <em>minimum</em>, these three DiagnosticReport categories:</p>
+
+<ol>
+  <li><a href="https://loinc.org/LP29708-2">Cardiology (LP29708-2)</a></li>
+  <li><a href="https://loinc.org/LP7839-6">Pathology (LP7839-6)</a></li>
+  <li><a href="https://loinc.org/LP29684-5">Radiology (LP29684-5)</a></li>
+</ol>
+
+<p>A DiagnosticReport category query allows a Client to retrieve multiple documents in a single query (see <a href="#support-requirements">Support Requirements</a>).</p>
+
+<p>The Argonaut project team provided this initial list to HL7 after surveying the Argonaut and the US Veterans Administration (VA) participants. They represent the <em>minimum</em> set a system must support to claim conformance to this guide. In addition, systems are encouraged to support other common notes types, such as:</p>
+
+<ul>
+  <li><a href="https://loinc.org/57133-1.html">Referral Note (57133-1)</a></li>
+  <li><a href="https://loinc.org/34746-8.html">Nurse Note (34746-8)</a></li>
+</ul>
+
+<p>The complete list of note (document) types is available in the [US Core DocumentReference Type Value Set].</p>
+
+<p>●●●</p>
+
+<p>Not all scanned information stored through DocumentReference will be exposed through DiagnosticReport since DocumentReference stores other non-clinical information. For example, DocumentReference can point to an insurance card.</p>
+
+<h4 id="support-requirements">Support Requirements</h4>
+
+<p><a name="l411">​</a>This guide requires systems to implement the [US Core DocumentReference Profile] and to support a <em>minimum</em> of all <span class="bg-success">nine</span>  <!-- new-content -->  Common Clinical Notes listed above. Systems may extend their capabilities to the complete [US Core DocumentReference Type Value Set]. This requirement is necessary because some systems scan lab reports and don’t store them in the DiagnosticReport resource. See <a href="#fhir-resources-to-exchange-clinical-notes">FHIR Resources to Exchange Clinical Notes</a> for more detail.</p>
+
+<p>●●●</p>
+
+<p>[Structured Data Capture (SDC)]: 
+[StructureDefinitions]: http://hl7.org/fhir/R4/structuredefinition.html
+[Suppressed Data]: general-guidance.html#suppressed-data
+[Surgical Operation Note (11504-8)]: https://loinc.org/11504-8.html
+[Terminology Binding Extensible]: http://hl7.org/fhir/R4/terminologies.html#extensible
+[Terminology]: terminology.html “Terminology Page”
+[timezone extension]: http://hl7.org/fhir/R4/extension-tz-code.html
+[U.S. Core Data for Interoperability (USCDI) v1]: https://www.healthit.gov/isa/sites/isa/files/2020-07/USCDI-Version-1-July-2020-Errata-Final.pdf
+[U.S. Core Data for Interoperability (USCDI) v2]: https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2
+[U.S. Core Data for Interoperability (USCDI) v3]: https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v3
+[U.S. Core Data for Interoperability (USCDI) v4]: https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v4
+[U.S. Core Data for Interoperability (USCDI)]: https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi
+[UCUM Codes value set]: http://hl7.org/fhir/R4/valueset-ucum-units.html
+[UCUM Codes ValueSet]: http://hl7.org/fhir/R4/valueset-ucum-units.html
+[UCUM]: http://unitsofmeasure.org
+[US Core Allergies Profile]: StructureDefinition-us-core-allergyintolerance.html
+[US Core AllergyIntolerance Profile]: StructureDefinition-us-core-allergyintolerance.html
+[US Core Blood Pressure Profile]: StructureDefinition-us-core-blood-pressure.html
+[US Core Average Blood Pressure Profile]: StructureDefinition-us-core-average-blood-pressure.html
+[US Core BMI Profile]: StructureDefinition-us-core-bmi.html
+[US Core Birth Sex Extension]: StructureDefinition-us-core-birthsex.html
+[US Core Sex Extension]: StructureDefinition-us-core-sex.html
+[US Core Body Height Profile]: StructureDefinition-us-core-body-height.html
+[US Core Body Temperature Profile]: StructureDefinition-us-core-body-temperature.html
+[US Core Body Weight Profile]: StructureDefinition-us-core-body-weight.html
+[US Core CarePlan Profile]: StructureDefinition-us-core-careplan.html
+[US Core CareTeam Profile]: StructureDefinition-us-core-careteam.html
+[US Core Client CapabilityStatement]: CapabilityStatement-us-core-client.html
+[US Core Common SDOH Assessments]: ValueSet-us-core-common-sdoh-assessments.html
+[US Core Condition Category Codes]: ValueSet-us-core-condition-category.html
+[US Core Condition Codes]: ValueSet-us-core-condition-code.html
+[US Core Condition Encounter Diagnosis Profile]: StructureDefinition-us-core-condition-encounter-diagnosis.html
+[US Core Condition Problems and Health Concerns Profile]: StructureDefinition-us-core-condition-problems-health-concerns.html
+[US Core Coverage Profile]: StructureDefinition-us-core-coverage.html
+[US Core Diagnostic Imaging Result Observation Profile]: StructureDefinition-us-core-observation-imaging.html
+[US Core Diagnostic Imaging Result Observation Profile]: StructureDefinition-us-core-observation-imaging.html
+[US Core DiagnosticReport Category Codes]: ValueSet-us-core-diagnosticreport-category.html
+[US Core DiagnosticReport Profile for Laboratory Results Reporting]: StructureDefinition-us-core-diagnosticreport-lab.html
+[US Core DiagnosticReport Profile for Report and Note exchange]: StructureDefinition-us-core-diagnosticreport-note.html
+[US Core DocumentReference Category]: ValueSet-us-core-documentreference-category.html
+[US Core DocumentReference Profile]: StructureDefinition-us-core-documentreference.html
+[US Core DocumentReference Type Value Set]: ValueSet-us-core-documentreference-type.html
+[US Core DocumentReference]: StructureDefinition-us-core-documentreference.html
+[US Core DocumentReferences Category Value Set]: ValueSet-us-core-documentreference-category.html
+[US Core Encounter Profile]: StructureDefinition-us-core-encounter.html
+[US Core Extension Questionnaire URI]: StructureDefinition-us-core-extension-questionnaire-uri.html
+[US Core FHIR RESTful Search API]: general-requirements.html#fhir-restful-search-api-requirements
+[US Core Gender Identity Extension]: StructureDefinition-us-core-genderIdentity.html
+[US Core Goal Profile]: StructureDefinition-us-core-goal.html
+[US Core Head Circumference Profile]: StructureDefinition-us-core-head-circumference.html
+[US Core Heart Rate Profile]: StructureDefinition-us-core-heart-rate.html
+[US Core Immunization Profile]: StructureDefinition-us-core-immunization.html
+[US Core Implantable Device Profile]: StructureDefinition-us-core-implantable-device.html
+[US Core ImplementationGuide Resource]: ImplementationGuide-hl7.fhir.us.core.html
+[US Core Laboratory Result Observation Profile]: StructureDefinition-us-core-observation-lab.html
+[US Core Location Profile]: StructureDefinition-us-core-location.html
+[US Core Medication Profile]: StructureDefinition-us-core-medication.html
+[US Core MedicationDispense Profile]: StructureDefinition-us-core-medicationdispense.html
+[US Core Medication Statement Profile]: StructureDefinition-us-core-medicationstatement.html
+[US Core MedicationRequest Profile]: StructureDefinition-us-core-medicationrequest.html
+[US Core Medication Adherence Extension]: StructureDefinition-us-core-medication-adherence.html
+[Medication Adherence ValueSet]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1240.8/expansionStructureDefinition-us-core-medication-adherence.html
+[US Core Simple Observation Profile]: StructureDefinition-us-core-simple-observation.html
+[US Core Specimen Profile]: StructureDefinition-us-core-specimen.html
+[US Core Observation Clinical Result Profile]: StructureDefinition-us-core-observation-clinical-result.html
+[US Core Observation Screening Assessment Profile]: StructureDefinition-us-core-observation-screening-assessment.html
+[US Core Observation Occupation Profile]: StructureDefinition-us-core-observation-occupation.html
+[US Core Observation Sexual Orientation Profile]: StructureDefinition-us-core-observation-sexual-orientation.html
+[US Core Organization Profile]: StructureDefinition-us-core-organization.html
+[US Core Patient Profile]: StructureDefinition-us-core-patient.html
+[US Core Pediatric BMI for Age Observation Profile]: StructureDefinition-pediatric-bmi-for-age.html
+[US Core Pediatric Head Occipital Frontal Circumference Observation Profile]: StructureDefinition-head-occipital-frontal-circumference-percentile.html
+[US Core Pediatric Head Occipital Frontal Circumference Percentile Profile]: StructureDefinition-head-occipital-frontal-circumference-percentile.html
+[US Core Pediatric Weight for Height Observation Profile]: StructureDefinition-pediatric-weight-for-height.html
+[US Core Practitioner Profile]: StructureDefinition-us-core-practitioner.html
+[US Core PractitionerRole Profile]: StructureDefinition-us-core-practitionerrole.html
+[US Core Procedure Codes]: ValueSet-us-core-procedure-code.html
+[US Core Procedure Profile]: StructureDefinition-us-core-procedure.html
+[US Core Provenance Profile]: StructureDefinition-us-core-provenance.html
+[US Core Pulse Oximetry Profile]: StructureDefinition-us-core-pulse-oximetry.html
+[US Core QuestionnaireResponse Profile]: StructureDefinition-us-core-questionnaireresponse.html
+[US Core RelatedPerson Profile]: StructureDefinition-us-core-relatedperson.html
+[US Core Respiratory Rate Profile]: StructureDefinition-us-core-respiratory-rate.html
+[US Core Security]: security.html
+[US Core Server Capability Statement]: CapabilityStatement-us-core-server.html
+[US Core Server CapabilityStatement]: CapabilityStatement-us-core-server.html
+[US Core ServiceRequest Category Codes]: ValueSet-us-core-servicerequest-category.html
+[US Core ServiceRequest Profile]: StructureDefinition-us-core-servicerequest.html
+[US Core Smoking Status Observation Profile]: StructureDefinition-us-core-smokingstatus.html
+[US Core Observation Pregnancy Status Profile]: StructureDefinition-us-core-observation-pregnancystatus.html
+[US Core Observation Pregnancy Intent Profile]: StructureDefinition-us-core-observation-pregnancyintent.html
+[US Core Pregnancy Status Codes]: ValueSet-us-core-pregnancy-status.html
+[US Core Pregnancy Intent Codes]: ValueSet-us-core-pregnancy-intent.html
+[US Core Tribal Affiliation Extension]: StructureDefinition-us-core-tribal-affiliation.html
+[US Core Vital Signs Profile]: StructureDefinition-us-core-vital-signs.html
+[US Core Treatment Intervention Preference Profile]: StructureDefinition-us-core-treatment-intervention-preference.html
+[US Core Care Experience Preference Profile]: StructureDefinition-us-core-care-experience-preference.html
+[US Core USCDI Requirement Extension]: StructureDefinition-uscdi-requirement.html
+[Additional USCDI Requirements]: must-support.html#additional-uscdi-requirements
+[USCDI v2]: https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v2
+[USCDI v3]: https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v3
+[USCDI]: uscdi.html
+[Using multiple codes with CodeableConcept Datatype]: general-requirements.html#translations
+[Using SNOMED CT with FHIR]: http://hl7.org/fhir/R4/snomedct.html
+[validating profiles and resources]: http://hl7.org/fhir/R4/validation.html
+[Value sets]: terminology.html
+[Vital Signs Profile]: http://hl7.org/fhir/R4/observation-vitalsigns.html
+[Vital Signs Quick Start]: vitals-search.html
+[vital signs table]: http://hl7.org/fhir/R4/observation-vitalsigns.html#vitals-table
+[writing and updating]: future-of-US-core.html#future-candidate-requirements-under-consideration
+[Parameters]: http://hl7.org/fhir/R4/parameters.html
+[Patient Example]: Patient-example.html 
+<a href="http://snomed.info/sct/731000124108" title="SNOMED CT US Edition">SNOMED CT</a>: http://snomed.info/sct
+[Observation Category Codes]: http://hl7.org/fhir/R4/valueset-observation-category.html
+[US Core Common SDOH Assessments ValueSet]: ValueSet-us-core-common-sdoh-assessments.html
+[Gravity Project]: https://hl7.org/gravity
+<a href="http://hl7.org/fhir/us/sdoh-clinicalcare/index.html">SDOH Clinical Care</a>: http://hl7.org/fhir/us/sdoh-clinicalcare/
+[technical requirements]: general-requirements.html#required-bindings-when-slicing-by-valuesets
+[SDC Base Questionnaire]: /StructureDefinition-sdc-questionnaire.html
+[<code class="language-plaintext highlighter-rouge">Questionnaire.useContext</code>]: http://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.useContext
+[US Core Category]: CodeSystem-us-core-category.html
+[Required Bindings When Slicing by Value Sets]: general-requirements.html#required-bindings-when-slicing-by-valuesets
+[The US Core DocumentReferences Type Value Set]: ValueSet-us-core-documentreference-category.html
+[Endpoint]: http://hl7.org/fhir/R4/endpoint.html
+[US Core Direct email Extension]: StructureDefinition-us-core-direct.html
+[Target Element]: http://hl7.org/fhir/StructureDefinition/targetElement
+[Element Level Provenance]: basic-provenance.html#element-level-provenance
+[modifier element]: http://hl7.org/fhir/R4/conformance-rules.html#isModifier
+[ONC Health IT Certification]: https://www.healthit.gov/topic/certification-ehrs/about-onc-health-it-certification-program
+[Certifying systems]: https://www.healthit.gov/topic/certification-ehrs/about-onc-health-it-certification-program
+[modifier elements]: general-requirements.html#modifier-elements
+[PHDSC Payer Type Committee User’s Guide]: https://www.nahdo.org/sites/default/files/2020-12/SourceofPaymentTypologyUsersGuideVersion9.2December2020.pdf
+[resource level scopes]: http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data
+[granular scopes]: http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#finer-grained-resource-constraints-using-search-parameters
+[SMART on FHIR Obligations and Capabilities]: scopes.html
+[US Core SMART Scopes]: scopes.html#smart-scopes
+[Value Set Authority Center (VSAC)]: https://vsac.nlm.nih.gov/
+[PHQ-9]: https://en.wikipedia.org/wiki/PHQ-9
+[Apgar score]: https://en.wikipedia.org/wiki/Apgar_score
+[HL7 Terminology (THO)]: https://terminology.hl7.org
+[FHIR Extension]: https://hl7.org/fhir/extensions/
+[US Core Data for Interoperability USCDI Table]: uscdi.html
+[Vital Signs with Qualifying Elements: Average Blood Pressure Profile]: https://hl7.org/fhir/us/vitals/STU1/StructureDefinition-average-blood-pressure.html
+[Care Experience Preferences at End of Life Grouping]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.11/expansion
+[Intervention Preferences at End of Life Grouping]: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1115.9/expansion
+[Writing Vital Signs]: vitals-write.html
+[HTI-1 final rule]: https://www.federalregister.gov/documents/2023/04/18/2023-07229/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and
+[FHIRpath]: https://hl7.org/fhirpath/N1/
+[USCDI ONDEC process]: https://www.healthit.gov/isa/ONDEC
+[principle of least privilege]: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+[Project US@ Technical Specification for Patient Addresses Final Version 1.0]: https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf
+[Physical Activity Implementation Guide]: https://hl7.org/fhir/us/physical-activity/
+[American Heart Association]: http://heart.org/
+[Physical Activity Alliance]: http://paamovewithus.org/
+[extension]: http://hl7.org/fhir/R4/extensibility.html
+[Extensions]: http://hl7.org/fhir/R4/extensibility.html
+[Multiple Chronic Condition (MCC) Care Plan Implementation Guide]: https://hl7.org/fhir/us/mcc/2023Sep/
+[FHIR R5 Patient Resource Gender and Sex Notes]: https://hl7.org/fhir/R5/patient.html#gender
+[<code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code>]: http://hl7.org/fhir/R4/resource.html#Meta
+[<code class="language-plaintext highlighter-rouge">_lastUpdated</code>]: http://hl7.org/fhir/R4/search.html#lastUpdated
+[FHIR Topic-Based Subscription]: https://hl7.org/fhir/R5/subscriptions.html
+[FHIR-45012]: https://jira.hl7.org/browse/FHIR-45012
+[Event Location Extension]: http://hl7.org/fhir/StructureDefinition/event-location
+[FHIR OAuth authorization Endpoints and Capabilities]: http://hl7.org/fhir/smart-app-launch/STU2/conformance.html#smart-on-fhir-oauth-authorization-endpoints-and-capabilities
+[Patient Access for Standalone Apps]: http://hl7.org/fhir/smart-app-launch/STU2/conformance.html#patient-access-for-standalone-apps
+[Clinician Access for EHR Launch]: http://hl7.org/fhir/smart-app-launch/STU2/conformance.html#clinician-access-for-standalone
+[Token Introspection]: http://hl7.org/fhir/smart-app-launch/STU2/token-introspection.html#token-introspection)
+[Well-Known Uniform Resource Identifiers (URIs)]: https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#using-well-known
+[NDC to RxNorm mappings]: https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/ndc_rxcui/NDC_RXCUI_DrugName.html
+[Enclosed Precondition Extension]: http://hl7.org/fhir/us/pacio-adi/StructureDefinition/adi-enclosedPrecondition-extension
+[HTA-1 final rule]: https://www.federalregister.gov/documents/2023/04/18/2023-07229/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and#p-991+
+[example binding]: http://hl7.org/fhir/R4/terminologies.html#example
+[example]: http://hl7.org/fhir/R4/terminologies.html#example
+[current]: https://hl7.org/fhir/R5/terminologies.html#binding
+[Searching Using lastUpdated]: general-guidance.html#searching-using-lastupdated
+[registry of standard extensions]: http://hl7.org/fhir/R4/extensibility-registry.html
+[HL7 v2]: http://www.hl7.org/implement/standards/product_brief.cfm?product_id=185
+[Clinical Information Reconciliation and Incorporation (CIRI)]: https://www.healthit.gov/test-method/clinical-information-reconciliation-and-incorporation
+[Normative]: http://hl7.org/fhir/R4/versions.html#maturity
+[US Realm Steering Committee (USRSC)]: https://confluence.hl7.org/display/USR/US+Realm+Steering+Committee</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 14, 2024 19:38+0000">2024-05-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

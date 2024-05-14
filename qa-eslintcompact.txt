@@ -1,0 +1,14 @@
+UCSDI5Sandbox
+=========================================
+
+Generic: line 0, col 0, Error - The link 'ImplementationGuide-.xml' for "XML" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'ImplementationGuide-.json' for "JSON" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#fhir-resources-to-exchange-clinical-notes' for "FHIR Resources to Exchange Clinical Notes" cannot be resolved (valid targets: [segment-header, clinical-notes, publish-box, bottom, segment-post-footer, support-requirements, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'schematrons.zip' for "Schematrons(compressed folder)" cannot be resolved (NOTFOUND)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type) (INVALID)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 1, col 3182, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type vs http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type (BUSINESSRULE)
+
+err = 3, warn = 0, info = 0
+IG Publisher Version: 1.6.7

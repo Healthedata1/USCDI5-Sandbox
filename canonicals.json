@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "us-core-clinical-note-type",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
+    "version" : "0.0.0",
+    "name" : "USCoreClinicalNoteType"
+  },
+  {
+    "id" : "uscdi5-sandbox",
+    "type" : "ImplementationGuide",
+    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox",
+    "version" : "0.0.0",
+    "name" : "UCSDI5Sandbox"
+  }
+]
