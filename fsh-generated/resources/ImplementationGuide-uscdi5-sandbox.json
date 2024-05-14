@@ -47,24 +47,6 @@
       "id": "hl7_fhir_uv_smart_app_launch"
     },
     {
-      "id": "vsac",
-      "packageId": "us.nlm.vsac",
-      "uri": "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac",
-      "version": "0.18.0"
-    },
-    {
-      "packageId": "hl7.fhir.uv.sdc",
-      "version": "3.0.0",
-      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
-      "id": "hl7_fhir_uv_sdc"
-    },
-    {
-      "id": "uscdcphinvads",
-      "packageId": "us.cdc.phinvads",
-      "uri": "http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads",
-      "version": "0.12.0"
-    },
-    {
       "packageId": "hl7.fhir.uv.extensions",
       "version": "5.1.0-cibuild",
       "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
