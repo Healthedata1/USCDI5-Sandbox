@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-14T20:21:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-14T20:31:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -681,6 +681,21 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Immunization/imm-1> ;
+         fhir:reference [ fhir:v "Immunization/imm-1" ]
+       ] ;
+       fhir:name [ fhir:v "Imm 1 Example" ] ;
+       fhir:description [ fhir:v "This is a imm 1 example for the *US Core Immunization Profile*." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization>
+       ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]

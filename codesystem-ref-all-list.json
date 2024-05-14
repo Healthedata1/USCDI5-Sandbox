@@ -47,8 +47,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes"
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",

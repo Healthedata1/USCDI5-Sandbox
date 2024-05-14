@@ -1,4 +1,5 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json	5381	-	0	0	0	0	0	0	7	73	0	0	0	0	0	0	0	0	0	0	101	83	0	0	0	4	0	3
-input/resources/StructureDefinition-us-core-immunization.json	7913	21	0	0	0	0	0	89	0	97	0	0	0	0	0	0	0	3	0	0	327	3889	0	0	0	12	0	2
-input/resources/ValueSet-us-core-clinical-note-type.json	1875	18	0	0	0	0	0	0	1	2618	0	0	0	0	0	0	0	0	0	0	19	32656	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json	5698	-	0	0	0	0	0	0	7	68	0	0	0	0	0	0	0	1	0	0	108	76	0	0	0	4	0	3
+input/examples/imm-1.json	1638	17	0	0	0	0	0	0	1	98	0	0	0	0	0	0	0	0	0	0	25	36	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-immunization.json	8076	20	1	0	0	0	0	101	0	69	0	0	0	0	0	0	0	2	0	0	343	2075	0	0	0	14	0	3
+input/resources/ValueSet-us-core-clinical-note-type.json	1875	18	0	0	0	0	0	0	1	2675	0	0	0	0	0	0	0	0	0	0	27	31050	0	0	0	1	0	0

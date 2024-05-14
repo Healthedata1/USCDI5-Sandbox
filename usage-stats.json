@@ -29,6 +29,12 @@
       "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Immunization.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Immunization.meta"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],

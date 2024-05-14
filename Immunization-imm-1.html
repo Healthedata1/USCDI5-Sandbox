@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Guidance - UCSDI5 Sandbox v0.0.0</title>
+    <title>Imm 1 Example - UCSDI5 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.3"}
+    h3,h4,h5,h6{--heading-prefix:"6.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -113,7 +113,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Guidance</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Imm 1 Example</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -125,46 +125,71 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Guidance</h2>
+
   
 
 
 
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+
+  
+    <li>
+      <a href="Immunization-imm-1.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Immunization: Imm 1 Example</h2>
 
 
   <table class="colsi">
     <tr>
-  
-      <td>
-        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+
+      <td colspan="2">
+        
+          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+          
         
       </td>
-  
-  
+
     </tr>
   </table>
 
 
 
+  <!-- insert intro if present -->
+  
 
 
 
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Immunization</b><a name="imm-1"> </a><a name="hcimm-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceImmunization &quot;imm-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: influenza, high-dose, quadrivalent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html">Vaccine Administered Code Set (CVX)</a>#197; <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ndc.html">National drug codes</a>#49281012165 &quot;FLUZONE High-Dose Quadrivalent Northern Hemisphere, 10 SYRINGE, GLASS in 1 PACKAGE (49281-121-65) &gt; .7 mL in 1 SYRINGE, GLASS (49281-121-88) (package)&quot;)</span></p><p><b>patient</b>: <a href="http://hl7.org/fhir/us/core/STU7/Patient-example.html">Patient/example: Amy Shaw</a></p><p><b>encounter</b>: <a href="http://hl7.org/fhir/us/core/STU7/Encounter-example-1.html">Encounter/example-1: Office Visit</a></p><p><b>occurrence</b>: 2020-11-19 12:46:57-0800</p><p><b>primarySource</b>: false</p><p><b>location</b>: <a href="http://hl7.org/fhir/us/core/STU7/Location-hospital.html">Location/hospital: Holy Family Hospital</a></p><p><b>lotNumber</b>: AAJN11K</p></div>
 
+  
 
-    <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h3 id="guidance">Guidance</h3>
+  <!-- insert notes if present -->
+  
 
 
 

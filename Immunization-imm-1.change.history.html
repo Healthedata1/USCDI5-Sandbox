@@ -1,9 +1,13 @@
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Guidance - UCSDI5 Sandbox v0.0.0</title>
+    <title> - UCSDI5 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -113,7 +117,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Guidance</b></li>
+          
 
         </ul>
       </div>  <!-- /container -->
@@ -125,50 +129,47 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
-<div class="col-12">
+
+<div style="counter-reset: section 10" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Guidance</h2>
   
 
 
 
 
 
-  <table class="colsi">
-    <tr>
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Immunization-imm-1.html">Narrative Content</a>
+  </li>
+
+
+
+
   
-      <td>
-        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
-        
-      </td>
+    <li>
+      <a href="Immunization-imm-1.json.html">JSON</a>
+    </li>
   
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">: Immunization/imm-1 - Change History</h2>
+  <p>History of changes for imm-1 .</p>
+
   
-    </tr>
-  </table>
 
-
-
-
-
-
-
-
-    <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h3 id="guidance">Guidance</h3>
 
-
-
-</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -176,6 +177,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>

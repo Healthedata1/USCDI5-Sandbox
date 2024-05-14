@@ -68,7 +68,7 @@ string {[]} {[]}","Vaccine administration date","Date vaccine administered or wa
 "Immunization.manufacturer","Immunization.manufacturer","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Vaccine manufacturer","Name of vaccine manufacturer.","","","","","","","","","",,,,,"",,,,"Immunization.manufacturer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXA-17",".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=ORG]","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacuturerOrganization/name"
-"Immunization.lotNumber","Immunization.lotNumber","","","",0,1,"","","","string {[]} {[]}
+"Immunization.lotNumber","Immunization.lotNumber","","","",0,1,"Y","","","string {[]} {[]}
 ","Vaccine lot number","Lot number of the  vaccine product.","","","","","","","","","",,,,,"",,,,"Immunization.lotNumber",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","RXA-15",".participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].id","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/lotNumberText"
 "Immunization.expirationDate","Immunization.expirationDate","","","",0,1,"","","","date {[]} {[]}

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi5-sandbox/Immunization/imm-1> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "imm-1"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Imm 1 Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a imm 1 example for the *US Core Immunization Profile*." ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Immunization</b><a name=\"imm-1\"> </a><a name=\"hcimm-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceImmunization &quot;imm-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-immunization.html\">US Core Immunization Profile</a></p></div><p><b>status</b>: completed</p><p><b>vaccineCode</b>: influenza, high-dose, quadrivalent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html\">Vaccine Administered Code Set (CVX)</a>#197; <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ndc.html\">National drug codes</a>#49281012165 &quot;FLUZONE High-Dose Quadrivalent Northern Hemisphere, 10 SYRINGE, GLASS in 1 PACKAGE (49281-121-65) &gt; .7 mL in 1 SYRINGE, GLASS (49281-121-88) (package)&quot;)</span></p><p><b>patient</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Patient-example.html\">Patient/example: Amy Shaw</a></p><p><b>encounter</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Encounter-example-1.html\">Encounter/example-1: Office Visit</a></p><p><b>occurrence</b>: 2020-11-19 12:46:57-0800</p><p><b>primarySource</b>: false</p><p><b>location</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Location-hospital.html\">Location/hospital: Holy Family Hospital</a></p><p><b>lotNumber</b>: AAJN11K</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "197" ] ;
+       fhir:display [ fhir:v "influenza, high-dose, quadrivalent" ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/ndc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "49281012165" ] ;
+       fhir:display [ fhir:v "FLUZONE High-Dose Quadrivalent Northern Hemisphere, 10 SYRINGE, GLASS in 1 PACKAGE (49281-121-65) > .7 mL in 1 SYRINGE, GLASS (49281-121-88) (package)" ]
+     ] ) ;
+     fhir:text [ fhir:v "influenza, high-dose, quadrivalent" ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ] ;
+     fhir:display [ fhir:v "Amy Shaw" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Encounter/example-1> ;
+     fhir:reference [ fhir:v "Encounter/example-1" ] ;
+     fhir:display [ fhir:v "Office Visit" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2020-11-19T12:46:57-08:00"^^xsd:dateTime] ; # 
+  fhir:primarySource [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:location [
+     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Location/hospital> ;
+     fhir:reference [ fhir:v "Location/hospital" ] ;
+     fhir:display [ fhir:v "Holy Family Hospital" ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "AAJN11K"] . # 
+
+# -------------------------------------------------------------------------------------
+

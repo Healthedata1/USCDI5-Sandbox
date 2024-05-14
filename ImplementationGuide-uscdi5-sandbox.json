@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-05-14T20:21:53+00:00",
+  "date" : "2024-05-14T20:31:17+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -796,6 +796,18 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/imm-1"
+      },
+      "name" : "Imm 1 Example",
+      "description" : "This is a imm 1 example for the *US Core Immunization Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
