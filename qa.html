@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 20, errors = 6, warn = 0, info = 0-->
+<!-- broken links = 66, errors = 15, warn = 0, info = 1-->
 <head>
   <title>UCSDI5Sandbox : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for UCSDI5Sandbox</h1>
- <p>Generated Tue May 14 20:32:22 UTC 2024, FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi5-sandbox">http://www.fhir.org/guides/uscdi5-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Tue May 14 22:50:22 UTC 2024, FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = <a href="http://www.fhir.org/guides/uscdi5-sandbox">http://www.fhir.org/guides/uscdi5-sandbox</a> (<a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.7</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = uscdi5-sandbox, Canonical = http://www.fhir.org/guides/uscdi5-sandbox</td></tr>
@@ -73,28 +73,63 @@
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
  (15 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">ImmunizationStatusCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">ImmunizationStatusCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status-reason.html">ImmunizationStatusReasonCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-origin.html">ImmunizationOriginCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-site.html">CodesForImmunizationSiteOfAdministration</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-site.html">CodesForImmunizationSiteOfAdministration</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-route.html">ImmunizationRouteCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-function.html">ImmunizationFunctionCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-reason.html">ImmunizationReasonCodes</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-reason.html">ImmunizationReasonCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-subpotent-reason.html">ImmunizationSubpotentReason</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html">ImmunizationProgramEligibility</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-funding-source.html">ImmunizationFundingSource</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-target-disease.html">ImmunizationTargetDiseaseCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationdispense-status.html">MedicationDispense Status Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationdispense-status-reason.html">MedicationDispense Status Reason Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationdispense-category.html">MedicationDispense Category Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationdispense-performer-function.html">MedicationDispense Performer Function Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-ucum-units.html">UCUMCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-ucum-common.html">Common UCUM units</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
  (1 uses)
   </li>
   <li>
 hl7.fhir.uv.extensions#5.1.0-cibuild:     <a href="http://hl7.org/fhir/extensions/5.1.0-snapshot1/StructureDefinition-structuredefinition-conformance-derivedFrom.html">SDStatusDerivation</a>
- (4 uses),     <a href="http://hl7.org/fhir/extensions/5.1.0-snapshot1/StructureDefinition-elementdefinition-type-must-support.html">TypeMustSupport</a>
- (2 uses)
+ (8 uses),     <a href="http://hl7.org/fhir/extensions/5.1.0-snapshot1/StructureDefinition-elementdefinition-type-must-support.html">TypeMustSupport</a>
+ (54 uses)
   </li>
   <li>
 hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/ImplementationGuide-hl7.fhir.uv.sdc.html">StructuredDataCapture</a>
@@ -102,7 +137,7 @@ hl7.fhir.uv.sdc#3.0.0:     <a href="http://hl7.org/fhir/uv/sdc/STU3/Implementati
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (3 uses)
+ (7 uses)
   </li>
 </ul>
 </td></tr>
@@ -110,14 +145,14 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://www.fhir.org/guides/uscdi5-sandbox (Problem #1 with package-list.json at http://www.fhir.org/guides/uscdi5-sandbox: Not Found)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 6, warn = 0, info = 0, broken links = 20</td></tr>
+ <tr><td>Summary:</td><td> errors = 15, warn = 0, info = 1, broken links = 66</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>20</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>66</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_fsh-generated_resources_ImplementationGuide-uscdi5-sandbox"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -125,8 +160,20 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_examples_imm-1"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/imm-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_examples_medicationdispense-example"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationdispense-example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_examples_medicationrequest-coded-oral-axid"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationrequest-coded-oral-axid</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_StructureDefinition-us-core-immunization"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_StructureDefinition-us-core-medicationdispense"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationdispense</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_StructureDefinition-us-core-medicationrequest"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_ValueSet-us-core-clinical-note-type"><b>/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -180,6 +227,144 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><b><a href="StructureDefinition-us-core-immunization.html#l7909">output&#8203;/StructureDefinition-us-core-immunization&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/p&#8203;/strong&#8203;/a at Line 2052, column 239</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-immunization-status.html' for &quot;status&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l362">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 263, column 8</a></b></td><td><b>error</b></td><td><b>The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for &quot;Record or update&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l371">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 269, column 57</a></b></td><td><b>error</b></td><td><b>The link 'must-support.html' for &quot;Mandatory&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l371">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 269, column 178</a></b></td><td><b>error</b></td><td><b>The link 'must-support.html' for &quot;Must Support&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9488">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2376, column 388</a></b></td><td><b>error</b></td><td><b>The link 'CapabilityStatement-us-core-server.html' for &quot;US Core Server CapabilityStatement&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9496">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 2379, column 16</a></b></td><td><b>error</b></td><td><b>The link 'general-guidance.html#search-syntax' for &quot;Search Syntax&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9502">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 2380, column 16</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html' for &quot;General Requirements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9508">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 2381, column 16</a></b></td><td><b>error</b></td><td><b>The link 'general-guidance.html' for &quot;General Guidance&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9526">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/p&#8203;/strong&#8203;/a at Line 2388, column 68</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationdispense-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9584">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 2412, column 87</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationdispense-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9589">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 2412, column 244</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationdispense-status.html' for &quot;status&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9649">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 2429, column 87</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationdispense-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9654">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 2429, column 244</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationdispense-status.html' for &quot;status&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationdispense.html#l9659">output&#8203;/StructureDefinition-us-core-medicationdispense&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 2429, column 399</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationdispense-type.html' for &quot;type&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest-definitions.html#l575">output&#8203;/StructureDefinition-us-core-medicationrequest-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/p&#8203;/a at Line 244, column 1995</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest-definitions.html#l2036">output&#8203;/StructureDefinition-us-core-medicationrequest-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/p&#8203;/a at Line 322, column 1099</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest-definitions.html#l5404">output&#8203;/StructureDefinition-us-core-medicationrequest-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/p&#8203;/a at Line 479, column 819</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l365">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 263, column 19</a></b></td><td><b>error</b></td><td><b>The link 'medication-list.html' for &quot;Medication List&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l385">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 269, column 8</a></b></td><td><b>error</b></td><td><b>The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for &quot;Record or update&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l394">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 57</a></b></td><td><b>error</b></td><td><b>The link 'must-support.html' for &quot;Mandatory&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l394">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 274, column 178</a></b></td><td><b>error</b></td><td><b>The link 'must-support.html' for &quot;Must Support&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l476">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 310, column 11</a></b></td><td><b>error</b></td><td><b>The link 'must-support.html#additional-uscdi-requirements' for &quot;Additional USCDI Requirements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l500">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 322, column 16</a></b></td><td><b>error</b></td><td><b>The link 'medication-list.html' for &quot;Medication List&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l657">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/ul&#8203;/li&#8203;/a at Line 356, column 107</a></b></td><td><b>error</b></td><td><b>The link 'general-guidance.html#referencing-us-core-profiles' for &quot;Referencing US Core Profiles&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l680">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/p&#8203;/a at Line 365, column 67</a></b></td><td><b>error</b></td><td><b>The link 'medication-list.html' for &quot;Medication List&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l693">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 367, column 33</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-us-core-medication-adherence.html' for &quot;US Core Medication Adherence Extension&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l1040">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 461, column 675</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l2373">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 710, column 641</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l3964">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1027, column 643</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l7149">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1788, column 675</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l8479">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 2036, column 641</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l10070">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 2353, column 643</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for &quot;Required Bindings When Slicing by Value Sets&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13008">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3085, column 388</a></b></td><td><b>error</b></td><td><b>The link 'CapabilityStatement-us-core-server.html' for &quot;US Core Server CapabilityStatement&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13016">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 3088, column 16</a></b></td><td><b>error</b></td><td><b>The link 'general-guidance.html#search-syntax' for &quot;Search Syntax&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13022">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 3089, column 16</a></b></td><td><b>error</b></td><td><b>The link 'general-requirements.html' for &quot;General Requirements&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13028">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 3090, column 16</a></b></td><td><b>error</b></td><td><b>The link 'general-guidance.html' for &quot;General Guidance&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13044">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3096, column 86</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13049">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3096, column 242</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-intent.html' for &quot;intent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13112">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3113, column 86</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13117">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3113, column 242</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-intent.html' for &quot;intent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13122">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3113, column 396</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-status.html' for &quot;status&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13209">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3138, column 87</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13214">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3138, column 243</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-intent.html' for &quot;intent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13219">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3138, column 397</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-encounter.html' for &quot;encounter&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13282">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3155, column 87</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-patient.html' for &quot;patient&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13287">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3155, column 243</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-intent.html' for &quot;intent&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-us-core-medicationrequest.html#l13292">output&#8203;/StructureDefinition-us-core-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ol&#8203;/li&#8203;/strong&#8203;/a at Line 3155, column 397</a></b></td><td><b>error</b></td><td><b>The link 'SearchParameter-us-core-medicationrequest-authoredon.html' for &quot;authoredon&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b><a href="changes.html#l317">output&#8203;/changes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 185, column 13</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/us/core/2022Jan' for &quot;http://hl7.org/fhir/us/core/2022Jan&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -219,9 +404,29 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_examples_medicationdispense-example"> </a>
+<h2><a href="MedicationDispense-medicationdispense-example.html">input/examples/medicationdispense-example.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>MedicationDispense: Validated against <a href="http://hl7.org/fhir/us/core/STU7">hl7.fhir.us.core</a>.<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_examples_medicationrequest-coded-oral-axid"> </a>
+<h2><a href="MedicationRequest-medicationrequest-coded-oral-axid.html">input/examples/medicationrequest-coded-oral-axid.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>MedicationRequest: Validated against <a href="http://hl7.org/fhir/us/core/STU7">hl7.fhir.us.core</a>.<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_StructureDefinition-us-core-immunization"> </a>
-<h2><a href="StructureDefinition-us-core-immunization.html">input/resources/StructureDefinition-us-core-immunization.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-us-core-immunization.html">input/resources/StructureDefinition-us-core-immunization.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -238,9 +443,59 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
    </tr>
 </table>
 <hr/>
+<a name="_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_StructureDefinition-us-core-medicationdispense"> </a>
+<h2><a href="StructureDefinition-us-core-medicationdispense.html">input/resources/StructureDefinition-us-core-medicationdispense.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-medicationdispense')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationdispense.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-medicationdispense) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-medicationdispense')</b></td><td><b>error</b></td><td title=""><b>The diff list size changed when sorting - was 17 is now 14 [MedicationDispense, MedicationDispense.status, MedicationDispense.medication[x], MedicationDispense.subject, MedicationDispense.context, MedicationDispense.performer, MedicationDispense.performer.actor, MedicationDispense.authorizingPrescription, MedicationDispense.type, MedicationDispense.quantity, MedicationDispense.whenHandedOver, MedicationDispense.dosageInstruction, MedicationDispense.dosageInstruction.text, MedicationDispense.dosageInstruction.timing, MedicationRequest.dosageInstruction.route, MedicationDispense.dosageInstruction.doseAndRate, MedicationDispense.dosageInstruction.doseAndRate.dose[x]]/[MedicationDispense, MedicationDispense.status, MedicationDispense.medication[x], MedicationDispense.subject, MedicationDispense.context, MedicationDispense.performer, MedicationDispense.performer.actor, MedicationDispense.authorizingPrescription, MedicationDispense.type, MedicationDispense.quantity, MedicationDispense.whenHandedOver, MedicationDispense.dosageInstruction, MedicationDispense.dosageInstruction.text, MedicationDispense.dosageInstruction.timing]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-medicationdispense')</b></td><td><b>error</b></td><td title=""><b>Sort failed: counts differ; at least one of the paths in the differential is illegal</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28]&#8203;.mapping[0]&#8203;.map (l1&#8203;/c82198)</b></td><td><b>information</b></td><td title="SECURITY_STRING_CONTENT_WARNING"><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition (l1/c134471)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/StructureDefinition-us-core-medicationdispense</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-medicationdispense vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_StructureDefinition-us-core-medicationrequest"> </a>
+<h2><a href="StructureDefinition-us-core-medicationrequest.html">input/resources/StructureDefinition-us-core-medicationrequest.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.org&#8203;/fhir&#8203;/us&#8203;/core&#8203;/StructureDefinition&#8203;/us-core-medicationrequest')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-medicationrequest) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition (l1/c194260)</b></td><td><b>error</b></td><td title="VALIDATION_HL7_WG_NEEDED"><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/resources&#8203;/StructureDefinition-us-core-medicationrequest</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-medicationrequest vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.text.div</b></td><td><b>error</b></td><td title=""><b>Hyperlink 'general-requirements.html#required-bindings-when-slicing-by-valuesets' at 'div/table/tr/td/a' for 'Required Bindings When Slicing by Value Sets' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_home_runner_work_USCDI5-Sandbox_USCDI5-Sandbox_input_resources_ValueSet-us-core-clinical-note-type"> </a>
-<h2><a href="ValueSet-us-core-clinical-note-type.html">input/resources/ValueSet-us-core-clinical-note-type.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<h2><a href="ValueSet-us-core-clinical-note-type.html">input/resources/ValueSet-us-core-clinical-note-type.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -268,7 +523,21 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
      <td><a href="StructureDefinition-us-core-immunization.html">input/resources/StructureDefinition-us-core-immunization.json</a></td><td><b>Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-us-core-medicationdispense.html">input/resources/StructureDefinition-us-core-medicationdispense.json</a></td><td><b>Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationdispense.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-medicationdispense) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-us-core-medicationrequest.html">input/resources/StructureDefinition-us-core-medicationrequest.json</a></td><td><b>Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-medicationrequest) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="ValueSet-us-core-clinical-note-type.html">input/resources/ValueSet-us-core-clinical-note-type.json</a></td><td><b>Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-us-core-medicationdispense.html">input/resources/StructureDefinition-us-core-medicationdispense.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
    </tr>
 </table>
 <hr/>
@@ -277,6 +546,12 @@ hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureD
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-us-core-immunization.html">input/resources/StructureDefinition-us-core-immunization.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-us-core-medicationdispense.html">input/resources/StructureDefinition-us-core-medicationdispense.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-us-core-medicationrequest.html">input/resources/StructureDefinition-us-core-medicationrequest.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="ValueSet-us-core-clinical-note-type.html">input/resources/ValueSet-us-core-clinical-note-type.json</a></td><td><b>When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension</b></td>

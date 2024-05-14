@@ -7,6 +7,20 @@
     "name" : "USCoreImmunizationProfile"
   },
   {
+    "id" : "us-core-medicationdispense",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
+    "version" : "0.0.0",
+    "name" : "USCoreMedicationDispenseProfile"
+  },
+  {
+    "id" : "us-core-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+    "version" : "0.0.0",
+    "name" : "USCoreMedicationRequestProfile"
+  },
+  {
     "id" : "us-core-clinical-note-type",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",

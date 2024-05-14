@@ -9,6 +9,18 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
         "title": "US Core Immunization Profile"
       }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationdispense",
+        "title": "US Core MedicationDispense Profile"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
+        "title": "US Core MedicationRequest Profile"
+      }
     ]
   },
   "usage": {
@@ -23,17 +35,24 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
-      "StructureDefinition.snapshot.element.type"
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "Immunization.meta"
+      "Immunization.meta",
+      "MedicationDispense.meta",
+      "MedicationRequest.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "Immunization.meta"
+      "Immunization.meta",
+      "MedicationDispense.meta",
+      "MedicationRequest.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -67,6 +86,13 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence": [
+      "MedicationRequest"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
     ]
   }
 }
