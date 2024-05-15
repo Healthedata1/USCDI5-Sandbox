@@ -190,16 +190,16 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
       "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes"
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
@@ -488,8 +488,8 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier",
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
     }
   ]
 }

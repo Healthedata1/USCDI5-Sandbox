@@ -1,11 +1,11 @@
 Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json	9612	-	0	0	0	0	0	0	9	51	0	0	0	0	0	0	0	0	0	0	96	104	0	0	0	4	0	0
-input/examples/imm-1.json	1638	18	0	0	0	0	0	0	0	95	0	0	0	0	0	0	0	0	0	0	21	34	0	0	0	0	0	0
-input/examples/medicationdispense-example.json	3011	14	0	0	0	0	0	0	0	624	0	0	0	0	0	0	0	0	0	0	22	42	0	0	0	0	0	0
-input/examples/medicationrequest-coded-oral-axid.json	4894	15	0	0	0	0	0	0	1	95	0	0	0	0	0	0	0	1	0	0	27	42	0	0	0	0	0	1
-input/examples/patient-example.json	7812	14	0	0	0	0	0	0	1	64	0	0	0	0	0	0	0	0	0	0	40	30	0	0	0	0	0	0
-input/resources/StructureDefinition-us-core-immunization.json	8076	20	1	0	0	0	0	74	0	71	0	0	0	0	0	0	0	2	0	0	308	1993	0	0	0	8	0	1
-input/resources/StructureDefinition-us-core-medicationdispense.json	13970	21	0	0	0	0	0	68	0	525	0	0	0	0	0	0	0	0	0	0	405	959	0	0	0	10	0	2
-input/resources/StructureDefinition-us-core-medicationrequest.json	22288	15	0	0	0	0	0	81	0	39	0	0	1	0	0	0	0	1	0	0	551	855	0	0	0	15	0	1
-input/resources/StructureDefinition-us-core-patient.json	24401	16	0	0	0	0	0	78	0	54	0	0	0	0	0	0	0	1	0	0	603	636	0	0	0	16	1	1
-input/resources/ValueSet-us-core-clinical-note-type.json	1875	17	0	0	0	0	0	0	0	2048	0	0	0	0	0	0	0	0	0	0	18	32417	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json	9612	-	0	0	0	0	0	0	4	71	0	0	0	0	0	0	0	0	0	0	139	92	0	0	0	4	0	1
+input/examples/imm-1.json	1638	25	0	0	0	0	0	0	0	145	0	0	0	0	0	0	0	0	0	0	20	32	0	0	0	0	0	0
+input/examples/medicationdispense-example.json	3011	25	0	0	0	0	0	0	0	557	0	0	0	0	0	0	0	0	0	0	18	39	0	0	0	0	0	0
+input/examples/medicationrequest-coded-oral-axid.json	4894	24	0	0	0	0	0	0	0	53	0	0	0	0	0	0	0	0	0	0	24	39	0	0	0	0	0	0
+input/examples/patient-example.json	8646	16	0	0	0	0	0	0	1	55	0	0	0	0	0	0	0	0	0	0	41	30	0	0	0	0	0	0
+input/resources/StructureDefinition-us-core-immunization.json	8076	20	1	0	0	0	0	87	0	63	0	0	1	0	0	0	0	2	0	0	300	2497	0	0	0	6	1	1
+input/resources/StructureDefinition-us-core-medicationdispense.json	13970	26	0	0	0	0	0	68	0	543	0	0	0	0	0	0	0	1	0	0	402	951	0	0	0	10	0	2
+input/resources/StructureDefinition-us-core-medicationrequest.json	22288	20	0	0	0	0	0	125	0	55	0	0	0	0	0	0	0	1	0	0	504	975	0	0	0	15	0	1
+input/resources/StructureDefinition-us-core-patient.json	26046	29	0	0	0	0	0	102	0	55	0	0	0	0	0	0	0	1	0	0	581	956	0	0	0	15	0	1
+input/resources/ValueSet-us-core-clinical-note-type.json	1875	23	0	0	0	0	0	0	1	2143	0	0	0	0	0	0	0	0	0	0	27	31310	0	0	0	1	0	0

@@ -50,6 +50,9 @@
       "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
+    "http://hl7.org/fhir/StructureDefinition/individual-pronouns": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "Immunization.meta",
       "MedicationDispense.meta",
@@ -61,6 +64,9 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Patient.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
       "Patient"

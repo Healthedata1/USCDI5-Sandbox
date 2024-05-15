@@ -364,9 +364,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
       "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {

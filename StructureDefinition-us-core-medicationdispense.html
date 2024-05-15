@@ -1461,7 +1461,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         </p>
         <div id="tbl-summ-inner">
           <a name="summary"> </a>
-          <p><i>Cannot invoke "Object.hashCode()" because "key" is null</i></p>
+          <p><i></i></p>
         </div>
       </div>
     </div>
@@ -2573,7 +2573,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         <p>This structure is derived from <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
         </p>
         <div id="all-summ-inner">
-          <p><i>Cannot invoke "Object.hashCode()" because "key" is null</i></p>
+          <p><i></i></p>
         </div>
       </div>
     </div>
@@ -2602,19 +2602,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <hr/>
 
-<p><a name="l10542">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
+<p><a name="l10540">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l10550">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l10556">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l10562">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l10548">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l10554">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l10560">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching using the <strong><a name="l10580">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching using the <strong><a name="l10578">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
 
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
@@ -2638,7 +2638,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10638">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10643">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10636">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10641">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
@@ -2655,7 +2655,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all MedicationDispense resources for the specified patient that have a given dispense status (e.g., dispensed, not dispensed)). (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10703">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10708">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> and <strong><a name="l10713">​</a><a href="SearchParameter-us-core-medicationdispense-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10701">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10706">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> and <strong><a name="l10711">​</a><a href="SearchParameter-us-core-medicationdispense-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
@@ -2700,7 +2700,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 00:33+0000">2024-05-15</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 15, 2024 01:06+0000">2024-05-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
