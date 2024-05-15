@@ -27,6 +27,12 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
         "title": "US Core Patient Profile"
       }
+    ],
+    "Provenance": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
+        "title": "US Core Provenance Profile"
+      }
     ]
   },
   "usage": {
@@ -43,6 +49,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",

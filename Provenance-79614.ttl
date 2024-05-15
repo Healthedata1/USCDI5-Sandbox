@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi5-sandbox/Provenance/79614> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "79614"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2019-07-09T15:26:23.217+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"79614\"> </a><a name=\"hc79614\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceProvenance &quot;79614&quot; Version &quot;1&quot; Updated &quot;2019-07-09 15:26:23+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-provenance.html\">US Core Provenance Profile</a></p></div><p><b>target</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613\">AllergyIntolerance/79613</a></p><p><b>recorded</b>: Jul 9, 2019, 3:26:23 PM</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Role</b></td><td><b>Who</b></td><td><b>OnBehalfOf</b></td></tr><tr><td style=\"display: none\">*</td><td>Author <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-provenance-participant-type.html\">Provenance participant type</a>#author)</span></td><td>legal authenticator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#LA)</span></td><td><a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a></td><td><a href=\"http://hl7.org/fhir/us/core/STU7/Organization-saint-luke-w-endpoint.html\">Organization/saint-luke-w-endpoint</a></td></tr></table></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/AllergyIntolerance/79613> ;
+     fhir:reference [ fhir:v "AllergyIntolerance/79613" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2019-07-09T15:26:23.217+00:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "author" ] ;
+         fhir:display [ fhir:v "Author" ]
+       ] )
+     ] ;
+     fhir:role ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA" ] ;
+         fhir:display [ fhir:v "legal authenticator" ]
+       ] )
+     ] ) ;
+     fhir:who [
+       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Practitioner/practitioner-1> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-1" ]
+     ] ;
+     fhir:onBehalfOf [
+       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Organization/saint-luke-w-endpoint> ;
+       fhir:reference [ fhir:v "Organization/saint-luke-w-endpoint" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

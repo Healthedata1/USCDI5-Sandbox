@@ -28,6 +28,13 @@
     "name" : "USCorePatientProfile"
   },
   {
+    "id" : "us-core-provenance",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
+    "version" : "0.0.0",
+    "name" : "USCoreProvenance"
+  },
+  {
     "id" : "us-core-clinical-note-type",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",

@@ -1,8 +1,10 @@
 UCSDI5Sandbox
 =========================================
 
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/79614.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-.xml' for "XML" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-.json' for "JSON" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for "Record or update" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'must-support.html' for "Mandatory" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'must-support.html' for "Must Support" cannot be resolved (NOTFOUND)
@@ -84,6 +86,12 @@ Generic: line 0, col 0, Error - The link 'SearchParameter-us-core-patient-death-
 Generic: line 0, col 0, Error - The link 'SearchParameter-us-core-patient-family.html' for "family" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'SearchParameter-us-core-patient-family.html' for "family" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'SearchParameter-us-core-patient-gender.html' for "gender" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'must-support.html' for "Must Support" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'must-support.html#additional-uscdi-requirements' for "Additional USCDI Requirements" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'CapabilityStatement-us-core-server.html' for "US Core Server CapabilityStatement" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'general-requirements.html' for "General Requirements" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'general-guidance.html' for "General Guidance" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ValueSet-us-core-documentreference-type.html' for "US Core DocumentReference Type Value Set" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-us-core-documentreference.html' for "US Core DocumentReference Profile" cannot be resolved (NOTFOUND)
@@ -93,6 +101,9 @@ Generic: line 0, col 0, Error - The link 'ImplementationGuide-hl7.fhir.us.core.h
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 132, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 150, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 181, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 12, col 10, Error - Unable to resolve resource with reference 'AllergyIntolerance/79613' (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 19, col 14, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0 (BUSINESSRULE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 0, col 0, Error - Hyperlink 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' at 'div/p/a' for 'AllergyIntolerance/79613' does not resolve (INVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) (INVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json: line 1, col 109471, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization (BUSINESSRULE)
@@ -107,9 +118,14 @@ Generic: line 0, col 0, Error - The link 'ImplementationGuide-hl7.fhir.us.core.h
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient) (INVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient.json: line 1, col 206486, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient (BUSINESSRULE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-provenance) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance) (INVALID)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json: line 1, col 99676, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0 (BUSINESSRULE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json: line 1, col 128259, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0 (BUSINESSRULE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json: line 1, col 128770, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-provenance vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type) (INVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 1, col 3328, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type vs http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type (BUSINESSRULE)
 
-err = 16, warn = 0, info = 4
+err = 21, warn = 1, info = 7
 IG Publisher Version: 1.6.7

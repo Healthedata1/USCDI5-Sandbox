@@ -1,24 +1,28 @@
 UCSDI5Sandbox : Validation Results
 =========================================
 
-err = 16, warn = 0, info = 4
+err = 21, warn = 1, info = 7
 IG Publisher Version: 1.6.7
-Generated Wed May 15 01:12:03 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
- Build Errors : 89 / 0 / 0
+Generated Wed May 15 02:13:38 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+ Build Errors : 96 / 1 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/imm-1 : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationdispense-example : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationrequest-coded-oral-axid : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example : 0 / 0 / 4
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example : 2 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationdispense : 3 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest : 4 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance : 3 / 0 / 3
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type : 3 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/79614.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 199, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 200, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/Provenance-79614.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 611: The link 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for "Record or update" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/p/a at Line 268, column 57: The link 'must-support.html' for "Mandatory" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/p/a at Line 268, column 178: The link 'must-support.html' for "Must Support" cannot be resolved
@@ -100,6 +104,12 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinitio
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-patient.html#/html/body/div/div/div/div/div/div/ol/li/p/strong/a at Line 3316, column 240: The link 'SearchParameter-us-core-patient-family.html' for "family" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-patient.html#/html/body/div/div/div/div/div/div/ol/li/p/strong/a at Line 3329, column 88: The link 'SearchParameter-us-core-patient-family.html' for "family" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-patient.html#/html/body/div/div/div/div/div/div/ol/li/p/strong/a at Line 3329, column 232: The link 'SearchParameter-us-core-patient-gender.html' for "gender" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 267, column 143: The link 'must-support.html' for "Must Support" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/div/p/a at Line 297, column 13: The link 'must-support.html#additional-uscdi-requirements' for "Additional USCDI Requirements" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 2382, column 388: The link 'CapabilityStatement-us-core-server.html' for "US Core Server CapabilityStatement" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2385, column 16: The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2386, column 16: The link 'general-requirements.html' for "General Requirements" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2387, column 16: The link 'general-guidance.html' for "General Guidance" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 208, column 68: The link 'ValueSet-us-core-documentreference-type.html' for "US Core DocumentReference Type Value Set" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 216, column 50: The link 'StructureDefinition-us-core-documentreference.html' for "US Core DocumentReference Profile" cannot be resolved
@@ -114,6 +124,10 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/downloads.html#/ht
 INFORMATION: Patient/example: Patient.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/example: Patient.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/example: Patient.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== input/examples/provenance-example.json ==
+ERROR: Provenance/79614: Provenance.target[0]: Unable to resolve resource with reference 'AllergyIntolerance/79613'
+INFORMATION: Provenance/79614: Provenance.agent[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
+ERROR: Provenance.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' at 'div/p/a' for 'AllergyIntolerance/79613' does not resolve
 == input/resources/StructureDefinition-us-core-immunization.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization)
 ERROR: StructureDefinition/us-core-immunization: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
@@ -132,6 +146,12 @@ ERROR: StructureDefinition.text.div: Hyperlink 'general-requirements.html#requir
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-patient) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 ERROR: StructureDefinition/us-core-patient: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-patient vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+== input/resources/StructureDefinition-us-core-provenance.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-provenance) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance)
+INFORMATION: StructureDefinition/us-core-provenance: StructureDefinition.snapshot.element[34].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
+INFORMATION: StructureDefinition/us-core-provenance: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
+ERROR: StructureDefinition/us-core-provenance: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-provenance vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance
 == input/resources/ValueSet-us-core-clinical-note-type.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type)
 ERROR: ValueSet/us-core-clinical-note-type: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
