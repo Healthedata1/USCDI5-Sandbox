@@ -29,16 +29,19 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 1. contact detail (e.g., a telephone number or an email address)
 2. a communication language*
-3. a race*
-4. an ethnicity*
-5. a tribal affiliation
-6. sex*
-7. <span class="bg-success" markdown="1">sex parameter for clinical use*</span><!-- new-content -->
-8. gender identity*
-9. date of death*
-10. previous address*
-11. previous name*
-12. suffix*
+3. <span class="bg-success" markdown="1">personal pronouns</span><!-- new-content -->
+4. a race*
+5. an ethnicity*
+6. 
+7. a tribal affiliation
+8. sex*
+9. <span class="bg-success" markdown="1">sex parameter for clinical use*</span><!-- new-content -->
+10. gender identity*
+11. <span class="bg-success" markdown="1">personal pronouns</span><!-- new-content -->
+12. date of death*
+13. previous address*
+14. previous name*
+15. suffix*
 
 *see guidance below
 

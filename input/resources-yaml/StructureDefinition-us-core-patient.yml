@@ -104,14 +104,14 @@ differential:
 
 #USCDI5
 
-  - id: Patient.extension:clinical-sex
+  - id: Patient.extension:clinicalSex
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.extension
     sliceName: clinical-sex
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
-      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Sex Extension"
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Sex Parameters for Clinical Use Extension"
     min: 0
     max: '*'
     type:
@@ -119,6 +119,8 @@ differential:
       profile:
       - http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse
     mustSupport: false
+
+
 
 
   - id: Patient.extension:genderIdentity
@@ -137,6 +139,38 @@ differential:
       profile:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity
     mustSupport: false
+
+#USCDI5
+
+  - id: Patient.extension:personalPronouns
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
+    path: Patient.extension
+    sliceName: personalPronouns
+    short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Individual's Pronouns Extension"
+    min: 0
+    max: '*'
+    type:
+    - code: Extension
+      profile:
+      - http://hl7.org/fhir/StructureDefinition/individual-pronouns
+    mustSupport: false
+
+#USCDI5
+
+  - id: Patient.extension:interpreterRequired
+    path: Patient.extension
+    sliceName: interpreterRequired
+    min: 0
+    max: '1'
+    type:
+    - code: Extension
+      profile:
+      - http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
+    mustSupport: false
+
   - id: Patient.identifier
     path: Patient.identifier
     min: 1
