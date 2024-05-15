@@ -1,3 +1,4 @@
+[79614]: Provenance-79614.html
 [imm-1]: Immunization-imm-1.html
 [medicationdispense-example]: MedicationDispense-medicationdispense-example.html
 [medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html
@@ -7,3 +8,4 @@
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
+[USCoreProvenance]: StructureDefinition-us-core-provenance.html
