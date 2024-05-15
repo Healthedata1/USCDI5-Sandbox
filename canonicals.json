@@ -21,6 +21,13 @@
     "name" : "USCoreMedicationRequestProfile"
   },
   {
+    "id" : "us-core-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "version" : "0.0.0",
+    "name" : "USCorePatientProfile"
+  },
+  {
     "id" : "us-core-clinical-note-type",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",

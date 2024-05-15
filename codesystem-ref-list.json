@@ -25,6 +25,42 @@
       "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
     },
     {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.72"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "oids" : ["2.16.840.1.113883.4.642.4.74"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
       "url" : "http://hl7.org/fhir/event-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -133,6 +169,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-ucum-common.html" : "Common UCUM units"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-simple-language.html" : "Language codes with language and optionally a region modifier"
     }
   ]
 }

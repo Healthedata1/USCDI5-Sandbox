@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-14T23:13:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-15T00:33:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -728,6 +728,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+         fhir:reference [ fhir:v "Patient/example" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Example" ] ;
+       fhir:description [ fhir:v "This is a patient example for the *US Core Patient Profile*." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -772,6 +787,18 @@
        ] ;
        fhir:name [ fhir:v "US Core MedicationRequest Profile" ] ;
        fhir:description [ fhir:v "The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-patient" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Patient Profile" ] ;
+       fhir:description [ fhir:v "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-05-14T23:13:58+00:00",
+  "date" : "2024-05-15T00:33:13+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -834,6 +834,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example"
+      },
+      "name" : "Patient Example",
+      "description" : "This is a patient example for the *US Core Patient Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -877,6 +889,18 @@
       },
       "name" : "US Core MedicationRequest Profile",
       "description" : "The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-patient"
+      },
+      "name" : "US Core Patient Profile",
+      "description" : "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
       "exampleBoolean" : false
     }],
     "page" : {

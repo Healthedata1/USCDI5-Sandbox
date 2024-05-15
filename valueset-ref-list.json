@@ -30,6 +30,48 @@
       "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -133,6 +175,20 @@
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+      "title" : "Language codes with language and optionally a region modifier",
+      "description" : "This value set includes codes from [BCP-47](http://tools.ietf.org/html/bcp47). This value set matches the ONC 2015 Edition LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the language codes are required, all other elements are optional.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.4"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.4"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
       "version" : "0.0.0",
       "status" : "active",
@@ -158,6 +214,20 @@
       "uses" : {
       },
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "UspsTwoLetterAlphabeticCodes",
+      "title" : "USPS Two Letter Alphabetic Codes",
+      "description" : "This value set defines two letter USPS alphabetic codes.",
+      "systems" : ["https://www.usps.com/"],
+      "oids" : ["2.16.840.1.113883.4.642.3.40"],
+      "sources" : ["2.16.840.1.113883.4.642.3.40"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",
