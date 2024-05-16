@@ -13,7 +13,7 @@ Servers **SHALL** support, at *minimum*, these <span class="bg-success" markdown
   1. [Consultation Note (11488-4)]
   1. [Discharge Summary (18842-5)]
   1. [History & Physical Note (34117-2)]
-  1. <span class="bg-success" markdown="1">[Procedures Note (28570-0)] </span><!-- new-content -->
+  1. [Procedures Note (28570-0)] 
   1. [Progress Note (11506-3)]
   1. [Imaging Narrative (18748-4)]
   1. [Laboratory Report Narrative (11502-2)]
