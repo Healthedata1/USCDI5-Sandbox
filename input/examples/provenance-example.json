@@ -30,8 +30,8 @@
                     "coding": [
                         {
                             "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-                            "code": "LA",
-                            "display": "legal authenticator"
+                            "code": "208M00000X",
+                            "display": "Allopathic & Osteopathic Physicians; Hospitalist"
                         }
                     ]
                 }
