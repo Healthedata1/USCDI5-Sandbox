@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-16T19:23:56+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-16T21:07:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -64,6 +64,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.smart-app-launch" ] ;
      fhir:version [ fhir:v "2.0.0" ]
+  ] [
+     fhir:id [ fhir:v "vsac" ] ;
+     fhir:uri [
+       fhir:v "http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
+     ] ;
+     fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
+     fhir:version [ fhir:v "0.18.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
      fhir:uri [
@@ -849,6 +857,18 @@
        ] ;
        fhir:name [ fhir:v "US Core Provenance Profile" ] ;
        fhir:description [ fhir:v "The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/uscore-cda-role-code> ;
+         fhir:reference [ fhir:v "ValueSet/uscore-cda-role-code" ]
+       ] ;
+       fhir:name [ fhir:v "USCore CCDA Role Code" ] ;
+       fhir:description [ fhir:v "**FHIR Version R4 Copy of FHIR Version R5 [CDARoleCode](http://hl7.org/cda/stds/core/ValueSet/CDARoleCode).** A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

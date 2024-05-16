@@ -1,9 +1,9 @@
 UCSDI5Sandbox : Validation Results
 =========================================
 
-err = 28, warn = 1, info = 7
+err = 30, warn = 1, info = 8
 IG Publisher Version: 1.6.7
-Generated Thu May 16 19:27:40 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+Generated Thu May 16 21:10:52 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
  Build Errors : 99 / 1 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 5 / 0 / 2
@@ -19,6 +19,7 @@ Generated Thu May 16 19:27:40 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance : 3 / 0 / 3
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type : 3 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code : 2 / 0 / 2
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/79614.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -111,10 +112,10 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinitio
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-patient.html#/html/body/div/div/div/div/div/div/ol/li/p/strong/a at Line 3328, column 232: The link 'SearchParameter-us-core-patient-gender.html' for "gender" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 267, column 143: The link 'must-support.html' for "Must Support" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/div/p/a at Line 297, column 13: The link 'must-support.html#additional-uscdi-requirements' for "Additional USCDI Requirements" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 2382, column 388: The link 'CapabilityStatement-us-core-server.html' for "US Core Server CapabilityStatement" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2385, column 16: The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2386, column 16: The link 'general-requirements.html' for "General Requirements" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2387, column 16: The link 'general-guidance.html' for "General Guidance" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 2670, column 388: The link 'CapabilityStatement-us-core-server.html' for "US Core Server CapabilityStatement" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2673, column 16: The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2674, column 16: The link 'general-requirements.html' for "General Requirements" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2675, column 16: The link 'general-guidance.html' for "General Guidance" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 208, column 68: The link 'ValueSet-us-core-documentreference-type.html' for "US Core DocumentReference Type Value Set" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 216, column 50: The link 'StructureDefinition-us-core-documentreference.html' for "US Core DocumentReference Profile" cannot be resolved
@@ -169,3 +170,7 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/Structure
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type)
 ERROR: ValueSet/us-core-clinical-note-type: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type vs http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type
+== input/resources/ValueSet-uscore-cda-role-code.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/uscore-cda-role-code) does not match the URL (http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code)
+INFORMATION: ValueSet/uscore-cda-role-code: ValueSet: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/uscore-cda-role-code vs http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code

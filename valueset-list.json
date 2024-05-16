@@ -1,6 +1,15 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code",
+      "version" : "0.0.0",
+      "status" : "draft",
+      "name" : "USCoreCDARoleCode",
+      "title" : "USCore CCDA Role Code",
+      "description" : "**FHIR Version R4 Copy of FHIR Version R5 [CDARoleCode](http://hl7.org/cda/stds/core/ValueSet/CDARoleCode).** A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"]
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
       "version" : "0.0.0",
       "status" : "active",

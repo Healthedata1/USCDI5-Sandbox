@@ -275,8 +275,8 @@
   <li>the author organization responsible for the information</li>
   <li>the transmitter that provided the information</li>
   <li>the transmitter organization responsible for the transmission (if the transmitter is a device, the transmitter organization must also be valued).</li>
-  <li></li>
 </ol>
+
 <div class="bg-success">
 
     <!-- format of include file 
@@ -289,7 +289,7 @@ for example
 
   <p><strong>Additional USCDI Requirements:</strong></p>
 
-  <p><a name="l417">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Provenance examples.</p>
+  <p><a name="l415">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Provenance examples.</p>
 
   <ol>
     <li>the role of author/agent</li>
@@ -416,12 +416,19 @@ for example
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html" title="http://hl7.org/fhir/ValueSet/security-role-type">SecurityRoleType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-uscore-cda-role-code.html" title="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code">USCore CCDA Role Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>): C-CDA author provenance and role value sets. See additional bindings<br/><br/>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td><td style="font-size: 11px">Documentation</td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">Healthcare Provider Taxonomy <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Providers</div></td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">Personal And Legal Relationship Role Type <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Non-clinicians</div></td></tr></table></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="acac"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0330.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#diff_Provenance.agent.who">who</a><a name="Provenance.agent.who"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who participated</span></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="acad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0320.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#diff_Provenance.agent.onBehalfOf">onBehalfOf</a><a name="Provenance.agent.onBehalfOf"> </a></td>
@@ -497,7 +504,48 @@ for example
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
 <tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-provenance-participant-type.html">USCoreProvenancePaticipantTypeCodes</a><div><code>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</code><button data-clipboard-text="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="C-CDA author provenance and role value sets. See additional bindings"><a style="opacity: 1.0" href="ValueSet-uscore-cda-role-code.html">USCoreCDARoleCode</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+    <td style="font-size: 11px">Documentation</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">
+Healthcare Provider Taxonomy <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066</p>
+
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">
+Personal And Legal Relationship Role Type <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1</p>
+
+
+      </div>
+    </td>
+  </tr>
+</table>
+<div><code>http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code</code><button data-clipboard-text="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code" title="Click to copy URL" class="btn-copy"></button></div><div>from this IG</div></td></tr>
 </table>
 
         
@@ -589,12 +637,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html" title="http://hl7.org/fhir/ValueSet/security-role-type">SecurityRoleType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-uscore-cda-role-code.html" title="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code">USCore CCDA Role Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>): C-CDA author provenance and role value sets. See additional bindings<br/><br/>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td><td style="font-size: 11px">Documentation</td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">Healthcare Provider Taxonomy <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Providers</div></td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">Personal And Legal Relationship Role Type <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Non-clinicians</div></td></tr></table><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aead"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0330.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#key_Provenance.agent.who" title="The individual, device or organization that participated in the event.">who</a><a name="Provenance.agent.who"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>)</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who participated</td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aeae"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0320.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#key_Provenance.agent.onBehalfOf" title="The individual, device, or organization for whom the change was made.">onBehalfOf</a><a name="Provenance.agent.onBehalfOf"> </a></td>
@@ -697,7 +752,48 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
 <tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-provenance-participant-type.html">USCoreProvenancePaticipantTypeCodes</a><div><code>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</code><button data-clipboard-text="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="C-CDA author provenance and role value sets. See additional bindings"><a style="opacity: 1.0" href="ValueSet-uscore-cda-role-code.html">USCoreCDARoleCode</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+    <td style="font-size: 11px">Documentation</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">
+Healthcare Provider Taxonomy <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066</p>
+
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">
+Personal And Legal Relationship Role Type <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1</p>
+
+
+      </div>
+    </td>
+  </tr>
+</table>
+<div><code>http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code</code><button data-clipboard-text="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code" title="Click to copy URL" class="btn-copy"></button></div><div>from this IG</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceAuthor.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author" title="Provenance participant type">author</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceTransmitter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-provenance-participant-type.html#us-core-provenance-participant-type-transmitter" title="US Core Provenance Participant Type Extension Codes">transmitter</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 </table>
@@ -923,12 +1019,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html" title="http://hl7.org/fhir/ValueSet/security-role-type">SecurityRoleType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-uscore-cda-role-code.html" title="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code">USCore CCDA Role Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>): C-CDA author provenance and role value sets. See additional bindings<br/><br/>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td><td style="font-size: 11px">Documentation</td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">Healthcare Provider Taxonomy <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Providers</div></td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">Personal And Legal Relationship Role Type <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Non-clinicians</div></td></tr></table><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="apaf"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1330.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#Provenance.agent.who" title="The individual, device or organization that participated in the event.">who</a><a name="Provenance.agent.who"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who participated</td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="apag"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1320.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#Provenance.agent.onBehalfOf" title="The individual, device, or organization for whom the change was made.">onBehalfOf</a><a name="Provenance.agent.onBehalfOf"> </a></td>
@@ -1245,7 +1348,48 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>Provenance.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The reason the activity took place."><a style="opacity: 1.0" href="http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a><div><code>http://terminology.hl7.org/ValueSet/v3-PurposeOfUse</code><button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
 <tr><td>Provenance.activity</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The activity that took place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-provenance-activity-type.html">ProvenanceActivityType</a><div><code>http://hl7.org/fhir/ValueSet/provenance-activity-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-activity-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-provenance-participant-type.html">USCoreProvenancePaticipantTypeCodes</a><div><code>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</code><button data-clipboard-text="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="C-CDA author provenance and role value sets. See additional bindings"><a style="opacity: 1.0" href="ValueSet-uscore-cda-role-code.html">USCoreCDARoleCode</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+    <td style="font-size: 11px">Documentation</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">
+Healthcare Provider Taxonomy <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066</p>
+
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">
+Personal And Legal Relationship Role Type <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1</p>
+
+
+      </div>
+    </td>
+  </tr>
+</table>
+<div><code>http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code</code><button data-clipboard-text="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code" title="Click to copy URL" class="btn-copy"></button></div><div>from this IG</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceAuthor.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author" title="Provenance participant type">author</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceAuthor.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="The role that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceTransmitter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-provenance-participant-type.html#us-core-provenance-participant-type-transmitter" title="US Core Provenance Participant Type Extension Codes">transmitter</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
@@ -1413,12 +1557,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html" title="http://hl7.org/fhir/ValueSet/security-role-type">SecurityRoleType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td></tr>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-uscore-cda-role-code.html" title="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code">USCore CCDA Role Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>): C-CDA author provenance and role value sets. See additional bindings<br/><br/>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td><td style="font-size: 11px">Documentation</td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">Healthcare Provider Taxonomy <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Providers</div></td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">Personal And Legal Relationship Role Type <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Non-clinicians</div></td></tr></table></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="acac"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0330.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#diff_Provenance.agent.who">who</a><a name="Provenance.agent.who"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Who participated</span></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="acad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0320.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#diff_Provenance.agent.onBehalfOf">onBehalfOf</a><a name="Provenance.agent.onBehalfOf"> </a></td>
@@ -1493,7 +1644,48 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
 <tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-provenance-participant-type.html">USCoreProvenancePaticipantTypeCodes</a><div><code>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</code><button data-clipboard-text="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="C-CDA author provenance and role value sets. See additional bindings"><a style="opacity: 1.0" href="ValueSet-uscore-cda-role-code.html">USCoreCDARoleCode</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+    <td style="font-size: 11px">Documentation</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">
+Healthcare Provider Taxonomy <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066</p>
+
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">
+Personal And Legal Relationship Role Type <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1</p>
+
+
+      </div>
+    </td>
+  </tr>
+</table>
+<div><code>http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code</code><button data-clipboard-text="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code" title="Click to copy URL" class="btn-copy"></button></div><div>from this IG</div></td></tr>
 </table>
 
         
@@ -1585,12 +1777,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html" title="http://hl7.org/fhir/ValueSet/security-role-type">SecurityRoleType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-uscore-cda-role-code.html" title="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code">USCore CCDA Role Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>): C-CDA author provenance and role value sets. See additional bindings<br/><br/>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td><td style="font-size: 11px">Documentation</td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">Healthcare Provider Taxonomy <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Providers</div></td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">Personal And Legal Relationship Role Type <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Non-clinicians</div></td></tr></table><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aead"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0330.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#key_Provenance.agent.who" title="The individual, device or organization that participated in the event.">who</a><a name="Provenance.agent.who"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>)</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who participated</td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aeae"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0320.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#key_Provenance.agent.onBehalfOf" title="The individual, device, or organization for whom the change was made.">onBehalfOf</a><a name="Provenance.agent.onBehalfOf"> </a></td>
@@ -1693,7 +1892,48 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <table class="list">
 <tr><td><b>Path</b></td><td><b>Conformance</b></td><td><b>ValueSet / Code</b></td><td><b>URI</b></td></tr>
 <tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-provenance-participant-type.html">USCoreProvenancePaticipantTypeCodes</a><div><code>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</code><button data-clipboard-text="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="C-CDA author provenance and role value sets. See additional bindings"><a style="opacity: 1.0" href="ValueSet-uscore-cda-role-code.html">USCoreCDARoleCode</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+    <td style="font-size: 11px">Documentation</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">
+Healthcare Provider Taxonomy <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066</p>
+
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">
+Personal And Legal Relationship Role Type <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1</p>
+
+
+      </div>
+    </td>
+  </tr>
+</table>
+<div><code>http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code</code><button data-clipboard-text="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code" title="Click to copy URL" class="btn-copy"></button></div><div>from this IG</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceAuthor.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author" title="Provenance participant type">author</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceTransmitter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-provenance-participant-type.html#us-core-provenance-participant-type-transmitter" title="US Core Provenance Participant Type Extension Codes">transmitter</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 </table>
@@ -1919,12 +2159,19 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-security-role-type.html" title="http://hl7.org/fhir/ValueSet/security-role-type">SecurityRoleType</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)<br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;: Roles of the agent<br/><span style="font-weight:bold">Binding: </span><a href="ValueSet-uscore-cda-role-code.html" title="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code">USCore CCDA Role Code</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.">example</a>): C-CDA author provenance and role value sets. See additional bindings<br/><br/>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td><td style="font-size: 11px">Documentation</td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">Healthcare Provider Taxonomy <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Providers</div></td></tr>
+<tr><td style="font-size: 11px"><a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">Personal And Legal Relationship Role Type <img src="external.png" alt="."/></a></td>
+<td style="font-size: 11px"><span title="This is the value set that is recommended (documentation should explain why)">Recommended</span></td>
+<td style="font-size: 11px"><div>Non-clinicians</div></td></tr></table><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="apaf"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1330.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#Provenance.agent.who" title="The individual, device or organization that participated in the event.">who</a><a name="Provenance.agent.who"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
+<td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-patient.html">US Core Patient Profile(7.0.0)</a> <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This type must be supported">S</span> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a> | <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> | <a href="http://hl7.org/fhir/R4/device.html">Device</a>)</td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Who participated</td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="apag"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1320.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-provenance-definitions.html#Provenance.agent.onBehalfOf" title="The individual, device, or organization for whom the change was made.">onBehalfOf</a><a name="Provenance.agent.onBehalfOf"> </a></td>
@@ -2241,7 +2488,48 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr><td>Provenance.reason</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The reason the activity took place."><a style="opacity: 1.0" href="http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a><div><code>http://terminology.hl7.org/ValueSet/v3-PurposeOfUse</code><button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PurposeOfUse" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
 <tr><td>Provenance.activity</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The activity that took place."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-provenance-activity-type.html">ProvenanceActivityType</a><div><code>http://hl7.org/fhir/ValueSet/provenance-activity-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-activity-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-provenance-participant-type.html">USCoreProvenancePaticipantTypeCodes</a><div><code>http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type</code><button data-clipboard-text="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
-<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
+<tr><td>Provenance.agent.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="C-CDA author provenance and role value sets. See additional bindings"><a style="opacity: 1.0" href="ValueSet-uscore-cda-role-code.html">USCoreCDARoleCode</a><table class="grid">
+  <tr>
+    <td style="font-size: 11px">
+      <b>Additional Bindings</b>
+    </td>
+    <td style="font-size: 11px">Purpose</td>
+    <td style="font-size: 11px">Documentation</td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.114222.4.11.1066/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066">
+Healthcare Provider Taxonomy <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066</p>
+
+
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size: 11px">
+      <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" title="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1">
+Personal And Legal Relationship Role Type <img src="external.png" alt="."/>      </a>
+    </td>
+    <td style="font-size: 11px">
+      <span title="This is the value set that is recommended (documentation should explain why)">Recommended</span>
+    </td>
+    <td style="font-size: 11px">
+      <div>
+        <p>If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1</p>
+
+
+      </div>
+    </td>
+  </tr>
+</table>
+<div><code>http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code</code><button data-clipboard-text="http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code" title="Click to copy URL" class="btn-copy"></button></div><div>from this IG</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceAuthor.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://terminology.hl7.org/5.5.0/CodeSystem-provenance-participant-type.html#provenance-participant-type-author" title="Provenance participant type">author</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceAuthor.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td><td title="The role that a provenance agent played with respect to the activity."><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a><div><code>http://hl7.org/fhir/ValueSet/security-role-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/security-role-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
 <tr><td>Provenance.agent:ProvenanceTransmitter.type</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td><td title="The type of participation that a provenance agent played with respect to the activity.">Pattern: <a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-provenance-participant-type.html#us-core-provenance-participant-type-transmitter" title="US Core Provenance Participant Type Extension Codes">transmitter</a><div><code>http://hl7.org/fhir/ValueSet/provenance-agent-type</code><button data-clipboard-text="http://hl7.org/fhir/ValueSet/provenance-agent-type" title="Click to copy URL" class="btn-copy"></button></div><div>from the FHIR Standard</div></td></tr>
@@ -2374,12 +2662,12 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <hr/>
 
-<p><a name="l9933">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
+<p><a name="l10627">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l9941">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l9947">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l9953">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l10635">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l10641">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l10647">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -2440,7 +2728,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 16, 2024 19:23+0000">2024-05-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 16, 2024 21:07+0000">2024-05-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

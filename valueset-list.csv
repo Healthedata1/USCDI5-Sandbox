@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code,0.0.0,draft,,USCoreCDARoleCode,USCore CCDA Role Code,"**FHIR Version R4 Copy of FHIR Version R5 [CDARoleCode](http://hl7.org/cda/stds/core/ValueSet/CDARoleCode).** A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",,"THO (V3)"
 http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type,0.0.0,active,,USCoreClinicalNoteType,US Core Clinical Note Type,"The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",,"LOINC"
