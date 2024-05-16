@@ -1,4 +1,6 @@
 [79614]: Provenance-79614.html
+[ADI-example]: Observation-ADI-example.html
+[example-patient-adi]: DocumentReference-example-patient-adi.html
 [imm-1]: Immunization-imm-1.html
 [medicationdispense-example]: MedicationDispense-medicationdispense-example.html
 [medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html

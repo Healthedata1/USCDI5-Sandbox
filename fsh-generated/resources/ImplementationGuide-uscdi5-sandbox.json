@@ -70,6 +70,22 @@
       },
       {
         "reference": {
+          "reference": "Observation/ADI-example"
+        },
+        "description": "This is a Observation example for the USCDI5 ADI Observation Data Element",
+        "name": "ADI Observation Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/example-patient-adi"
+        },
+        "description": "This is a DocumentReference example for the USCDI5 ADI Observation Data Element",
+        "name": "Example Patient Adi",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Immunization/imm-1"
         },
         "description": "This is a imm 1 example for the *US Core Immunization Profile*.",

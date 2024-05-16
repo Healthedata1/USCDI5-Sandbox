@@ -1,0 +1,48 @@
+{
+    "resourceType": "Observation",
+    "id": "ADI-example",
+    "meta": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                "valueString": "ADI Observation Example"
+            },
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                "valueMarkdown": "This is a Observation example for the USCDI5 ADI Observation Data Element"
+            }
+        ]
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "42348-3",
+                "display": "Advance directives"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/example"
+    },
+    "effectiveDateTime": "2024-05-16T01:06:06.393000+00:00",
+    "performer": [
+        {
+            "reference": "Patient/example"
+        }
+    ],
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "425392003",
+                "display": "Active advance directive (finding)"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "DocumentReference/example-patient-adi",
+        "display": "Person-Authored Advance Directive"
+    }
+}
