@@ -32,16 +32,15 @@ The following data elements must always be present ([Mandatory] definition) or m
 3. <span class="bg-success" markdown="1">personal pronouns</span><!-- new-content -->
 4. a race*
 5. an ethnicity*
-6. 
-7. a tribal affiliation
-8. sex*
-9. <span class="bg-success" markdown="1">sex parameter for clinical use*</span><!-- new-content -->
-10. gender identity*
-11. <span class="bg-success" markdown="1">personal pronouns</span><!-- new-content -->
-12. date of death*
-13. previous address*
-14. previous name*
-15. suffix*
+6. a tribal affiliation
+7. sex*
+8. <span class="bg-success" markdown="1">sex parameter for clinical use*</span><!-- new-content -->
+9. gender identity*
+10. <span class="bg-success" markdown="1">personal pronouns</span><!-- new-content -->
+11. date of death*
+12. previous address*
+13. previous name*
+14. suffix*
 
 *see guidance below
 
