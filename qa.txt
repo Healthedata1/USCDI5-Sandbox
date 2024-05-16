@@ -1,9 +1,9 @@
 UCSDI5Sandbox : Validation Results
 =========================================
 
-err = 30, warn = 1, info = 8
+err = 31, warn = 1, info = 8
 IG Publisher Version: 1.6.7
-Generated Thu May 16 21:10:52 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+Generated Thu May 16 21:37:41 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
  Build Errors : 99 / 1 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 5 / 0 / 2
@@ -12,7 +12,7 @@ Generated Thu May 16 21:10:52 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationrequest-coded-oral-axid : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/observation-ADI-example : 1 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example : 0 / 0 / 4
- /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example : 2 / 0 / 2
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example : 3 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationdispense : 3 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest : 4 / 0 / 1
@@ -140,6 +140,7 @@ INFORMATION: Patient/example: Patient.extension[6]: This element does not match 
 INFORMATION: Patient/example: Patient.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == input/examples/provenance-example.json ==
 ERROR: Provenance/79614: Provenance.target[0]: Unable to resolve resource with reference 'AllergyIntolerance/79613'
+ERROR: Provenance/79614: Provenance.agent[0].role[0].coding[0].code: Unknown code '208M00000X' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
 INFORMATION: Provenance/79614: Provenance.agent[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
 ERROR: Provenance.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' at 'div/p/a' for 'AllergyIntolerance/79613' does not resolve
 == input/resources/StructureDefinition-us-core-immunization.json ==

@@ -111,6 +111,7 @@ Generic: line 0, col 0, Error - The link 'ImplementationGuide-hl7.fhir.us.core.h
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 150, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 181, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 12, col 10, Error - Unable to resolve resource with reference 'AllergyIntolerance/79613' (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 29, col 18, Error - Unknown code '208M00000X' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0' (CODEINVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 19, col 14, Info - Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0 (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example.json: line 0, col 0, Error - Hyperlink 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' at 'div/p/a' for 'AllergyIntolerance/79613' does not resolve (INVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json: line 0, col 0, Error - Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization) (INVALID)
@@ -139,5 +140,5 @@ Generic: line 0, col 0, Error - The link 'ImplementationGuide-hl7.fhir.us.core.h
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code.json: line 1, col 33342, Info - The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/uscore-cda-role-code vs http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code (BUSINESSRULE)
 
-err = 30, warn = 1, info = 8
+err = 31, warn = 1, info = 8
 IG Publisher Version: 1.6.7
