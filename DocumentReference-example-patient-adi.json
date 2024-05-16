@@ -1,0 +1,45 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "example-patient-adi",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Example Patient Adi"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a DocumentReference example for the USCDI5 ADI Observation Data Element"
+    }],
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|7.0.0"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: DocumentReference</b><a name=\"example-patient-adi\"> </a><a name=\"hcexample-patient-adi\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceDocumentReference &quot;example-patient-adi&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-documentreference.html\">US Core DocumentReference Profile (version 7.0.0)</a></p></div><p><b>status</b>: current</p><p><b>type</b>: Advance directives <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#42348-3)</span></p><p><b>category</b>: Clinical Note <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-documentreference-category.html\">US Core DocumentReferences Category Codes</a>#clinical-note)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example</a> &quot; SHAW&quot;</p><blockquote><p><b>content</b></p></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://hl7.org/fhir/us/core/STU7/Encounter-example-1.html\">Encounter/example-1</a></td></tr></table></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "42348-3",
+      "display" : "Advance directives"
+    }],
+    "text" : "Advance directives"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+      "code" : "clinical-note",
+      "display" : "Clinical Note"
+    }],
+    "text" : "Clinical Note"
+  }],
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "content" : [null],
+  "context" : {
+    "encounter" : [{
+      "reference" : "Encounter/example-1"
+    }]
+  }
+}

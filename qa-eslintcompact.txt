@@ -2,8 +2,11 @@ UCSDI5Sandbox
 =========================================
 
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/79614.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Error - Error converting pacakge to R4B: Error processing example/DocumentReference-example-patient-adi.json: Not a JSON Object: null (EXCEPTION)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-.xml' for "XML" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-.json' for "JSON" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'package.r4.tgz' for "R4 (uscdi5-sandbox.r4)" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'package.r4b.tgz' for "R4B (uscdi5-sandbox.r4b)" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for "Record or update" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'must-support.html' for "Mandatory" cannot be resolved (NOTFOUND)
@@ -98,6 +101,12 @@ Generic: line 0, col 0, Error - The link 'StructureDefinition-us-core-documentre
 Generic: line 0, col 0, Error - The link 'ValueSet-us-core-documentreference-type.html' for "US Core DocumentReference Type Value Set" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#fhir-resources-to-exchange-clinical-notes' for "FHIR Resources to Exchange Clinical Notes" cannot be resolved (valid targets: [segment-header, clinical-notes, publish-box, bottom, segment-post-footer, support-requirements, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb]) (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved (NOTFOUND)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example.json: line 46, col 32, Error - Unrecognized property 'aattachment' (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example.json: line 47, col 45, Error - Unrecognized property 'contentType' (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example.json: line 48, col 54879, Error - Unrecognized property 'data' (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example.json: line 49, col 47, Error - Unrecognized property 'title' (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example.json: line 45, col 10, Error - DocumentReference.content.attachment: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|7.0.0) (STRUCTURE)
+/home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/observation-ADI-example.json: line 44, col 6, Error - The property focus  must be a JSON Array, not an Object (at Observation) (INVALID)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 132, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 150, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example.json: line 181, col 10, Info - This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice) (INFORMATIONAL)
@@ -127,5 +136,5 @@ Generic: line 0, col 0, Error - The link 'ImplementationGuide-hl7.fhir.us.core.h
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 1, col 3328, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json: line 0, col 0, Error - URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type vs http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type (BUSINESSRULE)
 
-err = 21, warn = 1, info = 7
+err = 28, warn = 1, info = 7
 IG Publisher Version: 1.6.7

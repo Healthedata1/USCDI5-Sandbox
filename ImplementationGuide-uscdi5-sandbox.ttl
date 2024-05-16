@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-15T02:10:00+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-16T01:45:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -694,6 +694,30 @@
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Observation/ADI-example> ;
+         fhir:reference [ fhir:v "Observation/ADI-example" ]
+       ] ;
+       fhir:name [ fhir:v "ADI Observation Example" ] ;
+       fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DocumentReference" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/DocumentReference/example-patient-adi> ;
+         fhir:reference [ fhir:v "DocumentReference/example-patient-adi" ]
+       ] ;
+       fhir:name [ fhir:v "Example Patient Adi" ] ;
+       fhir:description [ fhir:v "This is a DocumentReference example for the USCDI5 ADI Observation Data Element" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

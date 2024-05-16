@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-05-15T02:10:00+00:00"/>
+  <date value="2024-05-16T01:45:05+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -598,6 +598,28 @@
       </reference>
       <name value="79614"/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ADI-example"/>
+      </reference>
+      <name value="ADI Observation Example"/>
+      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/example-patient-adi"/>
+      </reference>
+      <name value="Example Patient Adi"/>
+      <description value="This is a DocumentReference example for the USCDI5 ADI Observation Data Element"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

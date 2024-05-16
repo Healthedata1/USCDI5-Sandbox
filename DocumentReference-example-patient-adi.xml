@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="example-patient-adi"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Example Patient Adi"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a DocumentReference example for the USCDI5 ADI Observation Data Element"/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|7.0.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: DocumentReference</b><a name="example-patient-adi"> </a><a name="hcexample-patient-adi"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceDocumentReference &quot;example-patient-adi&quot; </p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile (version 7.0.0)</a></p></div><p><b>status</b>: current</p><p><b>type</b>: Advance directives <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#42348-3)</span></p><p><b>category</b>: Clinical Note <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a>#clinical-note)</span></p><p><b>subject</b>: <a href="Patient-example.html">Patient/example</a> &quot; SHAW&quot;</p><blockquote><p><b>content</b></p></blockquote><h3>Contexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Encounter</b></td></tr><tr><td style="display: none">*</td><td><a href="http://hl7.org/fhir/us/core/STU7/Encounter-example-1.html">Encounter/example-1</a></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="42348-3"/>
+      <display value="Advance directives"/>
+    </coding>
+    <text value="Advance directives"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"/>
+      <code value="clinical-note"/>
+      <display value="Clinical Note"/>
+    </coding>
+    <text value="Clinical Note"/>
+  </category>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <content/>
+  <context>
+    <encounter>
+      <reference value="Encounter/example-1"/>
+    </encounter>
+  </context>
+</DocumentReference>

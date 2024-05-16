@@ -63,15 +63,19 @@
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "DocumentReference.meta",
       "Immunization.meta",
       "MedicationDispense.meta",
       "MedicationRequest.meta",
+      "Observation.meta",
       "Patient.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "DocumentReference.meta",
       "Immunization.meta",
       "MedicationDispense.meta",
       "MedicationRequest.meta",
+      "Observation.meta",
       "Patient.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [

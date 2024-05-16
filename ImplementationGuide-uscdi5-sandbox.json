@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-05-15T02:10:00+00:00",
+  "date" : "2024-05-16T01:45:05+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -805,6 +805,30 @@
       },
       "name" : "79614",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ADI-example"
+      },
+      "name" : "ADI Observation Example",
+      "description" : "This is a Observation example for the USCDI5 ADI Observation Data Element",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/example-patient-adi"
+      },
+      "name" : "Example Patient Adi",
+      "description" : "This is a DocumentReference example for the USCDI5 ADI Observation Data Element",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
