@@ -11,3 +11,4 @@
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html
+[USCoreCDARoleCode]: ValueSet-uscore-cda-role-code.html

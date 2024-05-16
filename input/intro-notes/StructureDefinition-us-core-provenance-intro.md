@@ -14,7 +14,7 @@ The following data elements are mandatory (i.e., data MUST be present) or must b
 
 **Each Provenance Must Have:**
 
-1.  a reference to the resource(s) the Provenance record is supporting (target)
+1. a reference to the resource(s) the Provenance record is supporting (target)
 1. a date and time for the activity
 
 
@@ -23,7 +23,7 @@ The following data elements are mandatory (i.e., data MUST be present) or must b
 1. the author organization responsible for the information
 1. the transmitter that provided the information
 1. the transmitter organization responsible for the transmission (if the transmitter is a device, the transmitter organization must also be valued).
-2. 
+
 <div class="bg-success" markdown="1">
 
 {% include additional-requirements-intro.md type="Provenance" plural="false" %}

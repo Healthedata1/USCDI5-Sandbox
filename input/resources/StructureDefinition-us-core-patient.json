@@ -155,7 +155,7 @@
                 "mustSupport": false
             },
             {
-                "id": "Patient.extension:spfcu",
+                "id": "Patient.extension:spcu",
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
@@ -163,7 +163,7 @@
                     }
                 ],
                 "path": "Patient.extension",
-                "sliceName": "spfcu",
+                "sliceName": "spcu",
                 "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Sex Parameters for Clinical Use Extension",
                 "min": 0,
                 "max": "*",

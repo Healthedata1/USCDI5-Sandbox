@@ -83,9 +83,63 @@
                 "path": "Provenance.agent.role",
                 "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Roles of the agent",
                 "mustSupport": false,
+                "comment": "When the author is a person who is not acting in the role of a clinician, this code encodes the personal or legal relationship between author and the patient.",
                 "binding": {
-                    "strength": "extensible",
-                    "valueSet": "http://hl7.org/fhir/ValueSet/security-role-type"
+                    "strength": "example",
+                    "description": "C-CDA author provenance and role value sets. See additional bindings",
+                    "valueSet": "http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code",
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+                            "extension": [
+                                {
+                                    "url": "purpose",
+                                    "valueCode": "preferred"
+                                },
+                                {
+                                    "url": "valueSet",
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066"
+                                },
+                                {
+                                    "url": "documentation",
+                                    "valueMarkdown": "If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066"
+                                },
+                                {
+                                    "url": "shortDoco",
+                                    "valueString": "Providers"
+                                },
+                                {
+                                    "url": "any",
+                                    "valueBoolean": true
+                                }
+                            ]
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+                            "extension": [
+                                {
+                                    "url": "purpose",
+                                    "valueCode": "preferred"
+                                },
+                                {
+                                    "url": "valueSet",
+                                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1"
+                                },
+                                {
+                                    "url": "documentation",
+                                    "valueMarkdown": "If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1"
+                                },
+                                {
+                                    "url": "shortDoco",
+                                    "valueString": "Non-clinicians"
+                                },
+                                {
+                                    "url": "any",
+                                    "valueBoolean": true
+                                }
+                            ]
+                        }
+                    ]
                 }
             },
             {
@@ -115,7 +169,7 @@
                                 "extension": [
                                     {
                                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
+                                        "valueBoolean": true
                                     }
                                 ]
                             },
@@ -123,7 +177,7 @@
                                 "extension": [
                                     {
                                         "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                        "valueBoolean": false
+                                        "valueBoolean": true
                                     }
                                 ]
                             },

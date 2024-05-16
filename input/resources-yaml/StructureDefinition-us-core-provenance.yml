@@ -62,9 +62,48 @@ differential:
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
       \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Roles of the agent"
     mustSupport: false
+    comment: >-
+      When the author is a person who is not acting in the role of a
+      clinician, this code encodes the personal or legal relationship between
+      author and the patient.
     binding:
-      strength: extensible
-      valueSet: http://hl7.org/fhir/ValueSet/security-role-type
+      strength: example
+      description: C-CDA author provenance and role value sets. See additional bindings
+      valueSet: http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code
+
+# ====== New R5 additional Binding Element Here ====
+      extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/additional-binding
+        extension:
+        - url: purpose
+          valueCode: preferred
+        - url: valueSet
+          valueCanonical: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066'
+        - url: documentation
+          valueMarkdown: If the content is provider authored, the code SHOULD be selected from ValueSet Healthcare Provider Taxonomy urn:oid:2.16.840.1.114222.4.11.1066
+        - url: shortDoco
+          valueString: Providers
+        - url: any
+          valueBoolean: true
+
+  
+      - url: http://hl7.org/fhir/tools/StructureDefinition/additional-binding
+        extension:
+        - url: purpose
+          valueCode: preferred
+        - url: valueSet
+          valueCanonical: 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1'
+        - url: documentation
+          valueMarkdown: If the author is a person who is not acting in the role of a clinician, the code SHOULD be selected from ValueSet Personal And Legal Relationship Role Type urn:oid:2.16.840.1.113883.11.20.12.1
+        - url: shortDoco
+          valueString: Non-clinicians
+        - url: any
+          valueBoolean: true
+
+
+
+  # ====== New R5 additional Binding Element Here ====
+
 
   - id: Provenance.agent.who
     path: Provenance.agent.who
@@ -83,10 +122,10 @@ differential:
           valueBoolean: true
       - extension:
         - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
-          valueBoolean: false
+          valueBoolean: true
       - extension:
         - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
-          valueBoolean: false
+          valueBoolean: true
       - extension:
         - url: http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support
           valueBoolean: false
