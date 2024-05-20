@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -30,12 +30,12 @@
       "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
     },
     {
-      "url" : "http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code",
-      "version" : "0.0.0",
+      "url" : "http://hl7.org/cda/stds/core/ValueSet/CDARoleCode",
+      "version" : "2.0.0-sd",
       "status" : "draft",
-      "name" : "USCoreCDARoleCode",
-      "title" : "USCore CCDA Role Code",
-      "description" : "**FHIR Version R4 Copy of FHIR Version R5 [CDARoleCode](http://hl7.org/cda/stds/core/ValueSet/CDARoleCode).** A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "name" : "CDARoleCode",
+      "title" : "CDARoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
       "uses" : {
       },
@@ -170,8 +170,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
@@ -183,8 +183,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",

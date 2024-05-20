@@ -1,16 +1,16 @@
 UCSDI5Sandbox : Validation Results
 =========================================
 
-err = 31, warn = 1, info = 8
+err = 22, warn = 0, info = 7
 IG Publisher Version: 1.6.7
-Generated Thu May 16 21:37:41 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
- Build Errors : 99 / 1 / 0
+Generated Mon May 20 04:15:59 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+ Build Errors : 96 / 0 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
- /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 5 / 0 / 2
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 0 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/imm-1 : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationdispense-example : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationrequest-coded-oral-axid : 0 / 0 / 1
- /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/observation-ADI-example : 1 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/observation-ADI-example : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example : 0 / 0 / 4
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example : 3 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization : 3 / 0 / 1
@@ -19,15 +19,10 @@ Generated Thu May 16 21:37:41 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance : 3 / 0 / 3
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type : 3 / 0 / 1
- /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code : 2 / 0 / 2
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/79614.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: package.tgz: Error converting pacakge to R4B: Error processing example/DocumentReference-example-patient-adi.json: Not a JSON Object: null
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 199, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 200, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/p/a at Line 205, column 132: The link 'package.r4.tgz' for "R4 (uscdi5-sandbox.r4)" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/p/a at Line 205, column 188: The link 'package.r4b.tgz' for "R4B (uscdi5-sandbox.r4b)" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/Provenance-79614.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 611: The link 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for "Record or update" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/p/a at Line 268, column 57: The link 'must-support.html' for "Mandatory" cannot be resolved
@@ -124,23 +119,17 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.htm
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 228, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json ==
 == input/examples/documentreference-ADI-example.json ==
-ERROR: DocumentReference.content[0]: Unrecognized property 'aattachment'
-ERROR: DocumentReference.content[0]: Unrecognized property 'contentType'
-ERROR: DocumentReference.content[0]: Unrecognized property 'data'
-ERROR: DocumentReference.content[0]: Unrecognized property 'title'
-ERROR: DocumentReference/example-patient-adi: DocumentReference.content[0]: DocumentReference.content.attachment: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference|7.0.0)
 == input/examples/imm-1.json ==
 == input/examples/medicationdispense-example.json ==
 == input/examples/medicationrequest-coded-oral-axid.json ==
 == input/examples/observation-ADI-example.json ==
-ERROR: Observation.focus: The property focus  must be a JSON Array, not an Object (at Observation)
 == input/examples/patient-example.json ==
 INFORMATION: Patient/example: Patient.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/example: Patient.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/example: Patient.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == input/examples/provenance-example.json ==
 ERROR: Provenance/79614: Provenance.target[0]: Unable to resolve resource with reference 'AllergyIntolerance/79613'
-ERROR: Provenance/79614: Provenance.agent[0].role[0].coding[0].code: Unknown code '208M00000X' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType' version '5.0.0'
+ERROR: Provenance/79614: Provenance.agent[0].role[0].coding[0].display: Wrong Display Name 'Surgery Physicians' for http://nucc.org/provider-taxonomy#208600000X. Valid display is 'Surgery Physician' (for the language(s) 'en')
 INFORMATION: Provenance/79614: Provenance.agent[0].type: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
 ERROR: Provenance.text.div: Hyperlink 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' at 'div/p/a' for 'AllergyIntolerance/79613' does not resolve
 == input/resources/StructureDefinition-us-core-immunization.json ==
@@ -171,7 +160,3 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/Structure
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type)
 ERROR: ValueSet/us-core-clinical-note-type: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type vs http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type
-== input/resources/ValueSet-uscore-cda-role-code.json ==
-ERROR: ValueSet.where(url = 'http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/uscore-cda-role-code) does not match the URL (http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code)
-INFORMATION: ValueSet/uscore-cda-role-code: ValueSet: The resource status 'draft' and the standards status 'trial-use' may not be consistent and should be reviewed
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-uscore-cda-role-code: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/uscore-cda-role-code vs http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code

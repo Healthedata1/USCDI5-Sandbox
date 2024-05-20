@@ -68,7 +68,8 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Observation.meta",
-      "Patient.meta"
+      "Patient.meta",
+      "Provenance.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "DocumentReference.meta",
@@ -76,7 +77,8 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Observation.meta",
-      "Patient.meta"
+      "Patient.meta",
+      "Provenance.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
       "Patient"

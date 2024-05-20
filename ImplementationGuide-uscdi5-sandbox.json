@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-05-16T21:33:57+00:00",
+  "date" : "2024-05-20T04:11:57+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -69,6 +69,12 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions",
     "version" : "5.1.0-cibuild"
+  },
+  {
+    "id" : "hl7_cda_us_ccda",
+    "uri" : "http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core",
+    "packageId" : "hl7.cda.us.ccda",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -804,17 +810,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Provenance"
-      }],
-      "reference" : {
-        "reference" : "Provenance/79614"
-      },
-      "name" : "79614",
-      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -834,7 +829,7 @@
       },
       "name" : "Example Patient Adi",
       "description" : "This is a DocumentReference example for the USCDI5 ADI Observation Data Element",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
     },
     {
       "extension" : [{
@@ -883,6 +878,18 @@
       "name" : "Patient Example",
       "description" : "This is a patient example for the *US Core Patient Profile*.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/79614"
+      },
+      "name" : "Provenance Example",
+      "description" : "This is a Provenance example for the *US Core Patient Profile*.",
+      "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"
     },
     {
       "extension" : [{
@@ -954,18 +961,6 @@
       },
       "name" : "US Core Provenance Profile",
       "description" : "The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/uscore-cda-role-code"
-      },
-      "name" : "USCore CCDA Role Code",
-      "description" : "**FHIR Version R4 Copy of FHIR Version R5 [CDARoleCode](http://hl7.org/cda/stds/core/ValueSet/CDARoleCode).** A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
       "exampleBoolean" : false
     }],
     "page" : {

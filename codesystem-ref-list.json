@@ -130,9 +130,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
       "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
@@ -180,7 +180,7 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "ValueSet-uscore-cda-role-code.html" : "USCore CCDA Role Code"
+      "http://hl7.org/cda/stds/core/2.0.0-sd/ValueSet-CDARoleCode.html" : "CDARoleCode"
     },
     {
       "url" : "http://unitsofmeasure.org",

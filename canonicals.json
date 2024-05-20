@@ -1,12 +1,5 @@
 [
   {
-    "id" : "uscore-cda-role-code",
-    "type" : "ValueSet",
-    "url" : "http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code",
-    "version" : "0.0.0",
-    "name" : "USCoreCDARoleCode"
-  },
-  {
     "id" : "us-core-immunization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
