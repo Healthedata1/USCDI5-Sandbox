@@ -20,7 +20,7 @@ The following data elements are mandatory (i.e., data MUST be present) or must b
 
 **Each Provenance Must Support:**
 
-1. the author organization responsible for the information
+1. the author <span class="bg-success" markdown="1">~~organization~~ </span><!-- new-content -->responsible for the information
 1. the transmitter that provided the information
 1. the transmitter organization responsible for the transmission (if the transmitter is a device, the transmitter organization must also be valued).
 
