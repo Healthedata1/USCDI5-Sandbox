@@ -272,7 +272,7 @@
 <p><strong>Each Provenance Must Support:</strong></p>
 
 <ol>
-  <li>the author organization responsible for the information</li>
+  <li>the author <span class="bg-success"><del>organization</del> </span>  <!-- new-content -->responsible for the information</li>
   <li>the transmitter that provided the information</li>
   <li>the transmitter organization responsible for the transmission (if the transmitter is a device, the transmitter organization must also be valued).</li>
 </ol>
@@ -289,7 +289,7 @@ for example
 
   <p><strong>Additional USCDI Requirements:</strong></p>
 
-  <p><a name="l415">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Provenance examples.</p>
+  <p><a name="l421">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Provenance examples.</p>
 
   <ol>
     <li>the role of author/agent</li>
@@ -2662,12 +2662,12 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
 <hr/>
 
-<p><a name="l10615">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
+<p><a name="l10621">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l10623">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l10629">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l10635">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l10629">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l10635">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l10641">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -2728,7 +2728,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 20, 2024 04:11+0000">2024-05-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 20, 2024 04:50+0000">2024-05-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

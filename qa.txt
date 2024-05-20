@@ -3,7 +3,7 @@ UCSDI5Sandbox : Validation Results
 
 err = 22, warn = 0, info = 7
 IG Publisher Version: 1.6.7
-Generated Mon May 20 04:15:59 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+Generated Mon May 20 04:54:25 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
  Build Errors : 96 / 0 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 0 / 0 / 2
