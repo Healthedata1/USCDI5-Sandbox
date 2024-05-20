@@ -41,8 +41,10 @@
             }
         ]
     },
-    "focus": {
-        "reference": "DocumentReference/example-patient-adi",
-        "display": "Person-Authored Advance Directive"
-    }
+    "focus": [
+        {
+            "reference": "DocumentReference/example-patient-adi",
+            "display": "Person-Authored Advance Directive"
+        }
+    ]
 }

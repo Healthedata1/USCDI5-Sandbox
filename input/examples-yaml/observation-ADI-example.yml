@@ -26,5 +26,5 @@ valueCodeableConcept:
       display: Active advance directive (finding)
 
 focus: 
-  reference: DocumentReference/example-patient-adi
-  display: Person-Authored Advance Directive 
+  - reference: DocumentReference/example-patient-adi
+    display: Person-Authored Advance Directive 

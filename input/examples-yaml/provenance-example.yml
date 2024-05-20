@@ -5,6 +5,11 @@
       lastUpdated: '2019-07-09T15:26:23.217+00:00'
       profile:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance
+      extension:
+        - url: http://hl7.org/fhir/StructureDefinition/instance-name
+          valueString: Provenance Example
+        - url: http://hl7.org/fhir/StructureDefinition/instance-description
+          valueMarkdown: This is a Provenance example for the *US Core Patient Profile*.
     target:
     - reference: AllergyIntolerance/79613
     recorded: '2019-07-09T15:26:23.217+00:00'
@@ -17,9 +22,9 @@
 
       role:
         - coding:
-          - system:  http://terminology.hl7.org/CodeSystem/v3-ParticipationType
-            code: 208M00000X
-            display: Allopathic & Osteopathic Physicians; Hospitalist
+          - system: http://nucc.org/provider-taxonomy
+            code: 208600000X
+            display: Surgery Physicians
 
       who:
         reference: Practitioner/practitioner-1

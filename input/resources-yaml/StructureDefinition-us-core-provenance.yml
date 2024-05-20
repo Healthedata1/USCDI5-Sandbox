@@ -69,7 +69,8 @@ differential:
     binding:
       strength: example
       description: C-CDA author provenance and role value sets. See additional bindings
-      valueSet: http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code
+      # valueSet: http://hl7.org/cda/stds/core/ValueSet/uscore-cda-role-code
+      valueSet: http://hl7.org/cda/stds/core/ValueSet/CDARoleCode
 
 # ====== New R5 additional Binding Element Here ====
       extension:
