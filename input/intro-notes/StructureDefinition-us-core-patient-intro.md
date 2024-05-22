@@ -29,7 +29,7 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 1. contact detail (e.g., a telephone number or an email address)
 2. a communication language*
-3. <span class="bg-success" markdown="1">personal pronouns</span><!-- new-content -->
+3. <span class="bg-success" markdown="1">interpreter required flag</span><!-- new-content -->
 4. a race*
 5. an ethnicity*
 6. a tribal affiliation
