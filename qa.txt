@@ -2,8 +2,8 @@ UCSDI5Sandbox : Validation Results
 =========================================
 
 err = 22, warn = 0, info = 7
-IG Publisher Version: 1.6.7
-Generated Mon May 20 04:54:25 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+IG Publisher Version: 1.6.9
+Generated Wed May 22 20:36:01 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
  Build Errors : 96 / 0 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 0 / 0 / 2
@@ -23,7 +23,7 @@ Generated Mon May 20 04:54:25 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.
 == n/a ==
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 199, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 200, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/Provenance-79614.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 611: The link 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/Provenance-79614.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 610: The link 'http://fhir.org/packages/us.nlm.vsac/AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'future-of-US-core.html#future-candidate-requirements-under-consideration' for "Record or update" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/p/a at Line 268, column 57: The link 'must-support.html' for "Mandatory" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-immunization.html#/html/body/div/div/div/div/div/div/p/a at Line 268, column 178: The link 'must-support.html' for "Must Support" cannot be resolved

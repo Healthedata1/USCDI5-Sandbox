@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a2104bbd-cf3c-424f-bab7-ba1a2c717a22"/>
+  <id value="ae3ae461-cef9-449b-bbec-a1737bbbe3c6"/>
   <meta>
-    <lastUpdated value="2024-05-20T04:50:23.141+00:00"/>
+    <lastUpdated value="2024-05-22T20:31:56.318+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
-            <p>This value set contains 10 concepts.</p>
+            <p>This value set contains 10 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -118,8 +118,8 @@
         <experimental value="false"/>
         <date value="2024-05-14"/>
         <expansion>
-          <identifier value="urn:uuid:53bd6041-507c-4332-8839-c89975fcadf1"/>
-          <timestamp value="2024-05-20T04:51:34+00:00"/>
+          <identifier value="urn:uuid:d35e743d-2b20-4bd5-a8b5-b59b5fa87456"/>
+          <timestamp value="2024-05-22T20:33:11+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
