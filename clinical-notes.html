@@ -171,9 +171,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Clinical notes are a key component in communicating a patient’s current status. In the context of this implementation guide, the term “clinical notes” refers to the wide variety of documents generated on behalf of a patient in many care activities. They include notes to support transitions of care, care planning, quality reporting, billing, and even handwritten notes by providers. This implementation guide does not define new note types or set content requirements per note type. Instead, this implementation guide focuses on exposing clinical notes stored in existing systems.</p>
 
-<p>This implementation guide defines how systems exchange <span class="bg-success">ten</span>  <!-- new-content --> “Common Clinical Notes” and three DiagnosticReport categories.</p>
+<p>This implementation guide defines how systems exchange <span class="bg-success">eleven</span>  <!-- new-content --> “Common Clinical Notes” and three DiagnosticReport categories.</p>
 
-<p>Servers <strong>SHALL</strong> support, at <em>minimum</em>, these <span class="bg-success">ten</span>  <!-- new-content --> “Common Clinical Notes”:</p>
+<p>Servers <strong>SHALL</strong> support, at <em>minimum</em>, these <span class="bg-success">eleven</span>  <!-- new-content --> “Common Clinical Notes”:</p>
 
 <ol>
   <li><a href="https://loinc.org/11488-4.html">Consultation Note (11488-4)</a></li>
@@ -186,6 +186,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://loinc.org/11526-1.html">Pathology Report Narrative (11526-1)</a></li>
   <li><span class="bg-success"><a href="https://loinc.org/11504-8.html">Surgical Operation Note (11504-8)</a></span>  <!-- new-content --></li>
   <li><span class="bg-success"><a href="https://loinc.org/34111-5.html">Emergency Department Note (34111-5)</a></span>  <!-- new-content --></li>
+  <li><span class="bg-success"><a href="https://loinc.org/42348-3.html">Advance directives (42348-3)</a><em>☞ ☞ ☞ See Question about DNR(81351-9) and POLST(81351-9) in notes ☜ ☜ ☜</em></span>  <!-- new-content --></li>
 </ol>
 
 <p>Servers <strong>SHALL</strong> support, at <em>minimum</em>, these three DiagnosticReport categories:</p>
@@ -205,7 +206,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://loinc.org/34746-8.html">Nurse Note (34746-8)</a></li>
 </ul>
 
-<p><a name="l403">​</a>The complete list of note (document) types is available in the <a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type Value Set</a>.</p>
+<p><a name="l411">​</a>The complete list of note (document) types is available in the <a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type Value Set</a>.</p>
 
 <p>●●●</p>
 
@@ -213,7 +214,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="support-requirements">Support Requirements</h4>
 
-<p><a name="l418">​</a>This guide requires systems to implement the <a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a> and to support a <em>minimum</em> of all <span class="bg-success">ten</span>  <!-- new-content -->  Common Clinical Notes listed above. Systems may extend their capabilities to the complete <a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type Value Set</a>. This requirement is necessary because some systems scan lab reports and don’t store them in the DiagnosticReport resource. See <a href="#fhir-resources-to-exchange-clinical-notes">FHIR Resources to Exchange Clinical Notes</a> for more detail.</p>
+<p><a name="l426">​</a>This guide requires systems to implement the <a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a> and to support a <em>minimum</em> of all <span class="bg-success">eleven</span>  <!-- new-content -->  Common Clinical Notes listed above. Systems may extend their capabilities to the complete <a href="ValueSet-us-core-documentreference-type.html">US Core DocumentReference Type Value Set</a>. This requirement is necessary because some systems scan lab reports and don’t store them in the DiagnosticReport resource. See <a href="#fhir-resources-to-exchange-clinical-notes">FHIR Resources to Exchange Clinical Notes</a> for more detail.</p>
 
 <p>●●●</p>
 
@@ -236,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 22, 2024 20:31+0000">2024-05-22</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 31, 2024 22:07+0000">2024-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

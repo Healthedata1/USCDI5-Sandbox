@@ -1,6 +1,15 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreADIFinding",
+      "title" : "US Core ADI Finding",
+      "description" : "The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
       "version" : "0.0.0",
       "status" : "active",

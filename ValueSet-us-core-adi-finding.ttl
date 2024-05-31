@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-adi-finding> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "us-core-adi-finding"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/449891000124104\">449891000124104</a></td><td style=\"color: #cccccc\">No advance directive (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/425392003\">425392003</a></td><td style=\"color: #cccccc\">Active advance directive (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/304253006\">304253006</a></td><td style=\"color: #cccccc\">Not for resuscitation</td></tr><tr><td><a href=\"http://snomed.info/id/697978002\">697978002</a></td><td style=\"color: #cccccc\">Provider orders for life-sustaining treatment</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "0"^^xsd:integer ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
+  fhir:name [ fhir:v "USCoreADIFinding"] ; # 
+  fhir:title [ fhir:v "US Core ADI Finding"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Health eData Inc"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives."] ; # 
+  fhir:copyright [ fhir:v "# 1.This material contains content from LOINC (http://loinc.org). LOINC is # copyright \\xA9 1995-2020, Regenstrief Institute, Inc. and the Logical Observation # Identifiers Names and Codes (LOINC) Committee and is available at no cost under # the license at http://loinc.org/license. LOINC\\xAE is a registered United States # trademark of Regenstrief Institute, Inc 1. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "449891000124104" ]
+       ] [
+         fhir:code [ fhir:v "425392003" ]
+       ] [
+         fhir:code [ fhir:v "304253006" ]
+       ] [
+         fhir:code [ fhir:v "697978002" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -21,6 +21,13 @@
     "name" : "USCoreMedicationRequestProfile"
   },
   {
+    "id" : "us-core-observation-adi-documentation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation",
+    "version" : "0.0.0",
+    "name" : "USCoreObservationADIDocumentationProfile"
+  },
+  {
     "id" : "us-core-patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
@@ -33,6 +40,13 @@
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
     "version" : "0.0.0",
     "name" : "USCoreProvenance"
+  },
+  {
+    "id" : "us-core-adi-finding",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
+    "version" : "0.0.0",
+    "name" : "USCoreADIFinding"
   },
   {
     "id" : "us-core-clinical-note-type",

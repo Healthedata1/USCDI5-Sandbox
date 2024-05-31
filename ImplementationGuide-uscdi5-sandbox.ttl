@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-22T20:31:56+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-31T22:07:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -707,7 +707,10 @@
        ] ;
        fhir:name [ fhir:v "ADI Observation Example" ] ;
        fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -804,6 +807,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-adi-finding> ;
+         fhir:reference [ fhir:v "ValueSet/us-core-adi-finding" ]
+       ] ;
+       fhir:name [ fhir:v "US Core ADI Finding" ] ;
+       fhir:description [ fhir:v "The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type> ;
          fhir:reference [ fhir:v "ValueSet/us-core-clinical-note-type" ]
        ] ;
@@ -845,6 +860,18 @@
        ] ;
        fhir:name [ fhir:v "US Core MedicationRequest Profile" ] ;
        fhir:description [ fhir:v "The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-observation-adi-documentation> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-observation-adi-documentation" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Observation ADI Documentation Profile" ] ;
+       fhir:description [ fhir:v "The US Core Observation ADI Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile is used to indicate if additional advance directive documents, such as physician order for life sustaining treatment (MOLST or POLST) or Do Not Resuscitate Order (DNR) exist and a reference to the document. The observation is not intended to communicate the actual contents of those additional documents, if they exist, but are intended to represent that the documents exist so that further investigation can be undertaken to locate them or learn more about them. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about ADI Documentation. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
