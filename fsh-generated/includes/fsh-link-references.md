@@ -5,9 +5,11 @@
 [medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html
 [example]: Patient-example.html
 [79614]: Provenance-79614.html
+[USCoreADIFinding]: ValueSet-us-core-adi-finding.html
 [USCoreClinicalNoteType]: ValueSet-us-core-clinical-note-type.html
 [USCoreImmunizationProfile]: StructureDefinition-us-core-immunization.html
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
+[USCoreObservationADIDocumentationProfile]: StructureDefinition-us-core-observation-adi-documentation.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html

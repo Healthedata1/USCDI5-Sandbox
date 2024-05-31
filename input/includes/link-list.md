@@ -152,6 +152,7 @@
 [Head Circumference]: {{site.data.fhir.path}}headcircum.html
 [Heart rate]: {{site.data.fhir.path}}heartrate.html
 [History & Physical Note (34117-2)]: https://loinc.org/34117-2.html
+[Advance directives (42348-3)]: https://loinc.org/42348-3.html
 [HL7 C-CDA]: https://hl7.org/cda/us/ccda/history.html
 [HL7 Cross Paradigm Implementation Guide: UDI Pattern]: http://www.hl7.org/documentcenter/private/standards/HL7_IG_UDI_R2_2020JUN.pdf
 [HL7 Gender Harmony Project]: https://confluence.hl7.org/display/VOC/The+Gender+Harmony+Project
@@ -451,3 +452,4 @@
 [Clinical Information Reconciliation and Incorporation (CIRI)]: https://www.healthit.gov/test-method/clinical-information-reconciliation-and-incorporation
 [Normative]: {{site.data.fhir.path}}versions.html#maturity
 [US Realm Steering Committee (USRSC)]: https://confluence.hl7.org/display/USR/US+Realm+Steering+Committee
+[US Core ADI Finding]: ValueSet-us-core-adi-finding.html

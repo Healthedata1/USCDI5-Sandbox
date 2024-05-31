@@ -7,6 +7,8 @@ meta:
     valueString: ADI Observation Example
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
     valueMarkdown: This is a Observation example for the USCDI5 ADI Observation Data Element
+  profile:
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
 
 status: final
 code:
@@ -21,7 +23,7 @@ performer:
   - reference: Patient/example
 valueCodeableConcept:
   coding:
-    - system: http://snomed.info/sct
+    - system: 'http://snomed.info/sct'
       code: '425392003'
       display: Active advance directive (finding)
 

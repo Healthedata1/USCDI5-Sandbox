@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "id": "us-core-adi-finding",
+    "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
+    "name": "USCoreADIFinding",
+    "title": "US Core ADI Finding",
+    "status": "active",
+    "experimental": false,
+    "date": "2024-05-30",
+    "description": "The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives.",
+    "copyright": "# 1.This material contains content from LOINC (http://loinc.org). LOINC is # copyright \\xA9 1995-2020, Regenstrief Institute, Inc. and the Logical Observation # Identifiers Names and Codes (LOINC) Committee and is available at no cost under # the license at http://loinc.org/license. LOINC\\xAE is a registered United States # trademark of Regenstrief Institute, Inc 1. This value set includes content from SNOMED CT, which is copyright \u00a9 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "concept": [
+                    {
+                        "code": "449891000124104"
+                    },
+                    {
+                        "code": "425392003"
+                    },
+                    {
+                        "code": "304253006"
+                    },
+                    {
+                        "code": "697978002"
+                    }
+                ]
+            }
+        ]
+    }
+}
