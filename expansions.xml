@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="68afc23d-ad1b-4e85-aa66-dae514f32d16"/>
+  <id value="5769f98e-b657-48e0-840b-6930cff2b848"/>
   <meta>
-    <lastUpdated value="2024-05-31T22:07:43.990+00:00"/>
+    <lastUpdated value="2024-07-23T17:19:20.009+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,6 +13,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Sep 2023</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -29,7 +32,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-449891000124104"> </a>  
+                  <a name="x-http://snomed.info/sct-449891000124104"> </a>  
                   <a href="http://snomed.info/id/449891000124104">449891000124104</a>
                 </td>
                 <td>http://snomed.info/sct</td>
@@ -37,7 +40,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-425392003"> </a>  
+                  <a name="x-http://snomed.info/sct-425392003"> </a>  
                   <a href="http://snomed.info/id/425392003">425392003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
@@ -45,7 +48,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-304253006"> </a>  
+                  <a name="x-http://snomed.info/sct-304253006"> </a>  
                   <a href="http://snomed.info/id/304253006">304253006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
@@ -53,7 +56,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-697978002"> </a>  
+                  <a name="x-http://snomed.info/sct-697978002"> </a>  
                   <a href="http://snomed.info/id/697978002">697978002</a>
                 </td>
                 <td>http://snomed.info/sct</td>
@@ -70,8 +73,8 @@
         <experimental value="false"/>
         <date value="2024-05-30"/>
         <expansion>
-          <identifier value="urn:uuid:658f3a8e-b7b0-4d50-8f29-42536b801d5b"/>
-          <timestamp value="2024-05-31T22:08:52+00:00"/>
+          <identifier value="urn:uuid:931d2c25-be29-477d-a02d-38f34de16ce8"/>
+          <timestamp value="2024-07-23T17:20:35+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -129,6 +132,9 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
             <p>This value set contains 11 concepts</p>
             <table class="codes">
@@ -145,7 +151,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-18842-5"> </a>  
+                  <a name="x-http://loinc.org-18842-5"> </a>  
                   <a href="https://loinc.org/18842-5/">18842-5</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -153,7 +159,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11488-4"> </a>  
+                  <a name="x-http://loinc.org-11488-4"> </a>  
                   <a href="https://loinc.org/11488-4/">11488-4</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -161,7 +167,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-34117-2"> </a>  
+                  <a name="x-http://loinc.org-34117-2"> </a>  
                   <a href="https://loinc.org/34117-2/">34117-2</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -169,7 +175,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11506-3"> </a>  
+                  <a name="x-http://loinc.org-11506-3"> </a>  
                   <a href="https://loinc.org/11506-3/">11506-3</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -177,7 +183,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-28570-0"> </a>  
+                  <a name="x-http://loinc.org-28570-0"> </a>  
                   <a href="https://loinc.org/28570-0/">28570-0</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -185,7 +191,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-18748-4"> </a>  
+                  <a name="x-http://loinc.org-18748-4"> </a>  
                   <a href="https://loinc.org/18748-4/">18748-4</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -193,7 +199,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11502-2"> </a>  
+                  <a name="x-http://loinc.org-11502-2"> </a>  
                   <a href="https://loinc.org/11502-2/">11502-2</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -201,7 +207,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11526-1"> </a>  
+                  <a name="x-http://loinc.org-11526-1"> </a>  
                   <a href="https://loinc.org/11526-1/">11526-1</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -209,7 +215,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-11504-8"> </a>  
+                  <a name="x-http://loinc.org-11504-8"> </a>  
                   <a href="https://loinc.org/11504-8/">11504-8</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -217,7 +223,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-34111-5"> </a>  
+                  <a name="x-http://loinc.org-34111-5"> </a>  
                   <a href="https://loinc.org/34111-5/">34111-5</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -225,7 +231,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-42348-3"> </a>  
+                  <a name="x-http://loinc.org-42348-3"> </a>  
                   <a href="https://loinc.org/42348-3/">42348-3</a>
                 </td>
                 <td>http://loinc.org</td>
@@ -242,8 +248,8 @@
         <experimental value="false"/>
         <date value="2024-05-14"/>
         <expansion>
-          <identifier value="urn:uuid:59813f5d-3c52-4f24-b5c4-49ad90e22fa8"/>
-          <timestamp value="2024-05-31T22:08:52+00:00"/>
+          <identifier value="urn:uuid:6be24197-53df-4706-8255-c19b836e894f"/>
+          <timestamp value="2024-07-23T17:20:36+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>

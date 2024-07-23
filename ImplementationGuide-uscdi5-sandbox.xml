@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="uscdi5-sandbox"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>UCSDI5Sandbox</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox</pre><div><p>This is a sandbox IG for drafting USCDI5 profiles,examples and documentation of US Core for Version 8</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide uscdi5-sandbox</b></p><a name="uscdi5-sandbox"> </a><a name="hcuscdi5-sandbox"> </a><a name="uscdi5-sandbox-en-US"> </a><h2>UCSDI5Sandbox</h2><p>The official URL for this implementation guide is: </p><pre>http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox</pre><div><p>This is a sandbox IG for drafting USCDI5 profiles,examples and documentation of US Core for Version 8</p>
 </div></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-05-31T22:07:43+00:00"/>
+  <date value="2024-07-23T17:19:20+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -35,7 +35,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.5.0"/>
+    <version value="6.0.2"/>
   </dependsOn>
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
