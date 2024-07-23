@@ -86,6 +86,16 @@ extension:
             code: unknown
             display: Unknown
         text: Unknown
+      #     - url: period
+      #   valuePeriod:
+      #     start: '2002-07-13'
+      # - url: comment
+      #   valueString: Patient transitioned from male to female in 2001.
+
+      # - url: supportingInfo  <<<<<< How to represent in R4? see https://chat.fhir.org/#narrow/stream/179166-implementers/topic/UV.20Extension.20Sex.20Parameter.20for.20clinical.20use.20broken.20for.20R4.3F/near/453453806
+      #   valueCodeableReference:
+      #     reference:
+      #       reference: MedicationStatement/2
 
 #USCDI5
 
@@ -99,6 +109,9 @@ extension:
           display: Unknown
         text: Unknown
 
+
+#USCDI5
+
 - url: http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity
   valueCodeableConcept:
     coding:
@@ -107,7 +120,6 @@ extension:
       display: Unknown
     text: Unknown
 
-#USCDI5
 
 - url: http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
   valueBoolean: false
