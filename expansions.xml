@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5769f98e-b657-48e0-840b-6930cff2b848"/>
+  <id value="939d8ca5-c0bb-47e3-ad4b-5ab9f4c32c88"/>
   <meta>
-    <lastUpdated value="2024-07-23T17:19:20.009+00:00"/>
+    <lastUpdated value="2024-07-25T17:48:18.205+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -73,8 +73,8 @@
         <experimental value="false"/>
         <date value="2024-05-30"/>
         <expansion>
-          <identifier value="urn:uuid:931d2c25-be29-477d-a02d-38f34de16ce8"/>
-          <timestamp value="2024-07-23T17:20:35+00:00"/>
+          <identifier value="urn:uuid:300a7f55-1bdb-4d9e-865d-654257998d00"/>
+          <timestamp value="2024-07-25T17:49:33+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -248,8 +248,8 @@
         <experimental value="false"/>
         <date value="2024-05-14"/>
         <expansion>
-          <identifier value="urn:uuid:6be24197-53df-4706-8255-c19b836e894f"/>
-          <timestamp value="2024-07-23T17:20:36+00:00"/>
+          <identifier value="urn:uuid:07f56946-4c73-4c2c-85ce-6d72fda532ee"/>
+          <timestamp value="2024-07-25T17:49:34+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -330,6 +330,108 @@
             <system value="http://loinc.org"/>
             <code value="42348-3"/>
             <display value="Advance directives"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-foo-bar.html">codesystem Foo Bar Test Code System v0.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-foo"> </a>  
+                  <a href="CodeSystem-foo-bar.html#foo-bar-foo">foo</a>
+                </td>
+                <td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td>
+                <td>foo</td>
+                <td>
+                  <div>
+                    <p>Foo</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-bar"> </a>  
+                  <a href="CodeSystem-foo-bar.html#foo-bar-bar">bar</a>
+                </td>
+                <td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td>
+                <td>bar</td>
+                <td>
+                  <div>
+                    <p>Bar</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar"/>
+        <version value="0.0.0"/>
+        <name value="FooBar"/>
+        <title value="Foo Bar Test Value Set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-07-25"/>
+        <expansion>
+          <identifier value="urn:uuid:63e49ce0-d5c1-47d6-bb30-aa90fb445783"/>
+          <timestamp value="2024-07-25T17:49:34+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar|0.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"/>
+            <code value="foo"/>
+            <display value="foo"/>
+          </contains>
+          <contains>
+            <system value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"/>
+            <code value="bar"/>
+            <display value="bar"/>
           </contains>
         </expansion>
       </ValueSet>

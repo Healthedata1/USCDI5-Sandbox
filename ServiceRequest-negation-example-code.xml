@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="negation-example-code"/>
+  <meta>
+    <profile value="http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest negation-example-code</b></p><a name="negation-example-code"> </a><a name="hcnegation-example-code"> </a><a name="negation-example-code-en-US"> </a><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 387713003}">Surgical Procedure</span></p><p><b>priority</b>: Urgent</p><p><b>doNotPerform</b>: true</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 348681001}">Graduated compression elastic hosiery (physical object)</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>encounter</b>: Encounter/example</p><p><b>occurrence</b>: 2024-07-25</p><p><b>authoredOn</b>: 2024-07-25</p><p><b>reasonCode</b>: <span title="Codes:{http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar foo}">reason why not done</span></p></div>
+  </text>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="387713003"/>
+      <display value="Surgical Procedure"/>
+    </coding>
+  </category>
+  <priority value="urgent"/>
+  <doNotPerform value="true"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="348681001"/>
+      <display value="Graduated compression elastic hosiery (physical object)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <encounter>
+    <display value="Encounter/example"/>
+  </encounter>
+  <occurrenceDateTime value="2024-07-25"/>
+  <authoredOn value="2024-07-25"/>
+  <reasonCode>
+    <coding>
+      <system value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"/>
+      <code value="foo"/>
+      <display value="Foo"/>
+    </coding>
+    <text value="reason why not done"/>
+  </reasonCode>
+</ServiceRequest>

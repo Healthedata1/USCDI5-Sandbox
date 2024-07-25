@@ -39,6 +39,12 @@
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
         "title": "US Core Provenance Profile"
       }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest",
+        "title": "US Core ServiceRequest Profile"
+      }
     ]
   },
   "usage": {
@@ -107,6 +113,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",

@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-07-23T17:19:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-07-25T17:48:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Health eData Inc"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -729,6 +729,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar> ;
+         fhir:reference [ fhir:v "CodeSystem/foo-bar" ]
+       ] ;
+       fhir:name [ fhir:v "Foo Bar Test Code System" ] ;
+       fhir:description [ fhir:v "Foo Bar Test Code System" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar> ;
+         fhir:reference [ fhir:v "ValueSet/foo-bar" ]
+       ] ;
+       fhir:name [ fhir:v "Foo Bar Test Value Set" ] ;
+       fhir:description [ fhir:v "Foo Bar Test ValueSet" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Immunization" ]
        ] ) ;
        fhir:reference [
@@ -770,6 +794,20 @@
        fhir:example [
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ServiceRequest" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ServiceRequest/negation-example-code> ;
+         fhir:reference [ fhir:v "ServiceRequest/negation-example-code" ]
+       ] ;
+       fhir:name [ fhir:v "negation-example-code" ] ;
+       fhir:example [
+         fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest"^^xsd:anyURI ;
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest>
        ]
      ] [
        fhir:extension ( [
@@ -896,6 +934,18 @@
        ] ;
        fhir:name [ fhir:v "US Core Provenance Profile" ] ;
        fhir:description [ fhir:v "The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-servicerequest" ]
+       ] ;
+       fhir:name [ fhir:v "US Core ServiceRequest Profile" ] ;
+       fhir:description [ fhir:v "The US Core ServiceRequest Profile inherits from the FHIR [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for recording, searching, and fetching the ServiceRequest information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

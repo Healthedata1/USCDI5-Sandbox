@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-07-23T17:19:20+00:00"/>
+  <date value="2024-07-25T17:48:18+00:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -623,6 +623,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/foo-bar"/>
+      </reference>
+      <name value="Foo Bar Test Code System"/>
+      <description value="Foo Bar Test Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/foo-bar"/>
+      </reference>
+      <name value="Foo Bar Test Value Set"/>
+      <description value="Foo Bar Test ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Immunization"/>
       </extension>
       <reference>
@@ -653,6 +675,16 @@
       <name value="MedicationRequest Coded Oral Axid Example"/>
       <description value="This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/negation-example-code"/>
+      </reference>
+      <name value="negation-example-code"/>
+      <exampleCanonical value="http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -762,6 +794,17 @@
       </reference>
       <name value="US Core Provenance Profile"/>
       <description value="The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-servicerequest"/>
+      </reference>
+      <name value="US Core ServiceRequest Profile"/>
+      <description value="The US Core ServiceRequest Profile inherits from the FHIR [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for recording, searching, and fetching the ServiceRequest information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -1,28 +1,33 @@
 UCSDI5Sandbox : Validation Results
 =========================================
 
-err = 30, warn = 0, info = 4
+err = 33, warn = 1, info = 5
 IG Publisher Version: 1.6.18
-Generated Tue Jul 23 17:21:16 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
- Build Errors : 121 / 0 / 0
+Generated Thu Jul 25 17:50:13 UTC 2024. FHIR version 4.0.1 for uscdi5-sandbox#0.0.0 (canonical = http://www.fhir.org/guides/uscdi5-sandbox)
+ Build Errors : 130 / 1 / 0
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/fsh-generated/resources/ImplementationGuide-uscdi5-sandbox : 0 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/ServiceRequest-negation-example : 0 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/documentreference-ADI-example : 0 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/imm-1 : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationdispense-example : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/medicationrequest-coded-oral-axid : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/observation-ADI-example : 0 / 0 / 1
- /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example : 0 / 0 / 4
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/patient-example : 2 / 0 / 4
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/examples/provenance-example : 3 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/CodeSystem-us-core-foo-bar : 0 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationdispense : 3 / 0 / 2
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-medicationrequest : 4 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-observation-adi-documentation : 5 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-patient : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance : 3 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-servicerequest : 1 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-adi-finding : 3 / 0 / 1
  /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type : 3 / 0 / 1
+ /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-foo-bar : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/negation-example-code.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 199, column 8: The link 'ImplementationGuide-.xml' for "XML" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/ImplementationGuide.html#/html/body/div/div/div/div/div/ul/li/a at Line 200, column 8: The link 'ImplementationGuide-.json' for "JSON" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/Provenance-79614.html#/html/body/div/div/div/div/div/div/p/a at Line 187, column 702: The link 'AllergyIntolerance/79613' for "AllergyIntolerance/79613" cannot be resolved
@@ -134,10 +139,19 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinitio
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-patient.html#/html/body/div/div/div/div/div/div/ol/li/p/strong/a at Line 3368, column 232: The link 'SearchParameter-us-core-patient-gender.html' for "gender" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 267, column 143: The link 'must-support.html' for "Must Support" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/div/p/a at Line 297, column 13: The link 'must-support.html#additional-uscdi-requirements' for "Additional USCDI Requirements" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 2718, column 388: The link 'CapabilityStatement-us-core-server.html' for "US Core Server CapabilityStatement" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2721, column 16: The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2722, column 16: The link 'general-requirements.html' for "General Requirements" cannot be resolved
-ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2723, column 16: The link 'general-guidance.html' for "General Guidance" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/p/a at Line 2720, column 388: The link 'CapabilityStatement-us-core-server.html' for "US Core Server CapabilityStatement" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2723, column 16: The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2724, column 16: The link 'general-requirements.html' for "General Requirements" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-provenance.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 2725, column 16: The link 'general-guidance.html' for "General Guidance" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 240, column 2001: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 297, column 1112: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 421, column 835: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 326, column 679: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 486, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 733, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1155, column 679: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1314, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
+ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/StructureDefinition-us-core-servicerequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1561, column 645: The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 185, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 209, column 68: The link 'ValueSet-us-core-documentreference-type.html' for "US Core DocumentReference Type Value Set" cannot be resolved
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 217, column 50: The link 'StructureDefinition-us-core-documentreference.html' for "US Core DocumentReference Profile" cannot be resolved
@@ -145,6 +159,8 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.htm
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/clinical-notes.html#/html/body/div/div/div/div/div/p/a at Line 217, column 568: The link '#fhir-resources-to-exchange-clinical-notes' for "FHIR Resources to Exchange Clinical Notes" cannot be resolved (valid targets: [segment-header, clinical-notes, publish-box, bottom, segment-post-footer, support-requirements, ig-status, top, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 228, column 8: The link 'ImplementationGuide-hl7.fhir.us.core.html' for "US Core ImplementationGuide Resource" cannot be resolved
 == fsh-generated/resources/ImplementationGuide-uscdi5-sandbox.json ==
+== input/examples/ServiceRequest-negation-example.json ==
+INFORMATION: ServiceRequest/negation-example-code: ServiceRequest.reasonCode[0]: Reference to experimental CodeSystem http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar|0.0.0
 == input/examples/documentreference-ADI-example.json ==
 == input/examples/imm-1.json ==
 == input/examples/medicationdispense-example.json ==
@@ -154,10 +170,13 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/output/downloads.html#/ht
 INFORMATION: Patient/example: Patient.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/example: Patient.extension[6]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Patient/example: Patient.extension[8]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Patient/example: Patient.extension[5].extension[1]: Extension.extension:supportingInfo.extension: max allowed = 0, but found 3 (from http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse|5.1.0)
+ERROR: Patient/example: Patient.extension[5].extension[1]: Extension.extension:supportingInfo.value[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse|5.1.0)
 == input/examples/provenance-example.json ==
 ERROR: Provenance/79614: Provenance.target[0]: Unable to resolve resource with reference 'AllergyIntolerance/79613'
 ERROR: Provenance/79614: Provenance.agent[0].role[0].coding[0].display: Wrong Display Name 'Surgery Physicians' for http://nucc.org/provider-taxonomy#208600000X. Valid display is 'Surgery Physician' (for the language(s) 'en')
 ERROR: Provenance.text.div: Hyperlink 'AllergyIntolerance/79613' at 'div/p/a' for 'AllergyIntolerance/79613' does not resolve
+== input/resources/CodeSystem-us-core-foo-bar.json ==
 == input/resources/StructureDefinition-us-core-immunization.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-immunization.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization)
 ERROR: StructureDefinition/us-core-immunization: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
@@ -186,6 +205,8 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/Structure
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-provenance) does not match the URL (http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance)
 ERROR: StructureDefinition/us-core-provenance: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/StructureDefinition-us-core-provenance: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-provenance vs http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance
+== input/resources/StructureDefinition-us-core-servicerequest.json ==
+ERROR: StructureDefinition.text.div: Hyperlink 'general-requirements.html#required-bindings-when-slicing-by-valuesets' at 'div/table/tr/td/a' for 'Required Bindings When Slicing by Value Sets' does not resolve
 == input/resources/ValueSet-us-core-adi-finding.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-adi-finding.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-adi-finding) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding)
 ERROR: ValueSet/us-core-adi-finding: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
@@ -194,3 +215,4 @@ ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type'): Conformance resource /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type.json - the canonical URL (http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type) does not match the URL (http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type)
 ERROR: ValueSet/us-core-clinical-note-type: ValueSet: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/ValueSet-us-core-clinical-note-type: URL Mismatch http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/us-core-clinical-note-type vs http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type
+== input/resources/ValueSet-us-core-foo-bar.json ==

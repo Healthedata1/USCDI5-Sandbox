@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5769f98e-b657-48e0-840b-6930cff2b848",
+  "id" : "939d8ca5-c0bb-47e3-ad4b-5ab9f4c32c88",
   "meta" : {
-    "lastUpdated" : "2024-07-23T17:19:20.009+00:00"
+    "lastUpdated" : "2024-07-25T17:48:18.205+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -21,8 +21,8 @@
       "experimental" : false,
       "date" : "2024-05-30",
       "expansion" : {
-        "identifier" : "urn:uuid:931d2c25-be29-477d-a02d-38f34de16ce8",
-        "timestamp" : "2024-07-23T17:20:35+00:00",
+        "identifier" : "urn:uuid:300a7f55-1bdb-4d9e-865d-654257998d00",
+        "timestamp" : "2024-07-25T17:49:33+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -88,8 +88,8 @@
       "experimental" : false,
       "date" : "2024-05-14",
       "expansion" : {
-        "identifier" : "urn:uuid:6be24197-53df-4706-8255-c19b836e894f",
-        "timestamp" : "2024-07-23T17:20:36+00:00",
+        "identifier" : "urn:uuid:07f56946-4c73-4c2c-85ce-6d72fda532ee",
+        "timestamp" : "2024-07-25T17:49:34+00:00",
         "total" : 11,
         "offset" : 0,
         "parameter" : [{
@@ -170,6 +170,55 @@
           "system" : "http://loinc.org",
           "code" : "42348-3",
           "display" : "Advance directives"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-foo-bar.html\">codesystem Foo Bar Test Code System v0.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-foo\"> </a>\u00a0\u00a0<a href=\"CodeSystem-foo-bar.html#foo-bar-foo\">foo</a></td><td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td><td>foo</td><td><div><p>Foo</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-bar\"> </a>\u00a0\u00a0<a href=\"CodeSystem-foo-bar.html#foo-bar-bar\">bar</a></td><td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td><td>bar</td><td><div><p>Bar</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
+      "version" : "0.0.0",
+      "name" : "FooBar",
+      "title" : "Foo Bar Test Value Set",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2024-07-25",
+      "expansion" : {
+        "identifier" : "urn:uuid:63e49ce0-d5c1-47d6-bb30-aa90fb445783",
+        "timestamp" : "2024-07-25T17:49:34+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
+          "code" : "foo",
+          "display" : "foo"
+        },
+        {
+          "system" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
+          "code" : "bar",
+          "display" : "bar"
         }]
       }
     }

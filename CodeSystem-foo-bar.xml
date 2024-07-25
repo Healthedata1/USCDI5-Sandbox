@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="foo-bar"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem foo-bar</b></p><a name="foo-bar"> </a><a name="hcfoo-bar"> </a><a name="foo-bar-en-US"> </a><p>This case-sensitive code system <code>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">foo<a name="foo-bar-foo"> </a></td><td>Foo</td></tr><tr><td style="white-space:nowrap">bar<a name="foo-bar-bar"> </a></td><td>Bar</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="informative">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"/>
+  <version value="0.0.0"/>
+  <name value="FooBar"/>
+  <title value="Foo Bar Test Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-07-25"/>
+  <publisher value="Health eData Inc"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:ehaas@healthedatainc.com"/>
+    </telecom>
+  </contact>
+  <description value="Foo Bar Test Code System"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="foo"/>
+    <display value="foo"/>
+    <definition value="Foo"/>
+  </concept>
+  <concept>
+    <code value="bar"/>
+    <display value="bar"/>
+    <definition value="Bar"/>
+  </concept>
+</CodeSystem>

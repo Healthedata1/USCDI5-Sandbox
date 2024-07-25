@@ -1,3 +1,4 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding,0.0.0,active,,USCoreADIFinding,US Core ADI Finding,"The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives.",,"SCT"
 http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type,0.0.0,active,,USCoreClinicalNoteType,US Core Clinical Note Type,"The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",,"LOINC"
+http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar,0.0.0,active,,FooBar,Foo Bar Test Value Set,"Foo Bar Test ValueSet",,"Internal"

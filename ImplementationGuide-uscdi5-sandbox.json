@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-07-23T17:19:20+00:00",
+  "date" : "2024-07-25T17:48:18+00:00",
   "publisher" : "Health eData Inc",
   "contact" : [{
     "telecom" : [{
@@ -834,6 +834,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/foo-bar"
+      },
+      "name" : "Foo Bar Test Code System",
+      "description" : "Foo Bar Test Code System",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/foo-bar"
+      },
+      "name" : "Foo Bar Test Value Set",
+      "description" : "Foo Bar Test ValueSet",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Immunization"
       }],
       "reference" : {
@@ -866,6 +890,17 @@
       "name" : "MedicationRequest Coded Oral Axid Example",
       "description" : "This is an prescribed oral solution example for the *US Core MedicationRequest Profile*.  It represents the medication and reason using codes.",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/negation-example-code"
+      },
+      "name" : "negation-example-code",
+      "exampleCanonical" : "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest"
     },
     {
       "extension" : [{
@@ -985,6 +1020,18 @@
       },
       "name" : "US Core Provenance Profile",
       "description" : "The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/us-core-servicerequest"
+      },
+      "name" : "US Core ServiceRequest Profile",
+      "description" : "The US Core ServiceRequest Profile inherits from the FHIR [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for recording, searching, and fetching the ServiceRequest information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
       "exampleBoolean" : false
     }],
     "page" : {

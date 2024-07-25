@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -170,8 +170,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
@@ -183,8 +183,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
@@ -237,7 +237,29 @@
       "sources" : ["2.16.840.1.113883.4.642.40.2.48.21"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreProcedureCodes",
+      "title" : "US Core Procedure Codes",
+      "description" : "Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed.",
+      "systems" : [
+        "http://www.ada.org/cdt",
+        "http://www.ama-assn.org/go/cpt",
+        "http://loinc.org",
+        "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "http://www.cms.gov/Medicare/Coding/ICD10",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.26"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.26"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type",
@@ -255,6 +277,23 @@
       "uses" : {
       },
       "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreServiceRequestCategoryCodes",
+      "title" : "US Core ServiceRequest Category Codes",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify a requested service",
+      "systems" : [
+        "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.27"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.27"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
@@ -283,6 +322,17 @@
       "uses" : {
       },
       "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "FooBar",
+      "title" : "Foo Bar Test Value Set",
+      "description" : "Foo Bar Test ValueSet",
+      "systems" : [
+        "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"
+      ]
     }
   ]
 }

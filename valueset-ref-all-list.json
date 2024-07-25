@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -53,8 +53,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.95"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -96,8 +96,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.97"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -125,8 +125,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.346"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -140,6 +140,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
     {
@@ -196,8 +197,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.981"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -404,12 +405,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
       "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
-      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -454,8 +456,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.96"],
       "uses" : {
       },
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-category",
@@ -684,6 +687,20 @@
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
       "version" : "4.0.1",
       "status" : "active",
@@ -794,6 +811,20 @@
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
       "version" : "4.0.1",
       "status" : "draft",
@@ -805,7 +836,22 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -833,8 +879,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -859,6 +905,34 @@
       "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
       "version" : "4.0.1",
       "status" : "draft",
@@ -868,8 +942,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
@@ -922,7 +996,29 @@
       "sources" : ["2.16.840.1.113883.4.642.40.2.48.21"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreProcedureCodes",
+      "title" : "US Core Procedure Codes",
+      "description" : "Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed.",
+      "systems" : [
+        "http://www.ada.org/cdt",
+        "http://www.ama-assn.org/go/cpt",
+        "http://loinc.org",
+        "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "http://www.cms.gov/Medicare/Coding/ICD10",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.26"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.26"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type",
@@ -940,6 +1036,23 @@
       "uses" : {
       },
       "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreServiceRequestCategoryCodes",
+      "title" : "US Core ServiceRequest Category Codes",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify a requested service",
+      "systems" : [
+        "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.27"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.27"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
@@ -983,8 +1096,8 @@
       "sources" : ["2.16.840.1.113883.1.11.16621"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
@@ -1001,6 +1114,20 @@
       "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
       "version" : "3.0.0",
       "status" : "active",
@@ -1012,8 +1139,19 @@
       "sources" : ["2.16.840.1.113883.1.11.19377"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "FooBar",
+      "title" : "Foo Bar Test Value Set",
+      "description" : "Foo Bar Test ValueSet",
+      "systems" : [
+        "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"
+      ]
     }
   ]
 }

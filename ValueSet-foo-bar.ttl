@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "foo-bar"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet foo-bar</b></p><a name=\"foo-bar\"> </a><a name=\"hcfoo-bar\"> </a><a name=\"foo-bar-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-foo-bar.html\"><code>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-foo-bar.html#foo-bar-foo\">foo</a></td><td style=\"color: #cccccc\">foo</td><td>Foo</td></tr><tr><td><a href=\"CodeSystem-foo-bar.html#foo-bar-bar\">bar</a></td><td style=\"color: #cccccc\">bar</td><td>Bar</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "informative" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"^^xsd:anyURI ;
+           fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
+  fhir:name [ fhir:v "FooBar"] ; # 
+  fhir:title [ fhir:v "Foo Bar Test Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-07-25"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Health eData Inc"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Foo Bar Test ValueSet"] ; # 
+  fhir:copyright [ fhir:v "All rights reserved ... Don't mess with Greatness!!!"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "foo" ]
+       ] [
+         fhir:code [ fhir:v "bar" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

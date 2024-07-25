@@ -109,6 +109,18 @@
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
     },
     {
+      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreCategory",
+      "title" : "US Core Category",
+      "description" : "Category codes used across US Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
+      "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type",
       "version" : "7.0.0",
       "status" : "active",
@@ -130,6 +142,7 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
       "ValueSet-us-core-clinical-note-type.html" : "US Core Clinical Note Type"
     },
     {
@@ -142,10 +155,12 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
       "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
       "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
@@ -206,6 +221,65 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-ucum-common.html" : "Common UCUM units"
+    },
+    {
+      "url" : "http://www.ada.org/cdt",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "CDT",
+      "title" : "Code on Dental Procedures and Nomenclature",
+      "description" : "The purpose of the CDT Code is to achieve uniformity, consistency and specificity in accurately documenting dental treatment. One use of the CDT Code is to provide for the efficient processing of dental claims, and another is to populate an Electronic Health Record.",
+      "oids" : ["2.16.840.1.113883.6.13"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "http://www.ama-assn.org/go/cpt",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "CPT",
+      "title" : "Current Procedural Terminology (CPT®)",
+      "description" : "The Current Procedural Terminology (CPT) code set, created and maintained by the American Medical Association, is the language of medicine today and the code to its future. This system of terminology is the most widely accepted medical nomenclature used to report medical procedures and services under public and private health insurance programs. CPT coding is also used for administrative management purposes such as claims processing and developing guidelines for medical care review. Each year, via a rigorous, evidence-based and transparent process, the independent CPT Editorial Panel revises, creates or deletes hundreds of codes in order to reflect current medical practice.\r\n\r\nDesignated by the U.S. Department of Health and Human Services under the Health Insurance Portability and Accountability Act (HIPAA) as a national coding set for physician and other health care professional services and procedures, CPT’s evidence-based codes accurately encompass the full range of health care services.\r\n\r\nAll CPT codes are five-digits and can be either numeric or alphanumeric, depending on the category. CPT code descriptors are clinically focused and utilize common standards so that a diverse set of users can have common understanding across the clinical health care paradigm.\r\n\r\nThere are various types of CPT codes:\r\n\r\nCategory I: These codes have descriptors that correspond to a procedure or service. Codes range from 00100–99499 and are generally ordered into sub-categories based on procedure/service type and anatomy.\r\n\r\nCategory II: These alphanumeric tracking codes are supplemental codes used for performance measurement. Using them is optional and not required for correct coding.\r\n\r\nCategory III: These are temporary alphanumeric codes for new and developing technology, procedures and services. They were created for data collection, assessment and in some instances, payment of new services and procedures that currently don’t meet the criteria for a Category I code.\r\n\r\nProprietary Laboratory Analyses (PLA) codes: These codes describe proprietary clinical laboratory analyses and can be either provided by a single (“solesource”) laboratory or licensed or marketed to multiple providing laboratories that are cleared or approved by the Food and Drug Administration (FDA)). This category includes but is not limited to Advanced Diagnostic Laboratory Tests (ADLTs) and Clinical Diagnostic Laboratory Tests (CDLTs), as defined under the Protecting Access to Medicare Act of 2014 (PAMA).",
+      "oids" : ["2.16.840.1.113883.6.12"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "http://www.cms.gov/Medicare/Coding/ICD10",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Icd10PCS",
+      "title" : "ICD-10 Procedure Codes",
+      "description" : "ICD Procedure Coding System (ICD 10 PCS)",
+      "oids" : ["2.16.840.1.113883.6.4"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "FooBar",
+      "title" : "Foo Bar Test Code System",
+      "description" : "Foo Bar Test Code System",
+      "uses" : {
+      },
+      "ValueSet-foo-bar.html" : "Foo Bar Test Value Set"
+    },
+    {
+      "url" : "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "HCPCSLevelII",
+      "title" : "Healthcare Common Procedure Coding System (HCPCS) level II alphanumeric codes",
+      "description" : "The Level II HCPCS codes, which are established by CMS's Alpha-Numeric Editorial Panel, primarily represent items and supplies and non-physician services not covered by the American Medical Association's Current Procedural Terminology-4 (CPT-4) codes; Medicare, Medicaid, and private health insurers use HCPCS procedure and modifier codes for claims processing.  Level II alphanumeric procedure and modifier codes comprise the A to V range.",
+      "oids" : ["2.16.840.1.113883.6.285"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
     },
     {
       "url" : "urn:ietf:bcp:47",

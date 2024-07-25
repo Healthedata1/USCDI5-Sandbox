@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.fhir.org/guides/uscdi5-sandbox/ServiceRequest/negation-example-code> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "negation-example-code"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest"^^xsd:anyURI ;
+       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest negation-example-code</b></p><a name=\"negation-example-code\"> </a><a name=\"hcnegation-example-code\"> </a><a name=\"negation-example-code-en-US\"> </a><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 387713003}\">Surgical Procedure</span></p><p><b>priority</b>: Urgent</p><p><b>doNotPerform</b>: true</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 348681001}\">Graduated compression elastic hosiery (physical object)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>encounter</b>: Encounter/example</p><p><b>occurrence</b>: 2024-07-25</p><p><b>authoredOn</b>: 2024-07-25</p><p><b>reasonCode</b>: <span title=\"Codes:{http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar foo}\">reason why not done</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:387713003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "387713003" ] ;
+       fhir:display [ fhir:v "Surgical Procedure" ]
+     ] )
+  ] ) ; # 
+  fhir:priority [ fhir:v "urgent"] ; # 
+  fhir:doNotPerform [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:348681001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "348681001" ] ;
+       fhir:display [ fhir:v "Graduated compression elastic hosiery (physical object)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:display [ fhir:v "Encounter/example" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2024-07-25"^^xsd:date] ; # 
+  fhir:authoredOn [ fhir:v "2024-07-25"^^xsd:date] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "foo" ] ;
+       fhir:display [ fhir:v "Foo" ]
+     ] ) ;
+     fhir:text [ fhir:v "reason why not done" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

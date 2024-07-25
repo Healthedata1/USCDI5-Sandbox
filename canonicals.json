@@ -56,10 +56,31 @@
     "name" : "USCoreClinicalNoteType"
   },
   {
+    "id" : "foo-bar",
+    "type" : "CodeSystem",
+    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
+    "version" : "0.0.0",
+    "name" : "FooBar"
+  },
+  {
     "id" : "uscdi5-sandbox",
     "type" : "ImplementationGuide",
     "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox",
     "version" : "0.0.0",
     "name" : "UCSDI5Sandbox"
+  },
+  {
+    "id" : "us-core-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest",
+    "version" : "0.0.0",
+    "name" : "USCoreServiceRequestProfile"
+  },
+  {
+    "id" : "foo-bar",
+    "type" : "ValueSet",
+    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
+    "version" : "0.0.0",
+    "name" : "FooBar"
   }
 ]
