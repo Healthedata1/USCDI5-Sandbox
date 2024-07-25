@@ -1,8 +1,11 @@
 [ADI-example]: Observation-ADI-example.html
 [example-patient-adi]: DocumentReference-example-patient-adi.html
+[FooBar]: CodeSystem-foo-bar.html
+[FooBar]: ValueSet-foo-bar.html
 [imm-1]: Immunization-imm-1.html
 [medicationdispense-example]: MedicationDispense-medicationdispense-example.html
 [medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html
+[negation-example-code]: ServiceRequest-negation-example-code.html
 [example]: Patient-example.html
 [79614]: Provenance-79614.html
 [USCoreADIFinding]: ValueSet-us-core-adi-finding.html
@@ -13,3 +16,4 @@
 [USCoreObservationADIDocumentationProfile]: StructureDefinition-us-core-observation-adi-documentation.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html
+[USCoreServiceRequestProfile]: StructureDefinition-us-core-servicerequest.html

@@ -144,6 +144,27 @@
                         ],
                         "text": "Unknown"
                     }
+                },
+                {
+                    "url": "supportingInfo",
+                    "extension": [
+                        {
+                            "url": "_datatype",
+                            "valueString": "CodeableReference"
+                        },
+                        {
+                            "url": "concept",
+                            "valueCodeableConcept": {
+                                "text": "Some Document"
+                            }
+                        },
+                        {
+                            "url": "reference",
+                            "valueReference": {
+                                "display": "some DocumentReference"
+                            }
+                        }
+                    ]
                 }
             ]
         },

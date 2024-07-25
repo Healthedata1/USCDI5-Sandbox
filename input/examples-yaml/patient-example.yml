@@ -91,11 +91,23 @@ extension:
       #     start: '2002-07-13'
       # - url: comment
       #   valueString: Patient transitioned from male to female in 2001.
-
-      # - url: supportingInfo  <<<<<< How to represent in R4? see https://chat.fhir.org/#narrow/stream/179166-implementers/topic/UV.20Extension.20Sex.20Parameter.20for.20clinical.20use.20broken.20for.20R4.3F/near/453453806
-      #   valueCodeableReference:
-      #     reference:
-      #       reference: MedicationStatement/2
+    - url: supportingInfo
+       # How to represent in R4? from CI build https://build.fhir.org/versions.html#extensions-examples-complex
+       #   valueCodeableReference:
+       #     reference:
+       #       reference: MedicationStatement/2
+      extension:
+            - 
+                url: _datatype
+                valueString: CodeableReference
+            - 
+                url: concept
+                valueCodeableConcept:
+                    text: Some Document
+            - 
+                url: reference
+                valueReference:
+                    display: some DocumentReference
 
 #USCDI5
 

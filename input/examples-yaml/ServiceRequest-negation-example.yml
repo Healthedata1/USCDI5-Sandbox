@@ -1,0 +1,41 @@
+resourceType: ServiceRequest
+id: negation-example-code
+meta:
+  profile:
+  - http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest
+
+# extension:
+#   - url: >-
+#       http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-doNotPerformReason
+#     valueCodeableConcept:
+#       coding:
+#         - system: 'http://snomed.info/sct'
+#           code: '416406003'
+#           display: Procedure discontinued (situation)
+status: completed
+intent: order
+category:
+  - coding:
+      - system: 'http://snomed.info/sct'
+        code: '387713003'
+        display: Surgical Procedure
+priority: urgent
+doNotPerform: true
+code:
+  coding:
+    - system: 'http://snomed.info/sct'
+      code: '348681001'
+      display: Graduated compression elastic hosiery (physical object)
+subject:
+  reference: Patient/example
+encounter:
+  display: Encounter/example
+occurrenceDateTime: '2024-07-25'
+authoredOn: '2024-07-25'
+reasonCode:
+    - coding:
+        - system: 'http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar'
+          code: foo
+          display: Foo
+      text: reason why not done
+    
