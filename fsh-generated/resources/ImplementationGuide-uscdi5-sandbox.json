@@ -170,11 +170,43 @@
       },
       {
         "reference": {
+          "reference": "SubscriptionTopic/us-core-encounter"
+        },
+        "description": "This topic allows subscribers to receive notifications for Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions.",
+        "exampleBoolean": false,
+        "name": "US Core Encounter Subscription Topic"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-core-immunization"
         },
         "description": "The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean": false,
         "name": "US Core Immunization Profile"
+      },
+      {
+        "reference": {
+          "reference": "SubscriptionTopic/us-core-immunization"
+        },
+        "description": "This topic allows subscribers to receive notifications for Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions.",
+        "exampleBoolean": false,
+        "name": "US Core Immunization Subscription Topic"
+      },
+      {
+        "reference": {
+          "reference": "SubscriptionTopic/us-core-laboratory-report"
+        },
+        "description": "This topic allows subscribers to receive notifications for Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.",
+        "exampleBoolean": false,
+        "name": "US Core Laboratory Report Subscription Topic"
+      },
+      {
+        "reference": {
+          "reference": "SubscriptionTopic/us-core-laboratory-result"
+        },
+        "description": "This topic allows subscribers to receive notifications for Laboratory Result events represented by US Core US Core Laboratory Result Observation Profile, including create, update, and delete interactions.",
+        "exampleBoolean": false,
+        "name": "US Core Laboratory Result Subscription Topic"
       },
       {
         "reference": {
@@ -210,11 +242,27 @@
       },
       {
         "reference": {
+          "reference": "SubscriptionTopic/us-core-problems-and-health-concerns"
+        },
+        "description": "This topic allows subscribers to receive notifications for Problems And Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.",
+        "exampleBoolean": false,
+        "name": "US Core Problems And Health Concerns Subscription Topic"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-core-provenance"
         },
         "description": "The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource.",
         "exampleBoolean": false,
         "name": "US Core Provenance Profile"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/us-core-server"
+        },
+        "description": "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ONC 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ONC [U.S. Core Data for Interoperability (USCDI) Version 4 July 2023](https://www.healthit.gov/sites/isa/files/2023-07/Final-USCDI-Version-4-July-2023-Final.pdf).",
+        "exampleBoolean": false,
+        "name": "US Core Server CapabilityStatement"
       },
       {
         "reference": {
@@ -238,6 +286,18 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
               "valueCode": "draft"
+            }
+          ]
+        },
+        {
+          "nameUrl": "conformance.html",
+          "title": "Conformance",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "subscription.html",
+              "title": "Subscription",
+              "generation": "markdown"
             }
           ]
         },

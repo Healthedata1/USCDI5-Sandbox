@@ -63,6 +63,8 @@ pages:
       - url: >-
           http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: draft 
+  conformance.md:
+    subscription.md:
 
   # background.md:
   # # specification.md:
@@ -128,8 +130,10 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
+  Conformance: #conformance.html
+    Subscription: subscription.html
   General Guidance: #guidance.html
-        Clinical Notes: clinical-notes.html
+    Clinical Notes: clinical-notes.html
   #Table of Contents: toc.html
   Artifact Index: artifacts.html
   Downloads: downloads.html

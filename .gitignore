@@ -19,4 +19,7 @@ Thumbs.db
 # /examples-yaml
 /scripts
 # /.github
+/.clj-kondo
+/.lsp
+
 
