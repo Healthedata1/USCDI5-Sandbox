@@ -1,7 +1,8 @@
 {
-  "package": "uscdi5-sandbox",
+  "package": "hl7.fhir.us.uscdi5-sandbox",
   "version": "0.0.0",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
   "extensions": [],
   "profiles": {
     "Immunization": [
@@ -48,6 +49,65 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.canFilterBy": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.contact": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.copyright": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.date": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.eventTrigger": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.jurisdiction": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.name": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.publisher": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.resourceTrigger": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.status": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.url": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.version": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.format",
+      "CapabilityStatement.implementationGuide",
+      "CapabilityStatement.patchFormat",
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.operation",
+      "CapabilityStatement.rest.resource.referencePolicy",
+      "CapabilityStatement.rest.resource.searchInclude",
+      "CapabilityStatement.rest.resource.searchParam",
+      "CapabilityStatement.rest.resource.searchRevInclude",
+      "CapabilityStatement.rest.resource.supportedProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination": [
+      "CapabilityStatement.rest.resource"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
@@ -105,6 +165,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "Basic",
       "ImplementationGuide",
       "StructureDefinition",
       "ValueSet"
@@ -113,6 +174,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "Basic",
       "CodeSystem",
       "ImplementationGuide",
       "ImplementationGuide.definition.page",

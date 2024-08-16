@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> a fhir:MedicationRequest ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "medicationrequest-coded-oral-axid"] ; # 
   fhir:meta [
@@ -77,13 +77,13 @@
      fhir:text [ fhir:v "Nizatidine 15 MG/ML Oral Solution" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ] ;
      fhir:display [ fhir:v "Amy Shaw" ]
   ] ; # 
   fhir:authoredOn [ fhir:v "2008-04-05"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Practitioner/practitioner-1> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Practitioner/practitioner-1> ;
      fhir:reference [ fhir:v "Practitioner/practitioner-1" ] ;
      fhir:display [ fhir:v "Ronald Bone, MD" ]
   ] ; # 
@@ -143,6 +143,10 @@
        fhir:code [ fhir:v "d" ]
      ]
   ] . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Practitioner/practitioner-1> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

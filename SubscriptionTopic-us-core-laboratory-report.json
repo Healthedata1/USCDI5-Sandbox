@@ -1,0 +1,148 @@
+{
+  "resourceType" : "Basic",
+  "id" : "us-core-laboratory-report",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SubscriptionTopic us-core-laboratory-report</b></p><a name=\"us-core-laboratory-report\"> </a><a name=\"hcus-core-laboratory-report\"> </a><a name=\"us-core-laboratory-report-en-US\"> </a><table class=\"grid\"><tr><td><b>SubscriptionTopic</b></td><td>US Core Laboratory Report Subscription Topic</td></tr><tr><td><b>Description</b></td><td><div><p>This topic allows subscribers to receive notifications for the US Core Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.</p>\n</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class=\"grid\"><tr><td colspan=\"4\"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Laboratory Report events</p>\n</div></td></tr></table><table class=\"grid\"><tr><td colspan=\"1\"><b>Event Triggers</b></td></tr><tr><th><b>Description</b></th></tr><tr><td><div><p>Trigger on patient-related clinical  laboratory report events</p>\n</div></td></tr></table><table class=\"grid\"><tr><td colspan=\"1\"><b>Can Filter By</b></td></tr><tr><th><b>Filter Parameter</b></th></tr><tr><td>patient</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.url",
+    "valueUri" : "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.version",
+    "valueString" : "0.0.0"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.name",
+    "valueString" : "USCoreLaboratoryReportSubscriptionTopic"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.title",
+    "valueString" : "US Core Laboratory Report Subscription Topic"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.status",
+    "valueCode" : "active"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.date",
+    "valueDateTime" : "2024-08-16"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.publisher",
+    "valueString" : "HL7 International / Cross-Group Projects"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.contact",
+    "valueContactDetail" : {
+      "name" : "HL7 International / Cross-Group Projects",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://www.hl7.org/Special/committees/cgp"
+      },
+      {
+        "system" : "email",
+        "value" : "cgp@lists.HL7.org"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.contact",
+    "valueContactDetail" : {
+      "name" : "Health eData Inc",
+      "telecom" : [{
+        "system" : "email",
+        "value" : "mailto:ehaas@healthedatainc.com"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.description",
+    "valueMarkdown" : "This topic allows subscribers to receive notifications for the US Core Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions."
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.jurisdiction",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "US"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.copyright",
+    "valueMarkdown" : "Used by permission of HL7 International, all rights reserved Creative Commons License"
+  },
+  {
+    "extension" : [{
+      "url" : "description",
+      "valueMarkdown" : "Trigger on US Core Laboratory Report events"
+    },
+    {
+      "url" : "resource",
+      "valueUri" : "DiagnosticReport"
+    },
+    {
+      "url" : "supportedInteraction",
+      "valueCode" : "create"
+    },
+    {
+      "url" : "supportedInteraction",
+      "valueCode" : "update"
+    },
+    {
+      "url" : "supportedInteraction",
+      "valueCode" : "delete"
+    },
+    {
+      "url" : "fhirPathCriteria",
+      "valueString" : "%previous.empty() or %current.empty() or %previous != %current"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.resourceTrigger"
+  },
+  {
+    "extension" : [{
+      "url" : "description",
+      "valueMarkdown" : "Trigger on patient-related clinical  laboratory report events"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.eventTrigger"
+  },
+  {
+    "extension" : [{
+      "url" : "description",
+      "valueMarkdown" : "Filter by patient"
+    },
+    {
+      "url" : "filterParameter",
+      "valueString" : "patient"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.canFilterBy"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "SubscriptionTopic"
+    }]
+  }
+}

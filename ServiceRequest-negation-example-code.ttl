@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/ServiceRequest/negation-example-code> a fhir:ServiceRequest ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/ServiceRequest/negation-example-code> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "negation-example-code"] ; # 
   fhir:meta [
@@ -40,7 +40,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ]
   ] ; # 
   fhir:encounter [
@@ -56,6 +56,8 @@
      ] ) ;
      fhir:text [ fhir:v "reason why not done" ]
   ] ) . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

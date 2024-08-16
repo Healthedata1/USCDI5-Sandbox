@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/Provenance/79614> a fhir:Provenance ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/Provenance/79614> a fhir:Provenance ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "79614"] ; # 
   fhir:meta [
@@ -25,10 +25,10 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance 79614</b></p><a name=\"79614\"> </a><a name=\"hc79614\"> </a><a name=\"79614-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: versionId: id (PrimitiveType/Provenance.meta.versionId): element = id -&gt; versionId=id[1]; Last updated: 2019-07-09 15:26:23+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-provenance.html\">US Core Provenance Profile</a></p></div><p>Provenance for <a href=\"AllergyIntolerance/79613\">AllergyIntolerance/79613</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2019-07-09 15:26:23+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Role</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td/><td><a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">??</a></td><td><a href=\"http://hl7.org/fhir/us/core/STU7/Organization-saint-luke-w-endpoint.html\">??</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance 79614</b></p><a name=\"79614\"> </a><a name=\"hc79614\"> </a><a name=\"79614-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2019-07-09 15:26:23+0000</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU7/StructureDefinition-us-core-provenance.html\">US Core Provenance Profile</a></p></div><p>Provenance for <a href=\"AllergyIntolerance/79613\">AllergyIntolerance/79613</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2019-07-09 15:26:23+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Role</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td/><td><a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">??</a></td><td><a href=\"http://hl7.org/fhir/us/core/STU7/Organization-saint-luke-w-endpoint.html\">??</a></td></tr></table></div>"
   ] ; # 
   fhir:target ( [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/AllergyIntolerance/79613> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/AllergyIntolerance/79613> ;
      fhir:reference [ fhir:v "AllergyIntolerance/79613" ]
   ] ) ; # 
   fhir:recorded [ fhir:v "2019-07-09T15:26:23.217+00:00"^^xsd:dateTime] ; # 
@@ -48,14 +48,20 @@
        ] )
      ] ) ;
      fhir:who [
-       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Practitioner/practitioner-1> ;
+       fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Practitioner/practitioner-1> ;
        fhir:reference [ fhir:v "Practitioner/practitioner-1" ]
      ] ;
      fhir:onBehalfOf [
-       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Organization/saint-luke-w-endpoint> ;
+       fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Organization/saint-luke-w-endpoint> ;
        fhir:reference [ fhir:v "Organization/saint-luke-w-endpoint" ]
      ]
   ] ) . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/AllergyIntolerance/79613> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Practitioner/practitioner-1> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Organization/saint-luke-w-endpoint> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

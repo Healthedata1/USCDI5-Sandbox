@@ -11,7 +11,7 @@
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"
+        "valueCanonical" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"
       }]
     }
   }],
@@ -22,14 +22,32 @@
   "status" : "active",
   "experimental" : true,
   "date" : "2024-07-25",
-  "publisher" : "Health eData Inc",
+  "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [{
+    "name" : "HL7 International / Cross-Group Projects",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cgp"
+    },
+    {
+      "system" : "email",
+      "value" : "cgp@lists.HL7.org"
+    }]
+  },
+  {
+    "name" : "Health eData Inc",
     "telecom" : [{
       "system" : "email",
       "value" : "mailto:ehaas@healthedatainc.com"
     }]
   }],
   "description" : "Foo Bar Test ValueSet",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
   "copyright" : "All rights reserved ... Don't mess with Greatness!!!",
   "compose" : {
     "include" : [{

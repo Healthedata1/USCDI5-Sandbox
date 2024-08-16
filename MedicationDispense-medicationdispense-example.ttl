@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/MedicationDispense/medicationdispense-example> a fhir:MedicationDispense ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/MedicationDispense/medicationdispense-example> a fhir:MedicationDispense ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "medicationdispense-example"] ; # 
   fhir:meta [
@@ -37,24 +37,24 @@
      fhir:text [ fhir:v "Nizatidine 15 MG/ML Oral Solution" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ] ;
      fhir:display [ fhir:v "Amy Shaw" ]
   ] ; # 
   fhir:context [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Encounter/example-1> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> ;
      fhir:reference [ fhir:v "Encounter/example-1" ] ;
      fhir:display [ fhir:v "Office Visit" ]
   ] ; # 
   fhir:performer ( [
      fhir:actor [
-       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Practitioner/practitioner-pharmacist> ;
+       fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Practitioner/practitioner-pharmacist> ;
        fhir:reference [ fhir:v "Practitioner/practitioner-pharmacist" ] ;
        fhir:display [ fhir:v "Doug Dispenser, PharmD" ]
      ]
   ] ) ; # 
   fhir:authorizingPrescription ( [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> ;
      fhir:reference [ fhir:v "MedicationRequest/medicationrequest-coded-oral-axid" ] ;
      fhir:display [ fhir:v "MedicationRequest Coded Oral Axid Example" ]
   ] ) ; # 
@@ -103,6 +103,14 @@
        ]
      ] )
   ] ) . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Practitioner/practitioner-pharmacist> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

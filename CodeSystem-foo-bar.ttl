@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar> a fhir:CodeSystem ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/CodeSystem/foo-bar> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "foo-bar"] ; # 
   fhir:text [
@@ -19,8 +19,8 @@
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
          fhir:value [
-           fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"^^xsd:anyURI ;
-           fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox>
+           fhir:v "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox>
          ]
        ] )
      ]
@@ -32,14 +32,31 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2024-07-25"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Health eData Inc"] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/cgp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "cgp@lists.HL7.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Health eData Inc" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Foo Bar Test Code System"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Used by permission of HL7 International, all rights reserved Creative Commons License"] ; # 
   fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:concept ( [

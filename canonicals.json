@@ -1,5 +1,12 @@
 [
   {
+    "id" : "us-core-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server",
+    "version" : "0.0.0",
+    "name" : "UsCoreServerCapabilityStatement"
+  },
+  {
     "id" : "us-core-immunization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
@@ -42,6 +49,41 @@
     "name" : "USCoreProvenance"
   },
   {
+    "id" : "us-core-encounter",
+    "type" : "SubscriptionTopic",
+    "url" : "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter",
+    "version" : "0.0.0",
+    "name" : "USCoreEncounterSubscriptionTopic"
+  },
+  {
+    "id" : "us-core-immunization",
+    "type" : "SubscriptionTopic",
+    "url" : "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization",
+    "version" : "0.0.0",
+    "name" : "USCoreImmunizationSubscriptionTopic"
+  },
+  {
+    "id" : "us-core-laboratory-report",
+    "type" : "SubscriptionTopic",
+    "url" : "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-report",
+    "version" : "0.0.0",
+    "name" : "USCoreLaboratoryReportSubscriptionTopic"
+  },
+  {
+    "id" : "us-core-laboratory-result",
+    "type" : "SubscriptionTopic",
+    "url" : "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-result",
+    "version" : "0.0.0",
+    "name" : "USCoreLaboratoryResultSubscriptionTopic"
+  },
+  {
+    "id" : "us-core-problems-and-health-concerns",
+    "type" : "SubscriptionTopic",
+    "url" : "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-problems-and-health-concerns",
+    "version" : "0.0.0",
+    "name" : "USCoreProblemsAndHealthConcernsSubscriptionTopic"
+  },
+  {
     "id" : "us-core-adi-finding",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
@@ -56,18 +98,18 @@
     "name" : "USCoreClinicalNoteType"
   },
   {
+    "id" : "hl7.fhir.us.uscdi5-sandbox",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox",
+    "version" : "0.0.0",
+    "name" : "UCSDI5Sandbox"
+  },
+  {
     "id" : "foo-bar",
     "type" : "CodeSystem",
     "url" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
     "version" : "0.0.0",
     "name" : "FooBar"
-  },
-  {
-    "id" : "uscdi5-sandbox",
-    "type" : "ImplementationGuide",
-    "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox",
-    "version" : "0.0.0",
-    "name" : "UCSDI5Sandbox"
   },
   {
     "id" : "us-core-servicerequest",

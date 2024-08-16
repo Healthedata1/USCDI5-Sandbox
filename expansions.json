@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "939d8ca5-c0bb-47e3-ad4b-5ab9f4c32c88",
+  "id" : "1054c128-5ce6-42cd-9574-babe9c15299d",
   "meta" : {
-    "lastUpdated" : "2024-07-25T17:48:18.205+00:00"
+    "lastUpdated" : "2024-08-16T22:48:06.265+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT United States edition 01-Sep 2023</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-449891000124104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/449891000124104\">449891000124104</a></td><td>http://snomed.info/sct</td><td>No advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-425392003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425392003\">425392003</a></td><td>http://snomed.info/sct</td><td>Active advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-304253006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/304253006\">304253006</a></td><td>http://snomed.info/sct</td><td>Not for resuscitation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-697978002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/697978002\">697978002</a></td><td>http://snomed.info/sct</td><td>Provider orders for life-sustaining treatment</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT United States edition 01-Mar 2024</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-449891000124104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/449891000124104\">449891000124104</a></td><td>http://snomed.info/sct</td><td>No advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-425392003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425392003\">425392003</a></td><td>http://snomed.info/sct</td><td>Active advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-304253006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/304253006\">304253006</a></td><td>http://snomed.info/sct</td><td>Not for resuscitation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-697978002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/697978002\">697978002</a></td><td>http://snomed.info/sct</td><td>Provider orders for life-sustaining treatment</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
       "version" : "0.0.0",
@@ -20,9 +20,15 @@
       "status" : "active",
       "experimental" : false,
       "date" : "2024-05-30",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:300a7f55-1bdb-4d9e-865d-654257998d00",
-        "timestamp" : "2024-07-25T17:49:33+00:00",
+        "identifier" : "urn:uuid:d8786a1c-a137-4dcf-9594-3f85489b8ffd",
+        "timestamp" : "2024-08-16T22:49:41+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -43,11 +49,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -87,9 +93,15 @@
       "status" : "active",
       "experimental" : false,
       "date" : "2024-05-14",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:07f56946-4c73-4c2c-85ce-6d72fda532ee",
-        "timestamp" : "2024-07-25T17:49:34+00:00",
+        "identifier" : "urn:uuid:8db53234-8d86-406a-bd49-5b3c6734be0c",
+        "timestamp" : "2024-08-16T22:49:42+00:00",
         "total" : 11,
         "offset" : 0,
         "parameter" : [{
@@ -189,9 +201,15 @@
       "status" : "active",
       "experimental" : true,
       "date" : "2024-07-25",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
       "expansion" : {
-        "identifier" : "urn:uuid:63e49ce0-d5c1-47d6-bb30-aa90fb445783",
-        "timestamp" : "2024-07-25T17:49:34+00:00",
+        "identifier" : "urn:uuid:a8c7ab69-9e51-4554-8a39-82486ce1b195",
+        "timestamp" : "2024-08-16T22:49:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -38,18 +40,35 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"6.5"}
-    h3,h4,h5,h6{--heading-prefix:"6.5"}</style>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7.6"}
+    h3,h4,h5,h6{--heading-prefix:"7.6"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">UCSDI5 Sandbox</span>
             <br/>
             <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
 
 
             </span>
@@ -78,6 +97,16 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="subscription.html">Subscription</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Guidance
@@ -126,7 +155,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -233,6 +262,11 @@
 
 
 
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Used by permission of HL7 International, all rights reserved Creative Commons License</p>
+</td>
+    </tr>
+
   </table>
 
 <p>
@@ -263,7 +297,7 @@ name, birthdate, and gender.</li>
 
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p><a name="l375">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+<p><a name="l433">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
 
 <p><strong>Each Patient Must Have:</strong></p>
 
@@ -290,7 +324,7 @@ for example
 
 <p><strong>Additional USCDI Requirements:</strong></p>
 
-<p><a name="l422">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Patient examples.</p>
+<p><a name="l480">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Patient examples.</p>
 
 <ol>
   <li>contact detail (e.g., a telephone number or an email address)</li>
@@ -317,7 +351,7 @@ for example
     <ul>
       <li>The Complex Extensions for Race and Ethnicity allow for one or more codes of which:
         <ul>
-          <li><a name="l517">​</a><a href="must-support.html">Must Support</a> at least one category code from the OMB Race and Ethnicity Categories</li>
+          <li><a name="l575">​</a><a href="must-support.html">Must Support</a> at least one category code from the OMB Race and Ethnicity Categories</li>
           <li><strong>MAY</strong> include additional detailed codes from CDC Race and Ethnicity Codes</li>
           <li><strong>SHALL</strong> include a text description</li>
         </ul>
@@ -327,9 +361,9 @@ for example
           <li>Although <code class="language-plaintext highlighter-rouge">Patient.deceased[x]</code> is marked as &#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5E8;&#x1D5E6;&#x1D5D6;&#x1D5D7;&#x1D5DC;, certifying systems are not required to support both, but <strong>SHALL</strong> support at least <code class="language-plaintext highlighter-rouge">Patient.deceasedDateTime</code></li>
         </ul>
       </li>
-      <li>Previous name is represented by setting <code class="language-plaintext highlighter-rouge">Patient.name.use</code> to “old” or providing an end date in <code class="language-plaintext highlighter-rouge">Patient.name.period</code> or doing both.</li>
+      <li>Previous name is represented by setting <code class="language-plaintext highlighter-rouge">Patient.name.use</code> to "old" or providing an end date in <code class="language-plaintext highlighter-rouge">Patient.name.period</code> or doing both.</li>
       <li>Suffix is represented using the <code class="language-plaintext highlighter-rouge">Patient.name.suffix</code> element.</li>
-      <li>Previous address is represented by setting <code class="language-plaintext highlighter-rouge">Patient.address.use</code> to “old” or providing an end date in <code class="language-plaintext highlighter-rouge">Patient.address.period</code> or doing both.</li>
+      <li>Previous address is represented by setting <code class="language-plaintext highlighter-rouge">Patient.address.use</code> to "old" or providing an end date in <code class="language-plaintext highlighter-rouge">Patient.address.period</code> or doing both.</li>
       <li><code class="language-plaintext highlighter-rouge">Communication.preferred</code> <strong>MAY</strong> designate a preferred language when multiple languages are represented.</li>
       <li>The <a href="Patient-example.html">Patient example</a> demonstrates how these elements are represented.</li>
     </ul>
@@ -343,12 +377,12 @@ for example
   </li>
   <li>*US Core aligns with the <a href="https://confluence.hl7.org/display/VOC/The+Gender+Harmony+Project">HL7 Gender Harmony Project</a> gender and sex information, which includes data elements, value sets, and code systems. Refer to it and the <a href="https://hl7.org/fhir/R5/patient.html#gender">FHIR R5 Patient Resource Gender and Sex Notes</a> for additional guidance and background for representing Administrative Gender, Sex Assigned at Birth, and Gender Identity. Note that:
     <ul>
-      <li>The US Core Sex Extension meets the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">U.S. Core Data for Interoperability (USCDI)</a> data element “sex”.</li>
+      <li>The US Core Sex Extension meets the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">U.S. Core Data for Interoperability (USCDI)</a> data element "sex".</li>
       <li>The US Core Birth Sex Extension is no longer a USCDI Requirement.</li>
     </ul>
   </li>
-  <li><a name="l644">​</a><a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a> and the FHIR Extension <a href="http://hl7.org/fhir/StructureDefinition/targetElement">Target Element</a> can document how individual patient demographic data was captured. See <a href="basic-provenance.html#element-level-provenance">Element Level Provenance</a> on the <a href="basic-provenance.html">Basic Provenance</a> page for more information.</li>
-  <li>The Patient’s Social Security Numbers <strong>SHOULD NOT</strong> be used as a patient identifier in <code class="language-plaintext highlighter-rouge">Patient.identifier.value</code>. There is increasing concern over using Social Security Numbers in healthcare due to the risk of identity theft and related issues. Many payers and providers have purged them from their systems and filtered them out of incoming data.</li>
+  <li><a name="l702">​</a><a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a> and the FHIR Extension <a href="http://hl7.org/fhir/StructureDefinition/targetElement">Target Element</a> can document how individual patient demographic data was captured. See <a href="basic-provenance.html#element-level-provenance">Element Level Provenance</a> on the <a href="basic-provenance.html">Basic Provenance</a> page for more information.</li>
+  <li>The Patient's Social Security Numbers <strong>SHOULD NOT</strong> be used as a patient identifier in <code class="language-plaintext highlighter-rouge">Patient.identifier.value</code>. There is increasing concern over using Social Security Numbers in healthcare due to the risk of identity theft and related issues. Many payers and providers have purged them from their systems and filtered them out of incoming data.</li>
 </ul>
 
 
@@ -3247,12 +3281,12 @@ Summary
 
 <hr/>
 
-<p><a name="l14044">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
+<p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l14052">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l14058">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l14064">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l14110">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l14116">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l14122">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -3261,7 +3295,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support both&nbsp;read Patient by <code class="language-plaintext highlighter-rouge">id</code> <strong>AND</strong> Patient search using the <strong><a name="l14091">​</a><a href="SearchParameter-us-core-patient-id.html"><code class="language-plaintext highlighter-rouge">_id</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support both&nbsp;read Patient by <code class="language-plaintext highlighter-rouge">id</code> <strong>AND</strong> Patient search using the <strong><a name="l14149">​</a><a href="SearchParameter-us-core-patient-id.html"><code class="language-plaintext highlighter-rouge">_id</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient/[id]</code> or <code class="language-plaintext highlighter-rouge">GET [base]/Patient?_id=[id]</code></p>
 
@@ -3275,7 +3309,7 @@ Summary
     <p><em>Implementation Notes:</em>  (<a href="http://hl7.org/fhir/R4/references.html#logical">how to search by the logical id</a> of the resource)</p>
   </li>
   <li>
-    <p><strong>SHALL</strong> support searching a patient by an identifier such as a MPI using the <strong><a name="l14131">​</a><a href="SearchParameter-us-core-patient-identifier.html"><code class="language-plaintext highlighter-rouge">identifier</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching a patient by an identifier such as a MPI using the <strong><a name="l14189">​</a><a href="SearchParameter-us-core-patient-identifier.html"><code class="language-plaintext highlighter-rouge">identifier</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?identifier={system|}[code]</code></p>
 
@@ -3288,7 +3322,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle containing any Patient resources matching the identifier (<a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
   <li>
-    <p><strong>SHALL</strong> support searching for a patient by a server defined search that matches any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text using the <strong><a name="l14165">​</a><a href="SearchParameter-us-core-patient-name.html"><code class="language-plaintext highlighter-rouge">name</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching for a patient by a server defined search that matches any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text using the <strong><a name="l14223">​</a><a href="SearchParameter-us-core-patient-name.html"><code class="language-plaintext highlighter-rouge">name</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?name=[string]</code></p>
 
@@ -3301,7 +3335,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Patient resources matching the name (<a href="http://hl7.org/fhir/R4/search.html#string">how to search by string</a>)</p>
   </li>
   <li>
-    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l14199">​</a><a href="SearchParameter-us-core-patient-birthdate.html"><code class="language-plaintext highlighter-rouge">birthdate</code></a></strong> and <strong><a name="l14204">​</a><a href="SearchParameter-us-core-patient-name.html"><code class="language-plaintext highlighter-rouge">name</code></a></strong> search parameters:</p>
+    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l14257">​</a><a href="SearchParameter-us-core-patient-birthdate.html"><code class="language-plaintext highlighter-rouge">birthdate</code></a></strong> and <strong><a name="l14262">​</a><a href="SearchParameter-us-core-patient-name.html"><code class="language-plaintext highlighter-rouge">name</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?birthdate=[date]&amp;name=[string]</code></p>
 
@@ -3314,7 +3348,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Patient resources matching the specified birthdate and name (<a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a> and <a href="http://hl7.org/fhir/R4/search.html#string">how to search by string</a>)</p>
   </li>
   <li>
-    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l14241">​</a><a href="SearchParameter-us-core-patient-gender.html"><code class="language-plaintext highlighter-rouge">gender</code></a></strong> and <strong><a name="l14246">​</a><a href="SearchParameter-us-core-patient-name.html"><code class="language-plaintext highlighter-rouge">name</code></a></strong> search parameters:</p>
+    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l14299">​</a><a href="SearchParameter-us-core-patient-gender.html"><code class="language-plaintext highlighter-rouge">gender</code></a></strong> and <strong><a name="l14304">​</a><a href="SearchParameter-us-core-patient-name.html"><code class="language-plaintext highlighter-rouge">name</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?gender={system|}[code]&amp;name=[string]</code></p>
 
@@ -3334,7 +3368,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l14295">​</a><a href="SearchParameter-us-core-patient-birthdate.html"><code class="language-plaintext highlighter-rouge">birthdate</code></a></strong> and <strong><a name="l14300">​</a><a href="SearchParameter-us-core-patient-family.html"><code class="language-plaintext highlighter-rouge">family</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l14353">​</a><a href="SearchParameter-us-core-patient-birthdate.html"><code class="language-plaintext highlighter-rouge">birthdate</code></a></strong> and <strong><a name="l14358">​</a><a href="SearchParameter-us-core-patient-family.html"><code class="language-plaintext highlighter-rouge">family</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?birthdate=[date]&amp;family=[string]</code></p>
 
@@ -3347,7 +3381,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Patient resources matching the specified birthdate and family (<a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a> and <a href="http://hl7.org/fhir/R4/search.html#string">how to search by string</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l14337">​</a><a href="SearchParameter-us-core-patient-death-date.html"><code class="language-plaintext highlighter-rouge">death-date</code></a></strong> and <strong><a name="l14342">​</a><a href="SearchParameter-us-core-patient-family.html"><code class="language-plaintext highlighter-rouge">family</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l14395">​</a><a href="SearchParameter-us-core-patient-death-date.html"><code class="language-plaintext highlighter-rouge">death-date</code></a></strong> and <strong><a name="l14400">​</a><a href="SearchParameter-us-core-patient-family.html"><code class="language-plaintext highlighter-rouge">family</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?death-date=[date]&amp;family=[string]</code></p>
 
@@ -3360,7 +3394,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Patient resources matching the specified death-date and family (<a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a> and <a href="http://hl7.org/fhir/R4/search.html#string">how to search by string</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l14379">​</a><a href="SearchParameter-us-core-patient-family.html"><code class="language-plaintext highlighter-rouge">family</code></a></strong> and <strong><a name="l14384">​</a><a href="SearchParameter-us-core-patient-gender.html"><code class="language-plaintext highlighter-rouge">gender</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l14437">​</a><a href="SearchParameter-us-core-patient-family.html"><code class="language-plaintext highlighter-rouge">family</code></a></strong> and <strong><a name="l14442">​</a><a href="SearchParameter-us-core-patient-gender.html"><code class="language-plaintext highlighter-rouge">gender</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Patient?family=[string]&amp;gender={system|}[code]</code></p>
 
@@ -3399,13 +3433,17 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 25, 2024 17:48+0000">2024-07-25</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 16, 2024 22:48+0000">2024-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -3416,7 +3454,7 @@ Summary
     <div class="container">    <!-- container -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
-  
+
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -3427,7 +3465,6 @@ Summary
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-  
     <!-- Analytics Below
   ================================================== -->
   </body>

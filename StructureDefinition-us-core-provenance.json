@@ -11,7 +11,7 @@
     "_valueInteger" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"
+        "valueCanonical" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"
       }]
     }
   },
@@ -21,7 +21,7 @@
     "_valueCode" : {
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"
+        "valueCanonical" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"
       }]
     }
   }],
@@ -31,14 +31,33 @@
   "title" : "US Core Provenance Profile",
   "status" : "active",
   "date" : "2023-10-17",
-  "publisher" : "Health eData Inc",
+  "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [{
+    "name" : "HL7 International / Cross-Group Projects",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cgp"
+    },
+    {
+      "system" : "email",
+      "value" : "cgp@lists.HL7.org"
+    }]
+  },
+  {
+    "name" : "Health eData Inc",
     "telecom" : [{
       "system" : "email",
       "value" : "mailto:ehaas@healthedatainc.com"
     }]
   }],
   "description" : "The US Core Provenance Profile inherits from the FHIR [Provenance](https://hl7.org/fhir/R4/provenance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Provenance resource to record, search, and fetch provenance information associated with a record. It covers the minimal (basic) information to support lineage of information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.   Before reviewing this profile, implementers are encouraged to read the Basic Provenance guidance page, which documents several key use cases, specifically, the organization responsible for the most recent action on the resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "Used by permission of HL7 International, all rights reserved Creative Commons License",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

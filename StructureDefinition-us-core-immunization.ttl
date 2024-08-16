@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-immunization> a fhir:StructureDefinition ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-immunization> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "us-core-immunization"] ; # 
   fhir:text [
@@ -19,8 +19,8 @@
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
          fhir:value [
-           fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"^^xsd:anyURI ;
-           fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox>
+           fhir:v "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox>
          ]
        ] )
      ]
@@ -31,8 +31,8 @@
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
          fhir:value [
-           fhir:v "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"^^xsd:anyURI ;
-           fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox>
+           fhir:v "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox>
          ]
        ] )
      ]
@@ -44,14 +44,31 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2023-10-17"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Health eData Inc"] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/cgp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "cgp@lists.HL7.org" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Health eData Inc" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "mailto:ehaas@healthedatainc.com" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Used by permission of HL7 International, all rights reserved Creative Commons License"] ; # 
   fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
   fhir:mapping ( [
      fhir:identity [ fhir:v "workflow" ] ;

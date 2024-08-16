@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="939d8ca5-c0bb-47e3-ad4b-5ab9f4c32c88"/>
+  <id value="1054c128-5ce6-42cd-9574-babe9c15299d"/>
   <meta>
-    <lastUpdated value="2024-07-25T17:48:18.205+00:00"/>
+    <lastUpdated value="2024-08-16T22:48:06.265+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Sep 2023</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Mar 2024</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -72,9 +72,15 @@
         <status value="active"/>
         <experimental value="false"/>
         <date value="2024-05-30"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:300a7f55-1bdb-4d9e-865d-654257998d00"/>
-          <timestamp value="2024-07-25T17:49:33+00:00"/>
+          <identifier value="urn:uuid:d8786a1c-a137-4dcf-9594-3f85489b8ffd"/>
+          <timestamp value="2024-08-16T22:49:41+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -95,11 +101,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20230901"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -247,9 +253,15 @@
         <status value="active"/>
         <experimental value="false"/>
         <date value="2024-05-14"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:07f56946-4c73-4c2c-85ce-6d72fda532ee"/>
-          <timestamp value="2024-07-25T17:49:34+00:00"/>
+          <identifier value="urn:uuid:8db53234-8d86-406a-bd49-5b3c6734be0c"/>
+          <timestamp value="2024-08-16T22:49:42+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -402,9 +414,15 @@
         <status value="active"/>
         <experimental value="true"/>
         <date value="2024-07-25"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:63e49ce0-d5c1-47d6-bb30-aa90fb445783"/>
-          <timestamp value="2024-07-25T17:49:34+00:00"/>
+          <identifier value="urn:uuid:a8c7ab69-9e51-4554-8a39-82486ce1b195"/>
+          <timestamp value="2024-08-16T22:49:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

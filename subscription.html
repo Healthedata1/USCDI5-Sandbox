@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Subscription - UCSDI5 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UCSDI5 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="subscription.html">Subscription</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='conformance.html'><b>Conformance</b></a></li><li><b>Subscription</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Subscription</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#polling-vs-subscriptions" id="markdown-toc-polling-vs-subscriptions">Polling vs Subscriptions</a></li>
+  <li><a href="#example-resource-based-transaction-using-subscription" id="markdown-toc-example-resource-based-transaction-using-subscription">Example resource Based Transaction using Subscription</a></li>
+</ul>
+
+</div>
+<h3 id="polling-vs-subscriptions">Polling vs Subscriptions</h3>
+
+<p>Checking for resource updates in FHIR can take one of two forms - subscription or polling, as described in the [Exchanging with polling] and [Exchanging with FHIR Subscription] sections of the FHIR R5 core specification. The [Subscription Capabilities] section provides general guidance on polling vs. subscription.</p>
+
+<h4 id="polling">Polling</h4>
+
+<p>Polling is a mechanism for conveying new data to a Data Consumer as (or shortly after) the data is created or updated without requiring the Data Source to be aware of the specific needs of the Data Consumer. The Data Consumer repeatedly queries the Data Source to see if there is new data. For example, if a Data Consumer wants to know a patient's vaccination status they could periodically Query for their Immunizations using the <code class="language-plaintext highlighter-rouge">_lastUpdated</code> search parameter (see <a href="https://hl7.org/fhir/us/core/general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a> for additional guidance and limitations).</p>
+
+<p>Data Consumers can poll for a single resource or across several resources. The frequency must be often enough that the time between when the relevant data is created or updated and when the Data Consumer receives it is sufficiently short for the Data Consumer's needs. However, it must be infrequent enough that the Data Source's resources are not over-taxed by the repeated query.
+<!-- Data Consumers **SHOULD** perform this operation in an automated/background manner after 1 minute to return automated responses and no more than every 5 minutes for the first 30 minutes and no more frequently than once every hour after that. --></p>
+
+<h4 id="subscription">Subscription</h4>
+
+<p>Subscription is a mechanism designed to allow clients to request notifications when an event occurs or data changes. It is an active notification system; a FHIR server actively sends notifications as changes occur. The Data Consumer subscribes to the Data Source's Server [base]/Subscription endpoint for notifications when any resource that they created is updated.</p>
+
+<p>Servers who support Subscription <strong>SHALL</strong> comply with the [Subscription R5 Backport Implementation Guide].  This topic-based subscription model supersedes the query-defined subscription model defined in FHIR R4.  Systems <strong>SHALL</strong> follow the conformance requirements specified in the Subscription R5 Backport Implementation Guide and the US Core-specific conformance requirements listed below.</p>
+
+<!-- In the subscription mechanism, instead of the Data Consumer regularly querying the Data Source to see if there are changes to existing resources, the Data Consumer creates a Subscription instance on the Data Source server. (It's also possible for the data source to configure subscriptions for clients; in other words, it can create subscriptions administratively. However, these implementation details are out of scope for this guide.) The Subscription indicates that the Data Consumer wants to be notified about changes to resources and provides filters describing what subset of resources the Data Consumer is interested in. The Data Source will then push notifications when there are new or updated resources and the Data Consumer can then query for the specific resources that have changed.
+
+Servers who support Subscription **SHALL** comply with the [Subscription R5 Backport Implementation Guide] and the Da Vinci Health Record Exchange (HRex) [Subscription requirements](https://build.fhir.org/ig/HL7/davinci-ehrx/resource.html#subscription) for subscribing to resource updates. These implementation guides "pre-adopt" the FHIR R5 topic-based subscription approach in R4 implementations since most U.S. EHR vendors have agreed to support it. -->
+
+<h4 id="subscription-topics">Subscription Topics</h4>
+
+<p>Subscription topics specify an event or change in data that is used to trigger a notification. Topic definitions also include the boundaries around what a Subscription can filter for and additional resources that MAY be included with notifications. The [SubscriptionTopic] resource, which is available in FHIR 4B and later versions, is used to define these topics conceptually and formally in a computable fashion.</p>
+
+<p class="bg-warning">Note that supporting the FHIR SubscriptionTopic resource or the equivalent Basic resource versions described in the R5 Backport Implementation Guides is NOT required by this guide to support subscriptions.</p>
+
+<p>The table below summarizes the US Core subscription topic requirements (<strong>SHALL</strong>)<!-- and best practice recommendations (**SHOULD**) --> to allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles. The events include creation, updates, and deletion interactions of resources.  The US Core topic subscription topic include a trigger for a resource type and have a filter to allow Clients to restrict notifications to a particular patient.  Servers <strong>MAY</strong> support other subscription topics including <em>derived</em> versions of these US Core topics adding additional triggers or filters to them as needed for their use cases.</p>
+
+<h5 id="the-following-subscription-topics-shall-vs-should--be-supported">The Following Subscription Topics <strong>SHALL</strong> (vs <strong>SHOULD</strong> ?) Be Supported</h5>
+
+<!-- US Core Laboratory Result SubscriptionTopic
+US Core Laboratory Report SubscriptionTopic
+US Core Problems and Health Concerns SubscriptionTopic
+US Core Encounter SubscriptionTopic
+US Core Immunization SubscriptionTopic -->
+
+<!-- This liquid script creates a US Core subscription topic requirements table using input data from input/data/scopes.csv
+include parameters: conformance='SHALL'|'SHOULD'|'MAY'see below for how used and crud='cruds'<<< not used -->
+
+<table class="grid">
+<thead>
+<tr>
+<th>Subscription Topic</th>
+<th>Subscription Topic Canonical URL</th>
+<th>Resource Type</th>
+<th>US Core Profile</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<p>http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-problems-and-health-concerns</p>
+
+<!-- 
+###### The Following Subscription Topics **SHOULD** Be Supported
+###### The Following Subscription Topics **SHOULD** Be Supported
+-->
+
+<p class="stu-note">Based upon additional testing in future versions, we may update these SubscriptionTopics to add additional filter based on the on US Core required search parameters, and add other US Core SubscriptionTopic to this list.</p>
+
+<h4 id="discovery">Discovery</h4>
+
+<p>The R5 Backport Implementation Guide defines the [CapabilityStatement SubscriptionTopic Canonical] extension to allow US Core Data Consumers to discover US Core Data Sources' supported subscription topics. This extension enables servers to advertise the canonical URLs of subscription topics available to clients and allows clients to see the list of supported topics on a server. If a Data Source supports subscriptions:</p>
+
+<ul>
+  <li>The Data Source <strong>SHALL</strong> support discovery of the US Core resource Update Subscription Topic canonical URL</li>
+  <li>The Data Source <strong>SHOULD</strong> support discovery using the CapabilityStatement SubscriptionTopic Canonical extension and <strong>MAY</strong> support discovery by some other method.</li>
+</ul>
+
+<p>The example CapabilityStatement snippet shows a Data Source advertising the US Core resource Update Subscription Topic canonical URL with the CapabilityStatement SubscriptionTopic Canonical extension:</p>
+
+<!--  {% include examplebutton_default.html example="advertise-topic.md" b_title = 'Click Here To See the US Core Server CapabilityStatement Advertising the US Core Immunization Subscription Topic' %}
+  -->
+
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#todo1" aria-expanded="false" aria-controls="collapseExample">
+    Click Here To See an Example Subscription to the US Core Immunization Subscription Topic
+  </button>
+</p>
+
+<div class="collapse" id="todo1">
+  <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+
+    <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+    <div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: TODO</strong></figcaption>
+  <img src="todo.png" class="img-responsive img-rounded center-block" alt="todo.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+  </div>
+</div>
+<p><br /></p>
+
+<h4 id="subscription-resource">Subscription Resource</h4>
+
+<p>To dynamically request notifications for US Core resource updates (and other topics the Data Source supports), Data Consumers RESTfully POST a Subscription resource with the Data Source. The Subscription resource <strong>SHALL</strong> conform to the [R4/B Topic-Based Subscription Profile].</p>
+
+<div class="bg-info">
+  <p>Subscriptions need not be created dynamically by the Data Consumer. It's also possible for the Data Source to configure subscriptions for clients, in other words, create subscriptions administratively. However, these implementation details are out of scope for this guide.</p>
+</div>
+
+<h5 id="channel-types">Channel Types</h5>
+
+<p>The subscription requires information about where to send notifications, such as the type of channel and the URL that describes the endpoint.</p>
+
+<h5 id="payload-types">Payload Types</h5>
+
+<p>When specifying the contents of a notification, there are three options available: "empty," "id-only," and "full-resource." Because the Data Source can not guarantee who has access to the nominated subscription endpoint, the notification typically uses "id-only" to return the resource resource ID. By omitting the payload, the Data Consumer is forced to authenticate before accessing the data using a FHIR RESTful read or search, which mitigates privacy and security risks for the Data Source.</p>
+
+<ul>
+  <li>The Data Consumer <strong>SHALL</strong> use the canonical URL in the <code class="language-plaintext highlighter-rouge">Subscription.criteria</code> element to subscribe to the Data Source's Server [base]/Subscription endpoint'</li>
+  <li>The Data Source <strong>SHOULD</strong> support the "rest-hook" channel and <strong>MAY</strong> support other channel types.</li>
+  <li>The Data Source <strong>SHALL</strong> support ""id-only" payload type and <strong>MAY</strong> support other payload types.</li>
+</ul>
+
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#todo2" aria-expanded="false" aria-controls="collapseExample">
+    Click Here To See an Example Subscription to the US Core Immunization Subscription Topic
+  </button>
+</p>
+
+<div class="collapse" id="todo2">
+  <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+
+    <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+    <div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: TODO</strong></figcaption>
+  <img src="todo.png" class="img-responsive img-rounded center-block" alt="todo.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+  </div>
+</div>
+<p><br /></p>
+
+<h5 id="subscription-notifications">Subscription Notifications</h5>
+
+<p>For active US Core event notification subscriptions, when that clinical event is updated, the Data Source <strong>SHALL</strong> trigger a Subscription Notification to the endpoint supplied by the Data Consumer. This notification is a Bundle resource and <strong>SHALL</strong> conform to the [R4 Topic-Based Subscription Notification Bundle]. The first entry contains the subscription's status information, represented by a Parameters resource. For the "id-only" payload type, resource IDs are listed in the "focus" part parameter.</p>
+
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#todo3" aria-expanded="false" aria-controls="collapseExample">
+    Click Here To See an Example Subscription Notification to the US Core Immunization Subscription Topic
+  </button>
+</p>
+
+<div class="collapse" id="todo3">
+  <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+
+    <!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+    <div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Figure 1: TODO</strong></figcaption>
+  <img src="todo.png" class="img-responsive img-rounded center-block" alt="todo.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+  </div>
+</div>
+<p><br /></p>
+
+<h3 id="example-resource-based-transaction-using-subscription">Example resource Based Transaction using Subscription</h3>
+
+<p>In this example, the patient refuses a booster vaccination which triggers a subscription notification to a subscriber.</p>
+
+<ol>
+  <li>The Client (Data Consumer) <em>subscribes</em> to the US Core Immunization Subscription Topic to get notifications when there is an immunization event for the patient.</li>
+  <li>In this example, the clinical event is a patient refusing a booster vaccination.</li>
+  <li>The event triggers, the EHR (Data Source) to send notification to the subscriber referencing the id of the US Core Immunization resource.</li>
+  <li>When notified, the Client can fetch the patient's Immunization resource referenced in the notification.</li>
+</ol>
+
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#immunization-subscription-scenario" aria-expanded="false" aria-controls="collapseExample">
+    Click Here To See Transaction using Subscription
+  </button>
+</p>
+
+<div class="collapse" id="immunization-subscription-scenario">
+  <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+
+    <h6 id="step-1---subscribe-to-us-core-immunization-subscription-topic">Step 1 - Subscribe to US Core Immunization Subscription Topic</h6>
+
+    <p>The Client (Data Consumer) <em>subscribes</em> to the EHR's US Core Immunization Subscription Topic to get notifications when there is an immunization event for a patient. The subscription resource uses the canonical URL <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization</code>. The EHR accepts the Subscription and returns it in the response body with an "active" status.</p>
+
+    <p>This operation is done once. To unsubscribe, the Client deletes the Subscription from the server or nominates a fixed end date, and the server automatically deletes it at the specified time.</p>
+
+    <p><strong>Request</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Post [base]/Subscription
+
+</code></pre></div>    </div>
+
+    <p><strong>Request Headers</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Accept: application/fhir+json
+Content-Type: application/fhir+json
+...(other headers)
+</code></pre></div>    </div>
+
+    <p><strong>Request Body</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;!--  {% include_relative Subscription-cdex-task-inline-scenario1-subscription-requested.json %}  --&gt;
+
+...Example Subscription ...
+
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+HTTP/1.1 200 OK
+
+Server: CDEX Example Server
+
+Location: http://example.org/FHIR/Subscription/cdex-example1-query-subscription/_history/1
+
+...(other headers)
+
+</code></pre></div>    </div>
+
+    <p><strong>Response Body</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;!--  {% include_relative Subscription-cdex-task-inline-scenario1-subscription-active.json %}  --&gt;
+
+...Subscription...
+
+</code></pre></div>    </div>
+
+    <h6 id="step-2---clinical-event-triggers-notification">Step 2 - Clinical Event Triggers Notification</h6>
+
+    <p>…clinical event…</p>
+
+    <h6 id="step-3---receive-notification">Step 3 - Receive Notification</h6>
+
+    <p>In this example, the clinical event is a patient refusing a booster vaccination which triggers a notification to the Client. As defined in the [Subscription R5 Backport Implementation Guide], the notification is a <em>history Bundle</em>. The first entry of the bundle is a Parameters resource that communicates the subscription status information. In addition to the subscription status information, Task IDs are listed in the "focus" part parameter.</p>
+
+    <p><strong>Post From EHR</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+Post http://example.org/FHIR/Client/immunization-watch
+
+</code></pre></div>    </div>
+
+    <p><strong>Request Headers</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Accept: application/fhir+json
+Content-Type: application/fhir+json
+...(other headers)
+</code></pre></div>    </div>
+
+    <p><strong>Request Body</strong></p>
+
+    <!--  ~~~
+{% include_relative Bundle-cdex-task-inline-scenario1-subscription-notification.json %}
+~~~  -->
+    <p>… request body …</p>
+
+    <p><strong>Response Headers</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
+Content-Type: application/fhir+json;charset=utf-8
+...(other headers)
+</code></pre></div>    </div>
+
+    <h6 id="step-4---fetch-task">Step 4 - Fetch Task</h6>
+
+    <p>When notified, the Client can fetch the patient's Immunization resource referenced in the notification using a FHIR RESTful <code class="language-plaintext highlighter-rouge">GET</code> interaction.</p>
+
+    <p><strong>Request</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+GET [base]Immunization/immunization-example2
+
+</code></pre></div>    </div>
+
+    <p><strong>Request Headers</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Accept: application/fhir+json
+Content-Type: application/fhir+json
+...(other headers)
+</code></pre></div>    </div>
+
+    <p><strong>Response Headers</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
+Content-Type: application/fhir+json;charset=utf-8
+...(other headers)
+</code></pre></div>    </div>
+
+    <p><strong>Response Body</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;!--  {% include_relative Task-cdex-task-example2.json %}  --&gt;
+... response body ...
+
+</code></pre></div>    </div>
+
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 16, 2024 22:48+0000">2024-08-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

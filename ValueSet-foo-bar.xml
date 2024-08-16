@@ -8,7 +8,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
     <valueCode value="informative">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
-        <valueCanonical value="http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox"/>
+        <valueCanonical value="http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox"/>
       </extension>
     </valueCode>
   </extension>
@@ -19,14 +19,32 @@
   <status value="active"/>
   <experimental value="true"/>
   <date value="2024-07-25"/>
-  <publisher value="Health eData Inc"/>
+  <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
+    <name value="HL7 International / Cross-Group Projects"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cgp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgp@lists.HL7.org"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Health eData Inc"/>
     <telecom>
       <system value="email"/>
       <value value="mailto:ehaas@healthedatainc.com"/>
     </telecom>
   </contact>
   <description value="Foo Bar Test ValueSet"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <copyright value="All rights reserved ... Don't mess with Greatness!!!"/>
   <compose>
     <include>

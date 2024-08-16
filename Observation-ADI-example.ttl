@@ -7,7 +7,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/Observation/ADI-example> a fhir:Observation ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/Observation/ADI-example> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ADI-example"] ; # 
   fhir:meta [
@@ -37,17 +37,17 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/DocumentReference/example-patient-adi> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> ;
      fhir:reference [ fhir:v "DocumentReference/example-patient-adi" ] ;
      fhir:display [ fhir:v "Person-Authored Advance Directive" ]
   ] ) ; # 
   fhir:effective [ fhir:v "2024-05-16T01:06:06.393000+00:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ]
   ] ) ; # 
   fhir:value [
@@ -59,6 +59,10 @@
        fhir:display [ fhir:v "Active advance directive (finding)" ]
      ] )
   ] . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

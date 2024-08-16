@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -38,18 +40,35 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"6.2"}
-    h3,h4,h5,h6{--heading-prefix:"6.2"}</style>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"7.3"}
+    h3,h4,h5,h6{--heading-prefix:"7.3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
 
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">UCSDI5 Sandbox</span>
             <br/>
             <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
 
 
             </span>
@@ -78,6 +97,16 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="subscription.html">Subscription</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Guidance
@@ -126,7 +155,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://www.fhir.org/guides/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -233,6 +262,11 @@
 
 
 
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Used by permission of HL7 International, all rights reserved Creative Commons License</p>
+</td>
+    </tr>
+
   </table>
 
 <p>
@@ -256,13 +290,13 @@ profile:</p>
 
 <ul>
   <li>Fetching dispense statuses for medications that have been prescribed to a particular patient</li>
-  <li><a name="l362">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a> dispense statuses for medications that have been prescribed for a particular
+  <li><a name="l420">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a> dispense statuses for medications that have been prescribed for a particular
  patient</li>
 </ul>
 
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p><a name="l371">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+<p><a name="l429">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
 
 <p><strong>Each MedicationDispense Must Have:</strong></p>
 
@@ -297,7 +331,7 @@ profile:</p>
     <ul>
       <li>When using a code, RXNorm concepts are used. They are defined as an <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a> binding to <code class="language-plaintext highlighter-rouge">.medicationCodeableConcept</code>. USCDI recommends the <a href="https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory">National Drug Codes (NDC)</a> as an <em>optional</em> terminology. They can be supplied as an additional coding element.
         <ul>
-          <li>Systems that primarily rely on NDC codes instead of RxNorm to represent medications can use the National Library of Medicine’s (NLM) <a href="https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/ndc_rxcui/NDC_RXCUI_DrugName.html">NDC to RxNorm mappings</a> to aid in translations.</li>
+          <li>Systems that primarily rely on NDC codes instead of RxNorm to represent medications can use the National Library of Medicine's (NLM) <a href="https://www.nlm.nih.gov/research/umls/user_education/quick_tours/RxNorm/ndc_rxcui/NDC_RXCUI_DrugName.html">NDC to RxNorm mappings</a> to aid in translations.</li>
         </ul>
       </li>
       <li>When referencing a Medication resource in <code class="language-plaintext highlighter-rouge">.medicationReference</code>, the resource may be <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> or an external resource.</li>
@@ -2642,19 +2676,19 @@ Summary
 
 <hr/>
 
-<p><a name="l10696">​</a>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile’s information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
+<p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l10704">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l10710">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l10716">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l10762">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l10768">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l10774">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching using the <strong><a name="l10734">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching using the <strong><a name="l10792">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
 
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
@@ -2678,7 +2712,7 @@ Summary
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10792">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10797">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10850">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10855">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
@@ -2695,7 +2729,7 @@ Summary
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all MedicationDispense resources for the specified patient that have a given dispense status (e.g., dispensed, not dispensed)). (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10857">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10862">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> and <strong><a name="l10867">​</a><a href="SearchParameter-us-core-medicationdispense-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10915">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10920">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> and <strong><a name="l10925">​</a><a href="SearchParameter-us-core-medicationdispense-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
@@ -2740,13 +2774,17 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="mailto:ehaas@healthedatainc.com">Health eData Inc</a>.  Package uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 25, 2024 17:48+0000">2024-07-25</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 16, 2024 22:48+0000">2024-08-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -2757,7 +2795,7 @@ Summary
     <div class="container">    <!-- container -->
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
-  
+
     <!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -2768,7 +2806,6 @@ Summary
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-  
     <!-- Analytics Below
   ================================================== -->
   </body>

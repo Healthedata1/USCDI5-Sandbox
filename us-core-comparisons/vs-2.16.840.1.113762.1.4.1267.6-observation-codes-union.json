@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b7e832e2-fb39-4a92-9a3b-ca9ea115b617-86",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b7e832e2-fb39-4a92-9a3b-ca9ea115b617-86",
+  "name" : "UnionSmokingStatusTypeAndLOINCCodes",
+  "title" : "Union of Smoking Status Type And LOINC Codes",
+  "status" : "active",
+  "date" : "2024-08-16T22:48:39+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.4"]
+    },
+    {
+      "valueSet" : ["http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.5"]
+    },
+    {
+      "system" : "http://loinc.org"
+    }]
+  }
+}

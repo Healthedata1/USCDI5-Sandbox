@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> a fhir:Patient ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example"] ; # 
   fhir:meta [

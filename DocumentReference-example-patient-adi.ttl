@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:DocumentReference ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:DocumentReference ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-patient-adi"] ; # 
   fhir:meta [
@@ -45,7 +45,7 @@
      fhir:text [ fhir:v "Clinical Note" ]
   ] ) ; # 
   fhir:subject [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ]
   ] ; # 
   fhir:content ( [
@@ -57,10 +57,14 @@
   ] ) ; # 
   fhir:context [
      fhir:encounter ( [
-       fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Encounter/example-1> ;
+       fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> ;
        fhir:reference [ fhir:v "Encounter/example-1" ]
      ] )
   ] . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

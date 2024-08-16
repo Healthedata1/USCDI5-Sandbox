@@ -1,6 +1,6 @@
 {
   "version" : "0.0.0",
-  "date" : "20240725174715",
+  "date" : "20240816224639",
   "notForPublication" : true,
-  "name" : "uscdi5-sandbox.r4"
+  "name" : "hl7.fhir.us.uscdi5-sandbox.r4"
 }

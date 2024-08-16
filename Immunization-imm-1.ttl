@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://www.fhir.org/guides/uscdi5-sandbox/Immunization/imm-1> a fhir:Immunization ;
+<http://hl7.org/fhir/us/uscdi5-sandbox/Immunization/imm-1> a fhir:Immunization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "imm-1"] ; # 
   fhir:meta [
@@ -39,23 +39,29 @@
      fhir:text [ fhir:v "influenza, high-dose, quadrivalent" ]
   ] ; # 
   fhir:patient [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Patient/example> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
      fhir:reference [ fhir:v "Patient/example" ] ;
      fhir:display [ fhir:v "Amy Shaw" ]
   ] ; # 
   fhir:encounter [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Encounter/example-1> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> ;
      fhir:reference [ fhir:v "Encounter/example-1" ] ;
      fhir:display [ fhir:v "Office Visit" ]
   ] ; # 
   fhir:occurrence [ fhir:v "2020-11-19T12:46:57-08:00"^^xsd:dateTime] ; # 
   fhir:primarySource [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:location [
-     fhir:link <http://www.fhir.org/guides/uscdi5-sandbox/Location/hospital> ;
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Location/hospital> ;
      fhir:reference [ fhir:v "Location/hospital" ] ;
      fhir:display [ fhir:v "Holy Family Hospital" ]
   ] ; # 
   fhir:lotNumber [ fhir:v "AAJN11K"] . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Location/hospital> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 
