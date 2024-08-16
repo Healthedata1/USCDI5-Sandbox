@@ -1,0 +1,70 @@
+09:59:06 From Eric Haas to Everyone:
+	Link to notes: https://hackmd.io/@erichaas/rk0FJ7wKp/%2Fr-VtK_20Rw25Vf81p5Lyvg
+10:01:36 From Juliet Rubini (ICF) to Everyone:
+	Link to notes: https://hackmd.io/@erichaas/rk0FJ7wKp/%2Fr-VtK_20Rw25Vf81p5Lyvg
+10:04:33 From Juliet Rubini (ICF) to Everyone:
+	Link to notes: https://hackmd.io/@erichaas/rk0FJ7wKp/%2Fr-VtK_20Rw25Vf81p5Lyvg
+10:11:15 From Juliet Rubini (ICF) to Everyone:
+	can we define 'small-p'?
+10:12:08 From Juliet Rubini (ICF) to Everyone:
+	perfect - thanks
+10:13:42 From Floyd Eisenberg to Everyone:
+	Hand raised (can’t find the icon)
+10:14:11 From Alex Kontur (ASTP/ONC) to Everyone:
+	Note the USCDI definition of Author Role: Category of actor that participated in the creation or revision of data.
+	Usage note: The source of the information can be used to form assessments about its quality, reliability, trustworthiness, or can indicate where to go to determine the origins of the information.
+	Examples include but are not limited to provider, patient, family member, and device.
+10:16:57 From Alex Kontur (ASTP/ONC) to Everyone:
+	Replying to "can we define 'small..."
+	
+	There is some discussion about this in the Provenance resource itself: https://build.fhir.org/provenance.html#bnr
+10:36:27 From Rita Torkzadeh to Everyone:
+	Are you including non-prescribed/dispensed patient report OTC items?
+10:36:59 From Eric Haas to Everyone:
+	“Are you including non-prescribed/dispensed patient report OTC items?”  Yes
+10:37:13 From Rita Torkzadeh to Everyone:
+	Reacted to "“Are you including n..." with 👍🏻
+10:42:46 From Gay Dolin to Everyone:
+	https://www.goodrx.com/hcp-articles/pharmacists/prescriber-authority-for-pharmacists
+10:43:54 From Linda Michaelsen (Optum) to Everyone:
+	You missed a great opportunity Eric, you should have said, "we've come to a fork in the road, and we are taking it" :)
+10:44:06 From Floyd Eisenberg to Everyone:
+	Reacted to "You missed a great o..." with 😃
+10:45:05 From Al Taylor (ASTP/ONC) to Everyone:
+	or bend the fork into a circle and try to eat with it
+10:45:20 From Floyd Eisenberg to Everyone:
+	FHIR’s 5 Ws is a great place to start. I’ve used it before
+10:47:20 From Jason Vogt to Everyone:
+	We gotta work on Eric's connotations, cheat.. steal...
+10:47:38 From Floyd Eisenberg to Everyone:
+	Reacted to "We gotta work on Eri..." with 🧐
+10:48:40 From Juliet Rubini (ICF) to Everyone:
+	Replying to "We gotta work on Eri..."
+	
+	borrowed or reproduced with permission
+10:49:11 From Al Taylor (ASTP/ONC) to Everyone:
+	Replying to "We gotta work on Eri..."
+	
+	appropriate (v.)
+10:50:17 From Floyd Eisenberg to Everyone:
+	Raised hand
+10:50:40 From Jason Vogt to Everyone:
+	Reacted to "Raised hand" with ❓
+10:55:31 From Floyd Eisenberg to Everyone:
+	Replying to "Raised hand"
+	
+	Thanks - just wanted to get clarification from Lisa
+10:56:19 From Floyd Eisenberg to Everyone:
+	DocumentReference has authenticator
+11:00:17 From Rob McClure [MD Partners] to Everyone:
+	When will we do SPCU?
+11:01:16 From Lisa Nelson (MyDirectives/ADVault) to Everyone:
+	Jason/Eric - I don't agree that Custodian of DocumentReference is the Organization who ingested the document.
+11:01:23 From Lisa Nelson (MyDirectives/ADVault) to Everyone:
+	We need to talk about that further.
+11:01:25 From Eric Haas to Everyone:
+	https://hackmd.io/@erichaas/rk0FJ7wKp/%2FfaojF1fRTWKG9FLNMHRLrA
+11:01:45 From Jason Vogt to Everyone:
+	Replying to "Jason/Eric - I don't..."
+	
+	Its the fhir definition

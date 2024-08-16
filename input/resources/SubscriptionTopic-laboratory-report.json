@@ -1,0 +1,29 @@
+{
+    "resourceType": "SubscriptionTopic",
+    "id": "us-core-laboratory-report",
+    "url": "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-report",
+    "version": "0.0.0",
+    "name": "USCoreLaboratoryReportSubscriptionTopic",
+    "title": "US Core Laboratory Report Subscription Topic",
+    "status": "active",
+    "date": "2024-08-15",
+    "description": "This topic allows subscribers to receive notifications for Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.",
+    "trigger": [
+        {
+            "description": "Trigger on Laboratory Report events",
+            "resource": "DiagnosticReport",
+            "supportedInteraction": [
+                "create",
+                "update",
+                "delete"
+            ],
+            "fhirPathCriteria": "%previous.empty() or %current.empty() or %previous != %current",
+            "canFilterBy": [
+                {
+                    "description": "Filter by patient",
+                    "filterParameter": "patient"
+                }
+            ]
+        }
+    ]
+}
