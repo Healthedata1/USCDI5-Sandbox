@@ -59,8 +59,10 @@ The R5 Backport Implementation Guide defines the [CapabilityStatement Subscripti
 
 The example CapabilityStatement snippet shows a Data Source advertising the US Core resource Update Subscription Topic canonical URL with the CapabilityStatement SubscriptionTopic Canonical extension:
 
-{% include examplebutton_default.html example="advertise-topic.md" b_title = 'Click Here To See CapabilityStatement Advertising the US Core resource Update Subscription Topic' %}
+<!-- {% raw %} {% include examplebutton_default.html example="advertise-topic.md" b_title = 'Click Here To See the US Core Server CapabilityStatement Advertising the US Core Immunization Subscription Topic' %}
+ {% endraw %} -->
 
+{% include examplebutton_default.html example="todo1.md" b_title = 'Click Here To See an Example Subscription to the US Core Immunization Subscription Topic' %}
 
 #### Subscription Resource
 
@@ -82,9 +84,15 @@ When specifying the contents of a notification, there are three options availabl
 - The Data Source **SHOULD** support the "rest-hook" channel and **MAY** support other channel types.
 - The Data Source **SHALL** support ""id-only" payload type and **MAY** support other payload types.
 
+{% include examplebutton_default.html example="todo2.md" b_title = 'Click Here To See an Example Subscription to the US Core Immunization Subscription Topic' %}
+
 ##### Subscription Notifications
 
 For active US Core event notification subscriptions, when that clinical event is updated, the Data Source **SHALL** trigger a Subscription Notification to the endpoint supplied by the Data Consumer. This notification is a Bundle resource and **SHALL** conform to the [R4 Topic-Based Subscription Notification Bundle]. The first entry contains the subscription's status information, represented by a Parameters resource. For the "id-only" payload type, resource IDs are listed in the "focus" part parameter.
+
+
+{% include examplebutton_default.html example="todo3.md" b_title = 'Click Here To See an Example Subscription Notification to the US Core Immunization Subscription Topic' %}
+
 
 
 ### Example resource Based Transaction using Subscription
