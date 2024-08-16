@@ -28,9 +28,9 @@ Subscription topics specify an event or change in data that is used to trigger a
 Note that supporting the FHIR SubscriptionTopic resource or the equivalent Basic resource versions described in the R5 Backport Implementation Guides is NOT required by this guide to support subscriptions.
 {:.bg-warning}
 
-The table below summarizes the US Core subscription topic requirements (**SHALL**)<!-- and best practice recommendations (**SHOULD**) --> to allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles. The events include creation, updates, and deletion interactions of resources.  Servers **MAY** support other subscription topics including *derived* versions of these US Core topics adding additional triggers or filters to them as needed for their use cases.
+The table below summarizes the US Core subscription topic requirements (**SHALL**)<!-- and best practice recommendations (**SHOULD**) --> to allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles. The events include creation, updates, and deletion interactions of resources.  The US Core topic subscription topic include a trigger for a resource type and have a filter to allow Clients to restrict notifications to a particular patient.  Servers **MAY** support other subscription topics including *derived* versions of these US Core topics adding additional triggers or filters to them as needed for their use cases.
 
-##### The Following Subscription Topics **SHALL** Be Supported
+##### The Following Subscription Topics **SHALL** (vs **SHOULD** ?) Be Supported
 
 <!-- US Core Laboratory Result SubscriptionTopic
 US Core Laboratory Report SubscriptionTopic
@@ -47,7 +47,7 @@ US Core Immunization SubscriptionTopic -->
 ###### The Following Subscription Topics **SHOULD** Be Supported
 -->
 
-Based upon additional testing, we intend to add other US Core Profiles to this list in the next version of US Core
+Based upon additional testing in future versions, we may update these SubscriptionTopics to add additional filter based on the on US Core required search parameters, and add other US Core SubscriptionTopic to this list.
 {:.stu-note}
 
 #### Discovery

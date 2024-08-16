@@ -1,6 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "uscdi5-sandbox",
+  "id": "hl7.fhir.us.uscdi5-sandbox",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
@@ -11,14 +11,28 @@
       "valueInteger": 0
     }
   ],
-  "url": "http://www.fhir.org/guides/uscdi5-sandbox/ImplementationGuide/uscdi5-sandbox",
+  "url": "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox",
   "version": "0.0.0",
   "name": "UCSDI5Sandbox",
   "title": "UCSDI5 Sandbox",
   "status": "active",
-  "publisher": "Health eData Inc",
+  "publisher": "HL7 International / Cross-Group Projects",
   "contact": [
     {
+      "name": "HL7 International / Cross-Group Projects",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/cgp"
+        },
+        {
+          "system": "email",
+          "value": "cgp@lists.HL7.org"
+        }
+      ]
+    },
+    {
+      "name": "Health eData Inc",
       "telecom": [
         {
           "system": "email",
@@ -27,8 +41,19 @@
       ]
     }
   ],
-  "description": "This is a sandbox IG for drafting USCDI5 profiles,examples and documentation of US Core for Version 8",
-  "packageId": "uscdi5-sandbox",
+  "description": "This is a sandbox IG for drafting USCDI5 profiles, examples and documentation of US Core for Version 8",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International, all rights reserved Creative Commons License",
+  "packageId": "hl7.fhir.us.uscdi5-sandbox",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -69,6 +94,12 @@
       "uri": "http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core",
       "version": "3.0.0",
       "id": "hl7_cda_us_ccda"
+    },
+    {
+      "id": "backport",
+      "packageId": "hl7.fhir.uv.subscriptions-backport.r4",
+      "uri": "http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport",
+      "version": "1.1.0"
     }
   ],
   "definition": {
@@ -172,7 +203,7 @@
         "reference": {
           "reference": "SubscriptionTopic/us-core-encounter"
         },
-        "description": "This topic allows subscribers to receive notifications for Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions.",
+        "description": "This topic allows subscribers to receive notifications for the US Core Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions.",
         "exampleBoolean": false,
         "name": "US Core Encounter Subscription Topic"
       },
@@ -188,7 +219,7 @@
         "reference": {
           "reference": "SubscriptionTopic/us-core-immunization"
         },
-        "description": "This topic allows subscribers to receive notifications for Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions.",
+        "description": "This topic allows subscribers to receive notifications for the US Core Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions.",
         "exampleBoolean": false,
         "name": "US Core Immunization Subscription Topic"
       },
@@ -196,7 +227,7 @@
         "reference": {
           "reference": "SubscriptionTopic/us-core-laboratory-report"
         },
-        "description": "This topic allows subscribers to receive notifications for Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.",
+        "description": "This topic allows subscribers to receive notifications for the US Core Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.",
         "exampleBoolean": false,
         "name": "US Core Laboratory Report Subscription Topic"
       },
@@ -204,7 +235,7 @@
         "reference": {
           "reference": "SubscriptionTopic/us-core-laboratory-result"
         },
-        "description": "This topic allows subscribers to receive notifications for Laboratory Result events represented by US Core US Core Laboratory Result Observation Profile, including create, update, and delete interactions.",
+        "description": "This topic allows subscribers to receive notifications for the US Core Laboratory Result events represented by US Core US Core Laboratory Result Observation Profile, including create, update, and delete interactions.",
         "exampleBoolean": false,
         "name": "US Core Laboratory Result Subscription Topic"
       },
@@ -244,9 +275,9 @@
         "reference": {
           "reference": "SubscriptionTopic/us-core-problems-and-health-concerns"
         },
-        "description": "This topic allows subscribers to receive notifications for Problems And Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.",
+        "description": "This topic allows subscribers to receive notifications for the US Core Problems and Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.",
         "exampleBoolean": false,
-        "name": "US Core Problems And Health Concerns Subscription Topic"
+        "name": "US Core Problems and Health Concerns Subscription Topic"
       },
       {
         "reference": {
@@ -390,6 +421,10 @@
       {
         "code": "propagate-status",
         "value": "true"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/us/uscdi5-sandbox/history.html"
       }
     ]
   }

@@ -17,7 +17,7 @@ include parameters: conformance='SHALL'|'SHOULD'|'MAY'see below for how used and
 {%- for item in rows -%}
 {%- if item.topic_conformance == include.conformance -%}
 <tr>
-<td><a href="{{item.topic_path}}">{{item.topic}}</a></td>
+<td><a href="{{item.topic_path}}">{{item.topic | strip}}</a></td>
 <td><pre><span class="copy-text">{{item.topic_url}}<button data-clipboard-text="{{item.topic_url}}" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></pre></td>
 <td>{{item.resource_type}}</td>
 <td>{{item.profile_title}}</td>

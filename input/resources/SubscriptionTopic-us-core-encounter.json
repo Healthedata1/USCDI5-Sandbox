@@ -1,0 +1,34 @@
+{
+    "resourceType": "SubscriptionTopic",
+    "id": "us-core-encounter",
+    "url": "http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter",
+    "version": "0.0.0",
+    "name": "USCoreEncounterSubscriptionTopic",
+    "title": "US Core Encounter Subscription Topic",
+    "status": "active",
+    "date": "2024-08-16",
+    "description": "This topic allows subscribers to receive notifications for the US Core Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions.",
+    "resourceTrigger": [
+        {
+            "description": "Trigger on US Core Encounter events",
+            "resource": "Encounter",
+            "supportedInteraction": [
+                "create",
+                "update",
+                "delete"
+            ],
+            "fhirPathCriteria": "%previous.empty() or %current.empty() or %previous != %current"
+        }
+    ],
+    "eventTrigger": [
+        {
+            "description": "Trigger on patient-related clinical  encounter events"
+        }
+    ],
+    "canFilterBy": [
+        {
+            "description": "Filter by patient",
+            "filterParameter": "patient"
+        }
+    ]
+}
