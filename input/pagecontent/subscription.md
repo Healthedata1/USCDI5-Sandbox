@@ -79,7 +79,7 @@ Servers *MAY* create subscriptions "administratively", in other words, configure
 
 ##### Channel Types
 
-The subscription requires information about where to send notifications, such as the type of channel and the URL that describes the endpoint.
+The Server requires information about the subscription requests, such as the what and where to the URL that describes the endpoint.
 
 ##### Payload Types
 
