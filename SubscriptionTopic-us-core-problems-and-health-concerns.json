@@ -3,7 +3,7 @@
   "id" : "us-core-problems-and-health-concerns",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SubscriptionTopic us-core-problems-and-health-concerns</b></p><a name=\"us-core-problems-and-health-concerns\"> </a><a name=\"hcus-core-problems-and-health-concerns\"> </a><a name=\"us-core-problems-and-health-concerns-en-US\"> </a><table class=\"grid\"><tr><td><b>SubscriptionTopic</b></td><td>US Core Problems and Health Concerns Subscription Topic</td></tr><tr><td><b>Description</b></td><td><div><p>This topic allows subscribers to receive notifications for the US Core Problems and Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.</p>\n</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class=\"grid\"><tr><td colspan=\"4\"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Problems and Health Concerns events</p>\n</div></td></tr></table><table class=\"grid\"><tr><td colspan=\"1\"><b>Event Triggers</b></td></tr><tr><th><b>Description</b></th></tr><tr><td><div><p>Trigger on patient-related clinical  problems and health concerns events</p>\n</div></td></tr></table><table class=\"grid\"><tr><td colspan=\"1\"><b>Can Filter By</b></td></tr><tr><th><b>Filter Parameter</b></th></tr><tr><td>patient</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SubscriptionTopic us-core-problems-and-health-concerns</b></p><a name=\"us-core-problems-and-health-concerns\"> </a><a name=\"hcus-core-problems-and-health-concerns\"> </a><a name=\"us-core-problems-and-health-concerns-en-US\"> </a><table class=\"grid\"><tr><td><b>SubscriptionTopic</b></td><td>US Core Problems and Health Concerns Subscription Topic</td></tr><tr><td><b>Description</b></td><td><div><p>This topic allows subscribers to receive notifications for the US Core Problems and Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.</p>\n</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class=\"grid\"><tr><td colspan=\"4\"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href=\"http://hl7.org/fhir/R4/condition.html\">http://hl7.org/fhir/StructureDefinition/Condition</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Problems and Health Concerns events</p>\n</div></td></tr></table><table class=\"grid\"><tr><td colspan=\"1\"><b>Event Triggers</b></td></tr><tr><th><b>Description</b></th></tr><tr><td><div><p>Trigger on patient-related clinical  problems and health concerns events</p>\n</div></td></tr></table><table class=\"grid\"><tr><td colspan=\"1\"><b>Can Filter By</b></td></tr><tr><th><b>Filter Parameter</b></th></tr><tr><td>patient</td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
@@ -47,7 +47,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.date",
-    "valueDateTime" : "2024-08-16"
+    "valueDateTime" : "2024-08-19"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.publisher",
@@ -101,7 +101,7 @@
     },
     {
       "url" : "resource",
-      "valueUri" : "Condition"
+      "valueUri" : "http://hl7.org/fhir/StructureDefinition/Condition"
     },
     {
       "url" : "supportedInteraction",

@@ -4,7 +4,7 @@
   <id value="us-core-encounter"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SubscriptionTopic us-core-encounter</b></p><a name="us-core-encounter"> </a><a name="hcus-core-encounter"> </a><a name="us-core-encounter-en-US"> </a><table class="grid"><tr><td><b>SubscriptionTopic</b></td><td>US Core Encounter Subscription Topic</td></tr><tr><td><b>Description</b></td><td><div><p>This topic allows subscribers to receive notifications for the US Core Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions.</p>
-</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class="grid"><tr><td colspan="4"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href="http://hl7.org/cda/stds/core/2.0.0-sd/StructureDefinition-Encounter.html">Encounter (CDA Class)</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Encounter events</p>
+</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class="grid"><tr><td colspan="4"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href="http://hl7.org/fhir/R4/encounter.html">http://hl7.org/fhir/StructureDefinition/Encounter</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Encounter events</p>
 </div></td></tr></table><table class="grid"><tr><td colspan="1"><b>Event Triggers</b></td></tr><tr><th><b>Description</b></th></tr><tr><td><div><p>Trigger on patient-related clinical  encounter events</p>
 </div></td></tr></table><table class="grid"><tr><td colspan="1"><b>Can Filter By</b></td></tr><tr><th><b>Filter Parameter</b></th></tr><tr><td>patient</td></tr></table></div>
   </text>
@@ -38,7 +38,7 @@
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.date">
-    <valueDateTime value="2024-08-16"/>
+    <valueDateTime value="2024-08-19"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.publisher">
     <valueString value="HL7 International / Cross-Group Projects"/>
@@ -84,7 +84,7 @@
       <valueMarkdown value="Trigger on US Core Encounter events"/>
     </extension>
     <extension url="resource">
-      <valueUri value="Encounter"/>
+      <valueUri value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
     </extension>
     <extension url="supportedInteraction">
       <valueCode value="create"/>

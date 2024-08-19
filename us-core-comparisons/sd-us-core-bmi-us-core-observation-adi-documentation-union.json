@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a0b1591f-b764-4395-b3b4-24b9ec5feb5b-23",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a0b1591f-b764-4395-b3b4-24b9ec5feb5b-23",
+  "id" : "b2cff689-02ae-4846-8f4a-b4f03a923e0f-23",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b2cff689-02ae-4846-8f4a-b4f03a923e0f-23",
   "name" : "UnionUSCoreBMIProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core BMI Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-19T07:13:09+00:00",
+  "date" : "2024-08-19T17:07:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a0b1591f-b764-4395-b3b4-24b9ec5feb5b-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b2cff689-02ae-4846-8f4a-b4f03a923e0f-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1001,7 +1001,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: ADI documentation types",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a0b1591f-b764-4395-b3b4-24b9ec5feb5b-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b2cff689-02ae-4846-8f4a-b4f03a923e0f-8"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1939,7 +1939,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a0b1591f-b764-4395-b3b4-24b9ec5feb5b-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b2cff689-02ae-4846-8f4a-b4f03a923e0f-5"
       },
       "mapping" : [{
         "identity" : "w5",

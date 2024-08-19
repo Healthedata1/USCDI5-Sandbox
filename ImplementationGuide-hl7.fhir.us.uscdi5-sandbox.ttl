@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-19T07:12:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-19T17:07:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;

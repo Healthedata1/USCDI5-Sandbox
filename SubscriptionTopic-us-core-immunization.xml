@@ -4,7 +4,7 @@
   <id value="us-core-immunization"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SubscriptionTopic us-core-immunization</b></p><a name="us-core-immunization"> </a><a name="hcus-core-immunization"> </a><a name="us-core-immunization-en-US"> </a><table class="grid"><tr><td><b>SubscriptionTopic</b></td><td>US Core Immunization Subscription Topic</td></tr><tr><td><b>Description</b></td><td><div><p>This topic allows subscribers to receive notifications for the US Core Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions.</p>
-</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class="grid"><tr><td colspan="4"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Immunization events</p>
+</div></td></tr><tr><td><b>Copyright Statement:</b></td><td> Used by permission of HL7 International, all rights reserved Creative Commons License</td></tr></table><table class="grid"><tr><td colspan="4"><b>Resource Triggers</b></td></tr><tr><th><b>Resource</b></th><th><b>Interactions</b></th><th><b>FHIR Path</b></th><th><b>Description</b></th></tr><tr><td><a href="http://hl7.org/fhir/R4/immunization.html">http://hl7.org/fhir/StructureDefinition/Immunization</a></td><td>create, update, delete</td><td>%previous.empty() or %current.empty() or %previous != %current</td><td><div><p>Trigger on US Core Immunization events</p>
 </div></td></tr></table><table class="grid"><tr><td colspan="1"><b>Event Triggers</b></td></tr><tr><th><b>Description</b></th></tr><tr><td><div><p>Trigger on patient-related clinical  immunization events</p>
 </div></td></tr></table><table class="grid"><tr><td colspan="1"><b>Can Filter By</b></td></tr><tr><th><b>Filter Parameter</b></th></tr><tr><td>patient</td></tr></table></div>
   </text>
@@ -38,7 +38,7 @@
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.date">
-    <valueDateTime value="2024-08-16"/>
+    <valueDateTime value="2024-08-19"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.publisher">
     <valueString value="HL7 International / Cross-Group Projects"/>
@@ -84,7 +84,7 @@
       <valueMarkdown value="Trigger on US Core Immunization events"/>
     </extension>
     <extension url="resource">
-      <valueUri value="Immunization"/>
+      <valueUri value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
     </extension>
     <extension url="supportedInteraction">
       <valueCode value="create"/>
