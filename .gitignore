@@ -7,7 +7,7 @@ Thumbs.db
 /temp
 /.idea
 *.sh
-/input/data
+#/input/data
 /input/draft
 /_gencontinuous.bat
 /_gencontinuous.sh
