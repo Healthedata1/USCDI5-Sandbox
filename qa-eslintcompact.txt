@@ -483,7 +483,7 @@ Generic: line 0, col 0, Error - The link 'future-of-US-core.html#future-candidat
 Generic: line 0, col 0, Error - The link 'must-support.html' for "Mandatory" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'must-support.html' for "Must Support" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'scopes.html#scopes-format' for "Scopes Format" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'subscription.html#scopes-format' for "Subscription" cannot be resolved (valid targets: 44 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'subscription.html#scopes-format' for "Subscription" cannot be resolved (valid targets: 46 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'general-guidance.html#search-syntax' for "Search Syntax" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'general-requirements.html' for "General Requirements" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'general-guidance.html' for "General Guidance" cannot be resolved (NOTFOUND)
