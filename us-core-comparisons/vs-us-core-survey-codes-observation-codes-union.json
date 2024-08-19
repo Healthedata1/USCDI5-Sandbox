@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "b7e832e2-fb39-4a92-9a3b-ca9ea115b617-65",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/b7e832e2-fb39-4a92-9a3b-ca9ea115b617-65",
+  "id" : "1586a77f-5a10-48d6-8d71-641154286bae-65",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/1586a77f-5a10-48d6-8d71-641154286bae-65",
   "name" : "UnionUSCoreSurveyCodesAndLOINCCodes",
   "title" : "Union of US Core Survey Codes And LOINC Codes",
   "status" : "active",
-  "date" : "2024-08-16T22:48:39+00:00",
+  "date" : "2024-08-19T05:24:26+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

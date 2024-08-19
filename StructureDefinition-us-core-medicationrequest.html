@@ -3165,7 +3165,9 @@ Summary
 
 <div markdown="1" style="display:inline-block">
 
-  <!-- This liquid script creates context specific text for each pages quickstart using input data from input/data/scopes.csv -->
+  <!-- This liquid script creates context specific scopes text for each pages quickstart using input data from input/data/scopes.csv  Rewrote to handle using for subscriptions too -->
+
+  <!-- This liquid script creates a single context specific subscription text for each page's quickstart using input data from input/data/scopes.csv  if multiple topics for a profile are needed will need to rewrite script -->
 
 <hr/>
 
@@ -3177,15 +3179,25 @@ Summary
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l13270">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l13276">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l13282">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l13272">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l13278">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l13284">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l13290">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+</ul>
+
+<h4 id="us-core-scopes">US Core Scopes</h4>
+
+  <!-- {% assign scope_string = scope | inspect %} -->
+
+<p><a name="l13302">​</a>Servers providing access to prescription data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<ul>
+  <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/MedicationRequest.rs</code></li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
 
 <ol>
-  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l13298">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13303">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> search parameters:
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l13330">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13335">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationRequest:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">intent</code> (e.g.<code class="language-plaintext highlighter-rouge">intent={system|}[code],{system|}[code],...</code>)</li>
@@ -3202,7 +3214,7 @@ Summary
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all MedicationRequest resources for the specified patient and intent code = <code class="language-plaintext highlighter-rouge">order,plan</code> (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l13366">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13371">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> and <strong><a name="l13376">​</a><a href="SearchParameter-us-core-medicationrequest-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l13398">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13403">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> and <strong><a name="l13408">​</a><a href="SearchParameter-us-core-medicationrequest-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationRequest:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">intent</code> (e.g.<code class="language-plaintext highlighter-rouge">intent={system|}[code],{system|}[code],...</code>)</li>
@@ -3227,7 +3239,7 @@ Summary
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l13463">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13468">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> and <strong><a name="l13473">​</a><a href="SearchParameter-us-core-medicationrequest-encounter.html"><code class="language-plaintext highlighter-rouge">encounter</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l13495">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13500">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> and <strong><a name="l13505">​</a><a href="SearchParameter-us-core-medicationrequest-encounter.html"><code class="language-plaintext highlighter-rouge">encounter</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationRequest:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">intent</code> (e.g.<code class="language-plaintext highlighter-rouge">intent={system|}[code],{system|}[code],...</code>)</li>
@@ -3244,7 +3256,7 @@ Summary
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all MedicationRequest resources for the specified patient and intent  code = <code class="language-plaintext highlighter-rouge">order,plan</code> and encounter (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l13536">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13541">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> and <strong><a name="l13546">​</a><a href="SearchParameter-us-core-medicationrequest-authoredon.html"><code class="language-plaintext highlighter-rouge">authoredon</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l13568">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l13573">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html"><code class="language-plaintext highlighter-rouge">intent</code></a></strong> and <strong><a name="l13578">​</a><a href="SearchParameter-us-core-medicationrequest-authoredon.html"><code class="language-plaintext highlighter-rouge">authoredon</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationRequest:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">intent</code> (e.g.<code class="language-plaintext highlighter-rouge">intent={system|}[code],{system|}[code],...</code>)</li>
@@ -3290,7 +3302,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 16, 2024 22:48+0000">2024-08-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 19, 2024 05:23+0000">2024-08-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

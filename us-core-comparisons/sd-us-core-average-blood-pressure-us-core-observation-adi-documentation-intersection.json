@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b7e832e2-fb39-4a92-9a3b-ca9ea115b617-18",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b7e832e2-fb39-4a92-9a3b-ca9ea115b617-18",
+  "id" : "1586a77f-5a10-48d6-8d71-641154286bae-18",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1586a77f-5a10-48d6-8d71-641154286bae-18",
   "name" : "IntersectionUSCoreAverageBloodPressureProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Average Blood Pressure Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-16T22:48:39+00:00",
+  "date" : "2024-08-19T05:24:26+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
