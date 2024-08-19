@@ -26,7 +26,3 @@ include parameters: conformance='SHALL'|'SHOULD'|'MAY'see below for how used and
 {% endfor %}
 </tbody>
 </table>
-
-
-
-http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-problems-and-health-concerns
