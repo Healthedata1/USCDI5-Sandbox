@@ -5,13 +5,13 @@ version: 0.0.0
 name: USCoreLaboratoryResultSubscriptionTopic
 title: US Core Laboratory Result Subscription Topic
 status: active
-date: '2024-08-16'
+date: '2024-08-19'
 description: This topic allows subscribers to receive notifications for the US Core
   Laboratory Result events represented by US Core US Core Laboratory Result Observation
   Profile, including create, update, and delete interactions.
 resourceTrigger:
 - description: Trigger on US Core Laboratory Result events
-  resource: Observation
+  resource: http://hl7.org/fhir/StructureDefinition/Observation
   supportedInteraction:
   - create
   - update

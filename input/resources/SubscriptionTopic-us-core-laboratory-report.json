@@ -6,12 +6,12 @@
     "name": "USCoreLaboratoryReportSubscriptionTopic",
     "title": "US Core Laboratory Report Subscription Topic",
     "status": "active",
-    "date": "2024-08-16",
+    "date": "2024-08-19",
     "description": "This topic allows subscribers to receive notifications for the US Core Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.",
     "resourceTrigger": [
         {
             "description": "Trigger on US Core Laboratory Report events",
-            "resource": "DiagnosticReport",
+            "resource": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
             "supportedInteraction": [
                 "create",
                 "update",

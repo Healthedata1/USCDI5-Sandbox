@@ -6,12 +6,12 @@
     "name": "USCoreImmunizationSubscriptionTopic",
     "title": "US Core Immunization Subscription Topic",
     "status": "active",
-    "date": "2024-08-16",
+    "date": "2024-08-19",
     "description": "This topic allows subscribers to receive notifications for the US Core Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions.",
     "resourceTrigger": [
         {
             "description": "Trigger on US Core Immunization events",
-            "resource": "Immunization",
+            "resource": "http://hl7.org/fhir/StructureDefinition/Immunization",
             "supportedInteraction": [
                 "create",
                 "update",

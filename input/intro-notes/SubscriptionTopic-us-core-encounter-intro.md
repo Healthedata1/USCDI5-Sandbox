@@ -1,2 +1,2 @@
-fooo...
+
 {% include subscriptiontopic-intro.md %}

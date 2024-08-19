@@ -13,22 +13,22 @@ Clients can poll for a single resource or across several resources. The frequenc
 
 #### Subscription
 
-Subscription is a mechanism designed to allow clients to request notifications when an event occurs or data changes. It is an active notification system; a FHIR server actively sends notifications as changes occur. The Client subscribes to the Server's Server [base]/Subscription endpoint for notifications when any resource that they created is updated.
+Subscription is a mechanism designed to allow clients to request notifications when an event occurs or data changes. It is an active notification system; a FHIR server actively sends notifications as changes occur. The Client subscribes to the Server's [base]/Subscription endpoint for notifications when any resource that they created is updated.
 
 Servers who support Subscription **SHALL** comply with the [Subscription R5 Backport Implementation Guide].  This topic-based subscription model supersedes the query-defined subscription model defined in FHIR R4.  Systems **SHALL** follow the conformance requirements specified in the Subscription R5 Backport Implementation Guide and the US Core-specific conformance requirements listed below. 
 
-<!-- In the subscription mechanism, instead of the Client regularly querying the Server to see if there are changes to existing resources, the Client creates a Subscription instance on the Server server. (It's also possible for the data source to configure subscriptions for clients; in other words, it can create subscriptions administratively. However, these implementation details are out of scope for this guide.) The Subscription indicates that the Client wants to be notified about changes to resources and provides filters describing what subset of resources the Client is interested in. The Server will then push notifications when there are new or updated resources and the Client can then query for the specific resources that have changed.
+<!-- In the subscription mechanism, instead of the Client regularly querying the Server to see if there are changes to existing resources, the Client creates a Subscription instance on the Server. (It's also possible for the data source to configure subscriptions for clients; in other words, it can create subscriptions administratively. However, these implementation details are out of scope for this guide.) The Subscription indicates that the Client wants to be notified about changes to resources and provides filters describing what subset of resources the Client is interested in. The Server will then push notifications when there are new or updated resources and the Client can then query for the specific resources that have changed.
 
 Servers who support Subscription **SHALL** comply with the [Subscription R5 Backport Implementation Guide] and the Da Vinci Health Record Exchange (HRex) [Subscription requirements](https://build.fhir.org/ig/HL7/davinci-ehrx/resource.html#subscription) for subscribing to resource updates. These implementation guides "pre-adopt" the FHIR R5 topic-based subscription approach in R4 implementations since most U.S. EHR vendors have agreed to support it. -->
 
 #### Subscription Topics
 
-Subscription topics specify an event or change in data that is used to trigger a notification. Topic definitions also include the boundaries around what a Subscription can filter for and additional resources that MAY be included with notifications. The [SubscriptionTopic] resource, which is available in FHIR 4B and later versions, is used to define these topics conceptually and formally in a computable fashion.  
+Subscription topics specify an event or change in data that is used to trigger a notification. Topic definitions also include the boundaries around what a Subscription can filter for and additional resources that are included with notifications. The [SubscriptionTopic] resource, which is available in FHIR 4B and later versions, is used to define these topics conceptually and formally in a computable fashion.  
 
 Note that supporting the FHIR SubscriptionTopic resource or the equivalent Basic resource versions described in the R5 Backport Implementation Guides is NOT required by this guide to support subscriptions.
 {:.bg-warning}
 
-The table below summarizes the US Core subscription topic requirements (**SHALL vs SHOULD ?**).<!-- and best practice recommendations (**SHOULD**) --> They allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles.  These subscription topics represent the minimum support for US Core. The events include creation, updates, and deletion interactions of resources. The US Core subscription topics include a trigger for a resource type and have a filter to allow Clients to restrict notifications to a particular patient. Servers **MAY** add filters to these topics (for example, filter by the code parameter for the US Core Laboratory Result SubscriptionTopic) and still satisfy the US Core conformance requirements. Servers **MAY** define other subscription for different triggers or that include other resources in the notifications (in other words, the "shape"). However, these topic definition would not support the US Core requirements even if they are formally derived from US Core subscriptions.
+The table below summarizes the US Core subscription topic requirements (**SHALL vs SHOULD ?**).<!-- and best practice recommendations (**SHOULD**) --> They allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles.  These subscription topics represent the minimum support for US Core. The events include creation, updates, and deletion interactions of resources. The US Core subscription topics include a trigger for a resource type and have a filter to allow Clients to restrict notifications to a particular patient. Servers **MAY** add filters to these topics (for example, filter by the code parameter for the US Core Laboratory Result SubscriptionTopic) and still satisfy the US Core conformance requirements. Servers **MAY** define other subscription for different triggers or that include other resources in the notifications. However, these topic definition would not support the US Core requirements even if they are formally derived from US Core subscriptions.
 
 ##### The Following Subscription Topics **SHALL** (vs **SHOULD** ?) Be Supported
 
@@ -55,12 +55,12 @@ Based upon additional testing in future versions, we may update these Subscripti
  If a Server supports subscriptions, the Server **SHALL** support discovery of the US Core Subscription Topic's definition and  canonical URL by one or more of the following methods:
 
 - Server CapabilityStatement's SubscriptionTopic Canonical Extension (see below).
-- FHIR Restful query of SubscriptionTopic Resource
+- FHIR Restful query of the SubscriptionTopic Resource
 - Out-of-band published documentation
 
 ##### CapabilityStatement SubscriptionTopic Canonicals
   
-  The R5 Backport Implementation Guide defines the [CapabilityStatement SubscriptionTopic Canonical] extension to allow US Core Clients to discover US Core Servers' supported subscription topics. This extension enables servers to advertise the canonical URLs of subscription topics available to clients and allows clients to see the list of supported topics on a server.
+  The R5 Backport Implementation Guide defines the [CapabilityStatement SubscriptionTopic Canonical] extension lists the supported topics on a server. It enable clients can discover a Server's supported subscription topics by inspecting its CapabilityStatement.
 
   The example CapabilityStatement snippet shows a Server advertising the US Core resource Update Subscription Topic canonical URL with the CapabilityStatement SubscriptionTopic Canonical extension:
 
@@ -74,7 +74,7 @@ Based upon additional testing in future versions, we may update these Subscripti
 To dynamically request notifications for US Core resource updates (and other topics the Server supports), Clients RESTfully POST a Subscription resource with the Server. The Subscription resource **SHALL** conform to the [R4/B Topic-Based Subscription Profile].
 
 <div class="bg-info" markdown="1">
-Subscriptions need not be created dynamically by the Client. It's also possible for the Server to configure subscriptions for clients, in other words, create subscriptions administratively. However, these implementation details are out of scope for this guide.
+Servers *MAY* create subscriptions "administratively", in other words, configure subscriptions for clients. However, this guide does not provide any guidance for how this is done.
 </div> 
 
 ##### Channel Types
@@ -85,7 +85,7 @@ The subscription requires information about where to send notifications, such as
 
 When specifying the contents of a notification, there are three options available: "empty," "id-only," and "full-resource." Because the Server can not guarantee who has access to the nominated subscription endpoint, the notification typically uses "id-only" to return the resource resource ID. By omitting the payload, the Client is forced to authenticate before accessing the data using a FHIR RESTful read or search, which mitigates privacy and security risks for the Server.
 
-- The Client **SHALL** use the canonical URL in the `Subscription.criteria` element to subscribe to the Server's Server [base]/Subscription endpoint'
+- The Client **SHALL** use the canonical URL in the `Subscription.criteria` element to subscribe to the Server's [base]/Subscription endpoint'
 - The Server **SHOULD** support the "rest-hook" channel and **MAY** support other channel types.
 - The Server **SHALL** support ""id-only" payload type and **MAY** support other payload types.
 

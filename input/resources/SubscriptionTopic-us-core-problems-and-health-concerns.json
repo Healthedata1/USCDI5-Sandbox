@@ -6,12 +6,12 @@
     "name": "USCoreProblemsAndHealthConcernsSubscriptionTopic",
     "title": "US Core Problems and Health Concerns Subscription Topic",
     "status": "active",
-    "date": "2024-08-16",
+    "date": "2024-08-19",
     "description": "This topic allows subscribers to receive notifications for the US Core Problems and Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.",
     "resourceTrigger": [
         {
             "description": "Trigger on US Core Problems and Health Concerns events",
-            "resource": "Condition",
+            "resource": "http://hl7.org/fhir/StructureDefinition/Condition",
             "supportedInteraction": [
                 "create",
                 "update",
