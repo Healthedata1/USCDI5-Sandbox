@@ -37,7 +37,7 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 - For more information on exchanging Social Determinants of Health (SDOH) service requests, See the [Screening and Assessments] guidance page.
 - The `ServiceRequest.category` binding Must Support, at a minimum, the [US Core ServiceRequest Category Codes]. However, this value set can be treated as [extensible], and other category codes can be used instead.
-- The `ServiceRequest.code` value set is broad to accommodate a wide variety of use cases and **SHOULD** be constrained to a subset for a particular use case or domain. <span class="bg-success" markdown="1"> These value sets contain concepts that span many use cases and are not bound to any USCDI Data Element. However, for the USCDI *Order* Data Elements that use ServiceRequest, the table below identifies *additional* value set binding. Implementers **SHOULD** conform to the binding strengths listed for each USCDI Order context. For example, laboratory orders are [extensibly] bound to the [LOINC Common Laboratory Orders Value Set]. </span><!-- new-content -->
+- The `ServiceRequest.code` value set is broad to accommodate a wide variety of use cases and **SHOULD** be constrained to a subset for a particular use case or domain. <span class="bg-success" markdown="1"> These value sets contain concepts that span many use cases and are not bound to any USCDI Data Element. However, for the USCDI *Laboratory Order, Imaging Order and Clinical Test Order* Data Elements, the table below identifies *additional* value set binding. Implementers **SHOULD** conform to the binding strengths listed for each USCDI Order context. For example, laboratory orders are [extensibly] bound to the [LOINC Common Laboratory Orders Value Set]. Note that the USCDI Class *Procedure Order* Data Element has no additional binding.</span><!-- new-content -->
 
   <div class="bg-success" markdown="1">
 
@@ -46,7 +46,6 @@ The following data elements must always be present ([Mandatory] definition) or m
   |Laboratory|[LOINC Common Laboratory Orders Value Set]|[extensible]|
   |Imaging|[LOINC Radiology Codes]|[preferred]|
   |Clinical Tests|[LOINC Clinical Test Code]|[example]|
-  |Procedures|[US Core Procedure Codes]|[extensible]|
   {:.grid}
 
   </div><!-- new-content -->
