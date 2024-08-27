@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3a573abf-762f-4b1a-9404-dffd7cb42849-71",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a573abf-762f-4b1a-9404-dffd7cb42849-71",
+  "id" : "e02b125e-9400-4bb5-a407-6319948bfc85-71",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e02b125e-9400-4bb5-a407-6319948bfc85-71",
   "name" : "UnionUSCoreRespiratoryRateProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Respiratory Rate Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-27T17:43:01+00:00",
+  "date" : "2024-08-27T18:11:41+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3a573abf-762f-4b1a-9404-dffd7cb42849-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e02b125e-9400-4bb5-a407-6319948bfc85-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1938,7 +1938,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3a573abf-762f-4b1a-9404-dffd7cb42849-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/e02b125e-9400-4bb5-a407-6319948bfc85-5"
       },
       "mapping" : [{
         "identity" : "w5",

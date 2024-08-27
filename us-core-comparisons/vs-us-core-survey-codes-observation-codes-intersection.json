@@ -1,9 +1,9 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "3a573abf-762f-4b1a-9404-dffd7cb42849-63",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/3a573abf-762f-4b1a-9404-dffd7cb42849-63",
+  "id" : "e02b125e-9400-4bb5-a407-6319948bfc85-63",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e02b125e-9400-4bb5-a407-6319948bfc85-63",
   "name" : "IntersectionUSCoreSurveyCodesAndLOINCCodes",
   "title" : "Intersection of US Core Survey Codes And LOINC Codes",
   "status" : "active",
-  "date" : "2024-08-27T17:43:01+00:00"
+  "date" : "2024-08-27T18:11:41+00:00"
 }

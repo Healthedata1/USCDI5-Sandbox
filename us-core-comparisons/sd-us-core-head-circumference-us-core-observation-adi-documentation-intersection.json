@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3a573abf-762f-4b1a-9404-dffd7cb42849-36",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a573abf-762f-4b1a-9404-dffd7cb42849-36",
+  "id" : "e02b125e-9400-4bb5-a407-6319948bfc85-36",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e02b125e-9400-4bb5-a407-6319948bfc85-36",
   "name" : "IntersectionUSCoreHeadCircumferenceProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Head Circumference Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-27T17:43:01+00:00",
+  "date" : "2024-08-27T18:11:40+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
