@@ -14,7 +14,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ADI-example</b></p><a name=\"ADI-example\"> </a><a name=\"hcADI-example\"> </a><a name=\"ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 42348-3}\">Advance directives</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>focus</b>: <a href=\"DocumentReference-example-patient-adi.html\">Person-Authored Advance Directive</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 425392003}\">Active advance directive (finding)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ADI-example</b></p><a name=\"ADI-example\"> </a><a name=\"hcADI-example\"> </a><a name=\"ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 42348-3}\">Advance directives</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>focus</b>: <a href=\"DocumentReference-example-patient-adi.html\">Person-Authored Advance Directive</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: </p><ul><li><a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">??</a></li><li>Dr Smith</li></ul><p><b>value</b>: <span title=\"Codes:{http://loinc.org 81334-5}\">Patient Personal advance care plan</span></p></div>"
   },
   "status" : "final",
   "code" : {
@@ -32,14 +32,18 @@
     "display" : "Person-Authored Advance Directive"
   }],
   "effectiveDateTime" : "2024-05-16T01:06:06.393000+00:00",
+  "issued" : "2024-05-16T01:06:06.393000+00:00",
   "performer" : [{
-    "reference" : "Patient/example"
+    "reference" : "http://hl7.org/fhir/us/core/Practitioner/practitioner-1"
+  },
+  {
+    "display" : "Dr Smith"
   }],
   "valueCodeableConcept" : {
     "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "425392003",
-      "display" : "Active advance directive (finding)"
+      "system" : "http://loinc.org",
+      "code" : "81334-5",
+      "display" : "Patient Personal advance care plan"
     }]
   }
 }

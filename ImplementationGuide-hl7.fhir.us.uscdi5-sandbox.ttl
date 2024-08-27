@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-19T17:07:17+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-27T04:29:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -739,6 +739,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example> ;
+         fhir:reference [ fhir:v "Observation/no-ADI-example" ]
+       ] ;
+       fhir:name [ fhir:v "ADI Observation No ADI Example" ] ;
+       fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "DocumentReference" ]
        ] ) ;
        fhir:reference [
@@ -891,18 +906,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SubscriptionTopic" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-encounter> ;
-         fhir:reference [ fhir:v "SubscriptionTopic/us-core-encounter" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Encounter Subscription Topic" ] ;
-       fhir:description [ fhir:v "This topic allows subscribers to receive notifications for the US Core Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -911,42 +914,6 @@
        ] ;
        fhir:name [ fhir:v "US Core Immunization Profile" ] ;
        fhir:description [ fhir:v "The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SubscriptionTopic" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-immunization> ;
-         fhir:reference [ fhir:v "SubscriptionTopic/us-core-immunization" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Immunization Subscription Topic" ] ;
-       fhir:description [ fhir:v "This topic allows subscribers to receive notifications for the US Core Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SubscriptionTopic" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-laboratory-report> ;
-         fhir:reference [ fhir:v "SubscriptionTopic/us-core-laboratory-report" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Laboratory Report Subscription Topic" ] ;
-       fhir:description [ fhir:v "This topic allows subscribers to receive notifications for the US Core Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SubscriptionTopic" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-laboratory-result> ;
-         fhir:reference [ fhir:v "SubscriptionTopic/us-core-laboratory-result" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Laboratory Result Subscription Topic" ] ;
-       fhir:description [ fhir:v "This topic allows subscribers to receive notifications for the US Core Laboratory Result events represented by US Core US Core Laboratory Result Observation Profile, including create, update, and delete interactions." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -995,18 +962,6 @@
        ] ;
        fhir:name [ fhir:v "US Core Patient Profile" ] ;
        fhir:description [ fhir:v "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "SubscriptionTopic" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-problems-and-health-concerns> ;
-         fhir:reference [ fhir:v "SubscriptionTopic/us-core-problems-and-health-concerns" ]
-       ] ;
-       fhir:name [ fhir:v "US Core Problems and Health Concerns Subscription Topic" ] ;
-       fhir:description [ fhir:v "This topic allows subscribers to receive notifications for the US Core Problems and Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1198,6 +1153,8 @@
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/ADI-example> a fhir:us .
 
+<http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example> a fhir:us .
+
 <http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/CodeSystem/foo-bar> a fhir:us .
@@ -1220,15 +1177,7 @@
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/us-core-clinical-note-type> a fhir:us .
 
-<http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-encounter> a fhir:us .
-
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-immunization> a fhir:us .
-
-<http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-immunization> a fhir:us .
-
-<http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-laboratory-report> a fhir:us .
-
-<http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-laboratory-result> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-medicationdispense> a fhir:us .
 
@@ -1237,8 +1186,6 @@
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-observation-adi-documentation> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-patient> a fhir:us .
-
-<http://hl7.org/fhir/us/uscdi5-sandbox/SubscriptionTopic/us-core-problems-and-health-concerns> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-provenance> a fhir:us .
 

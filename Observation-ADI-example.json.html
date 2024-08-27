@@ -235,7 +235,7 @@
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ADI-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ADI-example-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 42348-3}\&quot;&gt;Advance directives&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;DocumentReference-example-patient-adi.html\&quot;&gt;Person-Authored Advance Directive&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 425392003}\&quot;&gt;Active advance directive (finding)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ADI-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ADI-example-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 42348-3}\&quot;&gt;Advance directives&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;DocumentReference-example-patient-adi.html\&quot;&gt;Person-Authored Advance Directive&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\&quot;&gt;??&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Dr Smith&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 81334-5}\&quot;&gt;Patient Personal advance care plan&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -257,17 +257,21 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2024-05-16T01:06:06.393000+00:00",
+  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">issued</a>" : "2024-05-16T01:06:06.393000+00:00",
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
     {
-      <a href="Patient-example.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/example"
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/core/Practitioner/practitioner-1"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Dr Smith"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueCodeableConcept</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "425392003",
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Active advance directive (finding)"
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "81334-5",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Personal advance care plan"
       }
     ]
   }
@@ -295,7 +299,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 19, 2024 17:07+0000">2024-08-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 04:29+0000">2024-08-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

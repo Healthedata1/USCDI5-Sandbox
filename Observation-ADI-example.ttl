@@ -2,7 +2,6 @@
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -25,7 +24,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ADI-example</b></p><a name=\"ADI-example\"> </a><a name=\"hcADI-example\"> </a><a name=\"ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 42348-3}\">Advance directives</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>focus</b>: <a href=\"DocumentReference-example-patient-adi.html\">Person-Authored Advance Directive</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 425392003}\">Active advance directive (finding)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ADI-example</b></p><a name=\"ADI-example\"> </a><a name=\"hcADI-example\"> </a><a name=\"ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 42348-3}\">Advance directives</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>focus</b>: <a href=\"DocumentReference-example-patient-adi.html\">Person-Authored Advance Directive</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: </p><ul><li><a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">??</a></li><li>Dr Smith</li></ul><p><b>value</b>: <span title=\"Codes:{http://loinc.org 81334-5}\">Patient Personal advance care plan</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -46,23 +45,28 @@
      fhir:display [ fhir:v "Person-Authored Advance Directive" ]
   ] ) ; # 
   fhir:effective [ fhir:v "2024-05-16T01:06:06.393000+00:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2024-05-16T01:06:06.393000+00:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
-     fhir:reference [ fhir:v "Patient/example" ]
+     fhir:link <http://hl7.org/fhir/us/core/Practitioner/practitioner-1> ;
+     fhir:reference [ fhir:v "http://hl7.org/fhir/us/core/Practitioner/practitioner-1" ]
+  ] [
+     fhir:display [ fhir:v "Dr Smith" ]
   ] ) ; # 
   fhir:value [
      a fhir:CodeableConcept ;
      fhir:coding ( [
-       a sct:425392003 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "425392003" ] ;
-       fhir:display [ fhir:v "Active advance directive (finding)" ]
+       a loinc:81334-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "81334-5" ] ;
+       fhir:display [ fhir:v "Patient Personal advance care plan" ]
      ] )
   ] . # 
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:us .
+
+<http://hl7.org/fhir/us/core/Practitioner/practitioner-1> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

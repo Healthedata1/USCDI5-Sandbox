@@ -207,10 +207,7 @@
       "name" : "USCoreADIFinding",
       "title" : "US Core ADI Finding",
       "description" : "The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",

@@ -49,48 +49,6 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.canFilterBy": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.contact": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.copyright": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.date": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.description": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.eventTrigger": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.jurisdiction": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.name": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.publisher": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.resourceTrigger": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.status": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.title": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.url": [
-      "Basic"
-    ],
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SubscriptionTopic.version": [
-      "Basic"
-    ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
       "CapabilityStatement.format",
       "CapabilityStatement.implementationGuide",
@@ -165,7 +123,6 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "Basic",
       "ImplementationGuide",
       "StructureDefinition",
       "ValueSet"
@@ -174,7 +131,6 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "Basic",
       "CodeSystem",
       "ImplementationGuide",
       "ImplementationGuide.definition.page",

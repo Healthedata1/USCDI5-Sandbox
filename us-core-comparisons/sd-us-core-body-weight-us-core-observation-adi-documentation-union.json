@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "b2cff689-02ae-4846-8f4a-b4f03a923e0f-32",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/b2cff689-02ae-4846-8f4a-b4f03a923e0f-32",
+  "id" : "9c0f6f92-df91-4676-a137-e0736f2a3886-29",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9c0f6f92-df91-4676-a137-e0736f2a3886-29",
   "name" : "UnionUSCoreBodyWeightProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Body Weight Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-19T17:07:52+00:00",
+  "date" : "2024-08-27T04:29:39+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b2cff689-02ae-4846-8f4a-b4f03a923e0f-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9c0f6f92-df91-4676-a137-e0736f2a3886-5"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -791,8 +791,8 @@
     {
       "path" : "Observation.effective[x]",
       "short" : "left: Often just a dateTime for Vital Signs; right: Clinically relevant time/time-period for observation",
-      "definition" : "left: Often just a dateTime for Vital Signs.; right: The time or time-period the observed value is asserted as being true. For biological subjects - e.g., human patients - this is usually called the \"physiologically relevant time\".",
-      "comment" : "left: At least a date should be present unless this observation is a historical report.  For recording imprecise or \"fuzzy\" times (For example, a blood glucose measurement taken \"after breakfast\") use the [Timing] datatype which allow the measurement to be tied to regular life events.; right: At least a date should be present unless this observation is a historical report.",
+      "definition" : "left: Often just a dateTime for Vital Signs.; right: The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.",
+      "comment" : "At least a date should be present unless this observation is a historical report.  For recording imprecise or \"fuzzy\" times (For example, a blood glucose measurement taken \"after breakfast\") use the [Timing] datatype which allow the measurement to be tied to regular life events.",
       "requirements" : "Knowing when an observation was deemed true is important to its relevance as well as determining trends.",
       "alias" : ["Occurrence"],
       "min" : 0,
@@ -857,7 +857,7 @@
     },
     {
       "path" : "Observation.issued",
-      "short" : "Date/Time this version was made available",
+      "short" : "left: Date/Time this version was made available; right: Date/Time this reviewed and verified observation was made available",
       "definition" : "The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified.",
       "comment" : "For Observations that don’t require review and verification, it may be the same as the [`lastUpdated` ] time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that doesn’t require the new version to be reviewed and verified again.",
       "min" : 0,
@@ -876,7 +876,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -894,7 +894,7 @@
     },
     {
       "path" : "Observation.performer",
-      "short" : "Who is responsible for the observation",
+      "short" : "left: Who is responsible for the observation; right: Who reviewed and verified the observation",
       "definition" : "Who was responsible for asserting the observed value as \"true\".",
       "requirements" : "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
       "min" : 0,
@@ -919,7 +919,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -1000,8 +1000,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Common UCUM units for recording Vital Signs.; right: ADI documentation types",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b2cff689-02ae-4846-8f4a-b4f03a923e0f-8"
+        "description" : "left: Common UCUM units for recording Vital Signs.; right: Advance Healthcare Directive Categories Grouper"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1939,7 +1938,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/b2cff689-02ae-4846-8f4a-b4f03a923e0f-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9c0f6f92-df91-4676-a137-e0736f2a3886-5"
       },
       "mapping" : [{
         "identity" : "w5",

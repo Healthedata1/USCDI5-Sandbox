@@ -218,15 +218,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 Servers who support Subscription **SHALL** comply with the [Subscription R5 Backport Implementation Guide] and the Da Vinci Health Record Exchange (HRex) [Subscription requirements](https://build.fhir.org/ig/HL7/davinci-ehrx/resource.html#subscription) for subscribing to resource updates. These implementation guides "pre-adopt" the FHIR R5 topic-based subscription approach in R4 implementations since most U.S. EHR vendors have agreed to support it. -->
 
-<h4 id="subscription-topics">Subscription Topics</h4>
+<!-- #### Subscription Topics
 
-<p>Subscription topics specify an event or change in data that is used to trigger a notification. Topic definitions also include the boundaries around what a Subscription can filter for and additional resources that are included with notifications. The [SubscriptionTopic] resource, which is available in FHIR 4B and later versions, is used to define these topics conceptually and formally in a computable fashion.</p>
+Subscription topics specify an event or change in data that is used to trigger a notification. Topic definitions also include the boundaries around what a Subscription can filter for and additional resources that are included with notifications. The [SubscriptionTopic] resource, which is available in FHIR 4B and later versions, is used to define these topics conceptually and formally in a computable fashion.  
 
-<p class="bg-warning">Note that supporting the FHIR SubscriptionTopic resource or the equivalent Basic resource versions described in the R5 Backport Implementation Guides is NOT required by this guide to support subscriptions.</p>
+Note that supporting the FHIR SubscriptionTopic resource or the equivalent Basic resource versions described in the R5 Backport Implementation Guides is NOT required by this guide to support subscriptions.
+{:.bg-warning}
 
-<p>The table below summarizes the US Core subscription topic requirements (<strong>SHALL vs SHOULD ?</strong>).<!-- and best practice recommendations (**SHOULD**) --> They allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles.  These subscription topics represent the minimum support for US Core. The events include creation, updates, and deletion interactions of resources. The US Core subscription topics include a trigger for a resource type and have a filter to allow Clients to restrict notifications to a particular patient. Servers <strong>MAY</strong> add filters to these topics (for example, filter by the code parameter for the US Core Laboratory Result SubscriptionTopic) and still satisfy the US Core conformance requirements. Servers <strong>MAY</strong> define other subscription for different triggers or that include other resources in the notifications. However, these topic definition would not support the US Core requirements even if they are formally derived from US Core subscriptions.</p>
+The table below summarizes the US Core subscription topic requirements (**SHALL vs SHOULD ?**). ???and best practice recommendations (**SHOULD**)???. They allow subscribers to receive notifications for patient-related events that are represented by the corresponding US Core Profiles.  These subscription topics represent the minimum support for US Core. The events include creation, updates, and deletion interactions of resources. The US Core subscription topics include a trigger for a resource type and have a filter to allow Clients to restrict notifications to a particular patient. Servers **MAY** add filters to these topics (for example, filter by the code parameter for the US Core Laboratory Result SubscriptionTopic) and still satisfy the US Core conformance requirements. Servers **MAY** define other subscription for different triggers or that include other resources in the notifications. However, these topic definition would not support the US Core requirements even if they are formally derived from US Core subscriptions.
 
-<h5 id="the-following-subscription-topics-shall-vs-should--be-supported">The Following Subscription Topics <strong>SHALL</strong> (vs <strong>SHOULD</strong> ?) Be Supported</h5>
+##### The Following Subscription Topics **SHALL** (vs **SHOULD** ?) Be Supported -->
 
 <!-- US Core Laboratory Result SubscriptionTopic
 US Core Laboratory Report SubscriptionTopic
@@ -234,53 +235,15 @@ US Core Problems and Health Concerns SubscriptionTopic
 US Core Encounter SubscriptionTopic
 US Core Immunization SubscriptionTopic -->
 
-<!-- This liquid script creates a US Core subscription topic requirements table using input data from input/data/scopes.csv
-include parameters: conformance='SHALL'|'SHOULD'|'MAY'see below for how used and crud='cruds'<<< not used -->
-
-<table class="grid">
-<thead>
-<tr>
-<th>Subscription Topic</th>
-<th>Subscription Topic Canonical URL</th>
-<th>Resource Type</th>
-<th>US Core Profile</th>
-</tr>
-</thead>
-<tbody><tr>
-<td><a href="SubscriptionTopic-us-core-problems-and-health-concerns.html">US Core Problems and Health Concerns</a></td>
-<td><pre><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-problems-and-health-concerns<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-problems-and-health-concerns" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></pre></td>
-<td>Condition</td>
-<td>US Core Condition Problems and Health Concerns Profile</td>
-</tr><tr>
-<td><a href="SubscriptionTopic-us-core-laboratory-report.html">US Core Laboratory Report</a></td>
-<td><pre><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-report<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-report" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></pre></td>
-<td>DiagnosticReport</td>
-<td>US Core DiagnosticReport Profile for Laboratory Results Reporting</td>
-</tr><tr>
-<td><a href="SubscriptionTopic-us-core-encounter.html">US Core Encounter</a></td>
-<td><pre><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></pre></td>
-<td>Encounter</td>
-<td>US Core Encounter Profile</td>
-</tr><tr>
-<td><a href="SubscriptionTopic-us-core-immunization.html">US Core Immunization</a></td>
-<td><pre><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></pre></td>
-<td>Immunization</td>
-<td>US Core Immunization Profile</td>
-</tr><tr>
-<td><a href="SubscriptionTopic-us-core-laboratory-result.html">US Core Laboratory Result</a></td>
-<td><pre><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-result<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-laboratory-result" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></pre></td>
-<td>Observation</td>
-<td>US Core Laboratory Result Observation Profile</td>
-</tr>
-</tbody>
-</table>
+<!--  {% include resource-subscription-table.md conformance="SHALL" crud='rs'%}  -->
 
 <!-- 
 ###### The Following Subscription Topics **SHOULD** Be Supported
 ###### The Following Subscription Topics **SHOULD** Be Supported
 -->
 
-<p class="stu-note">Based upon additional testing in future versions, we may update these SubscriptionTopics to add additional filter based on the on US Core required search parameters, and add other US Core SubscriptionTopic to this list.</p>
+<!-- Based upon additional testing in future versions, we may update these SubscriptionTopics to add additional filter based on the on US Core required search parameters, and add other US Core SubscriptionTopic to this list.
+{:.stu-note} -->
 
 <h4 id="discovery">Discovery</h4>
 
@@ -568,7 +531,7 @@ Content-Type: application/fhir+json;charset=utf-8
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 19, 2024 17:07+0000">2024-08-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 04:29+0000">2024-08-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

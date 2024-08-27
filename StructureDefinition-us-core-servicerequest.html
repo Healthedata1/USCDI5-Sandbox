@@ -281,6 +281,126 @@
 
 
 
+<div markdown="1" style="display:inline-block">
+
+<p><strong>Example Usage Scenarios:</strong></p>
+
+<p>The following are example usage scenarios for this profile:</p>
+
+<ul>
+  <li>Query for a specific procedure or test request, such as an electrocardiogram (ECG) order or a referral to a support program.</li>
+  <li>Query for a specific service offered to a patient, such as a referral to a support program.</li>
+  <li>Query for a category of service request (e.g., all cardiology requests)</li>
+</ul>
+
+<h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
+
+<p><a name="l430">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+
+<p><strong>Each Service Request Must Have:</strong></p>
+
+<ol>
+  <li>a status</li>
+  <li>an intent code indicating whether the request is a proposal, plan, or order.</li>
+  <li>a code defining what is being requested</li>
+  <li>a patient</li>
+</ol>
+
+<p><strong>Each Service Request Must Support:</strong></p>
+
+<ol>
+  <li>a category</li>
+  <li>the encounter in which the request was created</li>
+  <li>when requested service<strong>SHOULD</strong>happen</li>
+  <li>when the request was made</li>
+  <li>the requester</li>
+</ol>
+
+  <!-- format of include file 
+include parameters:
+type (required): resource type (e.g, Patient)
+plural (optional): any text (e.g, 'true') if present multiple additional requirements = true, if not present single requirement
+up to three LOINCs (1 or 3 required)
+for example
+ {% include additional-requirements-intro.md type="Patient" plural="true" %} or {% include additional-requirements-intro.md type="DocumentReference" %} -->
+
+<p><strong>Additional USCDI Requirements:</strong></p>
+
+<p><a name="l492">​</a>This <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> element is not Mandatory or Must Support but is required for ONC Health IT certification testing and is included in the formal definition of the profile and the ServiceRequest examples.</p>
+
+<ol>
+  <li>a reason or indication for referral or consultation*</li>
+</ol>
+
+<p>*see guidance below</p>
+
+<p><strong>Profile Specific Implementation Guidance:</strong></p>
+
+<ul>
+  <li><a name="l513">​</a>For more information on exchanging Social Determinants of Health (SDOH) service requests, See the <a href="screening-and-assessments.html">Screening and Assessments</a> guidance page.</li>
+  <li><a name="l519">​</a>The <code class="language-plaintext highlighter-rouge">ServiceRequest.category</code> binding Must Support, at a minimum, the <a href="ValueSet-us-core-servicerequest-category.html">US Core ServiceRequest Category Codes</a>. However, this value set can be treated as <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>, and other category codes can be used instead.</li>
+  <li>
+    <p>The <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code> value set is broad to accommodate a wide variety of use cases and <strong>SHOULD</strong> be constrained to a subset for a particular use case or domain. <span class="bg-success"> These value sets contain concepts that span many use cases and are not bound to any USCDI Data Element. However, for the USCDI <em>Order</em> Data Elements that use ServiceRequest, the table below identifies <em>additional</em> value set binding. Implementers <strong>SHOULD</strong> conform to the binding strengths listed for each USCDI Order context. For example, laboratory orders are [extensibly] bound to the [LOINC Common Laboratory Orders Value Set]. </span>  <!-- new-content --></p>
+
+    <div class="bg-success">
+
+      <table class="grid">
+        <thead>
+          <tr>
+            <th>USCDI Order Data Element</th>
+            <th>Additional Binding</th>
+            <th>Binding Strength</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Laboratory</td>
+            <td>[LOINC Common Laboratory Orders Value Set]</td>
+            <td><a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td>
+          </tr>
+          <tr>
+            <td>Imaging</td>
+            <td>[LOINC Radiology Codes]</td>
+            <td><a href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td>
+          </tr>
+          <tr>
+            <td>Clinical Tests</td>
+            <td>[LOINC Clinical Test Code]</td>
+            <td><a href="http://hl7.org/fhir/R4/terminologies.html#example">example</a></td>
+          </tr>
+          <tr>
+            <td>Procedures</td>
+            <td><a name="l619">​</a><a href="ValueSet-us-core-procedure-code.html">US Core Procedure Codes</a></td>
+            <td><a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+      <!-- new-content -->
+  </li>
+  <li>*Servers and Clients <strong>SHALL</strong> support both US Core ServiceRequest and US Core Procedure Profiles for communicating the reason or justification for a referral as Additional USCDI Requirements. Typically, the reason or justification for a referral or consultation is communicated through <code class="language-plaintext highlighter-rouge">Procedure.basedOn</code> linking the Procedure to the US Core ServiceRequest Profile that includes either <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonCode</code> or <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code>. When the Procedure does not have an associated ServiceRequest, it is communicated through the US Core Procedure Profile's <code class="language-plaintext highlighter-rouge">Procedure.reasonCode</code> or <code class="language-plaintext highlighter-rouge">Procedure.reasonReference</code>. Depending on the procedure being documented, a server will select the appropriate Profile to use.
+    <ul>
+      <li>Although both <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonCode</code> and <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code> are marked as Additional USCDI Requirements, the certifying server system is not required to support both, but <strong>SHALL</strong> support at least one of these elements. The certifying client application <strong>SHALL</strong> support both elements.
+        <ul>
+          <li>when using  <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code>:
+            <ul>
+              <li>Servers <strong>SHALL</strong> support <em>at least one</em> target resource in <code class="language-plaintext highlighter-rouge">ServiceRequest.reasonReference</code>. Clients <strong>SHALL</strong> support all target resources.</li>
+              <li><a name="l694">​</a>The referenced resources <strong>SHOULD</strong> be a US Core Profile as documented in <a href="general-guidance.html#referencing-us-core-profiles">Referencing US Core Profiles</a>.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+
+
+
+
 <p><b>Usage:</b></p>
 <ul>
  <li>Examples for this Resource Profile: <a href="ServiceRequest-negation-example-code.html">ServiceRequest/negation-example-code</a></li>
@@ -353,7 +473,7 @@
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l660">​</a><span style="opacity: 0.5">Classification of service</span><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l965">​</a><span style="opacity: 0.5">Classification of service</span><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-servicerequest-definitions.html#ServiceRequest.code">code</a><a name="d-ServiceRequest.code"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -513,7 +633,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1461">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1766">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="af"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-servicerequest-definitions.html#ServiceRequest.doNotPerform" title="Set this to true if the record is saying that the service/procedure should NOT be performed.">doNotPerform</a><a name="k-ServiceRequest.doNotPerform"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is a modifier element">?!</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -760,7 +880,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l2715">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l3020">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a17."><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-servicerequest-definitions.html#ServiceRequest.priority" title="Indicates how quickly the ServiceRequest should be addressed with respect to other requests.">priority</a><a name="ServiceRequest.priority"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -1182,7 +1302,7 @@ Summary
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l4449">​</a><span style="opacity: 0.5">Classification of service</span><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l4754">​</a><span style="opacity: 0.5">Classification of service</span><br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ad"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-servicerequest-definitions.html#ServiceRequest.code">code</a><a name="da-ServiceRequest.code"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td>
@@ -1341,7 +1461,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l5247">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l5552">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="af"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-servicerequest-definitions.html#ServiceRequest.doNotPerform" title="Set this to true if the record is saying that the service/procedure should NOT be performed.">doNotPerform</a><a name="ka-ServiceRequest.doNotPerform"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is a modifier element">?!</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -1588,7 +1708,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l6501">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
+<td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l6806">​</a>Classification of service<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" title="http://hl7.org/fhir/us/core/ValueSet/us-core-servicerequest-category">US Core ServiceRequest Category Codes</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>): Note that other codes are permitted, see <a href="general-requirements.html#required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by Value Sets</a><br/><br/><br/></td></tr>
 
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="a17."><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-us-core-servicerequest-definitions.html#ServiceRequest.priority" title="Indicates how quickly the ServiceRequest should be addressed with respect to other requests.">priority</a><a name="sa-ServiceRequest.priority"> </a></td>
 <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
@@ -1979,6 +2099,162 @@ Summary
   <!-- insert notes if present -->
 
 
+<h3>Notes:</h3>
+
+
+<div markdown="1" style="display:inline-block">
+
+  <!-- Source = /Users/ehaas/Documents/FHIR/US-Core/input/. This file is generated by SearchParameterMakerR4.ipynb Do not edit directly. -->
+  <!-- This liquid script creates context specific scopes text for each pages quickstart using input data from input/data/scopes.csv  Rewrote to handle using for subscriptions too -->
+
+  <!-- This liquid script creates a single context specific subscription text for each page's quickstart using input data from input/data/scopes.csv  if multiple topics for a profile are needed will need to rewrite script -->
+
+<hr/>
+
+<p><strong style="font-size: 20px;" id="search">Quick Start</strong>
+<a name="quick-start"> </a></p>
+
+<hr/>
+
+<p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
+
+<ul>
+  <li><a name="l8382">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l8388">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l8394">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l8400">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+</ul>
+
+<h4 id="us-core-scopes">US Core Scopes</h4>
+
+  <!-- {% assign scope_string = scope | inspect %} -->
+
+<p><a name="l8412">​</a>Servers providing access to order and referral data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<ul>
+  <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/ServiceRequest.rs</code></li>
+</ul>
+
+<h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
+
+<p>The following search parameters and search parameter combinations SHALL be supported:</p>
+
+<ol>
+  <li>
+    <p><strong>SHALL</strong> support searching for all servicerequests for a patient using the <strong><a name="l8445">​</a><a href="SearchParameter-us-core-servicerequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?patient={Type/}[id]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest?patient=1137192</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all ServiceRequest resources for the specified patient (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a>)</p>
+  </li>
+  <li>
+    <p><strong>SHALL</strong> support both&nbsp;read ServiceRequest by <code class="language-plaintext highlighter-rouge">id</code> <strong>AND</strong> ServiceRequest search using the <strong><a name="l8485">​</a><a href="SearchParameter-us-core-servicerequest-id.html"><code class="language-plaintext highlighter-rouge">_id</code></a></strong> search parameter:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest/[id]</code> or <code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?_id=[id]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest/1032702</li>
+      <li>GET [base]/ServiceRequest?_id=1032702</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em>  (<a href="http://hl7.org/fhir/R4/references.html#logical">how to search by the logical id</a> of the resource)</p>
+  </li>
+  <li>
+    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l8525">​</a><a href="SearchParameter-us-core-servicerequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8530">​</a><a href="SearchParameter-us-core-servicerequest-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> search parameters:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?patient={Type/}[id]&amp;category={system|}[code]</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest?patient=f201&amp;category=http://loinc.org|LG41762-2</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all ServiceRequest resources for the specified patient and  a category code (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
+  </li>
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l8565">​</a><a href="SearchParameter-us-core-servicerequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8570">​</a><a href="SearchParameter-us-core-servicerequest-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> search parameters:
+    <ul>
+      <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
+    </ul>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?patient={Type/}[id]&amp;code={system|}[code]{,{system|}[code],...}</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest?patient=1032702&amp;code=http://snomed.info/sct|35637008</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all ServiceRequest resources for the specified patient and  report code(s).  SHOULD support search by multiple report codes. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
+  </li>
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l8619">​</a><a href="SearchParameter-us-core-servicerequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8624">​</a><a href="SearchParameter-us-core-servicerequest-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l8629">​</a><a href="SearchParameter-us-core-servicerequest-authored.html"><code class="language-plaintext highlighter-rouge">authored</code></a></strong> search parameters:
+    <ul>
+      <li>including support for these <code class="language-plaintext highlighter-rouge">authored</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
+      <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">authored</code> (e.g.<code class="language-plaintext highlighter-rouge">authored=[date]&amp;authored=[date]]&amp;...</code>)</li>
+    </ul>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?patient={Type/}[id]&amp;category={system|}[code]&amp;authored={gt|lt|ge|le}[date]{&amp;authored={gt|lt|ge|le}[date]&amp;...}</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest?patient=f201&amp;category=http://loinc.org|LG41762-2&amp;date=ge2010-01-14T00:00:00Z</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all ServiceRequest resources for the specified patient and date and a category code (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a> and <a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a>)</p>
+  </li>
+</ol>
+
+<h4 id="optional-search-parameters">Optional Search Parameters:</h4>
+
+<p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
+
+<ol>
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8701">​</a><a href="SearchParameter-us-core-servicerequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8706">​</a><a href="SearchParameter-us-core-servicerequest-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+    <ul>
+      <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
+    </ul>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?patient={Type/}[id]&amp;status={system|}[code]{,{system|}[code],...}</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest?patient=1137192&amp;status=completed</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all ServiceRequest resources for the specified patient and status (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
+  </li>
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8755">​</a><a href="SearchParameter-us-core-servicerequest-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8760">​</a><a href="SearchParameter-us-core-servicerequest-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> and <strong><a name="l8765">​</a><a href="SearchParameter-us-core-servicerequest-authored.html"><code class="language-plaintext highlighter-rouge">authored</code></a></strong> search parameters:
+    <ul>
+      <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
+      <li>including support for these <code class="language-plaintext highlighter-rouge">authored</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
+      <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">authored</code> (e.g.<code class="language-plaintext highlighter-rouge">authored=[date]&amp;authored=[date]]&amp;...</code>)</li>
+    </ul>
+
+    <p><code class="language-plaintext highlighter-rouge">GET [base]/ServiceRequest?patient={Type/}[id]&amp;code={system|}[code]{,{system|}[code],...}&amp;authored={gt|lt|ge|le}[date]{&amp;authored={gt|lt|ge|le}[date]&amp;...}</code></p>
+
+    <p>Example:</p>
+
+    <ol>
+      <li>GET [base]/ServiceRequest?patient=f201&amp;code=http://snomed.info/sct|35637008&amp;date=ge2019-01-14T00:00:00Z</li>
+    </ol>
+
+    <p><em>Implementation Notes:</em> Fetches a bundle of all ServiceRequest resources for the specified patient and date and service code(s).  SHOULD support search by multiple report codes. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a> and <a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a>)</p>
+  </li>
+</ol>
+
+
+</div>
+
+
 
 
 </div>
@@ -2000,7 +2276,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 19, 2024 17:07+0000">2024-08-19</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 04:29+0000">2024-08-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
