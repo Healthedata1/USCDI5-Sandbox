@@ -1,4 +1,5 @@
 [ADI-example]: Observation-ADI-example.html
+[no-ADI-example]: Observation-no-ADI-example.html
 [example-patient-adi]: DocumentReference-example-patient-adi.html
 [FooBar]: CodeSystem-foo-bar.html
 [FooBar]: ValueSet-foo-bar.html
@@ -10,16 +11,11 @@
 [79614]: Provenance-79614.html
 [USCoreADIFinding]: ValueSet-us-core-adi-finding.html
 [USCoreClinicalNoteType]: ValueSet-us-core-clinical-note-type.html
-[USCoreEncounterSubscriptionTopic]: SubscriptionTopic-us-core-encounter.html
 [USCoreImmunizationProfile]: StructureDefinition-us-core-immunization.html
-[USCoreImmunizationSubscriptionTopic]: SubscriptionTopic-us-core-immunization.html
-[USCoreLaboratoryReportSubscriptionTopic]: SubscriptionTopic-us-core-laboratory-report.html
-[USCoreLaboratoryResultSubscriptionTopic]: SubscriptionTopic-us-core-laboratory-result.html
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCoreObservationADIDocumentationProfile]: StructureDefinition-us-core-observation-adi-documentation.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
-[USCoreProblemsAndHealthConcernsSubscriptionTopic]: SubscriptionTopic-us-core-problems-and-health-concerns.html
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html
 [UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
 [USCoreServiceRequestProfile]: StructureDefinition-us-core-servicerequest.html

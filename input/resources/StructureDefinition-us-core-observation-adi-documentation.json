@@ -124,28 +124,76 @@
                 "mustSupport": true
             },
             {
-                "id": "Observation.effective[x]",
-                "path": "Observation.effective[x]",
-                "definition": "The time or time-period the observed value is asserted as being true. For biological subjects - e.g., human patients - this is usually called the \"physiologically relevant time\".",
-                "comment": "At least a date should be present unless this observation is a historical report.",
+                "id": "Observation.issued",
+                "path": "Observation.issued",
+                "short": "Date/Time this reviewed and verified observation was made available",
+                "mustSupport": true
+            },
+            {
+                "id": "Observation.performer",
+                "path": "Observation.performer",
+                "short": "Who reviewed and verified the observation",
                 "type": [
                     {
-                        "extension": [
-                            {
-                                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-                                "valueBoolean": true
-                            }
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+                            "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
+                            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"
                         ],
-                        "code": "dateTime"
-                    },
-                    {
-                        "code": "Period"
-                    },
-                    {
-                        "code": "Timing"
-                    },
-                    {
-                        "code": "instant"
+                        "_targetProfile": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                                        "valueBoolean": true
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                                        "valueBoolean": false
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                                        "valueBoolean": false
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                                        "valueBoolean": false
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                                        "valueBoolean": false
+                                    }
+                                ]
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
+                                        "valueBoolean": false
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
                 "mustSupport": true
@@ -161,8 +209,8 @@
                 "mustSupport": true,
                 "binding": {
                     "strength": "extensible",
-                    "description": "ADI documentation types",
-                    "valueSet": "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding"
+                    "description": "Advance Healthcare Directive Categories Grouper",
+                    "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.25"
                 }
             }
         ]

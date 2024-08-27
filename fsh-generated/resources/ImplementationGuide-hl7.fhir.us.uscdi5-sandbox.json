@@ -114,6 +114,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/no-ADI-example"
+        },
+        "description": "This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives",
+        "name": "ADI Observation No ADI Example",
+        "exampleCanonical": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"
+      },
+      {
+        "reference": {
           "reference": "DocumentReference/example-patient-adi"
         },
         "description": "This is a DocumentReference example for the USCDI5 ADI Observation Data Element",
@@ -201,43 +209,11 @@
       },
       {
         "reference": {
-          "reference": "SubscriptionTopic/us-core-encounter"
-        },
-        "description": "This topic allows subscribers to receive notifications for the US Core Encounter events represented by US Core US Core Encounter Profile, including create, update, and delete interactions.",
-        "exampleBoolean": false,
-        "name": "US Core Encounter Subscription Topic"
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/us-core-immunization"
         },
         "description": "The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean": false,
         "name": "US Core Immunization Profile"
-      },
-      {
-        "reference": {
-          "reference": "SubscriptionTopic/us-core-immunization"
-        },
-        "description": "This topic allows subscribers to receive notifications for the US Core Immunization events represented by US Core US Core Immunization Profile, including create, update, and delete interactions.",
-        "exampleBoolean": false,
-        "name": "US Core Immunization Subscription Topic"
-      },
-      {
-        "reference": {
-          "reference": "SubscriptionTopic/us-core-laboratory-report"
-        },
-        "description": "This topic allows subscribers to receive notifications for the US Core Laboratory Report events represented by US Core US Core DiagnosticReport Profile for Laboratory Results Reporting, including create, update, and delete interactions.",
-        "exampleBoolean": false,
-        "name": "US Core Laboratory Report Subscription Topic"
-      },
-      {
-        "reference": {
-          "reference": "SubscriptionTopic/us-core-laboratory-result"
-        },
-        "description": "This topic allows subscribers to receive notifications for the US Core Laboratory Result events represented by US Core US Core Laboratory Result Observation Profile, including create, update, and delete interactions.",
-        "exampleBoolean": false,
-        "name": "US Core Laboratory Result Subscription Topic"
       },
       {
         "reference": {
@@ -270,14 +246,6 @@
         "description": "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean": false,
         "name": "US Core Patient Profile"
-      },
-      {
-        "reference": {
-          "reference": "SubscriptionTopic/us-core-problems-and-health-concerns"
-        },
-        "description": "This topic allows subscribers to receive notifications for the US Core Problems and Health Concerns events represented by US Core US Core Condition Problems and Health Concerns Profile, including create, update, and delete interactions.",
-        "exampleBoolean": false,
-        "name": "US Core Problems and Health Concerns Subscription Topic"
       },
       {
         "reference": {

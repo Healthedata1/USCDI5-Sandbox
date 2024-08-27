@@ -1,15 +1,14 @@
 resourceType: Observation
-id: ADI-example
+id: no-ADI-example
 meta:
 
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
-    valueString: ADI Observation Example
+    valueString: ADI Observation No ADI Example
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
-    valueMarkdown: This is a Observation example for the USCDI5 ADI Observation Data Element
+    valueMarkdown: This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives 
   profile:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
-
 status: final
 code:
   coding:
@@ -25,9 +24,9 @@ performer:
   - display: Dr Smith
 valueCodeableConcept:
   coding:
-    - system: 'http://loinc.org'
-      code: '81334-5'
-      display: Patient Personal advance care plan
-focus: 
-  - reference: DocumentReference/example-patient-adi
-    display: Person-Authored Advance Directive 
+    - system: http://snomed.info/sct
+      code: '449891000124104'
+      display: No advance directive (finding)
+# focus: 
+#   - reference: DocumentReference/example-patient-adi
+#     display: Person-Authored Advance Directive 
