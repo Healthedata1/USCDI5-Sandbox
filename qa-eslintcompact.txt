@@ -604,7 +604,6 @@ Generic: line 0, col 0, Error - The link 'must-support.html' for "Must Support" 
 Generic: line 0, col 0, Error - The link 'must-support.html#additional-uscdi-requirements' for "Additional USCDI Requirements" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'screening-and-assessments.html' for "Screening and Assessments" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'ValueSet-us-core-servicerequest-category.html' for "US Core ServiceRequest Category Codes" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'ValueSet-us-core-procedure-code.html' for "US Core Procedure Codes" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'general-guidance.html#referencing-us-core-profiles' for "Referencing US Core Profiles" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'general-requirements.html#required-bindings-when-slicing-by-valuesets' for "Required Bindings When Slicing by Value Sets" cannot be resolved (NOTFOUND)
