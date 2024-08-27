@@ -230,12 +230,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#health-edata-sandbox" id="markdown-toc-health-edata-sandbox">Health eData Sandbox</a></li>
+  <li><a href="#loinc-universal-lab-order-codes-value-set" id="markdown-toc-loinc-universal-lab-order-codes-value-set">LOINC Universal Lab Order Codes Value Set</a></li>
+</ul>
+
 </div>
 <h3 id="health-edata-sandbox">Health eData Sandbox</h3>
 
 <p>testbed for ideas….</p>
+
+<!-- This liquid script creates a US Core subscription topic requirements table using input data from input/data/input/data/LoincUniversalLabOrdersValueSet.csv
+include parameters: conformance='SHALL'|'SHOULD'|'MAY'see below for how used and crud='cruds'<<< not used -->
+
+<h3 id="loinc-universal-lab-order-codes-value-set">LOINC Universal Lab Order Codes Value Set</h3>
+
+<p>Overview:
+The LOINC Universal Lab Order Codes Value Set, also known as the "Common Lab Orders", is a collection of the most frequent lab orders. It was created for order entry system developers so that they could deliver them in HL7 messages to laboratories. On receipt, laboratories could understand and translate these universal codes into their internal processes for fulfillment.</p>
+
+<p>This value set was developed iteratively through both empirical and consensus-driven approaches. The original version was developed by the NLM, Regenstrief Institute, and several organizations and contained an empirical list of the most commonly ordered tests. We often called that list the "Top 300", because it contained about 300 codes that accounted for the majority of the volume of five nationally-representative data sources.</p>
+
+<p>In 2014, S&amp;I Framework Initiative called "aLOINC Order Code" launched with the goal of enhancing and expanding the original list to more comprehensively cover tests commonly ordered in ambulatory care settings and for tests ordered in public health settings. The initative used a combination of empiric and consensus based approaches to identify additional LOINC codes to be added to the original list.</p>
+
+<p>Columns:</p>
+<ul>
+  <li>LOINC_NUM - the LOINC term identifier, which is a unique numeric identifier with a check digit</li>
+  <li>LONG_COMMON_NAME - the LOINC Long Common Name for the term =</li>
+  <li>ORDER_OBS - whether the LOINC term can be used as an Order, an Observation, or Both. In this file, the only values contained in the ORDER_OBS column are "Both" and "Order".</li>
+</ul>
+
+<p>Sort order:
+This file is sorted alphabetically by LOINC Long Common Name.</p>
+
+<p>*Note: This file does not include any deprecated terms.</p>
+
+<table class="grid">
+<thead>
+<tr>
+<th>Row</th>
+<th>LOINC</th>
+<th>Long Common Name</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
 
 
 
@@ -256,7 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 15:46+0000">2024-08-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 17:42+0000">2024-08-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

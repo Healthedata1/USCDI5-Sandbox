@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1a5c9a0a-3d97-4426-8a99-629f292065be-74",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1a5c9a0a-3d97-4426-8a99-629f292065be-74",
+  "id" : "3a573abf-762f-4b1a-9404-dffd7cb42849-74",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a573abf-762f-4b1a-9404-dffd7cb42849-74",
   "name" : "UnionUSCoreSimpleObservationProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Simple Observation Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-27T15:47:22+00:00",
+  "date" : "2024-08-27T17:43:01+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
