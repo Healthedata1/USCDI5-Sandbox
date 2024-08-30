@@ -36,7 +36,20 @@ The following data elements must always be present ([Mandatory] definition) or m
 **Profile Specific Implementation Guidance:**
 
 - For more information on exchanging Social Determinants of Health (SDOH) service requests, See the [Screening and Assessments] guidance page.
-- The `ServiceRequest.category` binding Must Support, at a minimum, the [US Core ServiceRequest Category Codes]. However, this value set can be treated as [extensible], and other category codes can be used instead.
+- <span class="bg-success" markdown="1">The Must Support `ServiceRequest.category` is bound, *at a minimum*, to the [US Core ServiceRequest Category Codes] and other category codes can be used. API consumers can query by category when accessing patient information. For the USCDI *Laboratory Order*, *Imaging Order*, *Clinical Test Order*, and *Procedure Order* Data Elements, implementers **SHOULD** use the corresponding category codes listed in the table below. For example, laboratory orders would have the category code "108252007" (Laboratory procedure).</span><!-- new-content -->
+
+  <div class="bg-success" markdown="1">
+
+  |USCDI Order Data Element|Category Codes|
+  |---|---|
+  |Laboratory|  108252007 (Laboratory procedure)|
+  |Imaging|363679005 (Imaging)|
+  |Clinical Tests|386053000 (Evaluation procedure (procedure),<br />410606000 (Social service procedure (procedure)), or<br />387713003 (Surgical procedure (procedure))|
+  |Procedure|386053000 (Evaluation procedure (procedure),<br />410606000 (Social service procedure (procedure)), or <br />387713003 (Surgical procedure (procedure))| 
+  {:.grid}
+
+  </div><!-- new-content -->
+
 - The `ServiceRequest.code` value set is broad to accommodate a wide variety of use cases and **SHOULD** be constrained to a subset for a particular use case or domain. <span class="bg-success" markdown="1"> These value sets contain concepts that span many use cases and are not bound to any USCDI Data Element. However, for the USCDI *Laboratory Order, Imaging Order and Clinical Test Order* Data Elements, the table below identifies *additional* value set binding. Implementers **SHOULD** conform to the binding strengths listed for each USCDI Order context. For example, laboratory orders are [extensibly] bound to the [LOINC Common Laboratory Orders Value Set]. Note that the USCDI Class *Procedure Order* Data Element has no additional binding.</span><!-- new-content -->
 
   <div class="bg-success" markdown="1">

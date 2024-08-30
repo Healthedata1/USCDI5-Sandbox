@@ -1,12 +1,13 @@
 resourceType: Observation
-id: no-ADI-example
+id: no-ADI-example-option1
 meta:
 
   extension:
   - url: http://hl7.org/fhir/StructureDefinition/instance-name
-    valueString: ADI Observation No ADI Example
+    valueString: ADI Observation No ADI Example OPTION 1
   - url: http://hl7.org/fhir/StructureDefinition/instance-description
-    valueMarkdown: This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives 
+    valueMarkdown: This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives using the same code = '42348-3'
+       (Advance directives) and adding a value to ADI document type binding '449891000124104'  (No advance directive (finding))
   profile:
       - http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
 status: final
@@ -21,7 +22,7 @@ effectiveDateTime: 2024-05-16T01:06:06.393Z
 issued: 2024-05-16T01:06:06.393Z
 performer:
   - reference: http://hl7.org/fhir/us/core/Practitioner/practitioner-1
-  - display: Dr Smith
+    display: Dr Smith
 valueCodeableConcept:
   coding:
     - system: http://snomed.info/sct

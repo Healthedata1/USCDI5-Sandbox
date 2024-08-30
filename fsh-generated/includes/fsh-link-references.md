@@ -1,5 +1,7 @@
 [ADI-example]: Observation-ADI-example.html
-[no-ADI-example]: Observation-no-ADI-example.html
+[no-ADI-example-option1]: Observation-no-ADI-example-option1.html
+[no-ADI-example-option2]: Observation-no-ADI-example-option2.html
+[no-ADI-example-option3]: Observation-no-ADI-example-option3.html
 [example-patient-adi]: DocumentReference-example-patient-adi.html
 [FooBar]: CodeSystem-foo-bar.html
 [FooBar]: ValueSet-foo-bar.html
