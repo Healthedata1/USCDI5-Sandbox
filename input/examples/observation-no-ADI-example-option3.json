@@ -1,0 +1,49 @@
+{
+    "resourceType": "Observation",
+    "id": "no-ADI-example-option3",
+    "meta": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+                "valueString": "ADI Observation No ADI Example OPTION 3"
+            },
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+                "valueMarkdown": "This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = \"45481-9\" - (Advance directive - none ?) and value of \"Yes\"/\"No\"/\"Unknown\" (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"
+            }
+        ],
+        "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"
+        ]
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "45481-9 - Advance directive - none,",
+                "display": "Advance directive - none?"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/example"
+    },
+    "effectiveDateTime": "2024-05-16T01:06:06.393000+00:00",
+    "issued": "2024-05-16T01:06:06.393000+00:00",
+    "performer": [
+        {
+            "reference": "http://hl7.org/fhir/us/core/Practitioner/practitioner-1",
+            "display": "Dr Smith"
+        }
+    ],
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": true
+            }
+        ]
+    }
+}
