@@ -175,6 +175,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -183,9 +186,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument.recordTarget.patientRole" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.id" ] ;
@@ -624,14 +624,14 @@
        fhir:mustSupport [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.extension" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender" ]
        ] [
          fhir:identity [ fhir:v "iso11179" ] ;
          fhir:map [ fhir:v ".patient.administrativeGenderCode" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.extension" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.extension:sex" ] ;
@@ -939,6 +939,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.identifier" ]
+       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.identifier" ]
        ] [
@@ -950,9 +953,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v ".id" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.identifier" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.identifier.id" ] ;
@@ -1167,6 +1167,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.identifier.system" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "CX.4 / EI-2-4" ]
        ] [
@@ -1175,9 +1178,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./IdentifierType" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.identifier.system" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.identifier.value" ] ;
@@ -1214,6 +1214,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.identifier.value" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "CX.1 / EI.1" ]
        ] [
@@ -1222,9 +1225,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./Value" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.identifier.value" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.identifier.period" ] ;
@@ -1387,6 +1387,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.name" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PID-5, PID-9" ]
        ] [
@@ -1395,9 +1398,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v ".patient.name" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.name" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.name.id" ] ;
@@ -1604,6 +1604,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.name.family" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XPN.1/FN.1" ]
        ] [
@@ -1612,9 +1615,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./FamilyName" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.name.family" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.name.given" ] ;
@@ -1650,6 +1650,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.name.given" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XPN.2 + XPN.3" ]
        ] [
@@ -1658,9 +1661,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./GivenNames" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.name.given" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.name.prefix" ] ;
@@ -1736,14 +1736,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XPN/4" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "./part[partType = SFX]" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.name.period" ] ;
@@ -1780,6 +1780,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XPN.13 + XPN.14" ]
        ] [
@@ -1788,9 +1791,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./StartDate and ./EndDate" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.telecom" ] ;
@@ -1828,6 +1828,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PID-13, PID-14, PID-40" ]
        ] [
@@ -1836,9 +1839,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v ".telecom" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.telecom.id" ] ;
@@ -1957,6 +1957,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XTN.3" ]
        ] [
@@ -1965,9 +1968,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./ContactPointType" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.telecom.value" ] ;
@@ -2001,6 +2001,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XTN.1 (or XTN.12)" ]
        ] [
@@ -2009,9 +2012,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./Value" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.telecom.use" ] ;
@@ -2053,6 +2053,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XTN.2 - but often indicated by field" ]
        ] [
@@ -2061,9 +2064,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./ContactPointPurpose" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.telecom.rank" ] ;
@@ -2178,6 +2178,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.gender" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PID-8" ]
        ] [
@@ -2186,9 +2189,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v ".patient.administrativeGenderCode" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.gender" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.birthDate" ] ;
@@ -2222,6 +2222,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.birthDate" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PID-7" ]
        ] [
@@ -2233,9 +2236,6 @@
        ] [
          fhir:identity [ fhir:v "loinc" ] ;
          fhir:map [ fhir:v "21112-8" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.birthDate" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.deceased[x]" ] ;
@@ -2316,6 +2316,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.birthDate" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PID-11" ]
        ] [
@@ -2324,9 +2327,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v ".addr" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.birthDate" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.address.id" ] ;
@@ -2604,6 +2604,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)" ]
        ] [
@@ -2615,9 +2618,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./StreetAddress (newline delimitted)" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.address.city" ] ;
@@ -2657,6 +2657,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XAD.3" ]
        ] [
@@ -2668,9 +2671,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./Jurisdiction" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.address.district" ] ;
@@ -2756,6 +2756,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XAD.4" ]
        ] [
@@ -2767,9 +2770,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./Region" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.address.postalCode" ] ;
@@ -2809,6 +2809,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XAD.5" ]
        ] [
@@ -2820,9 +2823,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./PostalIdentificationCode" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.address.country" ] ;
@@ -2908,6 +2908,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "XAD.12 / XAD.13 + XAD.14" ]
        ] [
@@ -2916,9 +2919,6 @@
        ] [
          fhir:identity [ fhir:v "servd" ] ;
          fhir:map [ fhir:v "./StartDate and ./EndDate" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.maritalStatus" ] ;
@@ -3551,14 +3551,14 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.communication" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "LanguageCommunication" ]
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "patient.languageCommunication" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.communication" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.communication.id" ] ;
@@ -3715,6 +3715,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Patient.communication.language" ]
+       ] [
          fhir:identity [ fhir:v "v2" ] ;
          fhir:map [ fhir:v "PID-15, LAN-2" ]
        ] [
@@ -3723,9 +3726,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v ".languageCode" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Patient.communication.language" ]
        ] )
      ] [
        fhir:id [ fhir:v "Patient.communication.preferred" ] ;

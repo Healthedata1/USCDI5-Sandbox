@@ -163,6 +163,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -177,10 +181,6 @@
       {
         "identity" : "rim",
         "map" : "CombinedMedicationRequest"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder"
       }]
     },
     {
@@ -568,6 +568,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/medicationrequest-status"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder.status"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.status"
       },
@@ -582,10 +586,6 @@
       {
         "identity" : "rim",
         "map" : ".statusCode"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder.status"
       }]
     },
     {
@@ -667,6 +667,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder.status"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.intent"
       },
@@ -677,10 +681,6 @@
       {
         "identity" : "rim",
         "map" : ".moodCode (nuances beyond PRP/PLAN/RQO would need to be elsewhere)"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder.status"
       }]
     },
     {
@@ -937,12 +937,12 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
-        "identity" : "rim",
-        "map" : ".participation[typeCode=INF].role"
-      },
-      {
         "identity" : "argonaut-dq-dstu2",
         "map" : "MedicationOrder.status"
+      },
+      {
+        "identity" : "rim",
+        "map" : ".participation[typeCode=INF].role"
       }]
     },
     {
@@ -981,6 +981,10 @@
         "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder.medication[x]"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.code"
       },
@@ -999,10 +1003,6 @@
       {
         "identity" : "rim",
         "map" : "consumable.administrableMedication"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder.medication[x]"
       }]
     },
     {
@@ -1047,6 +1047,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder.patient"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.subject"
       },
@@ -1069,10 +1073,6 @@
       {
         "identity" : "w5",
         "map" : "FiveWs.subject"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder.patient"
       }]
     },
     {
@@ -1104,6 +1104,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.context"
       },
@@ -1122,10 +1126,6 @@
       {
         "identity" : "rim",
         "map" : ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -1194,6 +1194,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder.dateWritten"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.authoredOn"
       },
@@ -1212,10 +1216,6 @@
       {
         "identity" : "rim",
         "map" : "author.time"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder.dateWritten"
       }]
     },
     {
@@ -1288,6 +1288,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "MedicationOrder.prescriber"
+      },
+      {
         "identity" : "workflow",
         "map" : "Request.requester"
       },
@@ -1298,10 +1302,6 @@
       {
         "identity" : "rim",
         "map" : ".participation[typeCode=AUT].role"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "MedicationOrder.prescriber"
       }]
     },
     {

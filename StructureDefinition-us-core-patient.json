@@ -156,6 +156,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -166,10 +170,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument.recordTarget.patientRole"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient"
       }]
     },
     {
@@ -569,16 +569,16 @@
       "mustSupport" : false,
       "isModifier" : false,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.extension"
+      },
+      {
         "identity" : "rim",
         "map" : "player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender"
       },
       {
         "identity" : "iso11179",
         "map" : ".patient.administrativeGenderCode"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.extension"
       }]
     },
     {
@@ -846,6 +846,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.identifier"
+      },
+      {
         "identity" : "w5",
         "map" : "FiveWs.identifier"
       },
@@ -860,10 +864,6 @@
       {
         "identity" : "cda",
         "map" : ".id"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.identifier"
       }]
     },
     {
@@ -1066,6 +1066,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.identifier.system"
+      },
+      {
         "identity" : "v2",
         "map" : "CX.4 / EI-2-4"
       },
@@ -1076,10 +1080,6 @@
       {
         "identity" : "servd",
         "map" : "./IdentifierType"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.identifier.system"
       }]
     },
     {
@@ -1114,6 +1114,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.identifier.value"
+      },
+      {
         "identity" : "v2",
         "map" : "CX.1 / EI.1"
       },
@@ -1124,10 +1128,6 @@
       {
         "identity" : "servd",
         "map" : "./Value"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.identifier.value"
       }]
     },
     {
@@ -1286,6 +1286,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.name"
+      },
+      {
         "identity" : "v2",
         "map" : "PID-5, PID-9"
       },
@@ -1296,10 +1300,6 @@
       {
         "identity" : "cda",
         "map" : ".patient.name"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.name"
       }]
     },
     {
@@ -1498,6 +1498,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.name.family"
+      },
+      {
         "identity" : "v2",
         "map" : "XPN.1/FN.1"
       },
@@ -1508,10 +1512,6 @@
       {
         "identity" : "servd",
         "map" : "./FamilyName"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.name.family"
       }]
     },
     {
@@ -1546,6 +1546,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.name.given"
+      },
+      {
         "identity" : "v2",
         "map" : "XPN.2 + XPN.3"
       },
@@ -1556,10 +1560,6 @@
       {
         "identity" : "servd",
         "map" : "./GivenNames"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.name.given"
       }]
     },
     {
@@ -1633,16 +1633,16 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XPN/4"
       },
       {
         "identity" : "rim",
         "map" : "./part[partType = SFX]"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -1677,6 +1677,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XPN.13 + XPN.14"
       },
@@ -1687,10 +1691,6 @@
       {
         "identity" : "servd",
         "map" : "./StartDate and ./EndDate"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -1726,6 +1726,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "PID-13, PID-14, PID-40"
       },
@@ -1736,10 +1740,6 @@
       {
         "identity" : "cda",
         "map" : ".telecom"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -1851,6 +1851,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-system"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XTN.3"
       },
@@ -1861,10 +1865,6 @@
       {
         "identity" : "servd",
         "map" : "./ContactPointType"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -1896,6 +1896,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XTN.1 (or XTN.12)"
       },
@@ -1906,10 +1910,6 @@
       {
         "identity" : "servd",
         "map" : "./Value"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -1946,6 +1946,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/contact-point-use"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XTN.2 - but often indicated by field"
       },
@@ -1956,10 +1960,6 @@
       {
         "identity" : "servd",
         "map" : "./ContactPointPurpose"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -2068,6 +2068,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/administrative-gender"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.gender"
+      },
+      {
         "identity" : "v2",
         "map" : "PID-8"
       },
@@ -2078,10 +2082,6 @@
       {
         "identity" : "cda",
         "map" : ".patient.administrativeGenderCode"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.gender"
       }]
     },
     {
@@ -2113,6 +2113,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.birthDate"
+      },
+      {
         "identity" : "v2",
         "map" : "PID-7"
       },
@@ -2127,10 +2131,6 @@
       {
         "identity" : "loinc",
         "map" : "21112-8"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.birthDate"
       }]
     },
     {
@@ -2210,6 +2210,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.birthDate"
+      },
+      {
         "identity" : "v2",
         "map" : "PID-11"
       },
@@ -2220,10 +2224,6 @@
       {
         "identity" : "cda",
         "map" : ".addr"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.birthDate"
       }]
     },
     {
@@ -2492,6 +2492,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
       },
@@ -2506,10 +2510,6 @@
       {
         "identity" : "servd",
         "map" : "./StreetAddress (newline delimitted)"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -2548,6 +2548,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XAD.3"
       },
@@ -2562,10 +2566,6 @@
       {
         "identity" : "servd",
         "map" : "./Jurisdiction"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -2646,6 +2646,10 @@
         "valueSet" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XAD.4"
       },
@@ -2660,10 +2664,6 @@
       {
         "identity" : "servd",
         "map" : "./Region"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -2703,6 +2703,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XAD.5"
       },
@@ -2717,10 +2721,6 @@
       {
         "identity" : "servd",
         "map" : "./PostalIdentificationCode"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -2804,6 +2804,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "NA"
+      },
+      {
         "identity" : "v2",
         "map" : "XAD.12 / XAD.13 + XAD.14"
       },
@@ -2814,10 +2818,6 @@
       {
         "identity" : "servd",
         "map" : "./StartDate and ./EndDate"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "NA"
       }]
     },
     {
@@ -3429,16 +3429,16 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.communication"
+      },
+      {
         "identity" : "rim",
         "map" : "LanguageCommunication"
       },
       {
         "identity" : "cda",
         "map" : "patient.languageCommunication"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.communication"
       }]
     },
     {
@@ -3586,6 +3586,10 @@
         "valueSet" : "http://hl7.org/fhir/us/core/ValueSet/simple-language"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Patient.communication.language"
+      },
+      {
         "identity" : "v2",
         "map" : "PID-15, LAN-2"
       },
@@ -3596,10 +3600,6 @@
       {
         "identity" : "cda",
         "map" : ".languageCode"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Patient.communication.language"
       }]
     },
     {

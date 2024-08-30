@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e02b125e-9400-4bb5-a407-6319948bfc85-53",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e02b125e-9400-4bb5-a407-6319948bfc85-53",
+  "id" : "3d27fc00-eb33-4e72-9d6e-7713e69d235c-53",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3d27fc00-eb33-4e72-9d6e-7713e69d235c-53",
   "name" : "UnionUSCoreObservationPregnancyIntentProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Observation Pregnancy Intent Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-27T18:11:41+00:00",
+  "date" : "2024-08-30T00:19:44+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

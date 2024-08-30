@@ -184,6 +184,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
       </mapping>
@@ -198,10 +202,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="CombinedMedicationRequest"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder"/>
       </mapping>
     </element>
     <element id="MedicationRequest.id">
@@ -574,6 +574,10 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-status"/>
       </binding>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder.status"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.status"/>
       </mapping>
@@ -588,10 +592,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".statusCode"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder.status"/>
       </mapping>
     </element>
     <element id="MedicationRequest.statusReason">
@@ -670,6 +670,10 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-intent"/>
       </binding>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder.status"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.intent"/>
       </mapping>
@@ -680,10 +684,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".moodCode (nuances beyond PRP/PLAN/RQO would need to be elsewhere)"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder.status"/>
       </mapping>
     </element>
     <element id="MedicationRequest.category">
@@ -921,12 +921,12 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
-        <identity value="rim"/>
-        <map value=".participation[typeCode=INF].role"/>
-      </mapping>
-      <mapping>
         <identity value="argonaut-dq-dstu2"/>
         <map value="MedicationOrder.status"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value=".participation[typeCode=INF].role"/>
       </mapping>
     </element>
     <element id="MedicationRequest.medication[x]">
@@ -964,6 +964,10 @@
         <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4"/>
       </binding>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder.medication[x]"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.code"/>
       </mapping>
@@ -982,10 +986,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="consumable.administrableMedication"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder.medication[x]"/>
       </mapping>
     </element>
     <element id="MedicationRequest.subject">
@@ -1025,6 +1025,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder.patient"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.subject"/>
       </mapping>
@@ -1047,10 +1051,6 @@
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.subject"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder.patient"/>
       </mapping>
     </element>
     <element id="MedicationRequest.encounter">
@@ -1081,6 +1081,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="NA"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.context"/>
       </mapping>
@@ -1099,10 +1103,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=&quot;type of encounter or episode&quot;]"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="NA"/>
       </mapping>
     </element>
     <element id="MedicationRequest.supportingInformation">
@@ -1169,6 +1169,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder.dateWritten"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.authoredOn"/>
       </mapping>
@@ -1187,10 +1191,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="author.time"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder.dateWritten"/>
       </mapping>
     </element>
     <element id="MedicationRequest.requester">
@@ -1250,6 +1250,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="MedicationOrder.prescriber"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Request.requester"/>
       </mapping>
@@ -1260,10 +1264,6 @@
       <mapping>
         <identity value="rim"/>
         <map value=".participation[typeCode=AUT].role"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="MedicationOrder.prescriber"/>
       </mapping>
     </element>
     <element id="MedicationRequest.performer">

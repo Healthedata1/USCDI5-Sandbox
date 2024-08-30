@@ -180,6 +180,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -191,9 +194,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "CombinedMedicationRequest" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.id" ] ;
@@ -604,6 +604,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder.status" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.status" ]
        ] [
@@ -615,9 +618,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".statusCode" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder.status" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.statusReason" ] ;
@@ -708,6 +708,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder.status" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.intent" ]
        ] [
@@ -716,9 +719,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".moodCode (nuances beyond PRP/PLAN/RQO would need to be elsewhere)" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder.status" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.category" ] ;
@@ -988,11 +988,11 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v ".participation[typeCode=INF].role" ]
-       ] [
          fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
          fhir:map [ fhir:v "MedicationOrder.status" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v ".participation[typeCode=INF].role" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.medication[x]" ] ;
@@ -1038,6 +1038,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder.medication[x]" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.code" ]
        ] [
@@ -1052,9 +1055,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "consumable.administrableMedication" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder.medication[x]" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.subject" ] ;
@@ -1102,6 +1102,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder.patient" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.subject" ]
        ] [
@@ -1119,9 +1122,6 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.subject" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder.patient" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.encounter" ] ;
@@ -1158,6 +1158,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "NA" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.context" ]
        ] [
@@ -1172,9 +1175,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=COMP].source[classCode=ENC, moodCode=EVN, code=\"type of encounter or episode\"]" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "NA" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.supportingInformation" ] ;
@@ -1248,6 +1248,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder.dateWritten" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.authoredOn" ]
        ] [
@@ -1262,9 +1265,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "author.time" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder.dateWritten" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.requester" ] ;
@@ -1340,6 +1340,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "MedicationOrder.prescriber" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Request.requester" ]
        ] [
@@ -1348,9 +1351,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".participation[typeCode=AUT].role" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "MedicationOrder.prescriber" ]
        ] )
      ] [
        fhir:id [ fhir:v "MedicationRequest.performer" ] ;

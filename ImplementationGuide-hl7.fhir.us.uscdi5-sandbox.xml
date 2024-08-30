@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-08-27T18:11:09+00:00"/>
+  <date value="2024-08-30T00:19:12+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -357,7 +357,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -639,10 +639,32 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/no-ADI-example"/>
+        <reference value="Observation/no-ADI-example-option1"/>
       </reference>
-      <name value="ADI Observation No ADI Example"/>
-      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives"/>
+      <name value="ADI Observation No ADI Example OPTION 1"/>
+      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives using the same code = '42348-3' (Advance directives) and adding a value to ADI document type binding '449891000124104'  (No advance directive (finding))"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/no-ADI-example-option2"/>
+      </reference>
+      <name value="ADI Observation No ADI Example OPTION 2"/>
+      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = &quot;45473-6&quot; - (Advance directive/living will completed) and and value of &quot;Yes&quot;/&quot;No&quot;/&quot;Unknown&quot; (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/no-ADI-example-option3"/>
+      </reference>
+      <name value="ADI Observation No ADI Example OPTION 3"/>
+      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = &quot;45481-9&quot; - (Advance directive - none ?) and value of &quot;Yes&quot;/&quot;No&quot;/&quot;Unknown&quot; (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"/>
     </resource>
     <resource>

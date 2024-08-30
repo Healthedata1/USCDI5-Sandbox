@@ -168,6 +168,10 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization"/>
+      </mapping>
+      <mapping>
         <identity value="rim"/>
         <map value="Entity. Role, or Act"/>
       </mapping>
@@ -182,10 +186,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="SubstanceAdministration"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization"/>
       </mapping>
     </element>
     <element id="Immunization.id">
@@ -512,6 +512,10 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/immunization-status"/>
       </binding>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization.status"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.status"/>
       </mapping>
@@ -522,10 +526,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="statusCode"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization.status"/>
       </mapping>
     </element>
     <element id="Immunization.statusReason">
@@ -559,16 +559,16 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/immunization-status-reason"/>
       </binding>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization.wasNotGiven"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.statusReason"/>
       </mapping>
       <mapping>
         <identity value="rim"/>
         <map value=".inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN].reasonCOde"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization.wasNotGiven"/>
       </mapping>
     </element>
     <element id="Immunization.vaccineCode">
@@ -602,6 +602,10 @@
         <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6"/>
       </binding>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.code"/>
       </mapping>
@@ -620,10 +624,6 @@
       <mapping>
         <identity value="cda"/>
         <map value="ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/realmCode/code"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization.vaccineCode"/>
       </mapping>
     </element>
     <element id="Immunization.patient">
@@ -654,6 +654,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization.patient"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.subject"/>
       </mapping>
@@ -672,10 +676,6 @@
       <mapping>
         <identity value="w5"/>
         <map value="FiveWs.subject"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization.patient"/>
       </mapping>
     </element>
     <element id="Immunization.encounter">
@@ -754,6 +754,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization.date"/>
+      </mapping>
+      <mapping>
         <identity value="workflow"/>
         <map value="Event.occurrence[x]"/>
       </mapping>
@@ -772,10 +776,6 @@
       <mapping>
         <identity value="cda"/>
         <map value="ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/effectiveTime/value"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization.date"/>
       </mapping>
     </element>
     <element id="Immunization.recorded">
@@ -838,6 +838,10 @@
       <isModifier value="false"/>
       <isSummary value="true"/>
       <mapping>
+        <identity value="argonaut-dq-dstu2"/>
+        <map value="Immunization.reported"/>
+      </mapping>
+      <mapping>
         <identity value="w5"/>
         <map value="FiveWs.source"/>
       </mapping>
@@ -848,10 +852,6 @@
       <mapping>
         <identity value="rim"/>
         <map value="immunization.uncertaintycode (if primary source=false, uncertainty=U)"/>
-      </mapping>
-      <mapping>
-        <identity value="argonaut-dq-dstu2"/>
-        <map value="Immunization.reported"/>
       </mapping>
     </element>
     <element id="Immunization.reportOrigin">

@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-27T18:11:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-30T00:19:12+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -422,7 +422,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -742,11 +742,41 @@
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example> ;
-         fhir:reference [ fhir:v "Observation/no-ADI-example" ]
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option1> ;
+         fhir:reference [ fhir:v "Observation/no-ADI-example-option1" ]
        ] ;
-       fhir:name [ fhir:v "ADI Observation No ADI Example" ] ;
-       fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives" ] ;
+       fhir:name [ fhir:v "ADI Observation No ADI Example OPTION 1" ] ;
+       fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives using the same code = '42348-3' (Advance directives) and adding a value to ADI document type binding '449891000124104'  (No advance directive (finding))" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option2> ;
+         fhir:reference [ fhir:v "Observation/no-ADI-example-option2" ]
+       ] ;
+       fhir:name [ fhir:v "ADI Observation No ADI Example OPTION 2" ] ;
+       fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = \"45473-6\" - (Advance directive/living will completed) and and value of \"Yes\"/\"No\"/\"Unknown\" (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option3> ;
+         fhir:reference [ fhir:v "Observation/no-ADI-example-option3" ]
+       ] ;
+       fhir:name [ fhir:v "ADI Observation No ADI Example OPTION 3" ] ;
+       fhir:description [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = \"45481-9\" - (Advance directive - none ?) and value of \"Yes\"/\"No\"/\"Unknown\" (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))" ] ;
        fhir:example [
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation>
@@ -1153,7 +1183,11 @@
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/ADI-example> a fhir:us .
 
-<http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example> a fhir:us .
+<http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option1> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option2> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option3> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:us .
 

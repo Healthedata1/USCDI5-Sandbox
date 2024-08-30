@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="no-ADI-example-option1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="ADI Observation No ADI Example OPTION 1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a Observation example for the USCDI5 ADI Observation Data Element to show when a patient has no advance directives using the same code = '42348-3' (Advance directives) and adding a value to ADI document type binding '449891000124104'  (No advance directive (finding))"/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation no-ADI-example-option1</b></p><a name="no-ADI-example-option1"> </a><a name="hcno-ADI-example-option1"> </a><a name="no-ADI-example-option1-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 42348-3}">Advance directives</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href="http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html">Dr Smith</a></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 449891000124104}">No advance directive (finding)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="42348-3"/>
+      <display value="Advance directives"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2024-05-16T01:06:06.393000+00:00"/>
+  <issued value="2024-05-16T01:06:06.393000+00:00"/>
+  <performer>
+    <reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/>
+    <display value="Dr Smith"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="449891000124104"/>
+      <display value="No advance directive (finding)"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

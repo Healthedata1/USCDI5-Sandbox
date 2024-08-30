@@ -331,7 +331,7 @@
 
 <p><b>Usage:</b></p>
 <ul>
- <li>Examples for this Resource Profile: <a href="Observation-ADI-example.html">Observation/ADI-example</a> and <a href="Observation-no-ADI-example.html">Observation/no-ADI-example</a></li>
+ <li>Examples for this Resource Profile: <a href="Observation-ADI-example.html">Observation/ADI-example</a>, <a href="Observation-no-ADI-example-option1.html">Observation/no-ADI-example-option1</a>, <a href="Observation-no-ADI-example-option2.html">Observation/no-ADI-example-option2</a> and <a href="Observation-no-ADI-example-option3.html">Observation/no-ADI-example-option3</a></li>
 </ul>
 
 
@@ -2391,9 +2391,9 @@ up to three LOINCs (1 or 3 required)
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l9795">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l9801">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l9807">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l9801">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l9807">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l9813">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -2402,7 +2402,7 @@ up to three LOINCs (1 or 3 required)
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l9828">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l9833">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> search parameters:</p>
+    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l9834">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l9839">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Observation?patient={Type/}[id]&amp;category=http://terminology.hl7.org/CodeSystem/observation-category|laboratory</code></p>
 
@@ -2414,7 +2414,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and a category code = <code class="language-plaintext highlighter-rouge">laboratory</code> (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l9871">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l9876">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> search parameters:
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l9877">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l9882">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> search parameters:
     <ul>
       <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
     </ul>
@@ -2429,7 +2429,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and observation code(s).  SHOULD support search by multiple report codes. The Observation <code class="language-plaintext highlighter-rouge">code</code> parameter searches `Observation.code only. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l9928">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l9933">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l9938">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
+  <li><strong>SHALL</strong> support searching using the combination of the <strong><a name="l9934">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l9939">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l9944">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">date</code> (e.g.<code class="language-plaintext highlighter-rouge">date=[date]&amp;date=[date]]&amp;...</code>)</li>
@@ -2452,7 +2452,7 @@ up to three LOINCs (1 or 3 required)
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10013">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10018">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l10023">​</a><a href="SearchParameter-us-core-observation-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10019">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10024">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l10029">​</a><a href="SearchParameter-us-core-observation-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
     <ul>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
     </ul>
@@ -2467,7 +2467,7 @@ up to three LOINCs (1 or 3 required)
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and category = <code class="language-plaintext highlighter-rouge">laboratory</code> and status (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10075">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10080">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l10085">​</a><a href="SearchParameter-us-core-observation-lastupdated.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10081">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10086">​</a><a href="SearchParameter-us-core-observation-category.html"><code class="language-plaintext highlighter-rouge">category</code></a></strong> and <strong><a name="l10091">​</a><a href="SearchParameter-us-core-observation-lastupdated.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">_lastUpdated</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">_lastUpdated</code> (e.g.<code class="language-plaintext highlighter-rouge">_lastUpdated=[date]&amp;_lastUpdated=[date]]&amp;...</code>)</li>
@@ -2481,9 +2481,9 @@ up to three LOINCs (1 or 3 required)
       <li>GET [base]Observation?patient=555580&amp;advance-directive-observation&amp;_lastUpdated=ge2024-01-01T00:00:00Z</li>
     </ol>
 
-    <p><a name="l10126">​</a><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and category and _lastUpdated. See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a> and <a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a>)</p>
+    <p><a name="l10132">​</a><em>Implementation Notes:</em> Fetches a bundle of all Observation resources for the specified patient and category and _lastUpdated. See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a> and <a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a>)</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10148">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10153">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> and <strong><a name="l10158">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10154">​</a><a href="SearchParameter-us-core-observation-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10159">​</a><a href="SearchParameter-us-core-observation-code.html"><code class="language-plaintext highlighter-rouge">code</code></a></strong> and <strong><a name="l10164">​</a><a href="SearchParameter-us-core-observation-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
     <ul>
       <li>including optional support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">code</code> (e.g.<code class="language-plaintext highlighter-rouge">code={system|}[code],{system|}[code],...</code>)</li>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
@@ -2527,7 +2527,7 @@ up to three LOINCs (1 or 3 required)
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 27, 2024 18:11+0000">2024-08-27</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 30, 2024 00:19+0000">2024-08-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

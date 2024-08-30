@@ -166,6 +166,10 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization"
+      },
+      {
         "identity" : "rim",
         "map" : "Entity. Role, or Act"
       },
@@ -180,10 +184,6 @@
       {
         "identity" : "rim",
         "map" : "SubstanceAdministration"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization"
       }]
     },
     {
@@ -523,6 +523,10 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/immunization-status"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization.status"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.status"
       },
@@ -533,10 +537,6 @@
       {
         "identity" : "rim",
         "map" : "statusCode"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization.status"
       }]
     },
     {
@@ -571,16 +571,16 @@
         "valueSet" : "http://hl7.org/fhir/ValueSet/immunization-status-reason"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization.wasNotGiven"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.statusReason"
       },
       {
         "identity" : "rim",
         "map" : ".inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN].reasonCOde"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization.wasNotGiven"
       }]
     },
     {
@@ -615,6 +615,10 @@
         "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6"
       },
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization.vaccineCode"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.code"
       },
@@ -633,10 +637,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/realmCode/code"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization.vaccineCode"
       }]
     },
     {
@@ -668,6 +668,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization.patient"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.subject"
       },
@@ -686,10 +690,6 @@
       {
         "identity" : "w5",
         "map" : "FiveWs.subject"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization.patient"
       }]
     },
     {
@@ -771,6 +771,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization.date"
+      },
+      {
         "identity" : "workflow",
         "map" : "Event.occurrence[x]"
       },
@@ -789,10 +793,6 @@
       {
         "identity" : "cda",
         "map" : "ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/effectiveTime/value"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization.date"
       }]
     },
     {
@@ -857,6 +857,10 @@
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
+        "identity" : "argonaut-dq-dstu2",
+        "map" : "Immunization.reported"
+      },
+      {
         "identity" : "w5",
         "map" : "FiveWs.source"
       },
@@ -867,10 +871,6 @@
       {
         "identity" : "rim",
         "map" : "immunization.uncertaintycode (if primary source=false, uncertainty=U)"
-      },
-      {
-        "identity" : "argonaut-dq-dstu2",
-        "map" : "Immunization.reported"
       }]
     },
     {

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "c98f7a4a-c1db-4638-95c7-54f478d18a28",
+  "id" : "90c52061-af09-4add-82c5-79d0875d0943",
   "meta" : {
-    "lastUpdated" : "2024-08-27T18:11:09.236+00:00"
+    "lastUpdated" : "2024-08-30T00:19:12.903+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:976088e0-5ef8-4e7f-beea-8f14ce67b0cc",
-        "timestamp" : "2024-08-27T18:12:40+00:00",
+        "identifier" : "urn:uuid:7d8e5ed8-93c7-45ab-8a4c-4c1194a49f8d",
+        "timestamp" : "2024-08-30T00:20:43+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -84,7 +84,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.77</p><p>This value set contains 11 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-18842-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/18842-5/\">18842-5</a></td><td>http://loinc.org</td><td>Discharge summary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11488-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11488-4/\">11488-4</a></td><td>http://loinc.org</td><td>Consult note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-34117-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/34117-2/\">34117-2</a></td><td>http://loinc.org</td><td>History and physical note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11506-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11506-3/\">11506-3</a></td><td>http://loinc.org</td><td>Progress note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-28570-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/28570-0/\">28570-0</a></td><td>http://loinc.org</td><td>Procedure note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-18748-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/18748-4/\">18748-4</a></td><td>http://loinc.org</td><td>Diagnostic imaging study</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11502-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11502-2/\">11502-2</a></td><td>http://loinc.org</td><td>Laboratory report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11526-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11526-1/\">11526-1</a></td><td>http://loinc.org</td><td>Pathology study</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11504-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11504-8/\">11504-8</a></td><td>http://loinc.org</td><td>Surgical operation note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-34111-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/34111-5/\">34111-5</a></td><td>http://loinc.org</td><td>Emergency department Note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-42348-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/42348-3/\">42348-3</a></td><td>http://loinc.org</td><td>Advance directives</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.78</p><p>This value set contains 11 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-18842-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/18842-5/\">18842-5</a></td><td>http://loinc.org</td><td>Discharge summary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11488-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11488-4/\">11488-4</a></td><td>http://loinc.org</td><td>Consult note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-34117-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/34117-2/\">34117-2</a></td><td>http://loinc.org</td><td>History and physical note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11506-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11506-3/\">11506-3</a></td><td>http://loinc.org</td><td>Progress note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-28570-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/28570-0/\">28570-0</a></td><td>http://loinc.org</td><td>Procedure note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-18748-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/18748-4/\">18748-4</a></td><td>http://loinc.org</td><td>Diagnostic imaging study</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11502-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11502-2/\">11502-2</a></td><td>http://loinc.org</td><td>Laboratory report</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11526-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11526-1/\">11526-1</a></td><td>http://loinc.org</td><td>Pathology study</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-11504-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/11504-8/\">11504-8</a></td><td>http://loinc.org</td><td>Surgical operation note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-34111-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/34111-5/\">34111-5</a></td><td>http://loinc.org</td><td>Emergency department Note</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-42348-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/42348-3/\">42348-3</a></td><td>http://loinc.org</td><td>Advance directives</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
       "version" : "0.0.0",
@@ -100,8 +100,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c48157df-545f-4867-8f30-e36d6fe0599e",
-        "timestamp" : "2024-08-27T18:12:41+00:00",
+        "identifier" : "urn:uuid:32ce39f9-d774-49cf-97a1-97c4c5beeb06",
+        "timestamp" : "2024-08-30T00:20:46+00:00",
         "total" : 11,
         "offset" : 0,
         "parameter" : [{
@@ -122,11 +122,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://loinc.org|2.77"
+          "valueUri" : "http://loinc.org|2.78"
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.77"
+          "valueUri" : "http://loinc.org|2.78"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -208,8 +208,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c6e21c1b-855a-44e8-a7b6-00e6308a4ebc",
-        "timestamp" : "2024-08-27T18:12:42+00:00",
+        "identifier" : "urn:uuid:0afbb611-e8d6-47f0-9c56-556f74eb0fc6",
+        "timestamp" : "2024-08-30T00:20:49+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

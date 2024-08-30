@@ -184,6 +184,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization" ]
+       ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "Entity. Role, or Act" ]
        ] [
@@ -195,9 +198,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "SubstanceAdministration" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.id" ] ;
@@ -553,6 +553,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization.status" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.status" ]
        ] [
@@ -561,9 +564,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "statusCode" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization.status" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.statusReason" ] ;
@@ -603,14 +603,14 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization.wasNotGiven" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.statusReason" ]
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v ".inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN].reasonCOde" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization.wasNotGiven" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.vaccineCode" ] ;
@@ -650,6 +650,9 @@
          ]
        ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization.vaccineCode" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.code" ]
        ] [
@@ -664,9 +667,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/realmCode/code" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization.vaccineCode" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.patient" ] ;
@@ -703,6 +703,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization.patient" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.subject" ]
        ] [
@@ -717,9 +720,6 @@
        ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.subject" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization.patient" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.encounter" ] ;
@@ -804,6 +804,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization.date" ]
+       ] [
          fhir:identity [ fhir:v "workflow" ] ;
          fhir:map [ fhir:v "Event.occurrence[x]" ]
        ] [
@@ -818,9 +821,6 @@
        ] [
          fhir:identity [ fhir:v "cda" ] ;
          fhir:map [ fhir:v "ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/effectiveTime/value" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization.date" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.recorded" ] ;
@@ -888,6 +888,9 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
        fhir:mapping ( [
+         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
+         fhir:map [ fhir:v "Immunization.reported" ]
+       ] [
          fhir:identity [ fhir:v "w5" ] ;
          fhir:map [ fhir:v "FiveWs.source" ]
        ] [
@@ -896,9 +899,6 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "immunization.uncertaintycode (if primary source=false, uncertainty=U)" ]
-       ] [
-         fhir:identity [ fhir:v "argonaut-dq-dstu2" ] ;
-         fhir:map [ fhir:v "Immunization.reported" ]
        ] )
      ] [
        fhir:id [ fhir:v "Immunization.reportOrigin" ] ;

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c98f7a4a-c1db-4638-95c7-54f478d18a28"/>
+  <id value="90c52061-af09-4add-82c5-79d0875d0943"/>
   <meta>
-    <lastUpdated value="2024-08-27T18:11:09.236+00:00"/>
+    <lastUpdated value="2024-08-30T00:19:12.903+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -79,8 +79,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:976088e0-5ef8-4e7f-beea-8f14ce67b0cc"/>
-          <timestamp value="2024-08-27T18:12:40+00:00"/>
+          <identifier value="urn:uuid:7d8e5ed8-93c7-45ab-8a4c-4c1194a49f8d"/>
+          <timestamp value="2024-08-30T00:20:43+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -141,7 +141,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.77</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
             <p>This value set contains 11 concepts</p>
             <table class="codes">
               <tr>
@@ -260,8 +260,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c48157df-545f-4867-8f30-e36d6fe0599e"/>
-          <timestamp value="2024-08-27T18:12:41+00:00"/>
+          <identifier value="urn:uuid:32ce39f9-d774-49cf-97a1-97c4c5beeb06"/>
+          <timestamp value="2024-08-30T00:20:46+00:00"/>
           <total value="11"/>
           <offset value="0"/>
           <parameter>
@@ -282,11 +282,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.77"/>
+            <valueUri value="http://loinc.org|2.78"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.77"/>
+            <valueUri value="http://loinc.org|2.78"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -421,8 +421,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c6e21c1b-855a-44e8-a7b6-00e6308a4ebc"/>
-          <timestamp value="2024-08-27T18:12:42+00:00"/>
+          <identifier value="urn:uuid:0afbb611-e8d6-47f0-9c56-556f74eb0fc6"/>
+          <timestamp value="2024-08-30T00:20:49+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
