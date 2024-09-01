@@ -82,7 +82,8 @@ pages:
     #   title: USCDI
     # general-guidance.md:
     clinical-notes.md:
-
+    spcu.md:
+      title: Sex Parameters for Clinical Use
   downloads.md:
     title: Downloads
 
@@ -141,6 +142,7 @@ menu:
     Subscription: subscription.html
   General Guidance: #guidance.html
     Clinical Notes: clinical-notes.html
+    Sex Parameters for Clinical Use: spcu.html
   #Table of Contents: toc.html
   Artifact Index: artifacts.html
   Downloads: downloads.html

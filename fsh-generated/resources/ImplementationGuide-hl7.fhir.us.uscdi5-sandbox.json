@@ -325,6 +325,11 @@
               "nameUrl": "clinical-notes.html",
               "title": "Clinical Notes",
               "generation": "markdown"
+            },
+            {
+              "nameUrl": "spcu.html",
+              "title": "Sex Parameters for Clinical Use",
+              "generation": "markdown"
             }
           ]
         },

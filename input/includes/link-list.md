@@ -454,3 +454,5 @@
 [US Realm Steering Committee (USRSC)]: https://confluence.hl7.org/display/USR/US+Realm+Steering+Committee
 [US Core ADI Finding]: ValueSet-us-core-adi-finding.html
 [US Core SubscriptionTopic]: subscription.html
+[Patient Sex Parameter For Clinical Use]: http://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html
+[HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1]: https://hl7.org/xprod/ig/uv/gender-harmony/

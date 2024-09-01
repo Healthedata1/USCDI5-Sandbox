@@ -37,6 +37,7 @@
 <page key="guidance" name="Guidance"/>
 <page key="index" name="Home"/>
 <page key="ImplementationGuide" name="ImplementationGuide Resource"/>
+<page key="spcu" name="Sex Parameters for Clinical Use"/>
 <page key="subscription" name="Subscription"/>
 <page key="toc" name="Table of Contents"/>
 </specification>

@@ -62,9 +62,16 @@ The following data elements must always be present ([Mandatory] definition) or m
 
    - For certifying systems, this requirement does not apply to historical records or documents that are exposed through FHIR-based APIs.
 
-- \*US Core aligns with the [HL7 Gender Harmony Project] gender and sex information, which includes data elements, value sets, and code systems. Refer to it and the [FHIR R5 Patient Resource Gender and Sex Notes] for additional guidance and background for representing Administrative Gender, Sex Assigned at Birth, and Gender Identity. Note that:
-  - The US Core Sex Extension meets the [U.S. Core Data for Interoperability (USCDI)] data element "sex".
+- \*US Core aligns with the [HL7 Gender Harmony Project] gender and sex information, which includes data elements, value sets, and code systems. Refer to it and the [FHIR R5 Patient Resource Gender and Sex Notes] for additional guidance and background for representing Administrative Gender, Sex Assigned at Birth, Gender Identity, <span class="bg-success" markdown="1"> and Sex Parameter For Clinical Use (SPCU)</span><!-- new-content --> Note that:
+  - The US Core Sex Extension <span class="bg-success" markdown="1">represents</span><!-- new-content --> the [U.S. Core Data for Interoperability (USCDI)] data element "Sex".
+  - <span class="bg-success" markdown="1">The FHIR extension [Patient Sex Parameter For Clinical Use] extension represents the [U.S. Core Data for Interoperability (USCDI)] Observation Data Class' Data Element "Sex Parameter for Clinical Use"</span><!-- new-content -->
   - The US Core Birth Sex Extension is no longer a USCDI Requirement.
+  
+  <div class="bg-success" markdown="1">
+  US Core certified systems are required to support the [Patient Sex Parameter For Clinical Use] extension on US Core Patient to support at least a patient level context. However, they **MAY** use the the extension on other US Core Profiles for specific clinical contexts, for example, on US Core Observation when interpreting a result. Future versions of US Core may require additional contexts (US Core Profiles) where this extension is required.
+  {:.stu-note}
+  </div><!-- new-content -->
+
 
 - [Provenance] and the FHIR Extension [Target Element] can document how individual patient demographic data was captured. See [Element Level Provenance] on the [Basic Provenance] page for more information.
 - The Patient's Social Security Numbers **SHOULD NOT** be used as a patient identifier in `Patient.identifier.value`. There is increasing concern over using Social Security Numbers in healthcare due to the risk of identity theft and related issues. Many payers and providers have purged them from their systems and filtered them out of incoming data.
