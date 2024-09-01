@@ -116,6 +116,9 @@
       <li>
         <a href="clinical-notes.html">Clinical Notes</a>
       </li>
+      <li>
+        <a href="spcu.html">Sex Parameters for Clinical Use</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -294,7 +297,7 @@
 
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p><a name="l427">​</a>The following data elements are mandatory (i.e., data MUST be present) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+<p><a name="l433">​</a>The following data elements are mandatory (i.e., data MUST be present) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
 
 <p><strong>Each Provenance Must Have:</strong></p>
 
@@ -323,7 +326,7 @@ for example
 
   <p><strong>Additional USCDI Requirements:</strong></p>
 
-  <p><a name="l479">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Provenance examples.</p>
+  <p><a name="l485">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Provenance examples.</p>
 
   <ol>
     <li>the role of author/agent</li>
@@ -2751,17 +2754,17 @@ Summary
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l10835">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l10841">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l10847">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l10853">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l10841">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l10847">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l10853">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l10859">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="us-core-scopes">US Core Scopes</h4>
 
   <!-- {% assign scope_string = scope | inspect %} -->
 
-<p><a name="l10865">​</a>Servers providing access to provenance data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<p><a name="l10871">​</a>Servers providing access to provenance data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/Provenance.rs</code></li>
 </ul>
@@ -2824,7 +2827,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 30, 2024 00:19+0000">2024-08-30</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Sep 1, 2024 02:27+0000">2024-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

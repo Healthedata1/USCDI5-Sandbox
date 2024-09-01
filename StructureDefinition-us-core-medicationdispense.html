@@ -116,6 +116,9 @@
       <li>
         <a href="clinical-notes.html">Clinical Notes</a>
       </li>
+      <li>
+        <a href="spcu.html">Sex Parameters for Clinical Use</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -290,13 +293,13 @@ profile:</p>
 
 <ul>
   <li>Fetching dispense statuses for medications that have been prescribed to a particular patient</li>
-  <li><a name="l420">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a> dispense statuses for medications that have been prescribed for a particular
+  <li><a name="l426">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a> dispense statuses for medications that have been prescribed for a particular
  patient</li>
 </ul>
 
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p><a name="l429">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+<p><a name="l435">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
 
 <p><strong>Each MedicationDispense Must Have:</strong></p>
 
@@ -2681,17 +2684,17 @@ Summary
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l10764">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l10770">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l10776">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l10782">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l10770">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l10776">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l10782">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l10788">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="us-core-scopes">US Core Scopes</h4>
 
   <!-- {% assign scope_string = scope | inspect %} -->
 
-<p><a name="l10794">​</a>Servers providing access to dispensed medication data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<p><a name="l10800">​</a>Servers providing access to dispensed medication data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/MedicationDispense.rs</code></li>
 </ul>
@@ -2700,7 +2703,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching using the <strong><a name="l10824">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching using the <strong><a name="l10830">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
 
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
@@ -2724,7 +2727,7 @@ Summary
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10882">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10887">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10888">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10893">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
@@ -2741,7 +2744,7 @@ Summary
 
     <p><em>Implementation Notes:</em> Fetches a bundle of all MedicationDispense resources for the specified patient that have a given dispense status (e.g., dispensed, not dispensed)). (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10947">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10952">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> and <strong><a name="l10957">​</a><a href="SearchParameter-us-core-medicationdispense-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l10953">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l10958">​</a><a href="SearchParameter-us-core-medicationdispense-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> and <strong><a name="l10963">​</a><a href="SearchParameter-us-core-medicationdispense-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:
     <ul>
       <li>including optional support for these <code class="language-plaintext highlighter-rouge">_include</code> parameters: <code class="language-plaintext highlighter-rouge">MedicationDispense:medication</code></li>
       <li>including support for <em>OR</em> search on <code class="language-plaintext highlighter-rouge">status</code> (e.g.<code class="language-plaintext highlighter-rouge">status={system|}[code],{system|}[code],...</code>)</li>
@@ -2786,7 +2789,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 30, 2024 00:19+0000">2024-08-30</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Sep 1, 2024 02:27+0000">2024-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

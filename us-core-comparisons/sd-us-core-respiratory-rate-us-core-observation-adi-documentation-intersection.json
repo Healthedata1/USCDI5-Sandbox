@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3d27fc00-eb33-4e72-9d6e-7713e69d235c-72",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3d27fc00-eb33-4e72-9d6e-7713e69d235c-72",
+  "id" : "4ea76129-2faa-4090-a803-abb4bdbf2c9c-72",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4ea76129-2faa-4090-a803-abb4bdbf2c9c-72",
   "name" : "IntersectionUSCoreRespiratoryRateProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Respiratory Rate Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-08-30T00:19:44+00:00",
+  "date" : "2024-09-01T02:28:26+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

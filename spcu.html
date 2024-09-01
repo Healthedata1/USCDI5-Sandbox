@@ -1,13 +1,9 @@
-<!-- get modelType -->
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>US Core MedicationRequest Profile - Examples - UCSDI5 Sandbox v0.0.0</title>
+    <title>Sex Parameters for Clinical Use - UCSDI5 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.4"}
-    h3,h4,h5,h6{--heading-prefix:"7.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -149,7 +145,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>US Core MedicationRequest Profile</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='guidance.html'><b>Guidance</b></a></li><li><b>Sex Parameters for Clinical Use</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -161,112 +157,102 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 6" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Sex Parameters for Clinical Use</h2>
   
 
 
 
 
 
-
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-us-core-medicationrequest.html">Content</a>
-  </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-us-core-medicationrequest-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
-
-
-
-
-
-  
-    
-      <li class="active">
-        <a href="#">Examples</a>
-      </li>
-    
-  
-
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-us-core-medicationrequest.profile.json.html">JSON</a>
-    </li>
-  
-
-
-
-</ul>
-
-
-  <a name="root"> </a>
-  <h2 id="root">Resource Profile: USCoreMedicationRequestProfile - Examples</h2>
-
-  <table class="colsd">
+  <table class="colsi">
     <tr>
-
-      <td colspan="1">
-        
-          <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
-          
-        
-      </td>
-
+  
       <td>
-        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 0
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
         
       </td>
-
+  
+  
     </tr>
   </table>
 
 
-   <!-- insert intro if present -->
-    
 
 
 
 
 
-  <p>Examples for the us-core-medicationrequest Profile.</p>
-  <table style="grid">
-    <tbody>
-      
-        <tr>
-          <td>
-            <a href="MedicationRequest-medicationrequest-coded-oral-axid.html">MedicationRequest Coded Oral Axid Example</a>
-          </td>
-        </tr>
-      
-    </tbody>
-  </table>
 
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#us-core-guidance-and-conformance" id="markdown-toc-us-core-guidance-and-conformance">US Core Guidance and Conformance</a></li>
+</ul>
 
-<!-- insert notes if present -->
+</div>
+<p>The USCDI <em>Sex Parameter for Clinical Use Observation Data Class</em> is defined as "Category based upon clinical observations typically associated with the designation of male and female." This section describes the guidance and conformance rules for using the FHIR extension <a href="http://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html">Patient Sex Parameter For Clinical Use</a> on US Core Profiles to represent this USCDI data element.</p>
 
+<h3 id="background">Background</h3>
+
+<p>The <a href="https://hl7.org/xprod/ig/uv/gender-harmony/">HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1</a> discusses the approach on how to exchange clinical sex and gender information using FHIR including the FHIR extension Patient Sex Parameter For Clinical Use</p>
+
+<blockquote>
+  <p><strong>4.6 Sex Parameter for Clinical Use (SPCU)</strong><br />
+Sex Parameter for Clinical Use is provided for use in orders, observations, and other clinical uses. SPCU can be highly contextual and allows specific considerations to be provided for potential automated uses and records<sup id="fnref:first" role="doc-noteref"><a href="#fn:first" class="footnote" rel="footnote">1</a></sup>.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>13.11.1 Patient Level Sex Parameter for Clinical Use</strong><br />
+A Sex Parameter for Clinical Use (SPCU) may be used in specific clinical contexts, for example, when placing an order or when interpreting a result. However, there are cases where having a context-free categorization of a patient can be useful…When using SPCU at a patient level, consider if any information is available suggesting that the patient is NOT male-typical or female-typical across all clinical contexts, then using <strong>specified</strong> [<em>Patient Sex Parameter For Clinical Use extension</em>] as the patient-level SPCU is most appropriate<sup id="fnref:second" role="doc-noteref"><a href="#fn:second" class="footnote" rel="footnote">2</a></sup>.</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>13.11.2 Contextual Sex Parameter for Clinical Use</strong><br />
+A Sex Parameter for Clinical Use (SPCU) may be used in specific clinical contexts, for example, when placing an order or when interpreting a result. In these contexts, consider whether using a categorization such as Sex Parameter for Clinical Use is sufficient, or if using a more specific clinical observation such as an Observation about the presence or absence of an organ is most appropriate. If a categorization is sufficient, then the patient-sexParameterForClinicalUse  [<em>Patient Sex Parameter For Clinical Use</em>] extension may be added to the resource that best represents the context. For example, if the context is a referral order or lab order, then the extension could be added to the ServiceRequest<sup id="fnref:third" role="doc-noteref"><a href="#fn:third" class="footnote" rel="footnote">3</a></sup>.</p>
+</blockquote>
+
+<h3 id="us-core-guidance-and-conformance">US Core Guidance and Conformance</h3>
+
+<p>Implementers seeking ONC certification <strong>SHALL</strong> be capable of using the  Patient Sex Parameter For Clinical Use extension on <em>at least one</em> appropriate US Core Profile to meet the USCDI <em>Sex Parameter for Clinical Use Observation Data Class</em>.</p>
+
+<p>For example, to represent SPCU for laboratory observation a server may either:</p>
+
+<ul>
+  <li>Add the Patient Sex Parameter For Clinical Use extension the US Patient profile (See the <a href="Patient-example.html">Patient Example</a>)</li>
+  <li>Add the  Patient Sex Parameter For Clinical Use extension to the US Core Laboratory Result Observation Profile (see the [GFR Observation Example])</li>
+</ul>
+
+<p>For non-certifying systems this extension is optional. See the <a href="">USCDI page</a> for more information about the US Core and USCDI relationship and a mapping between US Core Profiles and the USCDI Data Classes and Elements.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:first" role="doc-endnote">
+      <p>https://hl7.org/xprod/ig/uv/gender-harmony/model.html#sex-parameter-for-clinical-use-spcu <a href="#fnref:first" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:second" role="doc-endnote">
+      <p>https://hl7.org/xprod/ig/uv/gender-harmony/fhirgenderharmony.html#patient-level-sex-parameter-for-clinical-use <a href="#fnref:second" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:third" role="doc-endnote">
+      <p>https://hl7.org/xprod/ig/uv/gender-harmony/fhirgenderharmony.html#contextual-sex-parameter-for-clinical-use <a href="#fnref:third" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -274,8 +260,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
   <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
