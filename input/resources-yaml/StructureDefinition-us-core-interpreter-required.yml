@@ -1,0 +1,60 @@
+resourceType: StructureDefinition
+id: us-core-interpreter-required
+# hl7.fhir.us.uscdi5-sandbox
+# url: 'http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
+url: 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
+name: USCoreInterpreterRequiredExtension
+title: US Core Interpreter Required Extension
+status: active
+date: 2024-09-11
+description: >-
+  This extension indicates that an interpreter to communicate healthcare information in the language specified in the extension's context. For example, if the extension is in the context of `Patient.communication.language` for Spanish, then an interpreter for Spanish is needed.
+abstract: false
+kind: complex-type
+context:
+  - type: element
+    expression: Patient.communication.language
+  - type: element
+    expression: RelatedPerson.communication.language
+  - type: element
+    expression: Practitioner.communication
+
+type: Extension
+baseDefinition: 'http://hl7.org/fhir/StructureDefinition/Extension'
+derivation: constraint
+
+differential:
+  element:
+    - id: Extension
+      path: Extension
+
+      # code: 
+      #   - 
+      #     system: 'http://loinc.org'
+      #     code: 54588-9
+      #     display: Interpreter needed
+
+      short: Whether the individual needs an interpreter
+      definition: >-
+        This individual needs an interpreter to communicate healthcare information in the language specified in the extension's context.
+      comment: >-
+        The individual does not speak the default language of the organization, and
+        hence requires an interpreter.
+      min: 0
+      max: '1'
+    - id: Extension.extension
+      path: Extension.extension
+      max: '0'
+    - id: Extension.url
+      path: Extension.url
+      fixedUri: 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
+    - id: 'Extension.value[x]'
+      path: 'Extension.value[x]'
+      min: 1
+
+      type:
+        - code: code
+      binding:
+        strength: required
+        description: Yes|No|Unknown|Not Asked (Use Snomed CT values in final version to meet USCDI terminology requirement)
+        valueSet: http://terminology.hl7.org/ValueSet/yes-no-unknown-not-asked

@@ -227,6 +227,7 @@
                 "id": "Patient.extension:interpreterRequired",
                 "path": "Patient.extension",
                 "sliceName": "interpreterRequired",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Whether the patient needs an interpreter",
                 "min": 0,
                 "max": "1",
                 "type": [
@@ -625,6 +626,23 @@
                         "map": "Patient.communication.language"
                     }
                 ]
+            },
+            {
+                "id": "Patient.communication.language.extension:us-core-interpreter-required",
+                "path": "Patient.communication.language.extension",
+                "sliceName": "us-core-interpreter-required",
+                "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Whether the individual needs an interpreter",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required"
+                        ]
+                    }
+                ],
+                "mustSupport": false
             }
         ]
     }

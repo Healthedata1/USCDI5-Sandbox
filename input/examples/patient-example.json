@@ -289,5 +289,25 @@
                 "start": "2020-07-22"
             }
         }
+    ],
+    "communication": [
+        {
+            "language": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
+                        "valueCode": "yes"
+                    }
+                ],
+                "coding": [
+                    {
+                        "system": "urn:ietf:bcp:47",
+                        "code": "es",
+                        "display": "Spanish"
+                    }
+                ]
+            },
+            "preferred": true
+        }
     ]
 }

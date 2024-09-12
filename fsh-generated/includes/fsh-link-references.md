@@ -14,6 +14,7 @@
 [USCoreADIFinding]: ValueSet-us-core-adi-finding.html
 [USCoreClinicalNoteType]: ValueSet-us-core-clinical-note-type.html
 [USCoreImmunizationProfile]: StructureDefinition-us-core-immunization.html
+[USCoreInterpreterRequiredExtension]: StructureDefinition-us-core-interpreter-required.html
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCoreObservationADIDocumentationProfile]: StructureDefinition-us-core-observation-adi-documentation.html
