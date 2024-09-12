@@ -70,6 +70,13 @@
     "name" : "UCSDI5Sandbox"
   },
   {
+    "id" : "us-core-interpreter-required",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
+    "version" : "0.0.0",
+    "name" : "USCoreInterpreterRequiredExtension"
+  },
+  {
     "id" : "foo-bar",
     "type" : "CodeSystem",
     "url" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",

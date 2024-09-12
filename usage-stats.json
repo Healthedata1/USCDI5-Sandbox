@@ -3,7 +3,15 @@
   "version": "0.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
+      "title": "US Core Interpreter Required Extension",
+      "types": [
+        "code"
+      ]
+    }
+  ],
   "profiles": {
     "Immunization": [
       {
@@ -184,6 +192,9 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required": [
+      "Patient.communication.language"
     ]
   }
 }

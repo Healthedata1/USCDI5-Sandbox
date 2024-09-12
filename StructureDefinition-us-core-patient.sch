@@ -74,4 +74,12 @@
       <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Patient/f:communication/f:language</sch:title>
+    <sch:rule context="f:Patient/f:communication/f:language">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

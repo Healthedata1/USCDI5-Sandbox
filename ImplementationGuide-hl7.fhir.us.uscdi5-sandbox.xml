@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-09-01T02:27:55+00:00"/>
+  <date value="2024-09-12T16:41:36+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -796,6 +796,17 @@
       </reference>
       <name value="US Core Immunization Profile"/>
       <description value="The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-interpreter-required"/>
+      </reference>
+      <name value="US Core Interpreter Required Extension"/>
+      <description value="This extension indicates that an interpreter to communicate healthcare information in the language specified in the extension's context. For example, if the extension is in the context of `Patient.communication.language` for Spanish, then an interpreter for Spanish is needed."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

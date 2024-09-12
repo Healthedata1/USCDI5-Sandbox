@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4ea76129-2faa-4090-a803-abb4bdbf2c9c-14",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4ea76129-2faa-4090-a803-abb4bdbf2c9c-14",
+  "id" : "bd79700b-22bb-4775-b724-2f0af430ffed-14",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bd79700b-22bb-4775-b724-2f0af430ffed-14",
   "name" : "UnionUSCoreAverageBloodPressureProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Average Blood Pressure Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-01T02:28:26+00:00",
+  "date" : "2024-09-12T16:42:09+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
