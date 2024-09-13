@@ -8,7 +8,7 @@
       "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
       "title": "US Core Interpreter Required Extension",
       "types": [
-        "code"
+        "Coding"
       ]
     }
   ],
@@ -118,9 +118,6 @@
       "Patient.meta",
       "Provenance.meta"
     ],
-    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
-      "Patient"
-    ],
     "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
       "Patient"
     ],
@@ -194,7 +191,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required": [
-      "Patient.communication.language"
+      "Patient"
     ]
   }
 }

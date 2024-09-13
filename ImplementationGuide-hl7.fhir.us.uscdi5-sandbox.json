@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-09-12T16:41:36+00:00",
+  "date" : "2024-09-13T00:23:36+00:00",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [{
     "name" : "HL7 International / Cross-Group Projects",
@@ -1032,7 +1032,7 @@
         "reference" : "StructureDefinition/us-core-interpreter-required"
       },
       "name" : "US Core Interpreter Required Extension",
-      "description" : "This extension indicates that an interpreter to communicate healthcare information in the language specified in the extension's context. For example, if the extension is in the context of `Patient.communication.language` for Spanish, then an interpreter for Spanish is needed.",
+      "description" : "This extension indicates the individual's need for an interpreter to communicate healthcare information in a language other than the default language of the organization.",
       "exampleBoolean" : false
     },
     {

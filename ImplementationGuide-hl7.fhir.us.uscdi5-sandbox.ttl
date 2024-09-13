@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-09-12T16:41:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-13T00:23:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -955,7 +955,7 @@
          fhir:reference [ fhir:v "StructureDefinition/us-core-interpreter-required" ]
        ] ;
        fhir:name [ fhir:v "US Core Interpreter Required Extension" ] ;
-       fhir:description [ fhir:v "This extension indicates that an interpreter to communicate healthcare information in the language specified in the extension's context. For example, if the extension is in the context of `Patient.communication.language` for Spanish, then an interpreter for Spanish is needed." ] ;
+       fhir:description [ fhir:v "This extension indicates the individual's need for an interpreter to communicate healthcare information in a language other than the default language of the organization." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
