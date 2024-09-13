@@ -1,0 +1,78 @@
+10:05:43 From Gay Dolin to Everyone:
+	If time we could dispo this. If not time today thats OK: https://jira.hl7.org/browse/FHIR-47416
+10:05:51 From Jason Vogt to Everyone:
+	I don't know if Jean is the right person to talk about this 🤣
+10:06:23 From Floyd Eisenberg to Everyone:
+	He can present it - then I can take comments if you like
+10:19:38 From Brett Marquard to Everyone:
+	I added pending label, if approved, we update to 6.1.0-us-core-patch-approved
+10:26:06 From Yunwei Wang (MITRE) to Everyone:
+	https://jira.hl7.org/browse/FHIR-40299  is the only patch approved for more than one version: 3.1.1 4.0.0 and 5.0.1
+10:28:00 From Jason Vogt to Everyone:
+	"minor" - did he just curse the conversation?
+10:28:20 From Floyd Eisenberg to Everyone:
+	Reacted to ""minor" - did he jus..." with 🧐
+10:28:26 From Brett Marquard to Everyone:
+	Reacted to ""minor" - did he jus..." with 💯
+10:32:09 From Floyd Eisenberg to Everyone:
+	Al’s hand is raised
+10:34:32 From Jason Vogt to Everyone:
+	Lot Number	Sequence of characters representing a specific quantity of manufactured material within a batch of a vaccine product.
+10:34:49 From Brett Marquard to Everyone:
+	I think Rob is suggesting a new Resource --- Lettuce
+10:34:52 From Floyd Eisenberg to Everyone:
+	Rob is referencing manually entered lot number that are entered in error
+10:35:06 From Cooper Thompson (Epic) to Everyone:
+	Lettuce not go there.
+10:35:12 From Brett Marquard to Everyone:
+	Reacted to "Lettuce not go there..." with 🤣
+10:35:13 From Floyd Eisenberg to Everyone:
+	Replying to "I think Rob is sugge..."
+	
+	Leafy greens - lettuce is too specific
+10:35:14 From Rob McClure [MD Partners] to Everyone:
+	Reacted to "Lettuce not go there..." with 😃
+10:35:38 From Brett Marquard to Everyone:
+	Replying to "Lettuce not go there..."
+	
+	Looks like you are practicing your Dad jokes
+10:42:07 From Al Taylor (ASTP/ONC) to Everyone:
+	https://thesaurus.cancer.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=24.07e&ns=ncit&code=C38114&key=n1225739048&b=1&n=null
+10:42:28 From Juliet Rubini (ICF) to Everyone:
+	Reacted to "Lettuce not go there..." with 🤣
+10:42:52 From Floyd Eisenberg to Everyone:
+	Reacted to "https://thesaurus.ca..." with 👍
+10:43:40 From Brett Marquard to Everyone:
+	Reacted to "Leafy greens - lettu..." with 🙂
+10:47:25 From Floyd Eisenberg to Everyone:
+	Are we saying Spanish in Spanish or in German?
+10:47:26 From Cooper Thompson (Epic) to Everyone:
+	When we capture "stuff", we have a form for all of this:   	Needs Interpreter?: Yes	Preferred Language: Portuguese	English Fluency: Not good	Form confidence: Good	Written language: Portuguese
+10:49:50 From Floyd Eisenberg to Everyone:
+	Cooper’s comment suggests communication has more depth - speaking, written, etc
+10:50:04 From Jason Vogt to Everyone:
+	USCDI has a vocab of snomed and loinc in the definition
+10:51:20 From Floyd Eisenberg to Everyone:
+	Patient level seems best to fit USCDI - add specificity at Encounter as desired
+10:51:20 From Peter Muir to Everyone:
+	ASL
+10:52:03 From Gay Dolin to Everyone:
+	I think ASL is in the value set - we can check
+10:52:12 From Floyd Eisenberg to Everyone:
+	Replying to "I think ASL is in th..."
+	
+	It is
+10:52:21 From Jason Vogt to Everyone:
+	I need to run to an appt. Thanks All!
+10:54:06 From Peter Muir to Everyone:
+	Provider to patient communication crossmap
+10:54:20 From Alex Kontur (ASTP/ONC) to Everyone:
+	Are present/future encounters typically shared over the API?
+10:54:50 From Brett Marquard to Everyone:
+	Cooper - you don't capture that at patient
+10:55:02 From Alex Kontur (ASTP/ONC) to Everyone:
+	Are present/future encounters typically shared over the API?	Wondering how helpful it is to share retrospective info about interpreter, i.e. the patient needed an interpreter at this encounter that already happened
+10:57:57 From Floyd Eisenberg to Everyone:
+	3 minute warning
+11:01:32 From Cooper Thompson (Epic) to Everyone:
+	https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-patient-proficiency.html

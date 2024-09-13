@@ -139,9 +139,15 @@ extension:
                     code: UNK
                     display: Unknown
             text: Unknown
+    # - 
+    #     url: 'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired'
+    #     valueBoolean: false
+#USCDI5
     - 
-        url: 'http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired'
-        valueBoolean: false
+        url: 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
+        valueCoding: 
+          system: http://snomed.info/sct
+          code: '373066001' #<-- Snomed CT "Yes (qualifier value)"
 identifier:
     - 
         use: usual
@@ -208,10 +214,7 @@ address:
 communication:
     - 
         language:
-            extension:
-                - 
-                    url: 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
-                    valueCode: 'yes'
+
             coding:
                 - 
                     system: 'urn:ietf:bcp:47'

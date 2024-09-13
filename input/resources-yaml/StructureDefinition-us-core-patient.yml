@@ -157,19 +157,34 @@ differential:
     mustSupport: false
 
 #USCDI5
-
-  - id: Patient.extension:interpreterRequired
+  - id: Patient.extension:us-core-interpreter-required
+    extension:
+    - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
+      valueBoolean: true
     path: Patient.extension
-    sliceName: interpreterRequired
+    sliceName: us-core-interpreter-required
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
-      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the patient needs an interpreter"
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the individual needs an interpreter"
     min: 0
     max: '1'
     type:
     - code: Extension
       profile:
-      - http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
+      - 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
     mustSupport: false
+
+  # - id: Patient.extension:interpreterRequired
+  #   path: Patient.extension
+  #   sliceName: interpreterRequired
+  #   short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
+  #     \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the patient needs an interpreter"
+  #   min: 0
+  #   max: '1'
+  #   type:
+  #   - code: Extension
+  #     profile:
+  #     - http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
+  #   mustSupport: false
 
   - id: Patient.identifier
     path: Patient.identifier
@@ -415,16 +430,3 @@ differential:
     mapping:
     - identity: argonaut-dq-dstu2
       map: Patient.communication.language
-
-  - id: Patient.communication.language.extension:us-core-interpreter-required
-    path: Patient.communication.language.extension
-    sliceName: us-core-interpreter-required
-    short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
-      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the individual needs an interpreter"
-    min: 0
-    max: '1'
-    type:
-    - code: Extension
-      profile:
-      - 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
-    mustSupport: false

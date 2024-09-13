@@ -29,7 +29,7 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 1. contact detail (e.g., a telephone number or an email address)
 2. a communication language*
-3. <span class="bg-success" markdown="1">interpreter required flag</span><!-- new-content -->
+3. <span class="bg-success" markdown="1">interpreter required flag*</span><!-- new-content -->
 4. a race*
 5. an ethnicity*
 6. a tribal affiliation
@@ -75,5 +75,12 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 - [Provenance] and the FHIR Extension [Target Element] can document how individual patient demographic data was captured. See [Element Level Provenance] on the [Basic Provenance] page for more information.
 - The Patient's Social Security Numbers **SHOULD NOT** be used as a patient identifier in `Patient.identifier.value`. There is increasing concern over using Social Security Numbers in healthcare due to the risk of identity theft and related issues. Many payers and providers have purged them from their systems and filtered them out of incoming data.
+  
+<div class="bg-success" markdown="1">
+
+- \*Servers can use the US Core Interpreter Required Extension on the US Core Patient or [US Core Encounter Profiles] to communicate whether a patient needs an interpreter. Although the extension is marked as an *Additional USCDI Requirements* on both US Core Patient and US Core Encounter Profiles, the certifying server system is not required to support both, but **SHALL** support the extension on at least one of these profiles. The certifying client application **SHALL** support the extension on both profiles.
+  - System can communicate the patient's language preferences in the `Patient.language` element and the optional [Patient Proficiency Extension](https://hl7.org/fhir/extensions/StructureDefinition-patient-proficiency.html) and infer a patient's language service needs from it.
+
+</div><!-- new-content -->
 
 {% include link-list.md %}

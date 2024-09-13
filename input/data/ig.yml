@@ -166,10 +166,9 @@ definition:
     name: US Core Immunization Profile
   - reference:
       reference: StructureDefinition/us-core-interpreter-required
-    description: This extension indicates that an interpreter to communicate healthcare
-      information in the language specified in the extension's context. For example,
-      if the extension is in the context of `Patient.communication.language` for Spanish,
-      then an interpreter for Spanish is needed.
+    description: This extension indicates the individual's need for an interpreter
+      to communicate healthcare information in a language other than the default language
+      of the organization.
     exampleBoolean: false
     name: US Core Interpreter Required Extension
   - reference:
