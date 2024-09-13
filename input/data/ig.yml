@@ -96,6 +96,11 @@ definition:
     name: ADI Observation No ADI Example OPTION 3
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
   - reference:
+      reference: Encounter/example-1
+    description: This is a encounter 1 example for the *US Core Encounter Profile*.
+    name: Encounter 1 Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
+  - reference:
       reference: DocumentReference/example-patient-adi
     description: This is a DocumentReference example for the USCDI5 ADI Observation
       Data Element
@@ -153,6 +158,17 @@ definition:
       supported for fetching and storing clinical notes.
     exampleBoolean: false
     name: US Core Clinical Note Type
+  - reference:
+      reference: StructureDefinition/us-core-encounter
+    description: The US Core Encounter Profile inherits from the FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html)
+      resource; refer to it for scope and usage definitions. This profile sets minimum
+      expectations for the Encounter resource to record, search, and fetch basic encounter
+      information for an individual patient. It specifies which core elements, extensions,
+      vocabularies, and value sets **SHALL** be present and constrains how the elements
+      are used. Providing the floor for standards development for specific use cases
+      promotes interoperability and adoption.
+    exampleBoolean: false
+    name: US Core Encounter Profile
   - reference:
       reference: StructureDefinition/us-core-immunization
     description: The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html)

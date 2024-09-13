@@ -2,6 +2,7 @@
 [no-ADI-example-option1]: Observation-no-ADI-example-option1.html
 [no-ADI-example-option2]: Observation-no-ADI-example-option2.html
 [no-ADI-example-option3]: Observation-no-ADI-example-option3.html
+[example-1]: Encounter-example-1.html
 [example-patient-adi]: DocumentReference-example-patient-adi.html
 [FooBar]: CodeSystem-foo-bar.html
 [FooBar]: ValueSet-foo-bar.html
@@ -13,6 +14,7 @@
 [79614]: Provenance-79614.html
 [USCoreADIFinding]: ValueSet-us-core-adi-finding.html
 [USCoreClinicalNoteType]: ValueSet-us-core-clinical-note-type.html
+[USCoreEncounterProfile]: StructureDefinition-us-core-encounter.html
 [USCoreImmunizationProfile]: StructureDefinition-us-core-immunization.html
 [USCoreInterpreterRequiredExtension]: StructureDefinition-us-core-interpreter-required.html
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html

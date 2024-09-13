@@ -8,6 +8,7 @@
 <artifact id="Observation/no-ADI-example-option1" key="Observation-no-ADI-example-option1" name="ADI Observation No ADI Example OPTION 1"/>
 <artifact id="Observation/no-ADI-example-option2" key="Observation-no-ADI-example-option2" name="ADI Observation No ADI Example OPTION 2"/>
 <artifact id="Observation/no-ADI-example-option3" key="Observation-no-ADI-example-option3" name="ADI Observation No ADI Example OPTION 3"/>
+<artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter 1 Example"/>
 <artifact id="DocumentReference/example-patient-adi" key="DocumentReference-example-patient-adi" name="Example Patient Adi"/>
 <artifact id="CodeSystem/foo-bar" key="CodeSystem-foo-bar" name="Foo Bar Test Code System"/>
 <artifact id="ValueSet/foo-bar" key="ValueSet-foo-bar" name="Foo Bar Test Value Set"/>
@@ -18,6 +19,7 @@
 <artifact id="Provenance/79614" key="Provenance-79614" name="Provenance Example"/>
 <artifact id="ValueSet/us-core-adi-finding" key="ValueSet-us-core-adi-finding" name="US Core ADI Finding"/>
 <artifact id="ValueSet/us-core-clinical-note-type" key="ValueSet-us-core-clinical-note-type" name="US Core Clinical Note Type"/>
+<artifact id="StructureDefinition/us-core-encounter" key="StructureDefinition-us-core-encounter" name="US Core Encounter Profile"/>
 <artifact id="StructureDefinition/us-core-immunization" key="StructureDefinition-us-core-immunization" name="US Core Immunization Profile"/>
 <artifact id="StructureDefinition/us-core-interpreter-required" key="StructureDefinition-us-core-interpreter-required" name="US Core Interpreter Required Extension"/>
 <artifact id="StructureDefinition/us-core-medicationdispense" key="StructureDefinition-us-core-medicationdispense" name="US Core MedicationDispense Profile"/>

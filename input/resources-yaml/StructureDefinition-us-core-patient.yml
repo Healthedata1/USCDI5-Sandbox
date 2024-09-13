@@ -164,7 +164,7 @@ differential:
     path: Patient.extension
     sliceName: us-core-interpreter-required
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
-      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the individual needs an interpreter"
+      \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the patient needs an interpreter"
     min: 0
     max: '1'
     type:
