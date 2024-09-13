@@ -7,6 +7,13 @@
     "name" : "UsCoreServerCapabilityStatement"
   },
   {
+    "id" : "us-core-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+    "version" : "0.0.0",
+    "name" : "USCoreEncounterProfile"
+  },
+  {
     "id" : "us-core-immunization",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",

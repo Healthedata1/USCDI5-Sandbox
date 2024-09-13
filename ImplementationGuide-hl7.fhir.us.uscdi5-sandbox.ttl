@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-09-13T00:23:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-13T21:38:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -784,6 +784,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> ;
+         fhir:reference [ fhir:v "Encounter/example-1" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter 1 Example" ] ;
+       fhir:description [ fhir:v "This is a encounter 1 example for the *US Core Encounter Profile*." ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "DocumentReference" ]
        ] ) ;
        fhir:reference [
@@ -932,6 +947,18 @@
        ] ;
        fhir:name [ fhir:v "US Core Clinical Note Type" ] ;
        fhir:description [ fhir:v "The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Encounter Profile" ] ;
+       fhir:description [ fhir:v "The US Core Encounter Profile inherits from the FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Encounter resource to record, search, and fetch basic encounter information for an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1212,6 +1239,8 @@
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/Observation/no-ADI-example-option3> a fhir:us .
 
+<http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> a fhir:us .
+
 <http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/CodeSystem/foo-bar> a fhir:us .
@@ -1233,6 +1262,8 @@
 <http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/us-core-adi-finding> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/us-core-clinical-note-type> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-encounter> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-immunization> a fhir:us .
 

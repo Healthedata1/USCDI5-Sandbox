@@ -13,6 +13,12 @@
     }
   ],
   "profiles": {
+    "Encounter": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+        "title": "US Core Encounter Profile"
+      }
+    ],
     "Immunization": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
@@ -102,6 +108,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
       "DocumentReference.meta",
+      "Encounter.meta",
       "Immunization.meta",
       "MedicationDispense.meta",
       "MedicationRequest.meta",
@@ -111,6 +118,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "DocumentReference.meta",
+      "Encounter.meta",
       "Immunization.meta",
       "MedicationDispense.meta",
       "MedicationRequest.meta",
@@ -191,6 +199,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required": [
+      "Encounter",
       "Patient"
     ]
   }
