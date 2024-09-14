@@ -72,29 +72,13 @@ definition:
     name: ADI Observation Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
   - reference:
-      reference: Observation/no-ADI-example-option1
-    description: This is a Observation example for the USCDI5 ADI Observation Data
-      Element to show when a patient has no advance directives using the same code
-      = '42348-3' (Advance directives) and adding a value to ADI document type binding
-      '449891000124104'  (No advance directive (finding))
-    name: ADI Observation No ADI Example OPTION 1
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
-  - reference:
-      reference: Observation/no-ADI-example-option2
+      reference: Observation/no-ADI-example
     description: 'This is a Observation example for the USCDI5 ADI Observation Data
       Element to show whether a patient has an advance directive using a new code
       = "45473-6" - (Advance directive/living will completed) and and value of "Yes"/"No"/"Unknown"
       (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))'
-    name: ADI Observation No ADI Example OPTION 2
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
-  - reference:
-      reference: Observation/no-ADI-example-option3
-    description: 'This is a Observation example for the USCDI5 ADI Observation Data
-      Element to show whether a patient has an advance directive using a new code
-      = "45481-9" - (Advance directive - none ?) and value of "Yes"/"No"/"Unknown"
-      (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))'
-    name: ADI Observation No ADI Example OPTION 3
-    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
+    name: ADI Observation Presence No ADI Example
+    exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence
   - reference:
       reference: Encounter/example-1
     description: This is a encounter 1 example for the *US Core Encounter Profile*.
@@ -216,20 +200,42 @@ definition:
       reference: StructureDefinition/us-core-observation-adi-documentation
     description: The US Core Observation ADI Documentation Profile inherits from the
       FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer
-      to it for scope and usage definitions. This profile is used to indicate if additional
-      advance directive documents, such as physician order for life sustaining treatment
-      (MOLST or POLST) or Do Not Resuscitate Order (DNR) exist and a reference to
-      the document. The observation is not intended to communicate the actual contents
-      of those additional documents, if they exist, but are intended to represent
-      that the documents exist so that further investigation can be undertaken to
-      locate them or learn more about them. This profile sets minimum expectations
-      for the Observation resource to record, search, and fetch findings about ADI
-      Documentation. It specifies which core elements, extensions,  vocabularies,
+      to it for scope and usage definitions. This profile and the [US Core Observation
+      ADI Presence Profile] together meet the requirements of the U.S. Core Data for
+      Interoperability (USCDI) *Advance Directive Observation* Data Element. It is
+      used to communicate the types of advance directive documents for a patient,
+      the document location, and other properties. Examples of advance healthcare
+      directive documents include physician order for life sustaining treatment (POLST),
+      do not resuscitate order (DNR), and medical power of attorney. To communicates
+      whether any advance directive documents exist for a patient, see the [US Core
+      Observation ADI Presence Profile]. This profile sets minimum expectations for
+      the Observation resource to record, search, and fetch findings about advance
+      directive documents. It specifies which core elements, extensions,  vocabularies,
       and value sets **SHALL** be present in the resource and constrains how the elements
       are used. Providing the floor for standards development for specific use cases
       promotes interoperability and adoption.
     exampleBoolean: false
     name: US Core Observation ADI Documentation Profile
+  - reference:
+      reference: StructureDefinition/us-core-observation-adi-presence
+    description: The US Core Observation ADI Documentation Profile inherits from the
+      FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer
+      to it for scope and usage definitions. This profile and the [US Core Observation
+      ADI Documentation Profile] together meet the requirements of the U.S. Core Data
+      for Interoperability (USCDI) *Advance Directive Observation* Data Element. It
+      is used to communicate the presence of advance directive documents for a patient.
+      Examples of advance healthcare directive documents include physician order for
+      life sustaining treatment (POLST), do not resuscitate order (DNR), and medical
+      power of attorney. To communicate the types of advance directive documents,
+      the document location, and other properties, see the [US Core Observation ADI
+      Documentation Profile]. This profile sets minimum expectations for the Observation
+      resource to record, search, and fetch findings about the presence of a patient's
+      advance directives. It specifies which core elements, extensions,  vocabularies,
+      and value sets **SHALL** be present in the resource and constrains how the elements
+      are used. Providing the floor for standards development for specific use cases
+      promotes interoperability and adoption.
+    exampleBoolean: false
+    name: US Core Observation ADI Presence Profile
   - reference:
       reference: StructureDefinition/us-core-patient
     description: The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html)

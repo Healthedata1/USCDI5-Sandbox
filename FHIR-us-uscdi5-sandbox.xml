@@ -5,9 +5,7 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Observation/ADI-example" key="Observation-ADI-example" name="ADI Observation Example"/>
-<artifact id="Observation/no-ADI-example-option1" key="Observation-no-ADI-example-option1" name="ADI Observation No ADI Example OPTION 1"/>
-<artifact id="Observation/no-ADI-example-option2" key="Observation-no-ADI-example-option2" name="ADI Observation No ADI Example OPTION 2"/>
-<artifact id="Observation/no-ADI-example-option3" key="Observation-no-ADI-example-option3" name="ADI Observation No ADI Example OPTION 3"/>
+<artifact id="Observation/no-ADI-example" key="Observation-no-ADI-example" name="ADI Observation Presence No ADI Example"/>
 <artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter 1 Example"/>
 <artifact id="DocumentReference/example-patient-adi" key="DocumentReference-example-patient-adi" name="Example Patient Adi"/>
 <artifact id="CodeSystem/foo-bar" key="CodeSystem-foo-bar" name="Foo Bar Test Code System"/>
@@ -25,6 +23,7 @@
 <artifact id="StructureDefinition/us-core-medicationdispense" key="StructureDefinition-us-core-medicationdispense" name="US Core MedicationDispense Profile"/>
 <artifact id="StructureDefinition/us-core-medicationrequest" key="StructureDefinition-us-core-medicationrequest" name="US Core MedicationRequest Profile"/>
 <artifact id="StructureDefinition/us-core-observation-adi-documentation" key="StructureDefinition-us-core-observation-adi-documentation" name="US Core Observation ADI Documentation Profile"/>
+<artifact id="StructureDefinition/us-core-observation-adi-presence" key="StructureDefinition-us-core-observation-adi-presence" name="US Core Observation ADI Presence Profile"/>
 <artifact id="StructureDefinition/us-core-patient" key="StructureDefinition-us-core-patient" name="US Core Patient Profile"/>
 <artifact id="StructureDefinition/us-core-provenance" key="StructureDefinition-us-core-provenance" name="US Core Provenance Profile"/>
 <artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>

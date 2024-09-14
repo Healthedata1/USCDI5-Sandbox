@@ -1,7 +1,5 @@
 [ADI-example]: Observation-ADI-example.html
-[no-ADI-example-option1]: Observation-no-ADI-example-option1.html
-[no-ADI-example-option2]: Observation-no-ADI-example-option2.html
-[no-ADI-example-option3]: Observation-no-ADI-example-option3.html
+[no-ADI-example]: Observation-no-ADI-example.html
 [example-1]: Encounter-example-1.html
 [example-patient-adi]: DocumentReference-example-patient-adi.html
 [FooBar]: CodeSystem-foo-bar.html
@@ -20,6 +18,7 @@
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCoreObservationADIDocumentationProfile]: StructureDefinition-us-core-observation-adi-documentation.html
+[USCoreObservationADIPresenceProfile]: StructureDefinition-us-core-observation-adi-presence.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html
 [UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html

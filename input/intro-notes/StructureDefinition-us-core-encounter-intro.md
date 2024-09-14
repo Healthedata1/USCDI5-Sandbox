@@ -46,6 +46,8 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 {% include encounter-location.md %}
 
+<div class="bg-success" markdown="1">
+
 - \*Servers can use the US Core Interpreter Required Extension on the US Core Patient or [US Core Encounter Profiles] to communicate whether a patient needs an interpreter. Although the extension is marked as an *Additional USCDI Requirements* on both US Core Patient and US Core Encounter Profiles, the certifying server system is not required to support the extension on both profiles, but **SHALL** support the extension on at least one. The certifying client application **SHALL** support the extension on both profiles.
   - System can communicate the patient's language preferences in the `Patient.language` element and the optional [Patient Proficiency Extension](https://hl7.org/fhir/extensions/StructureDefinition-patient-proficiency.html) and infer a patient's language service needs from it.
 </div><!-- new-content -->
@@ -53,8 +55,6 @@ The following data elements must always be present ([Mandatory] definition) or m
 - \* See the US Core General Guidance page for [Searching Using lastUpdated]. Updates to `Meta.lastUpdated` **SHOULD** reflect:
   - New encounters/visits
   - Changes in the status of encounters, including events that trigger the same status (e.g., in-progress → in-progress). These status changes correspond to events that can initiate [HL7 V2] ADT messages.
-  - {% include meta-updated-next-version.md %}
-<div class="bg-success" markdown="1">
 
 {% include meta-updated-next-version.md %}
 

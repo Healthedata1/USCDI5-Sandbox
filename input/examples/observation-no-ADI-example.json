@@ -1,11 +1,11 @@
 {
     "resourceType": "Observation",
-    "id": "no-ADI-example-option2",
+    "id": "no-ADI-example",
     "meta": {
         "extension": [
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
-                "valueString": "ADI Observation No ADI Example OPTION 2"
+                "valueString": "ADI Observation Presence No ADI Example"
             },
             {
                 "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
@@ -13,7 +13,7 @@
             }
         ],
         "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence"
         ]
     },
     "status": "final",
@@ -29,8 +29,8 @@
     "subject": {
         "reference": "Patient/example"
     },
-    "effectiveDateTime": "2024-05-16T01:06:06.393000+00:00",
-    "issued": "2024-05-16T01:06:06.393000+00:00",
+    "effectiveDateTime": "2024-05-16T01:06:06.393Z",
+    "issued": "2024-05-16T01:06:06.393Z",
     "performer": [
         {
             "reference": "http://hl7.org/fhir/us/core/Practitioner/practitioner-1",
