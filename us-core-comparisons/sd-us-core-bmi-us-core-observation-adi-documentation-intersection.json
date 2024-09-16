@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5d9594ec-106b-4a1f-b6f7-1dee9ad47207-21",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5d9594ec-106b-4a1f-b6f7-1dee9ad47207-21",
+  "id" : "a8c106bf-8230-4369-8bca-9256a2409739-24",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a8c106bf-8230-4369-8bca-9256a2409739-24",
   "name" : "IntersectionUSCoreBMIProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core BMI Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-13T21:39:18+00:00",
+  "date" : "2024-09-16T18:53:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -639,8 +639,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "Vital sign result types",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62"
+        "description" : "left: Vital sign result types; right: Category of advance directive"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1055,7 +1054,8 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Common UCUM units for recording Vital Signs.; right: Advance Healthcare Directive Categories Grouper"
+        "description" : "left: Common UCUM units for recording Vital Signs.; right: Type of advance directive document",
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a8c106bf-8230-4369-8bca-9256a2409739-6"
       },
       "mapping" : [{
         "identity" : "sct-concept",

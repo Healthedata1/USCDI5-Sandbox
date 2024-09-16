@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5d9594ec-106b-4a1f-b6f7-1dee9ad47207-45",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5d9594ec-106b-4a1f-b6f7-1dee9ad47207-45",
+  "id" : "a8c106bf-8230-4369-8bca-9256a2409739-48",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a8c106bf-8230-4369-8bca-9256a2409739-48",
   "name" : "IntersectionUSCoreLaboratoryResultObservationProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Laboratory Result Observation Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-13T21:39:18+00:00",
+  "date" : "2024-09-16T18:53:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -639,8 +639,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "Laboratory LOINC Codes",
-        "valueSet" : "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes"
+        "description" : "left: Laboratory LOINC Codes; right: Category of advance directive"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1125,8 +1124,8 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "Advance Healthcare Directive Categories Grouper",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.25"
+        "description" : "Type of advance directive document",
+        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57"
       },
       "mapping" : [{
         "identity" : "sct-concept",

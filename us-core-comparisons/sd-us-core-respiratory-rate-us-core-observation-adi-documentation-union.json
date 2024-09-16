@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5d9594ec-106b-4a1f-b6f7-1dee9ad47207-71",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5d9594ec-106b-4a1f-b6f7-1dee9ad47207-71",
+  "id" : "a8c106bf-8230-4369-8bca-9256a2409739-68",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a8c106bf-8230-4369-8bca-9256a2409739-68",
   "name" : "UnionUSCoreRespiratoryRateProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Respiratory Rate Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-13T21:39:18+00:00",
+  "date" : "2024-09-16T18:53:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -627,8 +627,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5d9594ec-106b-4a1f-b6f7-1dee9ad47207-5"
+        "description" : "left: Vital sign result types; right: Category of advance directive"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1000,7 +999,8 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Common UCUM units for recording Vital Signs.; right: Advance Healthcare Directive Categories Grouper"
+        "description" : "left: Common UCUM units for recording Vital Signs.; right: Type of advance directive document",
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a8c106bf-8230-4369-8bca-9256a2409739-5"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1938,7 +1938,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/5d9594ec-106b-4a1f-b6f7-1dee9ad47207-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a8c106bf-8230-4369-8bca-9256a2409739-8"
       },
       "mapping" : [{
         "identity" : "w5",

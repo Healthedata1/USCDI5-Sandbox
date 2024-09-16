@@ -41,6 +41,10 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation",
         "title": "US Core Observation ADI Documentation Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence",
+        "title": "US Core Observation ADI Presence Profile"
       }
     ],
     "Patient": [

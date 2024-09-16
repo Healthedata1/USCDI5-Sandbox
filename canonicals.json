@@ -42,6 +42,13 @@
     "name" : "USCoreObservationADIDocumentationProfile"
   },
   {
+    "id" : "us-core-observation-adi-presence",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence",
+    "version" : "0.0.0",
+    "name" : "USCoreObservationADIPresenceProfile"
+  },
+  {
     "id" : "us-core-patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",

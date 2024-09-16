@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "5d9594ec-106b-4a1f-b6f7-1dee9ad47207-32",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/5d9594ec-106b-4a1f-b6f7-1dee9ad47207-32",
+  "id" : "a8c106bf-8230-4369-8bca-9256a2409739-35",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a8c106bf-8230-4369-8bca-9256a2409739-35",
   "name" : "UnionUSCoreCareExperiencePreferenceProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Care Experience Preference Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-13T21:39:18+00:00",
+  "date" : "2024-09-16T18:53:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -615,8 +615,8 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "example",
-        "description" : "Codes identifying names of simple observations.",
+        "strength" : "extensible",
+        "description" : "left: Codes identifying names of simple observations.; right: Category of advance directive",
         "valueSet" : "http://hl7.org/fhir/ValueSet/observation-codes"
       },
       "mapping" : [{
@@ -990,8 +990,8 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "example",
-        "description" : "Advance Healthcare Directive Categories Grouper",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.25"
+        "description" : "Type of advance directive document",
+        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57"
       },
       "mapping" : [{
         "identity" : "sct-concept",
