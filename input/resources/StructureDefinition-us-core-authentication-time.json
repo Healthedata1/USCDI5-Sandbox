@@ -4,9 +4,6 @@
     "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
     "name": "USCoreAuthenticationTimeExtension",
     "title": "US Core Authentication Time Extension",
-    "alias": [
-        "verification date"
-    ],
     "status": "active",
     "date": "2024-10-07",
     "description": "This extension indicates when the information in the document was verified.",

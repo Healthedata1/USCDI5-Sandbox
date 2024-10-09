@@ -47,7 +47,8 @@ differential:
       type:
         - code: Reference
           targetProfile:
-            - http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
+            - http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference
+            # - http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference
             - http://hl7.org/fhir/StructureDefinition/Resource
           _targetProfile:
             - extension:
