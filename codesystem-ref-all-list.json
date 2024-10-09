@@ -73,6 +73,18 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.242"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/contact-point-system",
       "version" : "4.0.1",
       "status" : "active",
@@ -95,6 +107,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "oids" : ["2.16.840.1.113883.4.642.4.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "oids" : ["2.16.840.1.113883.4.642.4.245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
     },
     {
       "url" : "http://hl7.org/fhir/encounter-location-status",
@@ -309,8 +345,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "ValueSet-us-core-clinical-note-type.html" : "US Core Clinical Note Type"
     },
     {
@@ -323,26 +360,29 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
       "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
       "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
+      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -355,6 +395,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-admit-source.html" : "Admit source"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
@@ -405,18 +457,6 @@
       "http://hl7.org/fhir/R4/valueset-encounter-diet.html" : "Diet"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "DischargeDisposition",
-      "title" : "Discharge disposition",
-      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1093"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
       "version" : "1.0.0",
       "status" : "draft",
@@ -439,18 +479,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "EncounterType",
-      "title" : "Encounter type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1088"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
@@ -714,8 +742,9 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType",
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActPharmacySupplyType.html" : "ActPharmacySupplyType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -739,9 +768,9 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason",
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-      "http://terminology.hl7.org/6.0.2/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActSite",
@@ -792,6 +821,18 @@
       "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "HL7DocumentFormatCodes",
+      "title" : "HL7 Document Format Codes",
+      "description" : "This codeSystem contains codes which specify the technical format of a document. Each code provides sufficient information to allow any potential document consumer to know if it will be able to process the document. The codes are sufficiently specific to ensure processing/display by identifying a document encoding, structure and template. For example, formatCodes can be used in the FHIR DocumentReference resource to characterize the document being referenced.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1407"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
       "version" : "3.0.0",
       "status" : "active",
@@ -813,8 +854,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -850,9 +891,9 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -876,9 +917,10 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/cda/stds/core/2.0.0-sd/ValueSet-CDARoleCode.html" : "CDARoleCode",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" : "Personal And Legal Relationship Role Type",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
@@ -962,7 +1004,8 @@
       "oids" : ["2.16.840.1.113883.6.12"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type"
     },
     {
       "url" : "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -998,6 +1041,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "https://www.nubc.org/CodeSystem/PatDischargeStatus",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AHA_NUBC_PatientDischargeStatus",
+      "title" : "AHA NUBC Patient Discharge Status Codes",
+      "description" : "\"The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.\"\r\n\r\nThis code system consists of the following:\r\n\r\n\\* FL 17 - Patient Discharge Status\r\n\r\nThese codes are used to convey the patient discharge status and are the property of the American Hospital Association.\r\n\r\nTo obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)\r\n\r\nStatement of Understanding between AHA and HL7 can be found [here](http://www.hl7.org/documentcenter/public/mou/AHA%20HL7%20SOU%202020%20AHA%20Fully%20Executed.pdf). In particular see sections 4.1d and 4.2.\r\n\r\n\"The UB-04 Manual has a 12-month subscription period from June 30 through July 1.\"\r\n\r\nFor frequently asked questions, see here [here](https://www.nubc.org/nubc-faqs)",
+      "oids" : ["2.16.840.1.113883.6.301.5"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-discharge-disposition.html" : "US Core Discharge Disposition"
     },
     {
       "url" : "urn:ietf:bcp:47",

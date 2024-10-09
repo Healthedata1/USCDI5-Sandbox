@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -41,7 +41,36 @@
       "sources" : ["2.16.840.1.113762.1.4.1099.57"],
       "uses" : {
       },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1",
+      "version" : "20161112",
+      "status" : "active",
+      "name" : "PersonalAndLegalRelationshipRoleType",
+      "title" : "Personal And Legal Relationship Role Type",
+      "description" : null,
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.11.20.12.1"],
+      "sources" : ["2.16.840.1.113883.11.20.12.1"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066",
+      "version" : "20190521",
+      "status" : "active",
+      "name" : "HealthcareProviderTaxonomy",
+      "title" : "Healthcare Provider Taxonomy",
+      "description" : "Code system at http://www.nucc.org/index.php?option=com_content&view=article&id=14&Itemid=125",
+      "systems" : ["http://nucc.org/provider-taxonomy"],
+      "oids" : ["2.16.840.1.114222.4.11.1066"],
+      "sources" : ["2.16.840.1.114222.4.11.1066"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
     },
     {
       "url" : "http://hl7.org/cda/stds/core/ValueSet/CDARoleCode",
@@ -67,8 +96,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.95"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
@@ -110,8 +139,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.97"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -139,8 +168,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.346"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -154,9 +183,66 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
-      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "FacilityTypeCodeValueSet",
+      "title" : "Facility Type Code Value Set",
+      "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -198,6 +284,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -216,6 +303,48 @@
       "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -227,8 +356,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.981"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -254,22 +383,6 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
       "oids" : ["2.16.840.1.113883.4.642.3.255"],
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DischargeDisposition",
-      "title" : "Discharge disposition",
-      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.259"],
-      "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
       "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
@@ -367,20 +480,6 @@
       "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "EncounterType",
-      "title" : "Encounter type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.248"],
-      "sources" : ["2.16.840.1.113883.4.642.3.248"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -392,7 +491,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -406,7 +506,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -585,15 +686,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile",
-      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
+      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
       "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile",
-      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -654,8 +757,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.96"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
       "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
@@ -799,6 +902,20 @@
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -824,6 +941,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -839,6 +957,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -856,6 +975,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -871,6 +991,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -886,6 +1007,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -995,6 +1117,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -1012,6 +1135,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
     },
@@ -1070,6 +1194,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
     },
     {
@@ -1084,8 +1209,29 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -1161,8 +1307,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
@@ -1214,6 +1360,34 @@
       },
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
       "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreDischargeDisposition",
+      "title" : "US Core Discharge Disposition",
+      "description" : "[National Uniform Billing Committee](http://www.nubc.org/), manual UB-04, UB form locator 17.",
+      "systems" : ["https://www.nubc.org/CodeSystem/PatDischargeStatus"],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.9"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.9"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type",
+      "version" : "7.0.0",
+      "status" : "active",
+      "name" : "USCoreEncounterType",
+      "title" : "US Core Encounter Type",
+      "description" : "The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and codes from the Current Procedure and Terminology (CPT) found in the following CPT sections:\n- 99211-99499 E/M - 99500-99600 home health (mainly nonphysician, such as newborn care in home) - 99605-99607 medication management - 98966-98968 non physician telephone services\n(subscription to AMA Required)",
+      "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.22"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.22"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code",
@@ -1299,6 +1473,18 @@
       "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
       "version" : "3.0.0",
       "status" : "active",
@@ -1354,8 +1540,25 @@
       "sources" : ["2.16.840.1.113883.1.11.16621"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "HL7FormatCodes",
+      "title" : "HL7 ValueSet of Format Codes for use with Document Sharing",
+      "description" : "The HL7-FormatCodes value set is defined to be the set of FormatCode(s) defined by implementation guides published by HL7 and other SDOs. The use of a formatCode from the FormatCodes value set specifies the technical format that a document conforms to. The formatCode is a further specialization more detailed than the mime-type. The formatCode provides sufficient information to allow any potential document content consumer to know if it can process and/or display the content of the document based on the document encoding, structure and template conformance indicated by the formatCode. The set of formatCodes is intended to be extensible. The Content Logical Description is defined intentionally to permit formatCodes defined by other Standards Development Organizations to be added by inclusion of additional formatCode Code Systems.",
+      "systems" : [
+        "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+        "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes"
+      ],
+      "oids" : ["2.16.840.1.113883.11.19752"],
+      "sources" : ["2.16.840.1.113883.11.19752"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
@@ -1397,8 +1600,8 @@
       "sources" : ["2.16.840.1.113883.1.11.19377"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/yes-no-unknown-not-asked",
@@ -1410,8 +1613,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-interpreter-required.html" : "US Core Interpreter Required Extension"
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
+      "StructureDefinition-us-core-interpreter-required.html" : "US Core Interpreter Required Extension",
+      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile"
     },
     {
       "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
@@ -1422,7 +1626,10 @@
       "description" : "Foo Bar Test ValueSet",
       "systems" : [
         "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     }
   ]
 }

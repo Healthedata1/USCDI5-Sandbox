@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for UCSDI5Sandbox</h1>
- <p>Generated Mon Sep 16 18:55:32 UTC 2024, FHIR version 4.0.1 for hl7.fhir.us.uscdi5-sandbox#0.0.0 (canonical = <a href="http://hl7.org/fhir/us/uscdi5-sandbox">http://hl7.org/fhir/us/uscdi5-sandbox</a> (<a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">history</a>))</p>
+ <p>Generated Wed Oct 09 03:48:55 UTC 2024, FHIR version 4.0.1 for hl7.fhir.us.uscdi5-sandbox#0.0.0 (canonical = <a href="http://hl7.org/fhir/us/uscdi5-sandbox">http://hl7.org/fhir/us/uscdi5-sandbox</a> (<a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -25,7 +25,8 @@
   <li>(No Errors/Reports - all good)</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 67. Code Systems used: </p>
+<a href="http://tx.fhir.org/r4"></a>
+<p>Use Count: 86. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -50,6 +51,22 @@
     </td>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/sid/icd-10-cm</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://hl7.org/fhir/sid/icd-9-cm</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.0.2/CodeSystem-ICD-9CM-procedurecodes.html">ICD-9-CM (procedure codes)</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://hl7.org/fhir/sid/ndc</td>
     <td>0</td>
     <td>1</td>
@@ -58,9 +75,17 @@
     </td>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/us/core/CodeSystem/us-core-category</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://hl7.org/fhir/us/core/STU7/CodeSystem-us-core-category.html">US Core Category</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://loinc.org</td>
     <td>2</td>
-    <td>10</td>
+    <td>24</td>
     <td>
       <a href="http://terminology.hl7.org/5.2.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
@@ -73,8 +98,8 @@
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
-    <td>2</td>
-    <td>19</td>
+    <td>4</td>
+    <td>21</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
     </td>
@@ -84,6 +109,14 @@
     <td>0</td>
     <td>1</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-data-absent-reason.html">DataAbsentReason</a>
+    </td>
   </tr>
   <tr>
     <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
@@ -104,15 +137,21 @@
   <tr>
     <td>http://unitsofmeasure.org</td>
     <td>0</td>
-    <td>4</td>
+    <td>5</td>
     <td>
       <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
     </td>
   </tr>
   <tr>
+    <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
+    <td>0</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://www.ama-assn.org/go/cpt</td>
     <td>0</td>
-    <td>3</td>
+    <td>4</td>
     <td>
       <a href="http://terminology.hl7.org/5.0.0/CodeSystem-CPT.html">Current Procedural Terminology (CPT&reg;)</a>
     </td>
@@ -126,6 +165,12 @@
     </td>
   </tr>
   <tr>
+    <td>http://www.nlm.nih.gov/research/umls/rxnorm|11062023</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>https://www.usps.com/</td>
     <td>0</td>
     <td>2</td>
@@ -134,7 +179,7 @@
   <tr>
     <td>urn:ietf:bcp:13</td>
     <td>0</td>
-    <td>9</td>
+    <td>14</td>
     <td></td>
   </tr>
   <tr>
@@ -148,7 +193,7 @@
   <tr>
     <td>urn:iso:std:iso:3166</td>
     <td>3</td>
-    <td>4</td>
+    <td>2</td>
     <td>
       <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
@@ -156,7 +201,7 @@
   <tr>
     <td>urn:iso:std:iso:3166:-2</td>
     <td>1</td>
-    <td>0</td>
+    <td>2</td>
     <td>
       <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
     </td>

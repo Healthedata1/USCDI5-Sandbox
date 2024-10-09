@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a8c106bf-8230-4369-8bca-9256a2409739-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a8c106bf-8230-4369-8bca-9256a2409739-3",
+  "id" : "fe30afc0-77de-4827-9607-338a2a59a56e-9",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fe30afc0-77de-4827-9607-338a2a59a56e-9",
   "name" : "IntersectionUSCorePediatricHeadOccipitalFrontalCircumferencePercentileProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Pediatric Head Occipital Frontal Circumference Percentile Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-16T18:53:36+00:00",
+  "date" : "2024-10-09T03:46:35+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1055,7 +1055,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: Type of advance directive document",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a8c106bf-8230-4369-8bca-9256a2409739-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fe30afc0-77de-4827-9607-338a2a59a56e-12"
       },
       "mapping" : [{
         "identity" : "sct-concept",

@@ -61,6 +61,18 @@
       "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
     },
     {
+      "url" : "http://hl7.org/fhir/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "oids" : ["2.16.840.1.113883.4.642.4.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/event-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -155,12 +167,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
+      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
@@ -211,6 +224,18 @@
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "HL7DocumentFormatCodes",
+      "title" : "HL7 Document Format Codes",
+      "description" : "This codeSystem contains codes which specify the technical format of a document. Each code provides sufficient information to allow any potential document consumer to know if it will be able to process the document. The codes are sufficiently specific to ensure processing/display by identifying a document encoding, structure and template. For example, formatCodes can be used in the FHIR DocumentReference resource to characterize the document being referenced.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1407"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "version" : "3.0.0",
       "status" : "active",
@@ -220,7 +245,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://hl7.org/cda/stds/core/2.0.0-sd/ValueSet-CDARoleCode.html" : "CDARoleCode"
+      "http://hl7.org/cda/stds/core/2.0.0-sd/ValueSet-CDARoleCode.html" : "CDARoleCode",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.12.1/expansion" : "Personal And Legal Relationship Role Type"
     },
     {
       "url" : "http://unitsofmeasure.org",
@@ -256,7 +282,8 @@
       "oids" : ["2.16.840.1.113883.6.12"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type"
     },
     {
       "url" : "http://www.cms.gov/Medicare/Coding/ICD10",
@@ -292,6 +319,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+    },
+    {
+      "url" : "https://www.nubc.org/CodeSystem/PatDischargeStatus",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "AHA_NUBC_PatientDischargeStatus",
+      "title" : "AHA NUBC Patient Discharge Status Codes",
+      "description" : "\"The UB-04 Data File contains the complete set of NUBC codes. Every code in the range of possible codes is accounted for sequentially. There are no gaps because all used and unused codes are identified.\"\r\n\r\nThis code system consists of the following:\r\n\r\n\\* FL 17 - Patient Discharge Status\r\n\r\nThese codes are used to convey the patient discharge status and are the property of the American Hospital Association.\r\n\r\nTo obtain the underlying code systems, please see information [here](https://www.nubc.org/subscription-information)\r\n\r\nStatement of Understanding between AHA and HL7 can be found [here](http://www.hl7.org/documentcenter/public/mou/AHA%20HL7%20SOU%202020%20AHA%20Fully%20Executed.pdf). In particular see sections 4.1d and 4.2.\r\n\r\n\"The UB-04 Manual has a 12-month subscription period from June 30 through July 1.\"\r\n\r\nFor frequently asked questions, see here [here](https://www.nubc.org/nubc-faqs)",
+      "oids" : ["2.16.840.1.113883.6.301.5"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-discharge-disposition.html" : "US Core Discharge Disposition"
     },
     {
       "url" : "urn:ietf:bcp:47",

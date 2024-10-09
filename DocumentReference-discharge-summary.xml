@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="discharge-summary"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Discharge Summary Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a discharge summary example for the *US Core DocumentReference*. It is used in the [Write Note Example](StructureDefinition-us-core-documentreference.html#mandatory-operation)."/>
+    </extension>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference discharge-summary</b></p><a name="discharge-summary"> </a><a name="hcdischarge-summary"> </a><a name="discharge-summary-en-US"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 18842-5}">Discharge Summary</span></p><p><b>category</b>: <span title="Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category clinical-note}">Clinical No</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style="display: none">*</td><td>text/plain</td><td><code>Tm8gYWN0aXZpdHkgcmVzdHJpY3Rpb24sIHJlZ3VsYXIgZGlldCwgZm9sbG93IHVwIGluIHR3byB0byB0aHJlZSB3ZWVrcyB3aXRoIHByaW1hcnkgY2FyZSBwcm92aWRlci4=</code></td></tr></table></blockquote><h3>Contexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Encounter</b></td></tr><tr><td style="display: none">*</td><td><a href="Encounter-example-1.html">Encounter: extension = Yes (qualifier value) (SNOMED CT#373066001); status = finished; class = ambulatory (ActCode#AMB); type = Office or other outpatient visit for the evaluation and management of an established patient that may not require the presence of a physician or other qualified health care professional; period = 2015-11-01 17:00:14-0500 --&gt; 2015-11-01 18:00:14-0500</a></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18842-5"/>
+      <display value="Discharge Summary"/>
+    </coding>
+    <text value="Discharge Summary"/>
+  </type>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"/>
+      <code value="clinical-note"/>
+      <display value="Clinical Note"/>
+    </coding>
+    <text value="Clinical No"/>
+  </category>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <content>
+    <attachment>
+      <contentType value="text/plain"/>
+      <data value="Tm8gYWN0aXZpdHkgcmVzdHJpY3Rpb24sIHJlZ3VsYXIgZGlldCwgZm9sbG93IHVwIGluIHR3byB0byB0aHJlZSB3ZWVrcyB3aXRoIHByaW1hcnkgY2FyZSBwcm92aWRlci4="/>
+    </attachment>
+  </content>
+  <context>
+    <encounter>
+      <reference value="Encounter/example-1"/>
+    </encounter>
+  </context>
+</DocumentReference>

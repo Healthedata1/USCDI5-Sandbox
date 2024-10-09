@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"7.3"}
-    h3,h4,h5,h6{--heading-prefix:"7.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.4"}
+    h3,h4,h5,h6{--heading-prefix:"7.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -190,16 +190,6 @@
 
 
 
-  
-    
-      <li>
-        <a href="StructureDefinition-us-core-immunization-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
 
 
   
@@ -293,12 +283,12 @@ profile:</p>
 
 <ul>
   <li>Query for immunizations belonging to a Patient</li>
-  <li><a name="l426">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a>  immunizations belonging to a Patient</li>
+  <li><a name="l420">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a>  immunizations belonging to a Patient</li>
 </ul>
 
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p><a name="l435">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+<p><a name="l429">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
 
 <p><strong>Each Immunization Must Have:</strong></p>
 
@@ -316,8 +306,10 @@ profile:</p>
   <li>a flag to indicate whether the vaccine was reported by someone other than the person who administered the vaccine.</li>
   <li>the encounter the immunization was part of</li>
   <li>where the vaccine was administered</li>
-  <li><span class="bg-success">vaccine lot number</span>  <!-- new-content --></li>
+  <li><span class="bg-success">vaccine lot number*</span>  <!-- new-content --></li>
 </ol>
+
+<p>*see guidance below</p>
 
 <p><strong>Profile Specific Implementation Guidance:</strong></p>
 
@@ -328,6 +320,7 @@ profile:</p>
       <li>The preferred code system identifiers are <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/sid/cvx</code> for CVX and <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/sid/ndc</code> for NDC vaccine codes. Note that the <code class="language-plaintext highlighter-rouge">vaccineCode</code> binding link in the formal definition and the CDC links below use the associated OID as the code system identifiers.</li>
       <li>Be aware that there is a <em>10-digit (with dashes)</em> NDC format displayed on drug packaging and an <em>11-digit (no dashes)</em> NDC format for billing and prescribing (for example, "49281-121-65" and "49281012165"). Normalization may be required to avoid validation errors and warnings.</li>
       <li>The CDC provides the <a href="http://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp">CDC National Drug Code (NDC) Directory – Vaccine NDC Linker Table</a> to assist implementers. The example <a href="Immunization-imm-1.html">Immunization-imm-1</a> illustrates using the CVX and 11-digit NDC codes based on this table.</li>
+      <li><span class="bg-success">*Although there is no guarantee that vaccine lot numbers are globally unique, they effectively are when combined with the vaccine code. NDC codes are defined by the manufacturer, and CVX codes, which are much less granular, are often limited to a single product made by a single manufacturer. Implementers <strong>MAY</strong> communicate the <code class="language-plaintext highlighter-rouge">Immunization.manufacturer</code> as well to ensure global uniqueness to lot numbers.</span>  <!-- new-content --></li>
     </ul>
   </li>
 </ul>
@@ -2065,18 +2058,18 @@ Summary
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l7907">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l7913">​</a>See the <a href="subscription.html#scopes-format">Subscription</a> page for a description of the US Core subscription requirements.</li>
-  <li><a name="l7919">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l7925">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l7931">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l7915">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l7921">​</a>See the <a href="subscription.html#scopes-format">Subscription</a> page for a description of the US Core subscription requirements.</li>
+  <li><a name="l7927">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l7933">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l7939">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="us-core-scopes">US Core Scopes</h4>
 
   <!-- {% assign scope_string = scope | inspect %} -->
 
-<p><a name="l7943">​</a>Servers providing access to immunization data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<p><a name="l7951">​</a>Servers providing access to immunization data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/Immunization.rs</code></li>
 </ul>
@@ -2085,7 +2078,7 @@ Summary
 
 <p>Servers providing access to immunization data <strong>SHALL</strong> support this <a href="subscription.html">US Core SubscriptionTopic</a>:</p>
 <ul>
-  <li><a name="l7976">​</a><a href="SubscriptionTopic-us-core-immunization.html&quot;">US Core Immunization</a> <code><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></code></li>
+  <li><a name="l7984">​</a><a href="SubscriptionTopic-us-core-immunization.html&quot;">US Core Immunization</a> <code><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></code></li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -2094,7 +2087,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching for all immunizations for a patient using the <strong><a name="l8000">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching for all immunizations for a patient using the <strong><a name="l8008">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Immunization?patient={Type/}[id]</code></p>
 
@@ -2113,7 +2106,7 @@ Summary
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8044">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8049">​</a><a href="SearchParameter-us-core-immunization-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8052">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8057">​</a><a href="SearchParameter-us-core-immunization-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">date</code> (e.g.<code class="language-plaintext highlighter-rouge">date=[date]&amp;date=[date]]&amp;...</code>)</li>
@@ -2130,7 +2123,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Immunization resources for the specified patient and date (<a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a> and <a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8108">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8113">​</a><a href="SearchParameter-us-core-immunization-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8116">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8121">​</a><a href="SearchParameter-us-core-immunization-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Immunization?patient={Type/}[id]&amp;status={system|}[code]</code></p>
 
@@ -2173,7 +2166,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 16, 2024 18:53+0000">2024-09-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 03:46+0000">2024-10-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

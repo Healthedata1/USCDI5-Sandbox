@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a8c106bf-8230-4369-8bca-9256a2409739-80",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a8c106bf-8230-4369-8bca-9256a2409739-80",
+  "id" : "fe30afc0-77de-4827-9607-338a2a59a56e-86",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fe30afc0-77de-4827-9607-338a2a59a56e-86",
   "name" : "UnionUSCoreTreatmentInterventionPreferenceProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Treatment Intervention Preference Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-09-16T18:53:36+00:00",
+  "date" : "2024-10-09T03:46:36+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

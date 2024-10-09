@@ -5,6 +5,13 @@
   "jurisdiction": "US",
   "extensions": [
     {
+      "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+      "title": "US Core Authentication Time Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
       "title": "US Core Interpreter Required Extension",
       "types": [
@@ -43,6 +50,10 @@
         "title": "US Core Observation ADI Documentation Profile"
       },
       {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2",
+        "title": "US Core Observation ADI Documentation Profile2"
+      },
+      {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence",
         "title": "US Core Observation ADI Presence Profile"
       }
@@ -57,6 +68,12 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance",
         "title": "US Core Provenance Profile"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference",
+        "title": "US Core ADI DocumentReference Profile"
       }
     ],
     "ServiceRequest": [
@@ -111,6 +128,7 @@
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "Bundle.meta",
       "DocumentReference.meta",
       "Encounter.meta",
       "Immunization.meta",
@@ -121,6 +139,7 @@
       "Provenance.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "Bundle.meta",
       "DocumentReference.meta",
       "Encounter.meta",
       "Immunization.meta",
@@ -155,6 +174,9 @@
       "ImplementationGuide.definition.page.page.page",
       "StructureDefinition",
       "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
       "StructureDefinition.differential.element.binding",
@@ -201,6 +223,9 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time": [
+      "DocumentReference.authenticator"
     ],
     "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required": [
       "Encounter",

@@ -42,6 +42,13 @@
     "name" : "USCoreObservationADIDocumentationProfile"
   },
   {
+    "id" : "us-core-observation-adi-documentation2",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2",
+    "version" : "0.0.0",
+    "name" : "USCoreObservationADIDocumentationProfile2"
+  },
+  {
     "id" : "us-core-observation-adi-presence",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence",
@@ -82,6 +89,20 @@
     "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/ImplementationGuide/hl7.fhir.us.uscdi5-sandbox",
     "version" : "0.0.0",
     "name" : "UCSDI5Sandbox"
+  },
+  {
+    "id" : "us-core-adi-documentreference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference",
+    "version" : "0.0.0",
+    "name" : "USCoreADIDocumentReferenceProfile"
+  },
+  {
+    "id" : "us-core-authentication-time",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+    "version" : "0.0.0",
+    "name" : "USCoreAuthenticationTimeExtension"
   },
   {
     "id" : "us-core-interpreter-required",
