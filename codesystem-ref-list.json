@@ -154,8 +154,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "ValueSet-us-core-clinical-note-type.html" : "US Core Clinical Note Type"
+      "ValueSet-us-core-clinical-note-type.html" : "US Core Clinical Note Type",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -167,13 +167,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
       "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
+      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
       "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
-      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding"
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",

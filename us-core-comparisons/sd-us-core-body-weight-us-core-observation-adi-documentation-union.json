@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fe30afc0-77de-4827-9607-338a2a59a56e-38",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fe30afc0-77de-4827-9607-338a2a59a56e-38",
+  "id" : "68a156ce-9d6b-4f83-a28b-22826665893d-38",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/68a156ce-9d6b-4f83-a28b-22826665893d-38",
   "name" : "UnionUSCoreBodyWeightProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Body Weight Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-10-09T03:46:35+00:00",
+  "date" : "2024-10-09T04:26:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1000,7 +1000,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: Type of advance directive document",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fe30afc0-77de-4827-9607-338a2a59a56e-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/68a156ce-9d6b-4f83-a28b-22826665893d-11"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1938,7 +1938,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/fe30afc0-77de-4827-9607-338a2a59a56e-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/68a156ce-9d6b-4f83-a28b-22826665893d-14"
       },
       "mapping" : [{
         "identity" : "w5",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fe30afc0-77de-4827-9607-338a2a59a56e-131",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fe30afc0-77de-4827-9607-338a2a59a56e-131",
+  "id" : "68a156ce-9d6b-4f83-a28b-22826665893d-131",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/68a156ce-9d6b-4f83-a28b-22826665893d-131",
   "name" : "UnionUSCoreObservationClinicalResultProfileAndUSCoreObservationADIDocumentationProfile2",
   "title" : "Union of US Core Observation Clinical Result Profile And US Core Observation ADI Documentation Profile2",
   "status" : "active",
-  "date" : "2024-10-09T03:46:36+00:00",
+  "date" : "2024-10-09T04:26:54+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -41,8 +41,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1099.57"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1",
@@ -432,9 +432,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
+      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-interpreter-required.html" : "US Core Interpreter Required Extension",
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile"
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",

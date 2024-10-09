@@ -41,8 +41,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1099.57"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1",
@@ -183,10 +183,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
       "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -284,9 +284,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -686,17 +686,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
+      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile",
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile",
-      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile",
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile",
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
+      "StructureDefinition-us-core-encounter.html" : "US Core Encounter Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -941,9 +941,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -957,9 +957,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -975,9 +975,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -991,9 +991,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1007,9 +1007,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -1117,9 +1117,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1135,9 +1135,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
       "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -1194,8 +1194,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile"
+      "StructureDefinition-us-core-provenance.html" : "US Core Provenance Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -1613,9 +1613,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
+      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
       "StructureDefinition-us-core-interpreter-required.html" : "US Core Interpreter Required Extension",
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile"
+      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2"
     },
     {
       "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
