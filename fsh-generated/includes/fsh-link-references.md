@@ -1,5 +1,13 @@
 [ADI-example]: Observation-ADI-example.html
+[ADI-example2]: Observation-ADI-example2.html
 [no-ADI-example]: Observation-no-ADI-example.html
+[no-ADI-example2]: Observation-no-ADI-example2.html
+[discharge-summary]: DocumentReference-discharge-summary.html
+[adi-intubation]: DocumentReference-adi-intubation.html
+[docref-example-1]: Bundle-docref-example-1.html
+[docref-example-2]: Bundle-docref-example-2.html
+[living-will]: DocumentReference-living-will.html
+[polst]: DocumentReference-polst.html
 [example-1]: Encounter-example-1.html
 [example-patient-adi]: DocumentReference-example-patient-adi.html
 [FooBar]: CodeSystem-foo-bar.html
@@ -10,7 +18,9 @@
 [negation-example-code]: ServiceRequest-negation-example-code.html
 [example]: Patient-example.html
 [79614]: Provenance-79614.html
+[USCoreADIDocumentReferenceProfile]: StructureDefinition-us-core-adi-documentreference.html
 [USCoreADIFinding]: ValueSet-us-core-adi-finding.html
+[USCoreAuthenticationTimeExtension]: StructureDefinition-us-core-authentication-time.html
 [USCoreClinicalNoteType]: ValueSet-us-core-clinical-note-type.html
 [USCoreEncounterProfile]: StructureDefinition-us-core-encounter.html
 [USCoreImmunizationProfile]: StructureDefinition-us-core-immunization.html
@@ -18,6 +28,7 @@
 [USCoreMedicationDispenseProfile]: StructureDefinition-us-core-medicationdispense.html
 [USCoreMedicationRequestProfile]: StructureDefinition-us-core-medicationrequest.html
 [USCoreObservationADIDocumentationProfile]: StructureDefinition-us-core-observation-adi-documentation.html
+[USCoreObservationADIDocumentationProfile2]: StructureDefinition-us-core-observation-adi-documentation2.html
 [USCoreObservationADIPresenceProfile]: StructureDefinition-us-core-observation-adi-presence.html
 [USCorePatientProfile]: StructureDefinition-us-core-patient.html
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html

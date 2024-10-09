@@ -35,6 +35,13 @@
             {
                 "id": "Extension",
                 "path": "Extension",
+                "code": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "54588-9",
+                        "display": "Interpreter needed"
+                    }
+                ],
                 "short": "Whether the individual needs an interpreter",
                 "definition": "This individual needs an interpreter to communicate healthcare information.",
                 "comment": "The individual does not speak the default language of the organization, and hence requires an interpreter.",
@@ -69,7 +76,7 @@
                 ],
                 "binding": {
                     "strength": "required",
-                    "description": "Yes|No|Unknown|Not Asked (Use Snomed CT values in final version to meet USCDI terminology requirement)",
+                    "description": "Yes|No|Unknown|Not Asked \u261e\u261e\u261e Use Snomed CT values in final version to meet USCDI terminology requirement",
                     "valueSet": "http://terminology.hl7.org/ValueSet/yes-no-unknown-not-asked"
                 }
             }

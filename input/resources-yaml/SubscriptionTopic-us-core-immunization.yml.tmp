@@ -1,0 +1,24 @@
+resourceType: SubscriptionTopic
+id: us-core-immunization
+url: http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization
+version: 0.0.0
+name: USCoreImmunizationSubscriptionTopic
+title: US Core Immunization Subscription Topic
+status: active
+date: '2024-08-19'
+description: This topic allows subscribers to receive notifications for the US Core
+  Immunization events represented by US Core US Core Immunization Profile, including
+  create, update, and delete interactions.
+resourceTrigger:
+- description: Trigger on US Core Immunization events
+  resource: http://hl7.org/fhir/StructureDefinition/Immunization
+  supportedInteraction:
+  - create
+  - update
+  - delete
+  fhirPathCriteria: '%previous.empty() or %current.empty() or %previous != %current'
+eventTrigger:
+- description: Trigger on patient-related clinical  immunization events
+canFilterBy:
+- description: Filter by patient
+  filterParameter: patient

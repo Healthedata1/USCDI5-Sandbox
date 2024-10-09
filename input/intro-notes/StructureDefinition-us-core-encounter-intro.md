@@ -33,6 +33,8 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 1. <span class="bg-success" markdown="1">interpreter required flag*</span><!-- new-content -->
 
+*see guidance below
+
 **Profile Specific Implementation Guidance:**
 
 * To search for an encounter diagnosis, query for Condition resources that reference the Encounter of interest and have a category of `encounter-diagnosis`.   An example search is shown in the [Condition Quick Start] section.

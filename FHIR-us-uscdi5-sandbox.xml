@@ -5,7 +5,15 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Observation/ADI-example" key="Observation-ADI-example" name="ADI Observation Example"/>
+<artifact id="Observation/ADI-example2" key="Observation-ADI-example2" name="ADI Observation Presence ADI Example2"/>
 <artifact id="Observation/no-ADI-example" key="Observation-no-ADI-example" name="ADI Observation Presence No ADI Example"/>
+<artifact id="Observation/no-ADI-example2" key="Observation-no-ADI-example2" name="ADI Observation Presence No ADI Example2"/>
+<artifact id="DocumentReference/discharge-summary" key="DocumentReference-discharge-summary" name="Discharge Summary Example"/>
+<artifact id="DocumentReference/adi-intubation" key="DocumentReference-adi-intubation" name="DocRef ADI-DNI (PDF)"/>
+<artifact id="DocumentReference/living-will" key="DocumentReference-living-will" name="DocRef Living Will (PDF)"/>
+<artifact id="DocumentReference/polst" key="DocumentReference-polst" name="DocRef POLST (PDF)"/>
+<artifact id="Bundle/docref-example-1" key="Bundle-docref-example-1" name="Docref Example 1"/>
+<artifact id="Bundle/docref-example-2" key="Bundle-docref-example-2" name="Docref Example 2"/>
 <artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter 1 Example"/>
 <artifact id="DocumentReference/example-patient-adi" key="DocumentReference-example-patient-adi" name="Example Patient Adi"/>
 <artifact id="CodeSystem/foo-bar" key="CodeSystem-foo-bar" name="Foo Bar Test Code System"/>
@@ -15,7 +23,9 @@
 <artifact id="MedicationRequest/medicationrequest-coded-oral-axid" key="MedicationRequest-medicationrequest-coded-oral-axid" name="MedicationRequest Coded Oral Axid Example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
 <artifact id="Provenance/79614" key="Provenance-79614" name="Provenance Example"/>
+<artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="ValueSet/us-core-adi-finding" key="ValueSet-us-core-adi-finding" name="US Core ADI Finding"/>
+<artifact id="StructureDefinition/us-core-authentication-time" key="StructureDefinition-us-core-authentication-time" name="US Core Authentication Time Extension"/>
 <artifact id="ValueSet/us-core-clinical-note-type" key="ValueSet-us-core-clinical-note-type" name="US Core Clinical Note Type"/>
 <artifact id="StructureDefinition/us-core-encounter" key="StructureDefinition-us-core-encounter" name="US Core Encounter Profile"/>
 <artifact id="StructureDefinition/us-core-immunization" key="StructureDefinition-us-core-immunization" name="US Core Immunization Profile"/>
@@ -23,6 +33,7 @@
 <artifact id="StructureDefinition/us-core-medicationdispense" key="StructureDefinition-us-core-medicationdispense" name="US Core MedicationDispense Profile"/>
 <artifact id="StructureDefinition/us-core-medicationrequest" key="StructureDefinition-us-core-medicationrequest" name="US Core MedicationRequest Profile"/>
 <artifact id="StructureDefinition/us-core-observation-adi-documentation" key="StructureDefinition-us-core-observation-adi-documentation" name="US Core Observation ADI Documentation Profile"/>
+<artifact id="StructureDefinition/us-core-observation-adi-documentation2" key="StructureDefinition-us-core-observation-adi-documentation2" name="US Core Observation ADI Documentation Profile2"/>
 <artifact id="StructureDefinition/us-core-observation-adi-presence" key="StructureDefinition-us-core-observation-adi-presence" name="US Core Observation ADI Presence Profile"/>
 <artifact id="StructureDefinition/us-core-patient" key="StructureDefinition-us-core-patient" name="US Core Patient Profile"/>
 <artifact id="StructureDefinition/us-core-provenance" key="StructureDefinition-us-core-provenance" name="US Core Provenance Profile"/>

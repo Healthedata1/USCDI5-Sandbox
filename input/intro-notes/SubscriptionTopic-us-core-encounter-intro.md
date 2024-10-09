@@ -1,2 +1,0 @@
-
-{% include subscriptiontopic-intro.md %}

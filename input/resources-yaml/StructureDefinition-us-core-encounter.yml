@@ -19,12 +19,12 @@ differential:
     path: Encounter
     mustSupport: false
 
-#USCDI5
-  - id: Encvounter.extension:us-core-interpreter-required
+# =================== USCDI5  ================
+  - id: Encounter.extension:us-core-interpreter-required
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
-    path: Encvounter.extension
+    path: Encounter.extension
     sliceName: us-core-interpreter-required
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
       \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the patient needs an interpreter"

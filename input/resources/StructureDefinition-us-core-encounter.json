@@ -22,14 +22,14 @@
                 "mustSupport": false
             },
             {
-                "id": "Encvounter.extension:us-core-interpreter-required",
+                "id": "Encounter.extension:us-core-interpreter-required",
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
                         "valueBoolean": true
                     }
                 ],
-                "path": "Encvounter.extension",
+                "path": "Encounter.extension",
                 "sliceName": "us-core-interpreter-required",
                 "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Whether the patient needs an interpreter",
                 "min": 0,
