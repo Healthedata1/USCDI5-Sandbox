@@ -29,6 +29,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
         <a href="clinical-notes.html">Clinical Notes</a>
       </li>
       <li>

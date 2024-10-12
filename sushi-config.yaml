@@ -45,7 +45,7 @@ dependencies:
   hl7.fhir.uv.smart-app-launch: 2.0.0
   us.nlm.vsac:
     uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
-    version: 0.18.0
+    version: 0.19.0
     id: vsac
   hl7.fhir.uv.sdc: 3.0.0
   # us.cdc.phinvads:
@@ -78,7 +78,7 @@ pages:
   # #   exchanging-clinical-data.md:
 
   guidance.md:
-    # uscdi.md:
+    uscdi.md:
     #   title: USCDI
     # general-guidance.md:
     clinical-notes.md:
@@ -141,6 +141,7 @@ menu:
   Conformance: #conformance.html
     Subscription: subscription.html
   General Guidance: #guidance.html
+    USCDI: uscdi.html
     Clinical Notes: clinical-notes.html
     Sex Parameters for Clinical Use: spcu.html
   #Table of Contents: toc.html

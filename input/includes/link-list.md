@@ -14,7 +14,7 @@
 [`race`]: SearchParameter-us-core-race.html
 [`role`]: SearchParameter-us-core-careteam-role.html
 [$docref operation]: OperationDefinition-docref.html
-[$expand]: {{site.data.fhir.path}}valueset-operation-expand.html  "An operation used to create a simple collection of codes suitable for use for data entry or validation"
+[$expand]: {{ site.data.fhir.path }}valueset-operation-expand.html  "An operation used to create a simple collection of codes suitable for use for data entry or validation"
 [2015 Edition Common Clinical Data Set (CCDS)]: https://www.healthit.gov/sites/default/files/ccds_reference_document_v1_1.pdf
 [21st Century Cures Act for accessing patient data]: https://www.federalregister.gov/d/2020-07419/p-1177
 [34133-9]: http://s.details.loinc.org/LOINC/34133-9.html?sections=Comprehensive
@@ -152,7 +152,6 @@
 [Head Circumference]: {{site.data.fhir.path}}headcircum.html
 [Heart rate]: {{site.data.fhir.path}}heartrate.html
 [History & Physical Note (34117-2)]: https://loinc.org/34117-2.html
-[Advance directives (42348-3)]: https://loinc.org/42348-3.html
 [HL7 C-CDA]: https://hl7.org/cda/us/ccda/history.html
 [HL7 Cross Paradigm Implementation Guide: UDI Pattern]: http://www.hl7.org/documentcenter/private/standards/HL7_IG_UDI_R2_2020JUN.pdf
 [HL7 Gender Harmony Project]: https://confluence.hl7.org/display/VOC/The+Gender+Harmony+Project
@@ -275,7 +274,6 @@
 [StructureDefinitions]: {{site.data.fhir.path}}structuredefinition.html
 [Suppressed Data]: general-guidance.html#suppressed-data
 [Surgical Operation Note (11504-8)]: https://loinc.org/11504-8.html
-[Emergency Department Note (34111-5)]: https://loinc.org/34111-5.html
 [Terminology Binding Extensible]: {{site.data.fhir.path}}terminologies.html#extensible
 [Terminology]: terminology.html "Terminology Page"
 [timezone extension]: {{site.data.fhir.path}}extension-tz-code.html
@@ -452,7 +450,4 @@
 [Clinical Information Reconciliation and Incorporation (CIRI)]: https://www.healthit.gov/test-method/clinical-information-reconciliation-and-incorporation
 [Normative]: {{site.data.fhir.path}}versions.html#maturity
 [US Realm Steering Committee (USRSC)]: https://confluence.hl7.org/display/USR/US+Realm+Steering+Committee
-[US Core ADI Finding]: ValueSet-us-core-adi-finding.html
-[US Core SubscriptionTopic]: subscription.html
-[Patient Sex Parameter For Clinical Use]: http://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html
-[HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1]: https://hl7.org/xprod/ig/uv/gender-harmony/
+{% include link-list-sandbox.md %}

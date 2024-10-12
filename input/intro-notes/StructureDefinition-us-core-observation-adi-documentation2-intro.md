@@ -27,9 +27,8 @@ The following data elements must always be present ([Mandatory] definition) or m
 
 **Profile Specific Implementation Guidance:**
 
-
-- \* The [Supporting info Extension](https://hl7.org/fhir/extensions/StructureDefinition-workflow-supportingInfo.html) references US Core DocumentReference Profiles which support the exchange of clinical notes including ADI documents.
-   - The type of ADI document, period that a document is clinically effective (in force) and other actors (e.g. Author, Custodian) is communicated in the referenced DocumentReference or the document itself.
-- \* An `Observation.performer` of type Practitioner or Organization typically made the Observation, and an `Observation.performer` of Patient or RelatedPerson usually is the source of information (for example, a next of kin who answers questions about the patient's advance directives) Systems may use the standard [Performer function Extension ](http://hl7.org/fhir/StructureDefinition/event-performerFunction) to distinguish the type of involvement of the performer in the Observation.
+- \* If the system asserts the patient has ADI documents and the references to the documents are known, it **SHOULD** reference them in the [Supporting Info Extension]. The [US Core ADI DocumentReference Profile] is targeted by the Supporting Info Extension to exchange ADI documents and it properties.
+  - Conversely if the system asserts the patient has no ADI documents or that their references are unknown, then there would be no references.
+- \* An `Observation.performer` of type Practitioner or Organization typically made the Observation, and an `Observation.performer` of Patient or RelatedPerson usually is the source of information (for example, a next of kin who answers questions about the patient's advance directives) Systems may use the standard [Performer function Extension] to distinguish the type of involvement of the performer in the Observation.
 
 {% include link-list.md %}

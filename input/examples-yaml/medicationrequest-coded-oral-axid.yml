@@ -63,10 +63,11 @@ dosageInstruction:
       boundsPeriod:
         start: '2008-04-05'
 
- # USCDI5 data elemneent       
+ # USCDI5 data element       
   route:
     coding:
     - system: http://snomed.info/sct
+      version: http://snomed.info/sct/731000124108
       code: '26643006'
       display: Oral route
 

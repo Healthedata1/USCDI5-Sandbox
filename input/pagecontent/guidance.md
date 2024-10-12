@@ -1,6 +1,6 @@
 
-<!-- - [USCDI]
-- [General Guidance] -->
+ - [USCDI]
+<!--- [General Guidance] -->
 - [Clinical Notes]
 <!-- - [Medication List]
 - [Basic Provenance]

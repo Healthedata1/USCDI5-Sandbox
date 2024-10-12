@@ -12,9 +12,10 @@ description: >-
   This extension indicates when the information in the document was verified.
 kind: complex-type
 abstract: false
+
 context:
   - type: element
-    expression: DocumentReference.authenticator
+    expression: DocumentReference
 
 type: Extension
 baseDefinition: 'http://hl7.org/fhir/StructureDefinition/Extension'

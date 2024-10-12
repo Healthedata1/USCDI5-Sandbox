@@ -22,7 +22,7 @@
             {
                 "system": "http://loinc.org",
                 "code": "45473-6",
-                "display": "Advance directive/living will completed?"
+                "display": "Advance directive/living will completed"
             }
         ]
     },
@@ -41,6 +41,7 @@
         "coding": [
             {
                 "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108",
                 "code": "373067005",
                 "display": "No (qualifier value)"
             }

@@ -23,6 +23,23 @@
                 "mustSupport": false
             },
             {
+                "id": "DocumentReference.extension:authenticationTime",
+                "path": "DocumentReference.extension",
+                "sliceName": "authenticationTime",
+                "short": "US Core DocumentReference Authentication Time Extension\"",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension",
+                        "profile": [
+                            "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time"
+                        ]
+                    }
+                ],
+                "mustSupport": true
+            },
+            {
                 "id": "DocumentReference.identifier",
                 "path": "DocumentReference.identifier",
                 "mustSupport": true
@@ -234,23 +251,6 @@
                                     }
                                 ]
                             }
-                        ]
-                    }
-                ],
-                "mustSupport": true
-            },
-            {
-                "id": "DocumentReference.authenticator.extension:authenticationTime",
-                "path": "DocumentReference.authenticator.extension",
-                "sliceName": "authenticationTime",
-                "short": "US Core DocumentReference Authentication Time Extension\"",
-                "min": 0,
-                "max": "1",
-                "type": [
-                    {
-                        "code": "Extension",
-                        "profile": [
-                            "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time"
                         ]
                     }
                 ],

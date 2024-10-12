@@ -13,7 +13,7 @@ code:
     coding:
         - system: "http://loinc.org"
           code: 45473-6
-          display: Advance directive/living will completed?
+          display: Advance directive/living will completed
 subject:
     reference: Patient/example
 effectiveDateTime: "2024-05-16T01:06:06.393Z"
@@ -24,6 +24,7 @@ performer:
 valueCodeableConcept:
     coding:
         - system: "http://snomed.info/sct"
+          version: http://snomed.info/sct/731000124108
           code: "373066001"
           display: Yes (qualifier value)
 extension:

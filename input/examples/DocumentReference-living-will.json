@@ -16,6 +16,12 @@
             "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference"
         ]
     },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+            "valueDateTime": "2024-10-08T19:48:54.316108-07:00"
+        }
+    ],
     "identifier": [
         {
             "system": "urn:ietf:rfc:3986",
@@ -56,12 +62,6 @@
         }
     ],
     "authenticator": {
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
-                "valueDateTime": "2024-10-08T19:48:54.316108-07:00"
-            }
-        ],
         "reference": "http://hl7.org/fhir/us/core/Practitioner/practitioner-1",
         "display": "Practitioner-1"
     },

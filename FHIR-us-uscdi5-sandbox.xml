@@ -18,7 +18,7 @@
 <artifact id="DocumentReference/example-patient-adi" key="DocumentReference-example-patient-adi" name="Example Patient Adi"/>
 <artifact id="CodeSystem/foo-bar" key="CodeSystem-foo-bar" name="Foo Bar Test Code System"/>
 <artifact id="ValueSet/foo-bar" key="ValueSet-foo-bar" name="Foo Bar Test Value Set"/>
-<artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Imm 1 Example"/>
+<artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Immunization Example 1"/>
 <artifact id="MedicationDispense/medicationdispense-example" key="MedicationDispense-medicationdispense-example" name="Medication Dispense Example"/>
 <artifact id="MedicationRequest/medicationrequest-coded-oral-axid" key="MedicationRequest-medicationrequest-coded-oral-axid" name="MedicationRequest Coded Oral Axid Example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
@@ -53,4 +53,5 @@
 <page key="spcu" name="Sex Parameters for Clinical Use"/>
 <page key="subscription" name="Subscription"/>
 <page key="toc" name="Table of Contents"/>
+<page key="uscdi" name="Uscdi"/>
 </specification>

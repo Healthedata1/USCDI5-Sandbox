@@ -12,7 +12,7 @@
     "context": [
         {
             "type": "element",
-            "expression": "DocumentReference.authenticator"
+            "expression": "DocumentReference"
         }
     ],
     "type": "Extension",
