@@ -11,10 +11,10 @@
   fhir:meta [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "Imm 1 Example" ]
+       fhir:value [ fhir:v "Immunization Example 1" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "This is a imm 1 example for the *US Core Immunization Profile*." ]
+       fhir:value [ fhir:v "This is an example for the *US Core Immunization Profile*." ]
      ] ) ;
      fhir:profile ( [
        fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"^^xsd:anyURI ;

@@ -4,11 +4,11 @@
   "meta" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-      "valueString" : "Imm 1 Example"
+      "valueString" : "Immunization Example 1"
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-      "valueMarkdown" : "This is a imm 1 example for the *US Core Immunization Profile*."
+      "valueMarkdown" : "This is an example for the *US Core Immunization Profile*."
     }],
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"]
   },

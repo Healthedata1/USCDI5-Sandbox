@@ -116,6 +116,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
         <a href="clinical-notes.html">Clinical Notes</a>
       </li>
       <li>
@@ -236,9 +239,15 @@
     ]
   },
   "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference living-will&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;living-will\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcliving-will\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;living-will-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/NamingSystem-uri.html\&quot; title=\&quot;As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\&quot;&gt;URI&lt;/a&gt;/urn:oid:2.16.840.1.113883.19.5.99999.1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 86533-7}\&quot;&gt;Patient Living Will&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 86533-7}\&quot;&gt;Patient Living will&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2024-10-08 19:48:54-0700&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authenticator&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\&quot;&gt;Practitioner-1&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Creation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;application/pdf&lt;/td&gt;&lt;td&gt;(base64 data - 184,040 base64 chars)&lt;/td&gt;&lt;td&gt;Living Will (PDF)&lt;/td&gt;&lt;td&gt;2024-10-04&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DocumentReference living-will&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;living-will\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcliving-will\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;living-will-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;US Core Authentication Time Extension&lt;/b&gt;: 2024-10-08 19:48:54-0700&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/NamingSystem-uri.html\&quot; title=\&quot;As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\&quot;&gt;URI&lt;/a&gt;/urn:oid:2.16.840.1.113883.19.5.99999.1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 86533-7}\&quot;&gt;Patient Living Will&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 86533-7}\&quot;&gt;Patient Living will&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2024-10-08 19:48:54-0700&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Example&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authenticator&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\&quot;&gt;Practitioner-1&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;ContentType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Data&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Creation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;application/pdf&lt;/td&gt;&lt;td&gt;(base64 data - 184,040 base64 chars)&lt;/td&gt;&lt;td&gt;Living Will (PDF)&lt;/td&gt;&lt;td&gt;2024-10-04&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;"
   },
+  "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2024-10-08T19:48:54.316108-07:00"
+    }
+  ],
   "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.identifier">identifier</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "urn:ietf:rfc:3986",
@@ -279,12 +288,6 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.authenticator">authenticator</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.extension">extension</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time",
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2024-10-08T19:48:54.316108-07:00"
-      }
-    ],
     "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://hl7.org/fhir/us/core/Practitioner/practitioner-1",
     "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Practitioner-1"
   },
@@ -322,7 +325,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 04:26+0000">2024-10-09</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 13, 2024 23:51+0000">2024-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

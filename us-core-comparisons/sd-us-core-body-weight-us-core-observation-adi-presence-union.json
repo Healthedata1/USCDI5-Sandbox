@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "68a156ce-9d6b-4f83-a28b-22826665893d-203",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/68a156ce-9d6b-4f83-a28b-22826665893d-203",
+  "id" : "bb24d8eb-79e8-4029-8336-ec8a0eef5070-203",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bb24d8eb-79e8-4029-8336-ec8a0eef5070-203",
   "name" : "UnionUSCoreBodyWeightProfileAndUSCoreObservationADIPresenceProfile",
   "title" : "Union of US Core Body Weight Profile And US Core Observation ADI Presence Profile",
   "status" : "active",
-  "date" : "2024-10-09T04:26:54+00:00",
+  "date" : "2024-10-13T23:52:13+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/68a156ce-9d6b-4f83-a28b-22826665893d-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/bb24d8eb-79e8-4029-8336-ec8a0eef5070-14"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1001,7 +1001,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: Yes|No|Unknown|Not Asked (Use Snomed CT values in final version?)",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/68a156ce-9d6b-4f83-a28b-22826665893d-95"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/bb24d8eb-79e8-4029-8336-ec8a0eef5070-95"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1939,7 +1939,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/68a156ce-9d6b-4f83-a28b-22826665893d-14"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/bb24d8eb-79e8-4029-8336-ec8a0eef5070-14"
       },
       "mapping" : [{
         "identity" : "w5",

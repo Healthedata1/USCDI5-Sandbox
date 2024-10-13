@@ -4,10 +4,10 @@
   <id value="imm-1"/>
   <meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
-      <valueString value="Imm 1 Example"/>
+      <valueString value="Immunization Example 1"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
-      <valueMarkdown value="This is a imm 1 example for the *US Core Immunization Profile*."/>
+      <valueMarkdown value="This is an example for the *US Core Immunization Profile*."/>
     </extension>
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
   </meta>

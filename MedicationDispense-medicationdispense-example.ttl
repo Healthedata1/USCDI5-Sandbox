@@ -89,6 +89,7 @@
        fhir:coding ( [
          a sct:26643006 ;
          fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
          fhir:code [ fhir:v "26643006" ] ;
          fhir:display [ fhir:v "Oral route" ]
        ] )

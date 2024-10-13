@@ -12,7 +12,7 @@
     <profile value="http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference polst</b></p><a name="polst"> </a><a name="hcpolst"> </a><a name="polst-en-US"> </a><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.0.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference polst</b></p><a name="polst"> </a><a name="hcpolst"> </a><a name="polst-en-US"> </a><p><b>US Core Authentication Time Extension</b>: 2024-10-08 19:48:54-0700</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/5.0.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
 This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
@@ -20,6 +20,9 @@ Note that this OID is created to aid with interconversion between CDA and FHIR -
 
 This OID may also be used in CD.codeSystem.">URI</a>/urn:oid:2.16.840.1.113883.19.5.99999.1</p><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:{http://loinc.org 100821-8}">National Polst Form: Portable Medical Order Panel</span></p><p><b>category</b>: <span title="Codes:{http://loinc.org 100821-8}">National POLST form: portable medical order panel</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>date</b>: 2024-10-08 19:48:54-0700</p><p><b>author</b>: <a href="http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html">Practitioner-1</a></p><p><b>authenticator</b>: <a href="http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html">Practitioner-1</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Data</b></td><td><b>Title</b></td><td><b>Creation</b></td></tr><tr><td style="display: none">*</td><td>application/pdf</td><td>(base64 data - 1,315,960 base64 chars)</td><td>POLST (PDF)</td><td>2024-10-04</td></tr></table></blockquote></div>
   </text>
+  <extension url="http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time">
+    <valueDateTime value="2024-10-08T19:48:54.316108-07:00"/>
+  </extension>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:oid:2.16.840.1.113883.19.5.99999.1"/>
@@ -50,9 +53,6 @@ This OID may also be used in CD.codeSystem.">URI</a>/urn:oid:2.16.840.1.113883.1
     <display value="Practitioner-1"/>
   </author>
   <authenticator>
-    <extension url="http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time">
-      <valueDateTime value="2024-10-08T19:48:54.316108-07:00"/>
-    </extension>
     <reference value="http://hl7.org/fhir/us/core/Practitioner/practitioner-1"/>
     <display value="Practitioner-1"/>
   </authenticator>

@@ -12,19 +12,9 @@
   <sch:pattern>
     <sch:title>f:DocumentReference</sch:title>
     <sch:rule context="f:DocumentReference">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:DocumentReference/f:authenticator</sch:title>
-    <sch:rule context="f:DocumentReference/f:authenticator">
-      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-authentication-time': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
-      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

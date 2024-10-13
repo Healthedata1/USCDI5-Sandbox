@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5a0bc660-ad9c-4fcf-863c-fa948de59a72"/>
+  <id value="9b1379a8-34b6-4e88-b8c5-159b130d3ef0"/>
   <meta>
-    <lastUpdated value="2024-10-09T04:26:16.667+00:00"/>
+    <lastUpdated value="2024-10-13T23:51:39.437+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -79,8 +79,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a4c52f3c-beaa-4f43-8278-cdf8ad5252e9"/>
-          <timestamp value="2024-10-09T04:28:20+00:00"/>
+          <identifier value="urn:uuid:70c9bd19-8baf-4383-91e8-3a4da4a327bc"/>
+          <timestamp value="2024-10-13T23:53:54+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -142,7 +142,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.78</p>
-            <p>This value set contains 11 concepts</p>
+            <p>This value set contains 10 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -235,14 +235,6 @@
                 <td>http://loinc.org</td>
                 <td>Emergency department Note</td>
               </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://loinc.org-42348-3"> </a>  
-                  <a href="https://loinc.org/42348-3/">42348-3</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Advance directives</td>
-              </tr>
             </table>
           </div>
         </text>
@@ -260,9 +252,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5f612b1c-91de-485b-a539-2bd33e9255e9"/>
-          <timestamp value="2024-10-09T04:28:21+00:00"/>
-          <total value="11"/>
+          <identifier value="urn:uuid:8555f107-07ed-4488-ad0e-1593d1f6afe9"/>
+          <timestamp value="2024-10-13T23:53:58+00:00"/>
+          <total value="10"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -337,11 +329,6 @@
             <system value="http://loinc.org"/>
             <code value="34111-5"/>
             <display value="Emergency department Note"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="42348-3"/>
-            <display value="Advance directives"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -421,8 +408,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:98425c48-4ca3-464b-b77a-d259e2440ee1"/>
-          <timestamp value="2024-10-09T04:28:21+00:00"/>
+          <identifier value="urn:uuid:f23787ad-2af6-46d3-a79a-80be62e623c8"/>
+          <timestamp value="2024-10-13T23:54:03+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

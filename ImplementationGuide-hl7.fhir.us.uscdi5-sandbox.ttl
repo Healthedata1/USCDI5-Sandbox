@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-09T04:26:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-13T23:51:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -88,7 +88,7 @@
        fhir:link <http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac>
      ] ;
      fhir:packageId [ fhir:v "us.nlm.vsac" ] ;
-     fhir:version [ fhir:v "0.18.0" ]
+     fhir:version [ fhir:v "0.19.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
      fhir:uri [
@@ -928,8 +928,8 @@
          fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Immunization/imm-1> ;
          fhir:reference [ fhir:v "Immunization/imm-1" ]
        ] ;
-       fhir:name [ fhir:v "Imm 1 Example" ] ;
-       fhir:description [ fhir:v "This is a imm 1 example for the *US Core Immunization Profile*." ] ;
+       fhir:name [ fhir:v "Immunization Example 1" ] ;
+       fhir:description [ fhir:v "This is an example for the *US Core Immunization Profile*." ] ;
        fhir:example [
          fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization>
@@ -1258,6 +1258,17 @@
          fhir:title [ fhir:v "Guidance" ] ;
          fhir:generation [ fhir:v "markdown" ] ;
          fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "informative" ]
+           ] [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "uscdi.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "uscdi.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Uscdi" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
            fhir:extension ( [
              fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
              fhir:value [ fhir:v "informative" ]

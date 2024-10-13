@@ -114,6 +114,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
         <a href="clinical-notes.html">Clinical Notes</a>
       </li>
       <li>
@@ -283,12 +286,12 @@
 <ul>
   <li>Query for a specific patient encounter</li>
   <li>Query for recent patient encounters</li>
-  <li><a name="l423">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a> an encounter</li>
+  <li><a name="l429">​</a><a href="future-of-US-core.html#future-candidate-requirements-under-consideration">Record or update</a> an encounter</li>
 </ul>
 
 <h3 id="mandatory-and-must-support-data-elements">Mandatory and Must Support Data Elements</h3>
 
-<p><a name="l432">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
+<p><a name="l438">​</a>The following data elements must always be present (<a href="must-support.html">Mandatory</a> definition) or must be supported if the data is present in the sending system (<a href="must-support.html">Must Support</a> definition). They are presented below in a simple human-readable explanation. Profile specific guidance and examples are provided as well. The <a href="#profile">Formal Views</a> below provides the formal summary, definitions, and terminology requirements.</p>
 
 <p><strong>Each Encounter Must Have:</strong></p>
 
@@ -321,7 +324,7 @@ for example
 
 <p><strong>Additional USCDI Requirements:</strong></p>
 
-<p><a name="l497">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Patient examples.</p>
+<p><a name="l503">​</a>These <a href="must-support.html#additional-uscdi-requirements">Additional USCDI Requirements</a> elements are not Mandatory or Must Support but are required for ONC Health IT certification testing and are included in the formal definition of the profile and the Patient examples.</p>
 
 <ol>
   <li><span class="bg-success">interpreter required flag*</span>  <!-- new-content --></li>
@@ -332,12 +335,12 @@ for example
 <p><strong>Profile Specific Implementation Guidance:</strong></p>
 
 <ul>
-  <li><a name="l520">​</a>To search for an encounter diagnosis, query for Condition resources that reference the Encounter of interest and have a category of <code class="language-plaintext highlighter-rouge">encounter-diagnosis</code>.   An example search is shown in the <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html#search">Condition Quick Start</a> section.</li>
+  <li><a name="l526">​</a>To search for an encounter diagnosis, query for Condition resources that reference the Encounter of interest and have a category of <code class="language-plaintext highlighter-rouge">encounter-diagnosis</code>.   An example search is shown in the <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html#search">Condition Quick Start</a> section.</li>
   <li>The Encounter resource can represent a reason using a code with <code class="language-plaintext highlighter-rouge">Encounter.reasonCode</code> or a reference with <code class="language-plaintext highlighter-rouge">Encounter.reasonReference</code> to  Condition or other resources.
     <ul>
       <li>Although both are marked as Must Support, servers are not required to support both a code and a reference, but they <strong>SHALL</strong> support <em>at least one</em> of these elements.</li>
       <li>The client application <strong>SHALL</strong> support both elements.</li>
-      <li><a name="l554">​</a>If <code class="language-plaintext highlighter-rouge">Encounter.reasonReference</code> references an Observation, it <strong>SHOULD</strong> conform to a US Core Observation if applicable. For example, a laboratory result <strong>SHOULD</strong> conform to the <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>.</li>
+      <li><a name="l560">​</a>If <code class="language-plaintext highlighter-rouge">Encounter.reasonReference</code> references an Observation, it <strong>SHOULD</strong> conform to a US Core Observation if applicable. For example, a laboratory result <strong>SHOULD</strong> conform to the <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>.</li>
     </ul>
   </li>
   <li>This profile supports <em>where the encounter occurred</em>.  The location address can be represented by the Location referenced by <code class="language-plaintext highlighter-rouge">Encounter.location.location</code> or indirectly through the Organization referenced by <code class="language-plaintext highlighter-rouge">Encounter.serviceProvider</code>.
@@ -348,11 +351,11 @@ for example
   </li>
   <li>The following US Core Profiles <em>indirectly</em> reference the location/facility through references to US Core Encounter:
     <ul>
-      <li><a name="l614">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></li>
+      <li><a name="l620">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></li>
       <li><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></li>
       <li><a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a></li>
-      <li><a name="l626">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></li>
-      <li><a name="l630">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></li>
+      <li><a name="l632">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></li>
+      <li><a name="l636">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></li>
       <li><a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a></li>
     </ul>
 
@@ -377,7 +380,7 @@ for example
   <!-- new-content -->
 
 <ul>
-  <li><a name="l705">​</a>* See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. Updates to <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> <strong>SHOULD</strong> reflect:
+  <li><a name="l711">​</a>* See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. Updates to <code class="language-plaintext highlighter-rouge">Meta.lastUpdated</code> <strong>SHOULD</strong> reflect:
     <ul>
       <li>New encounters/visits</li>
       <li>Changes in the status of encounters, including events that trigger the same status (e.g., in-progress → in-progress). These status changes correspond to events that can initiate <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=185">HL7 V2</a> ADT messages.</li>
@@ -2814,27 +2817,27 @@ Summary
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l11957">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l11963">​</a>See the <a href="subscription.html#scopes-format">Subscription</a> page for a description of the US Core subscription requirements.</li>
-  <li><a name="l11969">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l11975">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l11981">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l11963">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l11969">​</a>See the <a href="subscription.html#scopes-format">Subscription</a> page for a description of the US Core subscription requirements.</li>
+  <li><a name="l11975">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l11981">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l11987">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="us-core-scopes">US Core Scopes</h4>
 
   <!-- {% assign scope_string = scope | inspect %} -->
 
-<p><a name="l11993">​</a>Servers providing access to encounter data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<p><a name="l11999">​</a>Servers providing access to encounter data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/Encounter.rs</code></li>
 </ul>
 
 <h4 id="us-core-subscription">US Core Subscription</h4>
 
-<p>Servers providing access to encounter data <strong>SHALL</strong> support this <a href="subscription.html">US Core SubscriptionTopic</a>:</p>
+<p>Servers providing access to encounter data <strong>SHALL</strong> support this [US Core SubscriptionTopic]:</p>
 <ul>
-  <li><a name="l12026">​</a><a href="SubscriptionTopic-us-core-encounter.html&quot;">US Core Encounter</a> <code><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></code></li>
+  <li><a name="l12029">​</a><a href="SubscriptionTopic-us-core-encounter.html&quot;">US Core Encounter</a> <code><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-encounter" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></code></li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -2843,7 +2846,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support both&nbsp;read Encounter by <code class="language-plaintext highlighter-rouge">id</code> <strong>AND</strong> Encounter search using the <strong><a name="l12056">​</a><a href="SearchParameter-us-core-encounter-id.html"><code class="language-plaintext highlighter-rouge">_id</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support both&nbsp;read Encounter by <code class="language-plaintext highlighter-rouge">id</code> <strong>AND</strong> Encounter search using the <strong><a name="l12059">​</a><a href="SearchParameter-us-core-encounter-id.html"><code class="language-plaintext highlighter-rouge">_id</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter/[id]</code> or <code class="language-plaintext highlighter-rouge">GET [base]/Encounter?_id=[id]</code></p>
 
@@ -2857,7 +2860,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a single Encounter (<a href="http://hl7.org/fhir/R4/references.html#logical">how to search by the logical id</a> of the resource)</p>
   </li>
   <li>
-    <p><strong>SHALL</strong> support searching for all encounters for a patient using the <strong><a name="l12096">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching for all encounters for a patient using the <strong><a name="l12099">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?patient={Type/}[id]</code></p>
 
@@ -2870,7 +2873,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources for the specified patient (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a>)</p>
   </li>
   <li>
-    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l12130">​</a><a href="SearchParameter-us-core-encounter-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> and <strong><a name="l12135">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameters:</p>
+    <p><strong>SHALL</strong> support searching using the combination of the <strong><a name="l12133">​</a><a href="SearchParameter-us-core-encounter-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> and <strong><a name="l12138">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameters:</p>
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">date</code> (e.g.<code class="language-plaintext highlighter-rouge">date=[date]&amp;date=[date]]&amp;...</code>)</li>
@@ -2894,7 +2897,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHOULD</strong> support searching for an encounter by an identifier using the <strong><a name="l12207">​</a><a href="SearchParameter-us-core-encounter-identifier.html"><code class="language-plaintext highlighter-rouge">identifier</code></a></strong> search parameter:</p>
+    <p><strong>SHOULD</strong> support searching for an encounter by an identifier using the <strong><a name="l12210">​</a><a href="SearchParameter-us-core-encounter-identifier.html"><code class="language-plaintext highlighter-rouge">identifier</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?identifier={system|}[code]</code></p>
 
@@ -2907,7 +2910,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle containing any Encounter resources matching the identifier (<a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12241">​</a><a href="SearchParameter-us-core-encounter-class.html"><code class="language-plaintext highlighter-rouge">class</code></a></strong> and <strong><a name="l12246">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12244">​</a><a href="SearchParameter-us-core-encounter-class.html"><code class="language-plaintext highlighter-rouge">class</code></a></strong> and <strong><a name="l12249">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?class={system|}[code]&amp;patient={Type/}[id]</code></p>
 
@@ -2920,7 +2923,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources matching the specified class and patient (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12283">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12288">​</a><a href="SearchParameter-us-core-encounter-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12286">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12291">​</a><a href="SearchParameter-us-core-encounter-type.html"><code class="language-plaintext highlighter-rouge">type</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?patient={Type/}[id]&amp;type={system|}[code]</code></p>
 
@@ -2933,7 +2936,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources matching the specified patient and type (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12325">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12330">​</a><a href="SearchParameter-us-core-encounter-location.html"><code class="language-plaintext highlighter-rouge">location</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12328">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12333">​</a><a href="SearchParameter-us-core-encounter-location.html"><code class="language-plaintext highlighter-rouge">location</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?patient={Type/}[id]&amp;location={Type/}[id]</code></p>
 
@@ -2946,7 +2949,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources matching the specified patient and location (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12364">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12369">​</a><a href="SearchParameter-us-core-encounter-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12367">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12372">​</a><a href="SearchParameter-us-core-encounter-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?patient={Type/}[id]&amp;status={system|}[code]</code></p>
 
@@ -2959,7 +2962,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources matching the specified patient and status (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12406">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12411">​</a><a href="SearchParameter-us-core-encounter-discharge-disposition.html"><code class="language-plaintext highlighter-rouge">discharge-disposition</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12409">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12414">​</a><a href="SearchParameter-us-core-encounter-discharge-disposition.html"><code class="language-plaintext highlighter-rouge">discharge-disposition</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Encounter?patient={Type/}[id]&amp;discharge-disposition={system|}[code]</code></p>
 
@@ -2972,7 +2975,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources matching the specified patient and discharge-disposition (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#token">how to search by token</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12448">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12453">​</a><a href="SearchParameter-us-core-encounter-lastupdated.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l12451">​</a><a href="SearchParameter-us-core-encounter-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l12456">​</a><a href="SearchParameter-us-core-encounter-lastupdated.html"><code class="language-plaintext highlighter-rouge">_lastUpdated</code></a></strong> search parameters:</p>
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">_lastUpdated</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">_lastUpdated</code> (e.g.<code class="language-plaintext highlighter-rouge">_lastUpdated=[date]&amp;_lastUpdated=[date]]&amp;...</code>)</li>
@@ -2986,7 +2989,7 @@ Summary
       <li>GET [base]/Encounter?patient=1137192&amp;_lastUpdated=ge2024-01-01T00:00:00Z</li>
     </ol>
 
-    <p><a name="l12495">​</a><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources for the specified patient and _lastUpdated. See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a>)</p>
+    <p><a name="l12498">​</a><em>Implementation Notes:</em> Fetches a bundle of all Encounter resources for the specified patient and _lastUpdated. See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. (<a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a> and <a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a>)</p>
   </li>
 </ol>
 
@@ -3015,7 +3018,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 9, 2024 04:26+0000">2024-10-09</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 13, 2024 23:51+0000">2024-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

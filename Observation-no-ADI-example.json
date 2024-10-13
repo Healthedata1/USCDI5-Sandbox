@@ -14,14 +14,14 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-ADI-example</b></p><a name=\"no-ADI-example\"> </a><a name=\"hcno-ADI-example\"> </a><a name=\"no-ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed?</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-ADI-example</b></p><a name=\"no-ADI-example\"> </a><a name=\"hcno-ADI-example\"> </a><a name=\"no-ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
   },
   "status" : "final",
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "45473-6",
-      "display" : "Advance directive/living will completed?"
+      "display" : "Advance directive/living will completed"
     }]
   },
   "subject" : {

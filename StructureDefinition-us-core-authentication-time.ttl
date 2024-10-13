@@ -78,7 +78,7 @@
   fhir:abstract [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:context ( [
      fhir:type [ fhir:v "element" ] ;
-     fhir:expression [ fhir:v "DocumentReference.authenticator" ]
+     fhir:expression [ fhir:v "DocumentReference" ]
   ] ) ; # 
   fhir:type [ fhir:v "Extension"^^xsd:anyURI] ; # 
   fhir:baseDefinition [

@@ -25,7 +25,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-ADI-example2</b></p><a name=\"no-ADI-example2\"> </a><a name=\"hcno-ADI-example2\"> </a><a name=\"no-ADI-example2-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed?</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-ADI-example2</b></p><a name=\"no-ADI-example2\"> </a><a name=\"hcno-ADI-example2\"> </a><a name=\"no-ADI-example2-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -33,7 +33,7 @@
        a loinc:45473-6 ;
        fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "45473-6" ] ;
-       fhir:display [ fhir:v "Advance directive/living will completed?" ]
+       fhir:display [ fhir:v "Advance directive/living will completed" ]
      ] )
   ] ; # 
   fhir:subject [
@@ -52,6 +52,7 @@
      fhir:coding ( [
        a sct:373067005 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
        fhir:code [ fhir:v "373067005" ] ;
        fhir:display [ fhir:v "No (qualifier value)" ]
      ] )

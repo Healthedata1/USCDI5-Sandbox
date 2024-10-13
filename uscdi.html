@@ -1,0 +1,3862 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Uscdi - UCSDI5 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3.1"}
+    h3,h4,h5,h6{--heading-prefix:"3.1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UCSDI5 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="subscription.html">Subscription</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="spcu.html">Sex Parameters for Clinical Use</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="guidance.html"><b>Guidance</b></a></li><li><b>Uscdi</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Uscdi</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+</div>
+  <!-- to make the USCDI table
+
+need 
+
+source CSV file = `input/data/uscdi-table.csv`
+markdown page file = `input/pagecontent/uscdi.md`
+liquid template files = `input/includes/uscdi-uscore-map.html`,`input/includes/sd_link.html`
+icons (png files) = `input/images/<"kebab case" USCDI class names>.png`
+
+1. create the source CSV file with all the same column names
+    - FHIRPath column is not used for rendering so can replace with template name or whatever
+    - this file lives in the `input/data` folder
+    - It is copied to the `input/images` folder as both a csv and convert to excel file using a bash/python script.
+2. The pagecontent/uscdi.md page is where the table is rendered
+3. the liquid template tag "{% include uscdi-uscore-map.html %}" references `includes/uscdi-uscore-map.html` which does the rendering
+   - this file depends on another liquid template {% include sd_link.html title = title  %} which refererence `includes/sd_link.html` to get the profile page link.
+   1. icons (png images) are in the `input/images` are named using the "kebab case" USCDI class names. -->
+
+<p>The US Core Profiles were initially designed to meet the 2015 Edition certification criterion for Patient Selection 170.315(g)(7) and Application Access – Data Category Request 170.315(g)(8). US Core Editors have updated the guide annually to meet subsequent <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">U.S. Core Data for Interoperability (USCDI)</a> requirements. ONC's USCDI and FHIR US Core are complementary initiatives, with USCDI defining high-level data requirements and FHIR US Core providing detailed FHIR-based profiles for meeting those requirements. Mapping between them is necessary for achieving interoperability and consistency in healthcare data exchange within the United States. However, to make USCDI implementable in FHIR, an interpretation of USCDI is necessary. For information about what US Core Profile elements and US Core transactions are in scope for ONC Health IT Certification, see the US Core <a href="conformance.html">Conformance</a> pages.</p>
+
+<p>Note that:</p>
+<ul>
+  <li>USCDI Data Classes and Element names may differ from the FHIR US Core resource names and element names.</li>
+  <li>Not every USCDI Data Class and Element is mapped to a single profile.</li>
+  <li>Many US Core Profile elements do not map to a USCDI Data Classes and Element because US Core's usage is broader than certification and because additional US Core elements are required to make FHIR implementable.</li>
+</ul>
+
+<p>Updates to US Core depend upon community input, and we encourage our audience to submit questions and feedback to US Core specifications by clicking on the <em>Propose a change</em> link in the footer of every page. In addition, we encourage our audience to request any necessary clarifications to USCDI through the <a href="https://www.healthit.gov/isa/ONDEC">USCDI ONDEC process</a> that will help inform future updates to FHIR US Core.</p>
+
+<p><a name="l375">​</a>The table below defines the relationship between the USCDI Data Classes and Elements and USCore profiles. It lists the US Core Profile used for the corresponding Data Classes and Elements. This information and <a href="https://hl7.org/fhirpath/N1/">FHIRPath</a> expressions to USCDI Data Classes and Elements are available as a <a href="tables/uscdi-table.csv">csv</a> or <a href="tables/uscdi-table.xlsx">excel</a> file:</p>
+
+  <!-- Source =  This file is generated by liquid syntax below. The source table is input/data/uscdi-table.csv
+ where edits to the table contents are made -->
+
+<style>
+  .panel {
+    background: #0074bb;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0;
+    box-shadow: 1px 2px DarkGray;
+  }
+
+  .panel-body {
+    padding-left: 15px;
+  }
+
+  .panel table {
+    /* table-layout: fixed;
+    word-wrap: break-word;
+    width: auto; */
+    border: 0 !important;
+    padding-right: 20px;
+  }
+
+  .panel th,
+  td {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .panel a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .icon-right {
+    float: right;
+    padding: 6px
+  }
+</style>
+
+<div>
+  <div class="icon-right">
+    <img src="USCDI.png" alt="USCDI Logo" style="width: 60%;" class="pull-right img-responsive"/>
+  </div>
+  <p style="font-size: 300%; font-weight: bold;" class="text-center">US Core Data for Interoperability USCDI</p>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="allergies-and-intolerances.png" alt="Allergies and Intolerances" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Allergies and Intolerances</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core AllergyIntolerance Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Substance (Medication)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Substance (Drug Class)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Substance (Non-Medication)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Reaction</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="care-team-members.png" alt="Care Team Members" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Care Team Members</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core CareTeam Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Name</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Practitioner Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html"> US Core Patient Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Practitioner Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html"> US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Location</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core PractitionerRole Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Practitioner Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html"> US Core Patient Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Telecom</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core PractitionerRole Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Practitioner Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html"> US Core Patient Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Role</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core CareTeam Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="clinical-notes.png" alt="Clinical Notes" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Clinical Notes</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null">US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="clinical-notes.html">See Clinical Notes Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Consultation Note</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Discharge Summary Note</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•History &amp; Physical</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Imaging Narrative</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null">US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Procedure Note</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null">US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Progress Note</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Operative Note</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Emergency Department Note</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="clinical-tests.png" alt="Clinical Tests" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Clinical Tests</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Observation Clinical Result Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Clinical Test</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Clinical Result Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Clinical Test Result/Report</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Clinical Result Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="diagnostic-imaging.png" alt="Diagnostic Imaging" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Diagnostic Imaging</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Observation Clinical Result Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnostic Imaging Test</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Clinical Result Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnostic Imaging Result/Report</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Clinical Result Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="encounter.png" alt="Encounter" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Encounter</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Type</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diagnosis</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Condition Encounter Diagnosis Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Time</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Location</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Disposition</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="facility-information.png" alt="Facility Information" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Facility Information</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Location Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a name="l1187">​</a><a href="StructureDefinition-us-core-location.html">See Facility Information Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Location Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Type</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Location Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Name</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Location Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="goals-and-preferences.png" alt="Goals and Preferences" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Goals and Preferences</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Goal Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Patient Goals</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Goal Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•SDOH Goals</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Goal Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1309">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Treatment Intervention Preference</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Treatment Intervention Preference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Care Experience Preference</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Care Experience Preference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="health-insurance-information.png" alt="Health Insurance Information" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Health Insurance Information</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Coverage Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Organization Profile </a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Coverage Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Coverage Type</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Relationship to Subscriber</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Member Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Subscriber Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Group Number</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Payer Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Coverage Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Organization Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="health-status-assessments.png" alt="Health Status Assessments" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Health Status Assessments</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Health Concerns</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Functional Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1607">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Disability Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1640">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Mental/Cognitive Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1673">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Pregnancy Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Pregnancy Status Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Pregnancy Intent Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Alcohol Use</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1728">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Substance Use</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1761">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Physical Activity</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1794">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•SDOH Assessment</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Simple Observation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Condition Problems and Health Concerns Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Screening Assessment Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l1827">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Smoking Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Smoking Status Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="immunizations.png" alt="Immunizations" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Immunizations</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Immunizations</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Lot Number</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="laboratory.png" alt="Laboratory" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Laboratory</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Laboratory Results Reporting </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Specimen Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Tests</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Values/Results</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Specimen Type</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Result Status</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Result Unit of Measure</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Result Reference Range</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Result Interpretation</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Laboratory Result Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Specimen Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Specimen Source Site</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Specimen Condition Acceptability</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="medical-devices.png" alt="Medical Devices" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Medical Devices</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Implantable Device Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Unique Device Identifier(s) for a Patient's Implantable Device(s)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Implantable Device Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="medications.png" alt="Medications" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Medications</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationdispense.html"> US Core MedicationDispense Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Medication Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a name="l2245">​</a><a href="medication-list.html">See Medication List Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Medications</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Medication Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html"> US Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Dose</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Dose Unit of Measure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Route of Administration</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationdispense.html"> US Core MedicationDispense Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Indication</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Medication Instructions</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Medication Adherence</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Fill Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="patient-demographics.png" alt="Patient Demographics" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Patient Demographics</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Sexual Orientation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Sexual Orientation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Observation Sexual Orientation Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null">US Core Observation Occupation Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•First Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Last Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Previous Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Middle Name (including middle initial)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Suffix</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Sex</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Sex Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Date of Birth</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Date of Death</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Race</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Race Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Ethnicity</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Ethnicity Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Tribal Affiliation</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Tribal Affiliation Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Gender Identity</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Gender Identity Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Sexual Orientation</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Sexual Orientation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Preferred Language</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Address</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Previous Address</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Email</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Phone Number</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Related Person's Name</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Related Person's Relationship</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Occupation</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Occupation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Occupation Industry</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Observation Occupation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="patient-summary-and-plan.png" alt="Patient Summary and Plan" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Patient Summary and Plan</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core CarePlan Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Assessment and Plan of Treatment</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core CarePlan Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="problems.png" alt="Problems" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Problems</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Date of Resolution</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Date of Diagnosis</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•SDOH Problems/Health Concerns</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l2980">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="procedures.png" alt="Procedures" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Procedures</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Procedure Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-servicerequest.html"> US Core ServiceRequest Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Procedure</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Procedure Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Performance Time</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Procedure Profile</a>
+            
+            <br/>
+            
+            
+            
+            <a href="null">US Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            <br/>
+            
+            
+            
+            <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Reason for Referral</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Procedure Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•SDOH Interventions</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile </a>
+            
+            <br/>
+            
+            
+            
+            <a href="null"> US Core Procedure Profile</a>
+            
+            
+          </td>
+
+          <td><a name="l3109">​</a>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="provenance.png" alt="Provenance" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Provenance</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a name="l3144">​</a><a href="basic-provenance.html">See Basic Provenance Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Author Time Stamp</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Author Organization</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <div class="icon-right">
+      <img src="vital-signs.png" alt="Vital Signs" style="width:60px" class="media-object"/>
+    </div>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Vital Signs</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="null">US Core Vital Signs Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="null"></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Average Blood Pressure</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Average Blood Pressure Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Diastolic blood pressure</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Blood Pressure Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Systolic blood pressure</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Blood Pressure Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Body height</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Body Height Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Body weight</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Body Weight Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Heart rate</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Heart Rate Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Respiratory rate</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Respiratory Rate Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Body temperature</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Body Temperature Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Pulse oximetry</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Pulse Oximetry Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Inhaled oxygen concentration</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Pulse Oximetry Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•BMI Percentile (2-20 years old)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Pediatric BMI for Age Observation Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Weight-for-length Percentile (Birth - 36 months)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Pediatric Weight for Height Observation Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;•Occipital Frontal Head Circumference Percentile (Birth - 36 months)</td>
+
+          <td>
+            
+            
+            
+            <a href="null">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="null"></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Oct 13, 2024 23:51+0000">2024-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

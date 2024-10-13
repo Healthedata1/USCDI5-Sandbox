@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "68a156ce-9d6b-4f83-a28b-22826665893d-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/68a156ce-9d6b-4f83-a28b-22826665893d-3",
+  "id" : "bb24d8eb-79e8-4029-8336-ec8a0eef5070-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bb24d8eb-79e8-4029-8336-ec8a0eef5070-3",
   "name" : "IntersectionUSCoreDocumentReferenceProfileAndUSCoreADIDocumentReferenceProfile",
   "title" : "Intersection of US Core DocumentReference Profile And US Core ADI DocumentReference Profile",
   "status" : "active",
-  "date" : "2024-10-09T04:26:53+00:00",
+  "date" : "2024-10-13T23:52:12+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -268,8 +268,8 @@
     },
     {
       "path" : "DocumentReference.extension",
-      "short" : "Additional content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "short" : "left: Additional content defined by implementations; right: Extension",
+      "definition" : "left: May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.; right: An Extension",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
       "alias" : ["extensions",
       "user content"],
@@ -571,7 +571,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "left: All LOINC  values whose SCALE is \"Doc\" in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'; right: Advance Directives Content Type",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/68a156ce-9d6b-4f83-a28b-22826665893d-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/bb24d8eb-79e8-4029-8336-ec8a0eef5070-6"
       },
       "mapping" : [{
         "identity" : "workflow",
