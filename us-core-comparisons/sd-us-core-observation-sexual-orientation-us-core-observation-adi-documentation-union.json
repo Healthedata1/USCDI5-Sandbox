@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "bb24d8eb-79e8-4029-8336-ec8a0eef5070-68",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bb24d8eb-79e8-4029-8336-ec8a0eef5070-68",
+  "id" : "f2003e85-831b-41f1-8aae-c4a55e139944-68",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f2003e85-831b-41f1-8aae-c4a55e139944-68",
   "name" : "UnionUSCoreObservationSexualOrientationProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Observation Sexual Orientation Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-10-13T23:52:12+00:00",
+  "date" : "2024-10-15T00:14:05+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "bb24d8eb-79e8-4029-8336-ec8a0eef5070-186",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/bb24d8eb-79e8-4029-8336-ec8a0eef5070-186",
+  "id" : "f2003e85-831b-41f1-8aae-c4a55e139944-186",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f2003e85-831b-41f1-8aae-c4a55e139944-186",
   "name" : "IntersectionUSCorePediatricWeightForHeightObservationProfileAndUSCoreObservationADIPresenceProfile",
   "title" : "Intersection of US Core Pediatric Weight for Height Observation Profile And US Core Observation ADI Presence Profile",
   "status" : "active",
-  "date" : "2024-10-13T23:52:12+00:00",
+  "date" : "2024-10-15T00:14:05+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1043,7 +1043,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "left: Common UCUM units for recording Vital Signs.; right: Yes|No|Unknown|Not Asked (Use Snomed CT values in final version?)",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/bb24d8eb-79e8-4029-8336-ec8a0eef5070-96"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f2003e85-831b-41f1-8aae-c4a55e139944-96"
       },
       "mapping" : [{
         "identity" : "sct-concept",

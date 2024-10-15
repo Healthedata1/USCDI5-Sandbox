@@ -955,4 +955,4 @@ Generic: line 0, col 0, Error - The link 'basic-provenance.html' for "See Basic 
 /home/runner/work/USCDI5-Sandbox/USCDI5-Sandbox/input/resources/capabilitystatement-us-core-server.json: line 0, col 0, Error - Hyperlink 'SearchParameter-us-core-specimen-patient.html' at 'div/table/tbody/tr/td/a' for ' patient' does not resolve (INVALID)
 
 err = 529, warn = 9, info = 82
-IG Publisher Version: 1.6.30
+IG Publisher Version: 1.6.31
