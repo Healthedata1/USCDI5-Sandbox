@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "4cb798ea-ce54-42b7-9c4f-a39b1d709220",
+  "id" : "be2a52a9-b608-46fe-ba98-9a39ec8e045c",
   "meta" : {
-    "lastUpdated" : "2024-10-15T00:13:27.681+00:00"
+    "lastUpdated" : "2024-10-16T15:48:15.946+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT United States edition 01-Mar 2024</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-449891000124104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/449891000124104\">449891000124104</a></td><td>http://snomed.info/sct</td><td>No advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-425392003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425392003\">425392003</a></td><td>http://snomed.info/sct</td><td>Active advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-304253006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/304253006\">304253006</a></td><td>http://snomed.info/sct</td><td>Not for resuscitation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-697978002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/697978002\">697978002</a></td><td>http://snomed.info/sct</td><td>Provider orders for life-sustaining treatment</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT United States edition 01-Sep 2024</p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-449891000124104\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/449891000124104\">449891000124104</a></td><td>http://snomed.info/sct</td><td>No advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-425392003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/425392003\">425392003</a></td><td>http://snomed.info/sct</td><td>Active advance directive (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-304253006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/304253006\">304253006</a></td><td>http://snomed.info/sct</td><td>Not for resuscitation</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-697978002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/697978002\">697978002</a></td><td>http://snomed.info/sct</td><td>Provider orders for life-sustaining treatment</td></tr></table></div>"
       },
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
       "version" : "0.0.0",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cab1a49c-756d-4ae7-9d63-61501d685886",
-        "timestamp" : "2024-10-15T00:16:17+00:00",
+        "identifier" : "urn:uuid:3f7a1b21-e446-4c81-b41a-7f4abaece26a",
+        "timestamp" : "2024-10-16T15:50:51+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -49,11 +49,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901"
         },
         {
           "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901"
         }],
         "contains" : [{
           "system" : "http://snomed.info/sct",
@@ -100,8 +100,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:147b97b2-7723-4855-bd83-461ce49bd4c5",
-        "timestamp" : "2024-10-15T00:16:23+00:00",
+        "identifier" : "urn:uuid:3848ed30-155e-4652-b6b7-ed305e45e818",
+        "timestamp" : "2024-10-16T15:50:53+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -177,61 +177,6 @@
           "system" : "http://loinc.org",
           "code" : "34111-5",
           "display" : "Emergency department Note"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-foo-bar.html\">codesystem Foo Bar Test Code System v0.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-foo\"> </a>\u00a0\u00a0<a href=\"CodeSystem-foo-bar.html#foo-bar-foo\">foo</a></td><td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td><td>foo</td><td><div><p>Foo</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-bar\"> </a>\u00a0\u00a0<a href=\"CodeSystem-foo-bar.html#foo-bar-bar\">bar</a></td><td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td><td>bar</td><td><div><p>Bar</p>\n</div></td></tr></table></div>"
-      },
-      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
-      "version" : "0.0.0",
-      "name" : "FooBar",
-      "title" : "Foo Bar Test Value Set",
-      "status" : "active",
-      "experimental" : true,
-      "date" : "2024-07-25",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "US"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:861503b5-d017-4a1c-8200-c51ee7ada467",
-        "timestamp" : "2024-10-15T00:16:29+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar|0.0.0"
-        }],
-        "contains" : [{
-          "system" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
-          "code" : "foo",
-          "display" : "foo"
-        },
-        {
-          "system" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
-          "code" : "bar",
-          "display" : "bar"
         }]
       }
     }

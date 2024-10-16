@@ -18,7 +18,7 @@
   "name" : "UCSDI5Sandbox",
   "title" : "UCSDI5 Sandbox",
   "status" : "active",
-  "date" : "2024-10-15T00:13:27+00:00",
+  "date" : "2024-10-16T15:48:15+00:00",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [{
     "name" : "HL7 International / Cross-Group Projects",
@@ -975,30 +975,6 @@
       "name" : "Example Patient Adi",
       "description" : "This is a DocumentReference example for the USCDI5 ADI Observation Data Element",
       "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/foo-bar"
-      },
-      "name" : "Foo Bar Test Code System",
-      "description" : "Foo Bar Test Code System",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/foo-bar"
-      },
-      "name" : "Foo Bar Test Value Set",
-      "description" : "Foo Bar Test ValueSet",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{

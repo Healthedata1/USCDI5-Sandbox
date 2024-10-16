@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "f2003e85-831b-41f1-8aae-c4a55e139944-114",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f2003e85-831b-41f1-8aae-c4a55e139944-114",
+  "id" : "fb64f5e6-6fd8-44ac-82ed-c3d8409f6c22-111",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fb64f5e6-6fd8-44ac-82ed-c3d8409f6c22-111",
   "name" : "IntersectionUSCoreBodyHeightProfileAndUSCoreObservationADIDocumentationProfile2",
   "title" : "Intersection of US Core Body Height Profile And US Core Observation ADI Documentation Profile2",
   "status" : "active",
-  "date" : "2024-10-15T00:14:05+00:00",
+  "date" : "2024-10-16T15:48:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1043,8 +1043,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Common UCUM units for recording Vital Signs.; right: Yes|No|Unknown|Not Asked (Use Snomed CT values in final version?)",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f2003e85-831b-41f1-8aae-c4a55e139944-96"
+        "description" : "left: Common UCUM units for recording Vital Signs.; right: Answer Set with Yes No and Unknowns"
       },
       "mapping" : [{
         "identity" : "sct-concept",

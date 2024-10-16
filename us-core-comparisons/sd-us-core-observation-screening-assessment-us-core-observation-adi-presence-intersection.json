@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "f2003e85-831b-41f1-8aae-c4a55e139944-231",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f2003e85-831b-41f1-8aae-c4a55e139944-231",
+  "id" : "fb64f5e6-6fd8-44ac-82ed-c3d8409f6c22-231",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fb64f5e6-6fd8-44ac-82ed-c3d8409f6c22-231",
   "name" : "IntersectionUSCoreObservationScreeningAssessmentProfileAndUSCoreObservationADIPresenceProfile",
   "title" : "Intersection of US Core Observation Screening Assessment Profile And US Core Observation ADI Presence Profile",
   "status" : "active",
-  "date" : "2024-10-15T00:14:05+00:00",
+  "date" : "2024-10-16T15:48:52+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

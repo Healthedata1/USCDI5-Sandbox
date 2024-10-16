@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-10-15T00:13:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-16T15:48:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -898,30 +898,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/CodeSystem/foo-bar> ;
-         fhir:reference [ fhir:v "CodeSystem/foo-bar" ]
-       ] ;
-       fhir:name [ fhir:v "Foo Bar Test Code System" ] ;
-       fhir:description [ fhir:v "Foo Bar Test Code System" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/foo-bar> ;
-         fhir:reference [ fhir:v "ValueSet/foo-bar" ]
-       ] ;
-       fhir:name [ fhir:v "Foo Bar Test Value Set" ] ;
-       fhir:description [ fhir:v "Foo Bar Test ValueSet" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Immunization" ]
        ] ) ;
        fhir:reference [
@@ -1397,10 +1373,6 @@
 <http://hl7.org/fhir/us/uscdi5-sandbox/Encounter/example-1> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/DocumentReference/example-patient-adi> a fhir:us .
-
-<http://hl7.org/fhir/us/uscdi5-sandbox/CodeSystem/foo-bar> a fhir:us .
-
-<http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/foo-bar> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/Immunization/imm-1> a fhir:us .
 

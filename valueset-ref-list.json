@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -227,8 +227,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
@@ -240,8 +240,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
@@ -291,8 +291,8 @@
       "sources" : ["2.16.840.1.113883.4.642.40.2.48.21"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition",
@@ -432,23 +432,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile",
-      "StructureDefinition-us-core-observation-adi-documentation2.html" : "US Core Observation ADI Documentation Profile2",
-      "StructureDefinition-us-core-interpreter-required.html" : "US Core Interpreter Required Extension"
-    },
-    {
-      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar",
-      "version" : "0.0.0",
-      "status" : "active",
-      "name" : "FooBar",
-      "title" : "Foo Bar Test Value Set",
-      "description" : "Foo Bar Test ValueSet",
-      "systems" : [
-        "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile"
     }
   ]
 }

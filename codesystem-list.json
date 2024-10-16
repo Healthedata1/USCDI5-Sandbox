@@ -1,12 +1,3 @@
 {
-  "codeSystems" : [
-    {
-      "url" : "http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar",
-      "version" : "0.0.0",
-      "status" : "active",
-      "name" : "FooBar",
-      "title" : "Foo Bar Test Code System",
-      "description" : "Foo Bar Test Code System"
-    }
-  ]
+  "codeSystems" : []
 }

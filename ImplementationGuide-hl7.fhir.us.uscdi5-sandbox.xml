@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-10-15T00:13:27+00:00"/>
+  <date value="2024-10-16T15:48:15+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -754,28 +754,6 @@
       <name value="Example Patient Adi"/>
       <description value="This is a DocumentReference example for the USCDI5 ADI Observation Data Element"/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/foo-bar"/>
-      </reference>
-      <name value="Foo Bar Test Code System"/>
-      <description value="Foo Bar Test Code System"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/foo-bar"/>
-      </reference>
-      <name value="Foo Bar Test Value Set"/>
-      <description value="Foo Bar Test ValueSet"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

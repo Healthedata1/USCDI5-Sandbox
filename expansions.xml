@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="4cb798ea-ce54-42b7-9c4f-a39b1d709220"/>
+  <id value="be2a52a9-b608-46fe-ba98-9a39ec8e045c"/>
   <meta>
-    <lastUpdated value="2024-10-15T00:13:27.681+00:00"/>
+    <lastUpdated value="2024-10-16T15:48:15.946+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Mar 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT United States edition 01-Sep 2024</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -79,8 +79,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cab1a49c-756d-4ae7-9d63-61501d685886"/>
-          <timestamp value="2024-10-15T00:16:17+00:00"/>
+          <identifier value="urn:uuid:3f7a1b21-e446-4c81-b41a-7f4abaece26a"/>
+          <timestamp value="2024-10-16T15:50:51+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -101,11 +101,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240301"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108/version/20240901"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -252,8 +252,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:147b97b2-7723-4855-bd83-461ce49bd4c5"/>
-          <timestamp value="2024-10-15T00:16:23+00:00"/>
+          <identifier value="urn:uuid:3848ed30-155e-4652-b6b7-ed305e45e818"/>
+          <timestamp value="2024-10-16T15:50:53+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -329,114 +329,6 @@
             <system value="http://loinc.org"/>
             <code value="34111-5"/>
             <display value="Emergency department Note"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-foo-bar.html">codesystem Foo Bar Test Code System v0.0.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 2 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-foo"> </a>  
-                  <a href="CodeSystem-foo-bar.html#foo-bar-foo">foo</a>
-                </td>
-                <td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td>
-                <td>foo</td>
-                <td>
-                  <div>
-                    <p>Foo</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar-bar"> </a>  
-                  <a href="CodeSystem-foo-bar.html#foo-bar-bar">bar</a>
-                </td>
-                <td>http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar</td>
-                <td>bar</td>
-                <td>
-                  <div>
-                    <p>Bar</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://www.fhir.org/guides/uscdi5-sandbox/ValueSet/foo-bar"/>
-        <version value="0.0.0"/>
-        <name value="FooBar"/>
-        <title value="Foo Bar Test Value Set"/>
-        <status value="active"/>
-        <experimental value="true"/>
-        <date value="2024-07-25"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:861503b5-d017-4a1c-8200-c51ee7ada467"/>
-          <timestamp value="2024-10-15T00:16:29+00:00"/>
-          <total value="2"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar|0.0.0"/>
-          </parameter>
-          <contains>
-            <system value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"/>
-            <code value="foo"/>
-            <display value="foo"/>
-          </contains>
-          <contains>
-            <system value="http://www.fhir.org/guides/uscdi5-sandbox/CodeSystem/foo-bar"/>
-            <code value="bar"/>
-            <display value="bar"/>
           </contains>
         </expansion>
       </ValueSet>
