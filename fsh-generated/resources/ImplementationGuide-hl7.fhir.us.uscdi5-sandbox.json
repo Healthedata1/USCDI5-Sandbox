@@ -202,22 +202,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/foo-bar"
-        },
-        "description": "Foo Bar Test Code System",
-        "exampleBoolean": false,
-        "name": "Foo Bar Test Code System"
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/foo-bar"
-        },
-        "description": "Foo Bar Test ValueSet",
-        "exampleBoolean": false,
-        "name": "Foo Bar Test Value Set"
-      },
-      {
-        "reference": {
           "reference": "Immunization/imm-1"
         },
         "description": "This is an example for the *US Core Immunization Profile*.",

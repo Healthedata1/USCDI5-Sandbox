@@ -203,6 +203,7 @@
             "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
             "valueCoding": {
                 "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/731000124108",
                 "code": "373066001"
             }
         }
@@ -239,6 +240,7 @@
             }
         },
         {
+            "use": "usual",
             "family": "Baxter",
             "given": [
                 "Amy",

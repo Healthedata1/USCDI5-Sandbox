@@ -1,7 +1,5 @@
 resourceType: StructureDefinition
 id: us-core-interpreter-required
-# hl7.fhir.us.uscdi5-sandbox
-# url: 'http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
 url: 'http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required'
 name: USCoreInterpreterRequiredExtension
 title: US Core Interpreter Required Extension
@@ -63,5 +61,5 @@ differential:
         - code: Coding
       binding:
         strength: required
-        description: Yes|No|Unknown|Not Asked ☞☞☞ Use Snomed CT values in final version to meet USCDI terminology requirement
-        valueSet: http://terminology.hl7.org/ValueSet/yes-no-unknown-not-asked
+        description: Answer Set with Yes No and Unknowns
+        valueSet: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.16

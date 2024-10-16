@@ -16,8 +16,6 @@
 <artifact id="Bundle/docref-example-2" key="Bundle-docref-example-2" name="Docref Example 2"/>
 <artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter 1 Example"/>
 <artifact id="DocumentReference/example-patient-adi" key="DocumentReference-example-patient-adi" name="Example Patient Adi"/>
-<artifact id="CodeSystem/foo-bar" key="CodeSystem-foo-bar" name="Foo Bar Test Code System"/>
-<artifact id="ValueSet/foo-bar" key="ValueSet-foo-bar" name="Foo Bar Test Value Set"/>
 <artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Immunization Example 1"/>
 <artifact id="MedicationDispense/medicationdispense-example" key="MedicationDispense-medicationdispense-example" name="Medication Dispense Example"/>
 <artifact id="MedicationRequest/medicationrequest-coded-oral-axid" key="MedicationRequest-medicationrequest-coded-oral-axid" name="MedicationRequest Coded Oral Axid Example"/>
