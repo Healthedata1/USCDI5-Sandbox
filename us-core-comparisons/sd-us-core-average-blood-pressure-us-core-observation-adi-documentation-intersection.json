@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "fb64f5e6-6fd8-44ac-82ed-c3d8409f6c22-24",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/fb64f5e6-6fd8-44ac-82ed-c3d8409f6c22-24",
+  "id" : "77787499-fa15-467c-95da-5d92d546f92a-21",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/77787499-fa15-467c-95da-5d92d546f92a-21",
   "name" : "IntersectionUSCoreAverageBloodPressureProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Average Blood Pressure Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-10-16T15:48:52+00:00",
+  "date" : "2024-11-02T03:23:56+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,7 +15,7 @@
   "snapshot" : {
     "element" : [{
       "path" : "Observation",
-      "short" : "left: US Core Average Blood Pressure Profile; right: US Core Observation ADI Documentation Profile",
+      "short" : "left: US Core Average Blood Pressure Profile; right: US Core Observation ADI Presence Profile",
       "definition" : "Measurements and simple assertions made about a patient, device or other subject.",
       "comment" : "Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.",
       "alias" : ["Vital Signs",
@@ -294,8 +294,8 @@
     },
     {
       "path" : "Observation.extension",
-      "short" : "Additional content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "short" : "left: Additional content defined by implementations; right: Extension",
+      "definition" : "left: May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.; right: An Extension",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
       "alias" : ["extensions",
       "user content"],
@@ -627,9 +627,13 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "extensible",
-        "description" : "Category of advance directive",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.25"
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "ObservationCode"
+        }],
+        "strength" : "example",
+        "description" : "Codes identifying names of simple observations.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/observation-codes"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -705,27 +709,14 @@
     },
     {
       "path" : "Observation.focus",
-      "short" : "left: What the observation is about, when it is not about the subject of record; right: Reference to the advanced directive documents this observation is about",
+      "short" : "What the observation is about, when it is not about the subject of record",
       "definition" : "The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus observations in a mother's record.  The focus of an observation could also be an existing condition,  an intervention, the subject's diet,  another observation of the subject,  or a body structure such as tumor or implanted device.   An example use case would be using the Observation resource to capture whether the mother is trained to change her child's tracheostomy tube. In this example, the child is the patient of record and the mother is the focus.",
       "comment" : "Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., \"Blood Glucose\") and does not need to be represented separately using this element.  Use `specimen` if a reference to a specimen is required.  If a code is required instead of a resource use either  `bodysite` for bodysites or the standard extension [focusCode].",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
-        "http://hl7.org/fhir/StructureDefinition/Resource"],
-        "_targetProfile" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-            "valueBoolean" : true
-          }]
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support",
-            "valueBoolean" : false
-          }]
-        }]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -738,7 +729,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -854,7 +845,7 @@
     },
     {
       "path" : "Observation.issued",
-      "short" : "left: Date/Time this version was made available; right: Date/Time this reviewed and verified observation was made available",
+      "short" : "left: Date/Time this version was made available; right: Date/Time this observation was made available",
       "definition" : "The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified.",
       "comment" : "For Observations that don’t require review and verification, it may be the same as the [`lastUpdated` ] time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that doesn’t require the new version to be reviewed and verified again.",
       "min" : 0,
@@ -891,8 +882,9 @@
     },
     {
       "path" : "Observation.performer",
-      "short" : "left: Who is responsible for the observation; right: Who reviewed and verified the observation",
+      "short" : "Who is responsible for the observation",
       "definition" : "Who was responsible for asserting the observed value as \"true\".",
+      "comment" : "An `Observation.performer` of type Practitioner or Organization typically made the Observation, and an `Observation.performer` of Patient or RelatedPerson usually is the source of information (for example, a next of kin who answers questions about the patient's advance directives) Systems may use the standard [Performer function Extension ](http://hl7.org/fhir/StructureDefinition/event-performerFunction) to distinguish the type of involvement of the performer in the Observation.",
       "requirements" : "May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.",
       "min" : 0,
       "max" : "*",
@@ -1028,9 +1020,9 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "extensible",
-        "description" : "Type of advance directive document",
-        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57"
+        "strength" : "required",
+        "description" : "Answer Set with Yes No and Unknowns",
+        "valueSet" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.16"
       },
       "mapping" : [{
         "identity" : "sct-concept",

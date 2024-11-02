@@ -104,7 +104,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="subscription.html">Subscription</a>
+        <a href="must-support.html">Must Support</a>
       </li>
     </ul>
   </li>
@@ -115,6 +115,12 @@
     <ul class="dropdown-menu">
       <li>
         <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="changes-between-versions.html">Changes Between Versions</a>
       </li>
       <li>
         <a href="clinical-notes.html">Clinical Notes</a>
@@ -235,7 +241,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <p>For the USCDI Immunization Lot Number data element, we added <code class="language-plaintext highlighter-rouge">Immunization.lotNumber</code> to the <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a> as a <em>Must Support</em> element.</p>
       </li>
       <li>
-        <p>For the USCDI Route of Administration data element, we added <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction.route</code> to the <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a> and <code class="language-plaintext highlighter-rouge">MedicationDispense.dosageInstruction.route</code> to the <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a> as <em>Must Support</em> elements.</p>
+        <p>For the USCDI Route of Administration data element, we added <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction.route</code> to the <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a> and <code class="language-plaintext highlighter-rouge">MedicationDispense.dosageInstruction.route</code> to the <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a> as <em>Must Support</em> elements and use an extensible value set of SNOMED CT and NCI Thesaurus SPL codes.</p>
       </li>
       <li>For the USCDI Orders data class:
         <ul>
@@ -245,19 +251,99 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>For the USCDI Patient Demographics/Information data class:
         <ul>
-          <li>The <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a> <code class="language-plaintext highlighter-rouge">Patient.name.use</code> element supports the USCDI Name to Use data element.</li>
+          <li>The <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a> <code class="language-plaintext highlighter-rouge">Patient.name.use</code> <em>Additional USCDI</em> element supports the USCDI Name to Use data element.</li>
           <li>To support the USCDI Pronouns data element, we added the FHIR standard <a href="http://hl7.org/fhir/StructureDefinition/individual-pronouns">Individual Pronouns Extension</a> to the <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>  as an <em>Additional USCDI</em> element.</li>
-          <li>To support the USCDI Interpreter Needed data element, we added the <a href="StructureDefinition-us-core-interpreter-required.html">US Core Interpreter Required Extension</a> to the <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a> and <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a> as <em>Additional USCDI</em> elements. (Note that the version 5.1.0 FHIR standard <a href="https://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-interpreterRequired.html">Patient Interpreter Required</a> extension does not meet the USCDI terminology requirement or the multiple context needed. Change request <a href="https://jira.hl7.org/browse/FHIR-47587">FHIR-47587</a> was submitted to address these limitations.)</li>
+          <li>To support the USCDI Interpreter -Needed data element, we added the <a href="StructureDefinition-us-core-interpreter-required.html">US Core Interpreter Required Extension</a> to the <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a> and <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a> as <em>Additional USCDI</em> elements. (Note that the version 5.1.0 FHIR standard <a href="https://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-interpreterRequired.html">Patient Interpreter Required</a> extension does not meet the USCDI terminology requirement or the multiple context needed. Change request <a href="https://jira.hl7.org/browse/FHIR-47587">FHIR-47587</a> was submitted to address these limitations.)</li>
         </ul>
       </li>
       <li>For the USCDI Observation data class:
         <ul>
           <li>To support the Sex Parameter for Clinical Use data element, we added the 5.1.0 FHIR standard <a href="https://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-sexParameterForClinicalUse.html">Patient Sex Parameter for Clinical Use Extension</a> to the <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a> as an <em>Additional USCDI</em> element, and document its use on other US Core Profiles for specific clinical contexts.</li>
+          <li>To support the Advance Directive Observation data element, we added the <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a>, <a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a>, and <a href="StructureDefinition-us-core-authentication-time.html">US Core Authentication Time Extension</a>.</li>
+        </ul>
+      </li>
+      <li>
+        <p>For the USCDI Provenance Author and Author Role data elements, we detailed the individual US Core Profile elements representing these provenance data elements in a table on the <a href="basic-provenance.html">Basic Provenance</a> page.</p>
+      </li>
+      <li>Other USCDI changes:
+        <ul>
+          <li><a name="l595">​</a>Added National Healthcare Safety Network (NHSN) Healthcare Facility Patient Care Location (HSLOC) and SNOMED CT location type codes to the <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a> <code class="language-plaintext highlighter-rouge">Location.type</code> binding.</li>
         </ul>
       </li>
     </ul>
   </li>
+  <li>
+    <p>Implementers submitted over 60 trackers since the publication of US Core ver 7.0.0. We have addressed them and applied over 50 changes listed below:</p>
+  </li>
 </ul>
+
+<p><strong>Tracker Status</strong>: <strong>Summary</strong> <strong>Jira Issue</strong> <strong>Link to Updated Content</strong></p>
+<ol>
+  <li><strong>Resolved - change required:</strong> (Confusing for commercial vendor.  Reads very confusing.) FHIR-30783 [153067]</li>
+  <li><strong>Resolved - change required:</strong> (AllergyIntolerance does not show constraint) FHIR-34636 [173880]</li>
+  <li><strong>Resolved - change required:</strong> (Add link in history page to approved pages) FHIR-42950 [218544]</li>
+  <li><strong>Resolved - change required:</strong> (Override built-in examples for address elements) FHIR-43054 [219078]</li>
+  <li><strong>Triaged:</strong> (All lab orders and results across all FHIR IGs need to indicate the performing laboratory test order name and/or performing laboratory test result name) FHIR-43301 [219534]</li>
+  <li><strong>Resolved - change required:</strong> (Seems like observation-category CodeSystem needs to be extended to include a concept for care-experience-preference) FHIR-43541 [223591]</li>
+  <li><strong>Resolved - change required:</strong> (Smoking Status Max Binding addition) FHIR-43589 [223689]</li>
+  <li><strong>Triaged:</strong> (Create new section in Guidance on Sex and Gender in USCore) FHIR-44115 [225007]</li>
+  <li><strong>Triaged:</strong> (US Core Coverage Profile) FHIR-44122 [225018]</li>
+  <li><strong>Triaged:</strong> (US Core Coverage.Type Code Link Update ) FHIR-44124 [225024]</li>
+  <li><strong>Triaged:</strong> (US Core Terminology Reference List # 62) FHIR-44138 [225049]</li>
+  <li><strong>Triaged:</strong> (Source of Payment Typology (SOPT) references and information are incorrect) FHIR-44145 [225066]</li>
+  <li><strong>Resolved - change required:</strong> (Make Must Support Reference Table more visible) FHIR-44977 [229822]</li>
+  <li><strong>Triaged:</strong> (ValueSet for Condition.code ICD9 link does not resolve) FHIR-45136 [230134]</li>
+  <li><strong>Triaged:</strong> (Add requirements for client reference resolution) FHIR-45179 [230253]</li>
+  <li><strong>Resolved - change required:</strong> (Clarify Clinical Information Reconciliation and Incorporation (CIRI) description) FHIR-45267 [230508]</li>
+  <li><strong>Resolved - change required:</strong> (Remove dated footnote from Provenance page.) FHIR-45283 [232568]</li>
+  <li><strong>Triaged:</strong> (add link to Da Vinci SNOMED NUCC mapping to practionerrole page as additional guidance) FHIR-45286 [232582]</li>
+  <li><strong>Resolved - change required:</strong> (Clarify Observation Screening Assessment category must support) FHIR-45319 [232641]</li>
+  <li><strong>Triaged:</strong> (Clarify must-support requirements for requestors, especially for dateTime) FHIR-45448 [232885]</li>
+  <li><strong>Triaged:</strong> (Spelling errors in US Core Server Capability Statement) FHIR-45451 [232888]</li>
+  <li><strong>Triaged:</strong> (PHINVADS links broken) FHIR-45494 [232949]</li>
+  <li><strong>Resolved - change required:</strong> (Change Average Blood Pressure Profile minimum from 0 to 1) FHIR-45724 [233380]</li>
+  <li><strong>Resolved - change required:</strong> (Move ""time-period"" from Must Support to Must Have section in introduction.) FHIR-45726 [233383]</li>
+  <li><strong>Resolved - change required:</strong> (Align the Sig description in the medication profile introductions.) FHIR-45951 [235310]</li>
+  <li><strong>Triaged:</strong> (Typo in Condition's granular scope) FHIR-45961 [235320]</li>
+  <li><strong>Triaged:</strong> (clarify expectations for US@ for health systems) FHIR-46020 [235471]</li>
+  <li><strong>Triaged:</strong> (""Must Support"" should be ""Additional USCDI"" for Simple Observation) FHIR-46028 [235481]</li>
+  <li><strong>Resolved - change required:</strong> (Derive composite search parameters for derived normal parameters) FHIR-46036 [235493]</li>
+  <li><strong>Resolved - change required:</strong> (Procedure.code should be Procedure.performed) FHIR-46037 [235495]</li>
+  <li><strong>Triaged:</strong> (US Core Screening Assessment Observation Category in US Core v7) FHIR-46052 [235524]</li>
+  <li><strong>Resolved - change required:</strong> (Deprecate every version before 3.1.1&nbsp;) FHIR-46065 [235542]</li>
+  <li><strong>Triaged:</strong> (Is the Provenance Quick Start API Correct?) FHIR-46077 [235562]</li>
+  <li><strong>Resolved - change required:</strong> (Incorrect Examples) FHIR-46099 [235597]</li>
+  <li><strong>Triaged:</strong> (Continue to harmonize/share value sets used in US Core and C-CDA in the US Core 8.0 ballot and C-CDA 4.0 ballot) FHIR-46181 [235730]</li>
+  <li><strong>Triaged:</strong> (NAIC Code Number Identifier system not registered in THO) FHIR-46185 [235737]</li>
+  <li><strong>Triaged:</strong> (Discharge Disposition - US Core and C-CDA need to change to point to THO set ) FHIR-46194 [235749]</li>
+  <li><strong>Resolved - change required:</strong> (Clarify (reduce) the media.link requirements for DiagnosticReport (Report and Notes)) FHIR-46240 [235819]</li>
+  <li><strong>Resolved - change required:</strong> (Update and Corrections to 2 sets contained in Medication Clinical Drug) FHIR-46255 [235845]</li>
+  <li><strong>Resolved - change required:</strong> (Change US Core Pregnancy Status Codes to a soon to be created new value set in VSAC with CLD US Core current defintion) FHIR-46257 [235850]</li>
+  <li><strong>Resolved - change required:</strong> (Allow CMS Place of Service codes @location.type in US Core Location Profile) FHIR-46258 [235851]</li>
+  <li><strong>Triaged:</strong> (Align Encounter Type between C-CDA and FHIR US Core) FHIR-46259 [235852]</li>
+  <li><strong>Resolved - change required:</strong> (Change Binding at observation.value in Pregnancy Intention to VSAC set) FHIR-46263 [236066]</li>
+  <li><strong>Resolved - change required:</strong> (Add SDOH Goals value set as ""Additional Binding"" in Goal Profile) FHIR-46266 [236069]</li>
+  <li><strong>Triaged:</strong> (US Core Survey Codes expansion error) FHIR-46272 [236076]</li>
+  <li><strong>Resolved - change required:</strong> (Clarify the level of granular scopes server shall support) FHIR-46277 [236081]</li>
+  <li><strong>Resolved - change required:</strong> (Conflict requirements for SMART App Launch) FHIR-46279 [236083]</li>
+  <li><strong>Resolved - change required:</strong> (Survey Codes Set - Refine and change binding to VSAC set) FHIR-46347 [236250]</li>
+  <li><strong>Resolved - change required:</strong> (reference specific version of USCDI for each version of USCore) FHIR-46466 [236427]</li>
+  <li><strong>Resolved - change required:</strong> (change page status) FHIR-46514 [236498]</li>
+  <li><strong>Triaged:</strong> (US Core detailed ethnicity expansion error) FHIR-46638 [237270]</li>
+  <li><strong>Resolved - change required:</strong> (how to handle overlapping granular scopes overlap? How can US Core better anticipate UX impact of scopes?) FHIR-46748 [240801]</li>
+  <li><strong>Triaged:</strong> (Fix the US Core History Page) FHIR-46749 [240803]</li>
+  <li><strong>Triaged:</strong> (Create SCT Specimen Condition concept value set to be use as an additional binding) FHIR-47061 [241469]</li>
+  <li><strong>Resolved - change required:</strong> (clarify conformance requirements for structured assessments) FHIR-47139 [241624]</li>
+  <li><strong>Resolved - change required:</strong> (Point to new THO Discharge Disposition (NUBC) instead of US Core based set) FHIR-47416 [242738]</li>
+  <li><strong>Resolved - change required:</strong> (Tighten constraint on name.use to support better patient matching ) FHIR-48416 [247128]</li>
+  <li><strong>Resolved - change required:</strong> (RelatedPerson ""active"" is required) FHIR-48439 [247157]</li>
+  <li><strong>Triaged:</strong> (Update Must Support Resource References section in general and for Observation.performer targets) FHIR-48442 [247160]</li>
+  <li><strong>Resolved - change required:</strong> (Add USCDI v5 Data Elements to US Core) FHIR-48443 [247161]</li>
+  <li><strong>Resolved - change required:</strong> (Remove contradictory guidance on reference resolution in US Core) FHIR-48446 [247164]</li>
+  <li><strong>Triaged:</strong> (Update last_updated SHOULDS to SHALLS) FHIR-48542 [247336]</li>
+  <li><strong>Triaged:</strong> (Update US Core Clinical Note Type Valueset to align with Clinical Note Guidance) FHIR-48607 [247411]</li>
+  <li><strong>Triaged:</strong> (Update Terminology guidance to align with USCDI) FHIR-48668 [247519]</li>
+</ol>
 
 <h4 id="changes">Changes:</h4>
 
@@ -277,7 +363,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The changes in this annual update to US Core have been reviewed and commented upon by the public through the January 2024 HL7 balloting process. The HL7 International Cross-Group Projects work group members have agreed to and voted on the resolution of the community comments.</p>
 <h4 id="whats-new-in-version-700-of-us-core">What's new in Version 7.0.0 of US Core:</h4>
 
-<p><a name="l606">​</a>Each update to a new version of US Core changes the US Core Profiles and conformance expectations. Implementers can find detailed comparisons between the FHIR artifacts in this 7.0.0 version of US Core and each previous major release on <a href="changes-between-versions.html">Changes Between Versions</a> page. Below is an overview of significant changes in Version 7.0.0 of US Core.</p>
+<p>Each update to a new version of US Core changes the US Core Profiles and conformance expectations. Implementers can find detailed comparisons between the FHIR artifacts in this 7.0.0 version of US Core and each previous major release on <a href="changes-between-versions.html">Changes Between Versions</a> page. Below is an overview of significant changes in Version 7.0.0 of US Core.</p>
 
 <ul>
   <li><a href="https://hl7.org/fhir/us/core/STU7/scopes.html">SMART on FHIR Obligations and Capabilities</a>: We rewrote the SMART scopes guidance page to clarify the granular scope requirement in <a href="https://www.federalregister.gov/documents/2023/04/18/2023-07229/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and">HTI-1 final rule</a>, and expanded the guidance to include SMART on FHIR capabilities, token introspection, and <code class="language-plaintext highlighter-rouge">/.well-known/smart-configuration</code>.</li>
@@ -475,12 +561,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     <ul>
       <li>
-        <p><a name="l1815">​</a>For the USCDI Allergies and Intolerances Substance (Non-Medication) data element, no change was needed for the <a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a> because the existing <code class="language-plaintext highlighter-rouge">code</code> element binding to <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1186.8/expansion">Common substances for allergy and intolerance documentation including refutations</a> already includes "Non-pharmacologic agent"</p>
+        <p><a name="l2208">​</a>For the USCDI Allergies and Intolerances Substance (Non-Medication) data element, no change was needed for the <a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a> because the existing <code class="language-plaintext highlighter-rouge">code</code> element binding to <a href="https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1186.8/expansion">Common substances for allergy and intolerance documentation including refutations</a> already includes "Non-pharmacologic agent"</p>
       </li>
       <li>
         <p>For the USCDI Encounter Identifier data element, no changes were needed because the <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a> already supports <code class="language-plaintext highlighter-rouge">Encounter.identifier</code> as a <em>Must Support</em> element.</p>
       </li>
-      <li><a name="l1843">​</a>For the USCDI Facility Information data class and elements, the <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a> already supports Facility Name and has been updated to support Facility Identifier and Type.  The <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a> has been updated to reference the US Core Location resource directly as a <em>Must Support</em> element, and the following US Core Profiles have been updated to <em>indirectly</em> reference the location/facility via <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a> as a <em>Must Support</em> element:
+      <li><a name="l2236">​</a>For the USCDI Facility Information data class and elements, the <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a> already supports Facility Name and has been updated to support Facility Identifier and Type.  The <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a> has been updated to reference the US Core Location resource directly as a <em>Must Support</em> element, and the following US Core Profiles have been updated to <em>indirectly</em> reference the location/facility via <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a> as a <em>Must Support</em> element:
         <ul>
           <li><a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></li>
           <li><a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></li>
@@ -501,7 +587,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <p>For the USCDI Average Blood Pressure data element, the new <a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a> has been added to US Core. It is based on the <a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a> and uses the <a href="https://hl7.org/fhir/us/vitals/STU1/StructureDefinition-average-blood-pressure.html">Vital Signs with Qualifying Elements: Average Blood Pressure Profile</a> as a blueprint.</p>
       </li>
       <li>
-        <p><a name="l1950">​</a>For the USCDI Medications data class and elements, the <a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a> already supports Medication Instructions and has been updated to support Medication Adherence as an <em>Additional USCDI Requirement</em> using the new <a href="StructureDefinition-us-core-medication-adherence.html">US Core Medication Adherence Extension</a>.</p>
+        <p><a name="l2343">​</a>For the USCDI Medications data class and elements, the <a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a> already supports Medication Instructions and has been updated to support Medication Adherence as an <em>Additional USCDI Requirement</em> using the new <a href="StructureDefinition-us-core-medication-adherence.html">US Core Medication Adherence Extension</a>.</p>
       </li>
       <li>
         <p>For the USCDI Laboratory data class and elements, the <a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a> already supports Result Unit of Measure data element for using UCUM for coded quantity units and has been updated to support Result Reference Range and Result Interpretation as <em>Must Support</em> elements. The <a href="https://hl7.org/fhir/us/core/2024Jan/StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a> has been updated to support Specimen Identifier as a <em>Must Support</em> element, and Specimen Source Site and Specimen Condition Acceptability as <em>Additional USCDI Requirements</em>.</p>
@@ -651,7 +737,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The changes in this STU Update to US Core 6.0.0 have been reviewed by the public through the HL7 STU update process. The resolution of the community comments has been agreed to and voted on by the members of the HL7 International Cross-Group Projects work group.</p>
 <h4 id="whats-new-in-version-610-of-us-core">What's new in Version 6.1.0 of US Core:</h4>
 
-<p><a name="l2757">​</a>To meet the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v3">U.S. Core Data for Interoperability (USCDI) v3</a> "sex" data element, US Core added the <a href="StructureDefinition-us-core-sex.html">US Core Sex Extension</a> as a <a href="https://hl7.org/fhir/us/core/STU6/must-support.html#uscdi-requirements">USCDI Requirement</a>(). The <a href="StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a> is no longer a <em>USCDI Requirement</em>.</p>
+<p><a name="l3150">​</a>To meet the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v3">U.S. Core Data for Interoperability (USCDI) v3</a> "sex" data element, US Core added the <a href="StructureDefinition-us-core-sex.html">US Core Sex Extension</a> as a <a href="https://hl7.org/fhir/us/core/STU6/must-support.html#uscdi-requirements">USCDI Requirement</a>(). The <a href="StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a> is no longer a <em>USCDI Requirement</em>.</p>
 
 <h4 id="updates-and-corrected-errata-in-version-610-of-us-core">Updates and Corrected Errata in Version 6.1.0 of US Core:</h4>
 
@@ -676,37 +762,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The changes in this annual update to US Core have been reviewed and commented upon by the public through the January 2023 HL7 balloting process. The resolution of the community comments has been agreed to and voted on by the members of the HL7 International Cross-Group Projects work group.</p>
 <h4 id="whats-new-in-version-600-of-us-core">What's new in Version 6.0.0 of US Core:</h4>
 
-<p><a name="l2899">​</a>Each update to a new version of US Core changes the US Core Profiles and conformance expectations. Implementers can find detailed comparisons between the FHIR artifacts in this 6.0.0 version of US Core and each previous major release on <a href="changes-between-versions.html">Changes Between Versions</a> page. This section provides an overview of the significant changes in Version 6.0.0 of US Core.</p>
+<p>Each update to a new version of US Core changes the US Core Profiles and conformance expectations. Implementers can find detailed comparisons between the FHIR artifacts in this 6.0.0 version of US Core and each previous major release on <a href="changes-between-versions.html">Changes Between Versions</a> page. This section provides an overview of the significant changes in Version 6.0.0 of US Core.</p>
 
 <ul>
   <li>New and updated resources to meet the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi#uscdi-v3">U.S. Core Data for Interoperability (USCDI) v3</a> new Data Elements and Classes that the Office of the National Coordinator (ONC) published in July of 2022. <a href="https://hl7.org/fhir/us/core/STU6/uscdi.html">This table</a> summarizes the USCDI Data Classes and Data Elements and the corresponding US Core Profile(s).
     <ul>
-      <li><a name="l2917">​</a>The <em>new</em> <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a> represent and access data related to an individual's health insurance coverage for health care.</li>
+      <li><a name="l3310">​</a>The <em>new</em> <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a> represent and access data related to an individual's health insurance coverage for health care.</li>
       <li>The profiles from version 5.0.1 have been renamed and re-scoped in this version to accommodate the USCDI Health Status/Assessments Data Classes.
         <ul>
-          <li><a name="l2930">​</a>The <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a> replaces the <em>US Core Observation Survey Profile</em> and <em>US Core Observation SDOH Assessment Profile</em>, and the <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a> replaces the <em>US Core Observation Social History Profile</em>.  See the Cross Version Comparisons Table on the <a href="changes-between-versions.html">Changes Between Versions</a> page for a summary of profile revisions between versions.</li>
-          <li><a name="l2951">​</a>The SDOH Assessments documentation has been rewritten and renamed to <a href="screening-and-assessments.html">Screening and Assessments</a>, reflecting its expanded coverage of Health Status/Assessments Data Elements including: <em>Functional Status</em>, <em>Disability Status</em>, and <em>Mental/Cognitive Status</em> in addition to <em>SDOH Assessments</em>.</li>
+          <li><a name="l3323">​</a>The <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a> replaces the <em>US Core Observation Survey Profile</em> and <em>US Core Observation SDOH Assessment Profile</em>, and the <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a> replaces the <em>US Core Observation Social History Profile</em>.  See the Cross Version Comparisons Table on the <a href="changes-between-versions.html">Changes Between Versions</a> page for a summary of profile revisions between versions.</li>
+          <li><a name="l3344">​</a>The SDOH Assessments documentation has been rewritten and renamed to <a href="screening-and-assessments.html">Screening and Assessments</a>, reflecting its expanded coverage of Health Status/Assessments Data Elements including: <em>Functional Status</em>, <em>Disability Status</em>, and <em>Mental/Cognitive Status</em> in addition to <em>SDOH Assessments</em>.</li>
         </ul>
       </li>
-      <li><a name="l2971">​</a>The <em>new</em> <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a> and <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a> have been added to communicate pregnancy status.</li>
-      <li><a name="l2983">​</a>The <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a> supports the result status and terminology requirements for coded and numeric results.</li>
-      <li><a name="l2989">​</a>The <em>new</em> <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a> has been added to support Specimen Type.</li>
+      <li><a name="l3364">​</a>The <em>new</em> <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a> and <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a> have been added to communicate pregnancy status.</li>
+      <li><a name="l3376">​</a>The <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a> supports the result status and terminology requirements for coded and numeric results.</li>
+      <li><a name="l3382">​</a>The <em>new</em> <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a> has been added to support Specimen Type.</li>
       <li>The <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a> was updated to support Dose, Dose Unit of Measure, Indication,.</li>
       <li>The <em>new</em> <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a> has been added to support Fill Status.</li>
       <li>Updated Patient Demographics/Information:
         <ul>
           <li>To support Date of Death <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a> was updated</li>
-          <li><a name="l3023">​</a>The <em>new</em> <a href="StructureDefinition-us-core-tribal-affiliation.html">US Core Tribal Affiliation Extension</a> has been added to support Tribal Affiliation</li>
-          <li><a name="l3032">​</a>The <a href="StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a> meets the patient sex requirement (<em><a name="l3037">​</a>NOTE: US Core 6.1.0 added the <a href="StructureDefinition-us-core-sex.html">US Core Sex Extension</a> as a <a href="https://hl7.org/fhir/us/core/STU6/must-support.html#uscdi-requirements">USCDI Requirement</a>. The US Core Birth Sex Extension is no longer a USCDI Requirement</em>.)</li>
-          <li><a name="l3047">​</a>To support Related Person's Name and Related Person's Relationship <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> was updated</li>
-          <li><a name="l3053">​</a>The <em>new</em> <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a> supports a patient's Occupation and Occupation Industry</li>
+          <li><a name="l3416">​</a>The <em>new</em> <a href="StructureDefinition-us-core-tribal-affiliation.html">US Core Tribal Affiliation Extension</a> has been added to support Tribal Affiliation</li>
+          <li><a name="l3425">​</a>The <a href="StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a> meets the patient sex requirement (<em><a name="l3430">​</a>NOTE: US Core 6.1.0 added the <a href="StructureDefinition-us-core-sex.html">US Core Sex Extension</a> as a <a href="https://hl7.org/fhir/us/core/STU6/must-support.html#uscdi-requirements">USCDI Requirement</a>. The US Core Birth Sex Extension is no longer a USCDI Requirement</em>.)</li>
+          <li><a name="l3440">​</a>To support Related Person's Name and Related Person's Relationship <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a> was updated</li>
+          <li><a name="l3446">​</a>The <em>new</em> <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a> supports a patient's Occupation and Occupation Industry</li>
         </ul>
       </li>
-      <li><a name="l3064">​</a>Reason for Referral is supported by an updated <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a> and <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></li>
+      <li><a name="l3457">​</a>Reason for Referral is supported by an updated <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a> and <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></li>
     </ul>
   </li>
   <li>
-    <p><a name="l3076">​</a>The <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a> supersedes version 5.0.1  <em>US Core Observation Clinical Test Result Profile</em> and <em>US Core Observation Imaging Result Profile</em>. In addition, it is the base for the <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>. The Cross Version Comparisons Table on the <a href="changes-between-versions.html">Changes Between Versions</a> page summarized these significant revisions.</p>
+    <p><a name="l3469">​</a>The <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a> supersedes version 5.0.1  <em>US Core Observation Clinical Test Result Profile</em> and <em>US Core Observation Imaging Result Profile</em>. In addition, it is the base for the <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>. The Cross Version Comparisons Table on the <a href="changes-between-versions.html">Changes Between Versions</a> page summarized these significant revisions.</p>
   </li>
   <li>
     <p>Document the <a href="https://hl7.org/fhir/us/core/STU6/must-support.html#uscdi-requirements">USCDI Requirement</a> conformance category: Besides Mandatory and Must Support elements, the US Core Profile elements consist of USCDI Requirements elements for ONC Health IT Certification. This version <a href="https://hl7.org/fhir/us/core/STU6/general-requirements.html#us-core-conformance-artifacts">clarifies the meaning</a> and <a href="https://hl7.org/fhir/us/core/STU6/must-support.html#uscdi-requirements">documents</a> how it is communicated in the StructureDefinitions and on the profile pages</p>
@@ -718,7 +804,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>Expanded documentation on the Terminology page: In addition to detailing the Code Systems unique to this guide, links <a href="https://hl7.org/fhir/us/core/STU6/terminology.html#code-systems">all the Code Systems</a> used in US Core are listed.</p>
   </li>
   <li>
-    <p><a name="l3130">​</a>Introduce <a href="scopes.html#smart-scopes">US Core SMART Scopes</a> as a candidate requirements under consideration, and provide example for each Profile.</p>
+    <p><a name="l3523">​</a>Introduce <a href="scopes.html#smart-scopes">US Core SMART Scopes</a> as a candidate requirements under consideration, and provide example for each Profile.</p>
   </li>
   <li>We continue our efforts to link terminology directly to the FHIR&reg; Terminology Service for VSAC Resources (<a href="https://vsac.nlm.nih.gov/">Value Set Authority Center (VSAC)</a> where applicable and, as a result, align terminology between US Core and <a href="https://hl7.org/cda/us/ccda/history.html">HL7 C-CDA</a>.</li>
 </ul>
@@ -905,7 +991,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     <ul>
       <li><strong>Applied</strong>: <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-coverage.html">Health Insurance Information</a> Using US Core to represent and access data related to an individual's insurance coverage for health care.</li>
-      <li><a name="l4725">​</a><strong>Applied</strong>: The SDOH Assessments documentation has been rewritten and renamed to <a href="https://hl7.org/fhir/us/core/2023Jan/screening-and-assessments.html">Screening and Assessments</a>, reflecting its expanded coverage of Health Status/Assessments Data Elements. It documents how to use <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a> and the <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a> to represent and access health status and assessments, including: <em>Functional Status</em>, <em>Disability Status</em>, and <em>Mental/Cognitive Status</em> in addition to <em>SDOH Assessments</em>.</li>
+      <li><a name="l5118">​</a><strong>Applied</strong>: The SDOH Assessments documentation has been rewritten and renamed to <a href="https://hl7.org/fhir/us/core/2023Jan/screening-and-assessments.html">Screening and Assessments</a>, reflecting its expanded coverage of Health Status/Assessments Data Elements. It documents how to use <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a> and the <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a> to represent and access health status and assessments, including: <em>Functional Status</em>, <em>Disability Status</em>, and <em>Mental/Cognitive Status</em> in addition to <em>SDOH Assessments</em>.</li>
       <li><strong>Applied</strong>: <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a> and <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a> have been added to specifically address pregnancy status.</li>
       <li><strong>Applied</strong>: <strong>Laboratory:</strong> The <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Observation Profile</a> already supports the result status and terminology requirements for coded and numeric results. The <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a> has been added to support Specimen Type.</li>
       <li><strong>Applied</strong>: <strong>Medications:</strong> Updates to the <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a> to support Dose, Dose Unit of Measure, Indication and the <a href="https://hl7.org/fhir/us/core/2023Jan/StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a> has been added to support Fill Status.</li>
@@ -1044,12 +1130,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="https://hl7.org/fhir/us/core/STU5/changes.html">Change Log</a> new header and page. content migrated from the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a> page to create this page</li>
       <li><a href="https://hl7.org/fhir/us/core/STU5/conformance.html">Conformance</a> new Header that contains these pages:
         <ul>
-          <li><a name="l5638">​</a><a href="general-requirements.html">General Requirements</a> content migrated from version 4.0.0 <em>General Requirements</em> and <em>Conformance Expectation</em> pages</li>
-          <li><a name="l5649">​</a><a href="must-support.html">Must Support</a> renamed and edited from version 4.0.0 <em>Conformance Expectation</em> pages</li>
+          <li><a name="l6031">​</a><a href="general-requirements.html">General Requirements</a> content migrated from version 4.0.0 <em>General Requirements</em> and <em>Conformance Expectation</em> pages</li>
+          <li><a href="must-support.html">Must Support</a> renamed and edited from version 4.0.0 <em>Conformance Expectation</em> pages</li>
         </ul>
       </li>
       <li><a href="https://hl7.org/fhir/us/core/STU5/uscdi.html">USCDI</a> content migrated from version 4.0.0 <em>General Requirements</em> Page</li>
-      <li><a name="l5667">​</a><a href="changes-between-versions.html">Changes Between Versions</a> rewritten and renamed from version 4.0.0 <em>DSTU2 to R4 Conversion</em> page</li>
+      <li><a href="changes-between-versions.html">Changes Between Versions</a> rewritten and renamed from version 4.0.0 <em>DSTU2 to R4 Conversion</em> page</li>
     </ul>
   </li>
   <li>Link more terminology directly to the <a href="https://www.nlm.nih.gov/vsac/support/usingvsac/vsacfhirapi.html">FHIR Terminology Service for VSAC Resources</a> and align terminology between US Core and <a href="https://hl7.org/cda/us/ccda/history.html">HL7 C-CDA</a>.</li>
@@ -1952,7 +2038,7 @@ listed below are the resolved trackers for this version:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 16, 2024 15:48+0000">2024-10-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 2, 2024 03:23+0000">2024-11-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

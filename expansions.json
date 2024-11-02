@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "be2a52a9-b608-46fe-ba98-9a39ec8e045c",
+  "id" : "6254de38-9978-46c0-9ccd-0a654a68828c",
   "meta" : {
-    "lastUpdated" : "2024-10-16T15:48:15.946+00:00"
+    "lastUpdated" : "2024-11-02T03:23:22.339+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3f7a1b21-e446-4c81-b41a-7f4abaece26a",
-        "timestamp" : "2024-10-16T15:50:51+00:00",
+        "identifier" : "urn:uuid:35f72e6d-f538-471c-8432-b10cba3ead96",
+        "timestamp" : "2024-11-02T03:26:00+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -100,8 +100,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3848ed30-155e-4652-b6b7-ed305e45e818",
-        "timestamp" : "2024-10-16T15:50:53+00:00",
+        "identifier" : "urn:uuid:4eac798d-3194-453d-9113-00d2dafd73db",
+        "timestamp" : "2024-11-02T03:26:09+00:00",
         "total" : 10,
         "offset" : 0,
         "parameter" : [{
@@ -177,6 +177,2050 @@
           "system" : "http://loinc.org",
           "code" : "34111-5",
           "display" : "Emergency department Note"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://terminology.hl7.org/ValueSet/us-core-location-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on:</p><ul><li><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html\">codesystem RoleCode v3.0.0 (CodeSystem)</a></li><li><a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.1.11.20275/expansion\">valueset HealthcareServiceLocation v20240606 (ValueSet)</a></li><li><a href=\"http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html\">valueset ServiceDeliveryLocationRoleType v3.0.0 (ValueSet)</a></li></ul></div><p>This value set contains 349 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-_DedicatedServiceDeliveryLocationRoleType\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-_DedicatedServiceDeliveryLocationRoleType\" title=\"This code is not selectable ('Abstract')\"><i>_DedicatedServiceDeliveryLocationRoleType</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>DedicatedServiceDeliveryLocationRoleType</td><td><div><p>A role of a place that further classifies a setting that is intended to house the provision of services.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-_DedicatedClinicalLocationRoleType\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-_DedicatedClinicalLocationRoleType\" title=\"This code is not selectable ('Abstract')\"><i>_DedicatedClinicalLocationRoleType</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>DedicatedClinicalLocationRoleType</td><td><div><p>A role of a place that further classifies the clinical setting (e.g., cardiology clinic, primary care clinic, rehabilitation hospital, skilled nursing facility) in which care is delivered during an encounter.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-DX\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DX\">DX</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Diagnostics or therapeutics unit</td><td><div><p>A practice setting where diagnostic procedures or therapeutic interventions are performed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CVDX\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CVDX\">CVDX</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Cardiovascular diagnostics or therapeutics unit</td><td><div><p>A practice setting where cardiovascular diagnostic procedures or therapeutic interventions are performed (e.g., cardiac catheterization lab, echocardiography suite)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CATH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CATH\">CATH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Cardiac catheterization lab</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ECHO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ECHO\">ECHO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Echocardiography lab</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GIDX\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GIDX\">GIDX</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Gastroenterology diagnostics or therapeutics lab</td><td><div><p>A practice setting where GI procedures (such as endoscopies) are performed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ENDOS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ENDOS\">ENDOS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Endoscopy lab</td><td><div><p>(X12N 261QD0000N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RADDX\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RADDX\">RADDX</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Radiology diagnostics or therapeutics unit</td><td><div><p>A practice setting where radiology services (diagnostic or therapeutic) are provided (X12N 261QR0200N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RADO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RADO\">RADO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Radiation oncology unit</td><td><div><p>(X12N 261QX0203N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RNEU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RNEU\">RNEU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Neuroradiology unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HOSP\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HOSP\">HOSP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hospital</td><td><div><p>An acute care institution that provides medical, surgical, or psychiatric care and treatment for the sick or the injured.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CHR\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CHR\">CHR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Chronic Care Facility</td><td><div><p>(1) A hospital including a physical plant and personnel that provides multidisciplinary diagnosis and treatment for diseases that have one or more of the following characteristics: is permanent; leaves residual disability; is caused by nonreversible pathological alteration; requires special training of the patient for rehabilitation; and/or may be expected to require a long period of supervision or care. In addition, patients require the safety, security, and shelter of these specialized inpatient or partial hospitalization settings. (2) A hospital that provides medical and skilled nursing services to patients with long-term illnesses who are not in an acute phase but who require an intensity of services not available in nursing homes</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GACH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GACH\">GACH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hospitals; General Acute Care Hospital</td><td><div><p>(X12N 282N00000N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-MHSP\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-MHSP\">MHSP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Military Hospital</td><td><div><p>A health care facility operated by the Department of Defense or other military operation.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PSYCHF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PSYCHF\">PSYCHF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Psychatric Care Facility</td><td><div><p>Healthcare facility that cares for patients with psychiatric illness(s).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RH\">RH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Rehabilitation hospital</td><td><div><p>(X12N 283X00000N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHAT\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHAT\">RHAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>addiction treatment center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include life training and/or social support to people with addictions.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHII\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHII\">RHII</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>intellectual impairment center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include adaptation, rehabilitation and social integration services for people with intellectual and/or pervasive development disorders such as autism or severe behaviour disorder.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHMAD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHMAD\">RHMAD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>parents with adjustment difficulties center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may social support services for adolescents who are pregnant or have child and are experiencing adaptation issues/difficulties in their current or eventual parenting role.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHPI\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHPI\">RHPI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>physical impairment center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include adaptation, rehabilitation and social integration services for people with physical impairments.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHPIH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHPIH\">RHPIH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>physical impairment - hearing center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services for people with hearing impairments.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHPIMS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHPIMS\">RHPIMS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>physical impairment - motor skills center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services for people with motor skill impairments.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHPIVS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHPIVS\">RHPIVS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>physical impairment - visual skills center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services for people with visual skill impairments.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHYAD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHYAD\">RHYAD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>youths with adjustment difficulties center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include life training and/or social support services for the adaption, rehabilitation and social integration of youths with adjustment difficulties.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HU\">HU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hospital unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-BMTU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-BMTU\">BMTU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Bone marrow transplant unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CCU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CCU\">CCU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Coronary care unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CHEST\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CHEST\">CHEST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Chest unit</td><td><div><p>A specialty unit in hospital that focuses on chronic respirator patients and pulmonary failure</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-EPIL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-EPIL\">EPIL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Epilepsy unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ER\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ER\">ER</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Emergency room</td><td><div><p>The section of a health care facility for providing rapid treatment to victims of sudden illness or trauma.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ETU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ETU\">ETU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Emergency trauma unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HD\">HD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hemodialysis unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HLAB\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HLAB\">HLAB</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>hospital laboratory</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include tests done based on clinical specimens to get health information about a patient as pertaining to the diagnosis, treatment and prevention of disease. Hospital laboratories may be further divided into specialized units such as Anatomic Pathology, Microbiology, and Biochemistry.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-INLAB\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-INLAB\">INLAB</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>inpatient laboratory</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include tests are done on clinical specimens to get health information about a patient pertaining to the diagnosis, treatment, and prevention of disease for a hospital visit longer than one day.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OUTLAB\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OUTLAB\">OUTLAB</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>outpatient laboratory</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include tests are done on clinical specimens to get health information about a patient pertaining to the diagnosis, treatment, and prevention of disease for same day visits.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HRAD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HRAD\">HRAD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>radiology unit</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include the branch of medicine that uses ionizing and non-ionizing radiation to diagnose and treat diseases. The radiology unit may be further divided into subspecialties such as Imaging, Cardiovascular, Thoracic, and Ultrasound.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HUSCS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HUSCS\">HUSCS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>specimen collection site</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include collecting specimens and/or samples from patients for laboratory testing purposes, but does not perform any tests or analysis functions.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ICU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ICU\">ICU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Intensive care unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDICU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDICU\">PEDICU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric intensive care unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDNICU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDNICU\">PEDNICU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric neonatal intensive care unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-INPHARM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-INPHARM\">INPHARM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>inpatient pharmacy</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include providing judicious, safe, efficacious, appropriate and cost effective use of medicines for treatment of patients for visits longer than one day. The distinction between inpatient pharmacies and retail (or outpatient) pharmacies is that they are part of a patient's continuity of care while staying in the hospital.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-MBL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-MBL\">MBL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>medical laboratory</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which include biochemistry, hematology, microbiology, immunochemistry, and toxicology.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NCCS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NCCS\">NCCS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Neurology critical care and stroke unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NS\">NS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Neurosurgery unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OUTPHARM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OUTPHARM\">OUTPHARM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>outpatient pharmacy</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include providing judicious, safe, efficacious, appropriate and cost effective use of medicines for treatment of patients for outpatient visits and may also be used for discharge prescriptions.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDU\">PEDU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PHU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PHU\">PHU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Psychiatric hospital unit</td><td><div><p>(X12N 273R00000N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHU\">RHU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Rehabilitation hospital unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SLEEP\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SLEEP\">SLEEP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Sleep disorders unit</td><td><div><p>(X12N 261QA1200N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NCCF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NCCF\">NCCF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Nursing or custodial care facility</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SNF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SNF\">SNF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Skilled nursing facility</td><td><div><p>(X12N 314000000N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OF\">OF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Outpatient facility</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ALL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ALL\">ALL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Allergy clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-AMPUT\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-AMPUT\">AMPUT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Amputee clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-BMTC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-BMTC\">BMTC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Bone marrow transplant clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-BREAST\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-BREAST\">BREAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Breast clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CANC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CANC\">CANC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Child and adolescent neurology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CAPC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CAPC\">CAPC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Child and adolescent psychiatry clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CARD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CARD\">CARD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDCARD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDCARD\">PEDCARD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric cardiology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-COAG\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-COAG\">COAG</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Coagulation clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CRS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CRS\">CRS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Colon and rectal surgery clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-DERM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DERM\">DERM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Dermatology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ENDO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ENDO\">ENDO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Endocrinology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDE\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDE\">PEDE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric endocrinology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ENT\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ENT\">ENT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Otorhinolaryngology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-FMC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-FMC\">FMC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Family medicine clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GI\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GI\">GI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Gastroenterology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDGI\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDGI\">PEDGI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric gastroenterology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GIM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GIM\">GIM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>General internal medicine clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GYN\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GYN\">GYN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Gynecology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HEM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HEM\">HEM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hematology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDHEM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDHEM\">PEDHEM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric hematology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HTN\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HTN\">HTN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hypertension clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-IEC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-IEC\">IEC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Impairment evaluation center</td><td><div><p>Focuses on assessing disability</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-INFD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-INFD\">INFD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Infectious disease clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDID\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDID\">PEDID</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric infectious disease clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-INV\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-INV\">INV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Infertility clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-LYMPH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-LYMPH\">LYMPH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Lympedema clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-MGEN\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-MGEN\">MGEN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Medical genetics clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NEPH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NEPH\">NEPH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Nephrology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDNEPH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDNEPH\">PEDNEPH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric nephrology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NEUR\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-NEUR\">NEUR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Neurology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OB\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OB\">OB</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Obstetrics clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OMS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OMS\">OMS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Oral and maxillofacial surgery clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ONCL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ONCL\">ONCL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Medical oncology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDHO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDHO\">PEDHO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric oncology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OPH\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OPH\">OPH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Opthalmology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-OPTC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-OPTC\">OPTC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>optometry clinic</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include examination, diagnosis, treatment, management, and prevention of diseases and disorders of the eye as well as prescribing and fitting appropriate corrective lenses (glasses or contact lenses) as needed. Optometry clinics may also provide tests for visual field screening, measuring intra-ocular pressure and ophthalmoscopy, as and when required.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ORTHO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ORTHO\">ORTHO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Orthopedics clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-HAND\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HAND\">HAND</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Hand clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PAINCL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PAINCL\">PAINCL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pain clinic</td><td><div><p>(X12N 261QP3300N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PC\">PC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Primary care clinic</td><td><div><p>(X12N 261QP2300N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDC\">PEDC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatrics clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PEDRHEUM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PEDRHEUM\">PEDRHEUM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pediatric rheumatology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-POD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-POD\">POD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Podiatry clinic</td><td><div><p>(X12N 261QP1100N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PREV\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PREV\">PREV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Preventive medicine clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PROCTO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PROCTO\">PROCTO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Proctology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PROFF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PROFF\">PROFF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Provider's Office</td><td><div><p>Location where healthcare service was delivered, identified as the healthcare provider's practice office.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PROS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PROS\">PROS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Prosthodontics clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PSI\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PSI\">PSI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Psychology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PSY\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PSY\">PSY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Psychiatry clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RHEUM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RHEUM\">RHEUM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Rheumatology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SPMED\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SPMED\">SPMED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Sports medicine clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SU\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SU\">SU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Surgery clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PLS\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PLS\">PLS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Plastic surgery clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-URO\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-URO\">URO</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Urology clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-TR\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-TR\">TR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Transplant clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-TRAVEL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-TRAVEL\">TRAVEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Travel and geographic medicine clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-WND\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-WND\">WND</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Wound clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-RTF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-RTF\">RTF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Residential treatment facility</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PRC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PRC\">PRC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pain rehabilitation center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SURF\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SURF\">SURF</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Substance use rehabilitation facility</td><td><div><p>(X12N 324500000N)</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-_DedicatedNonClinicalLocationRoleType\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-_DedicatedNonClinicalLocationRoleType\" title=\"This code is not selectable ('Abstract')\"><i>_DedicatedNonClinicalLocationRoleType</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>DedicatedNonClinicalLocationRoleType</td><td><div><p>A role of a place that further classifies a setting that is intended to house the provision of non-clinical services.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-DADDR\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-DADDR\">DADDR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Delivery Address</td><td><div><p>Location address where medical supplies were transported to for use.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-MOBL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-MOBL\">MOBL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Mobile Unit</td><td><div><p>Location (mobile) where healthcare service was delivered.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-AMB\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-AMB\">AMB</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Ambulance</td><td><div><p>Location (mobile) where healthcare service was delivered, identified specifically as an ambulance.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PHARM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PHARM\">PHARM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Pharmacy</td><td><div><p>Location where healthcare service was delivered, identified as a pharmacy.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-_IncidentalServiceDeliveryLocationRoleType\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-_IncidentalServiceDeliveryLocationRoleType\" title=\"This code is not selectable ('Abstract')\"><i>_IncidentalServiceDeliveryLocationRoleType</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>IncidentalServiceDeliveryLocationRoleType</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ACC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-ACC\">ACC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>accident site</td><td><div><p>Location of an accident where healthcare service was delivered, such as a roadside.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-COMM\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-COMM\">COMM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Community Location</td><td><div><p>Community location where healthcare is delivered.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CSC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-CSC\">CSC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>community service center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include providing front-line services to the population of a defined geographic area such as: healthcare services and social services, preventive or curative, rehabilitation or reintegration.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PTRES\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-PTRES\">PTRES</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>Patient's Residence</td><td><div><p>location where healthcare was delivered which is the residence of the Patient.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SCHOOL\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-SCHOOL\">SCHOOL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>school</td><td><div><p>Location where healthcare service was delivered, identified as a school or educational facility.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-UPC\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-UPC\">UPC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>underage protection center</td><td><div><p><strong>Description:</strong> A location that plays the role of delivering services which may include: social emergency services required for a young person as required under any jurisdictional youth laws, child placement, and family mediation in the defined geographical area the SDL is responsible for. It may provide expertise in a judiciary setting on child custody, adoption and biological history research.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-WORK\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-WORK\">WORK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleCode</td><td>work site</td><td><div><p>Location where healthcare service was delivered, identified as a work place.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1005-8\"> </a>\u00a0\u00a0<code>1005-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Cardiac Catheterization Room/Suite</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1007-4\"> </a>\u00a0\u00a0<code>1007-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Endoscopy Suite</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1008-2\"> </a>\u00a0\u00a0<code>1008-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Radiology</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1009-0\"> </a>\u00a0\u00a0<code>1009-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pulmonary Function Testing</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1010-8\"> </a>\u00a0\u00a0<code>1010-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>General Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1011-6\"> </a>\u00a0\u00a0<code>1011-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Clinical Chemistry Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1012-4\"> </a>\u00a0\u00a0<code>1012-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Hematology Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1013-2\"> </a>\u00a0\u00a0<code>1013-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Histology-Surgical Pathology Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1014-0\"> </a>\u00a0\u00a0<code>1014-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Microbiology Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1015-7\"> </a>\u00a0\u00a0<code>1015-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Serology Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1016-5\"> </a>\u00a0\u00a0<code>1016-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Virology Laboratory</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1017-3\"> </a>\u00a0\u00a0<code>1017-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Hyperbaric Oxygen Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1018-1\"> </a>\u00a0\u00a0<code>1018-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Infusion Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1019-9\"> </a>\u00a0\u00a0<code>1019-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Specimen Collection Area (Healthcare)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1020-7\"> </a>\u00a0\u00a0<code>1020-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Sleep Study Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1025-6\"> </a>\u00a0\u00a0<code>1025-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Trauma Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1026-4\"> </a>\u00a0\u00a0<code>1026-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Burn Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1027-2\"> </a>\u00a0\u00a0<code>1027-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Medical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1028-0\"> </a>\u00a0\u00a0<code>1028-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Medical Cardiac Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1029-8\"> </a>\u00a0\u00a0<code>1029-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Medical-Surgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1030-6\"> </a>\u00a0\u00a0<code>1030-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Surgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1031-4\"> </a>\u00a0\u00a0<code>1031-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neurosurgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1032-2\"> </a>\u00a0\u00a0<code>1032-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Surgical Cardiothoracic Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1033-0\"> </a>\u00a0\u00a0<code>1033-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Respiratory Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1034-8\"> </a>\u00a0\u00a0<code>1034-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Prenatal Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1035-5\"> </a>\u00a0\u00a0<code>1035-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neurologic Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1038-9\"> </a>\u00a0\u00a0<code>1038-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Well Newborn Nursery (Level I)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1039-7\"> </a>\u00a0\u00a0<code>1039-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neonatal Critical Care (Level II/III)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1040-5\"> </a>\u00a0\u00a0<code>1040-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neonatal Critical Care (Level III)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1041-3\"> </a>\u00a0\u00a0<code>1041-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Special Care Nursery (Level II)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1042-1\"> </a>\u00a0\u00a0<code>1042-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Burn Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1043-9\"> </a>\u00a0\u00a0<code>1043-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Surgical Cardiothoracic Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1044-7\"> </a>\u00a0\u00a0<code>1044-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Medical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1045-4\"> </a>\u00a0\u00a0<code>1045-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Medical-Surgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1046-2\"> </a>\u00a0\u00a0<code>1046-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Neurosurgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1047-0\"> </a>\u00a0\u00a0<code>1047-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Respiratory Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1048-8\"> </a>\u00a0\u00a0<code>1048-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Surgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1049-6\"> </a>\u00a0\u00a0<code>1049-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Trauma Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1051-2\"> </a>\u00a0\u00a0<code>1051-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Behavioral Health/Psych Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1052-0\"> </a>\u00a0\u00a0<code>1052-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Burn Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1053-8\"> </a>\u00a0\u00a0<code>1053-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ear, Nose, Throat Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1054-6\"> </a>\u00a0\u00a0<code>1054-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Gastrointestinal Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1055-3\"> </a>\u00a0\u00a0<code>1055-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Genitourinary Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1056-1\"> </a>\u00a0\u00a0<code>1056-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Gerontology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1057-9\"> </a>\u00a0\u00a0<code>1057-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Gynecology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1058-7\"> </a>\u00a0\u00a0<code>1058-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Labor and Delivery Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1059-5\"> </a>\u00a0\u00a0<code>1059-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Labor, Delivery, Recovery, Postpartum Suite</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1060-3\"> </a>\u00a0\u00a0<code>1060-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Medical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1061-1\"> </a>\u00a0\u00a0<code>1061-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Medical-Surgical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1062-9\"> </a>\u00a0\u00a0<code>1062-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neurology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1063-7\"> </a>\u00a0\u00a0<code>1063-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neurosurgical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1064-5\"> </a>\u00a0\u00a0<code>1064-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ophthalmology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1065-2\"> </a>\u00a0\u00a0<code>1065-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Orthopedic Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1066-0\"> </a>\u00a0\u00a0<code>1066-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Orthopedic Trauma Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1067-8\"> </a>\u00a0\u00a0<code>1067-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Plastic Surgery Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1068-6\"> </a>\u00a0\u00a0<code>1068-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Postpartum Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1069-4\"> </a>\u00a0\u00a0<code>1069-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pulmonary Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1070-2\"> </a>\u00a0\u00a0<code>1070-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Rehabilitation Ward (within Hospital)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1071-0\"> </a>\u00a0\u00a0<code>1071-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Stroke (Acute) Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1072-8\"> </a>\u00a0\u00a0<code>1072-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Surgical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1073-6\"> </a>\u00a0\u00a0<code>1073-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Vascular Surgery Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1075-1\"> </a>\u00a0\u00a0<code>1075-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Adolescent Behavioral Health Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1076-9\"> </a>\u00a0\u00a0<code>1076-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Medical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1077-7\"> </a>\u00a0\u00a0<code>1077-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Behavioral Health Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1078-5\"> </a>\u00a0\u00a0<code>1078-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Burn Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1079-3\"> </a>\u00a0\u00a0<code>1079-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Ear, Nose, Throat Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1080-1\"> </a>\u00a0\u00a0<code>1080-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Genitourinary Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1081-9\"> </a>\u00a0\u00a0<code>1081-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Medical-Surgical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1082-7\"> </a>\u00a0\u00a0<code>1082-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Neurology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1083-5\"> </a>\u00a0\u00a0<code>1083-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Neurosurgical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1084-3\"> </a>\u00a0\u00a0<code>1084-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Orthopedic Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1085-0\"> </a>\u00a0\u00a0<code>1085-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Rehabilitation Ward (within Hospital)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1086-8\"> </a>\u00a0\u00a0<code>1086-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Surgical Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1091-8\"> </a>\u00a0\u00a0<code>1091-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Dialysis Specialty Care Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1092-6\"> </a>\u00a0\u00a0<code>1092-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Solid Organ Transplant Specialty Care Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1093-4\"> </a>\u00a0\u00a0<code>1093-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Solid Organ Transplant Specialty Care Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1095-9\"> </a>\u00a0\u00a0<code>1095-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Cesarean Section Room/Suite</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1096-7\"> </a>\u00a0\u00a0<code>1096-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Operating Room/Suite</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1097-5\"> </a>\u00a0\u00a0<code>1097-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Post-Anesthesia Care Unit/Recovery Room</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1099-1\"> </a>\u00a0\u00a0<code>1099-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Adult Step Down Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1100-7\"> </a>\u00a0\u00a0<code>1100-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Step Down Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1102-3\"> </a>\u00a0\u00a0<code>1102-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Chronic Care Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1103-1\"> </a>\u00a0\u00a0<code>1103-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Chronic Alzheimer's Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1104-9\"> </a>\u00a0\u00a0<code>1104-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Chronic Behavioral Health/Psych Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1105-6\"> </a>\u00a0\u00a0<code>1105-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Chronic Rehabilitation Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1106-4\"> </a>\u00a0\u00a0<code>1106-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Assisted Living Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1108-0\"> </a>\u00a0\u00a0<code>1108-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Emergency Department</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1109-8\"> </a>\u00a0\u00a0<code>1109-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Emergency Department</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1110-6\"> </a>\u00a0\u00a0<code>1110-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Allergy Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1112-2\"> </a>\u00a0\u00a0<code>1112-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Cardiac Rehabilitation Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1113-0\"> </a>\u00a0\u00a0<code>1113-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Cardiology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1115-5\"> </a>\u00a0\u00a0<code>1115-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Dermatology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1116-3\"> </a>\u00a0\u00a0<code>1116-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Diabetes-Endocrinology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1117-1\"> </a>\u00a0\u00a0<code>1117-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Family Medicine Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1118-9\"> </a>\u00a0\u00a0<code>1118-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Gastrointestinal Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1119-7\"> </a>\u00a0\u00a0<code>1119-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Gastrointestinal Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1120-5\"> </a>\u00a0\u00a0<code>1120-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Medical Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1121-3\"> </a>\u00a0\u00a0<code>1121-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Gynecology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1122-1\"> </a>\u00a0\u00a0<code>1122-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Genetics Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1123-9\"> </a>\u00a0\u00a0<code>1123-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neurology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1124-7\"> </a>\u00a0\u00a0<code>1124-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ophthalmology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1125-4\"> </a>\u00a0\u00a0<code>1125-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Orthopedic Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1126-2\"> </a>\u00a0\u00a0<code>1126-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ear, Nose, Throat Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1127-0\"> </a>\u00a0\u00a0<code>1127-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pain Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1128-8\"> </a>\u00a0\u00a0<code>1128-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1129-6\"> </a>\u00a0\u00a0<code>1129-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Cardiology Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1130-4\"> </a>\u00a0\u00a0<code>1130-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Dental Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1131-2\"> </a>\u00a0\u00a0<code>1131-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Dermatology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1132-0\"> </a>\u00a0\u00a0<code>1132-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Diabetes-Endocrinology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1133-8\"> </a>\u00a0\u00a0<code>1133-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Orthopedic Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1134-6\"> </a>\u00a0\u00a0<code>1134-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Scoliosis Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1136-1\"> </a>\u00a0\u00a0<code>1136-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Hematology-Oncology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1137-9\"> </a>\u00a0\u00a0<code>1137-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Nephrology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1138-7\"> </a>\u00a0\u00a0<code>1138-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Rheumatology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1139-5\"> </a>\u00a0\u00a0<code>1139-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Well Baby Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1140-3\"> </a>\u00a0\u00a0<code>1140-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Podiatry Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1141-1\"> </a>\u00a0\u00a0<code>1141-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Physician's Office</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1142-9\"> </a>\u00a0\u00a0<code>1142-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Rheumatology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1143-7\"> </a>\u00a0\u00a0<code>1143-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Surgical Services Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1144-5\"> </a>\u00a0\u00a0<code>1144-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Wound Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1145-2\"> </a>\u00a0\u00a0<code>1145-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Behavioral Health Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1146-0\"> </a>\u00a0\u00a0<code>1146-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Behavioral Health Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1147-8\"> </a>\u00a0\u00a0<code>1147-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Blood Collection Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1148-6\"> </a>\u00a0\u00a0<code>1148-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Continence Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1149-4\"> </a>\u00a0\u00a0<code>1149-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ostomy Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1150-2\"> </a>\u00a0\u00a0<code>1150-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Dental Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1151-0\"> </a>\u00a0\u00a0<code>1151-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Occupational Health Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1152-8\"> </a>\u00a0\u00a0<code>1152-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Occupational Therapy Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1153-6\"> </a>\u00a0\u00a0<code>1153-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Hemodialysis Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1154-4\"> </a>\u00a0\u00a0<code>1154-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>HIV Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1155-1\"> </a>\u00a0\u00a0<code>1155-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Rehabilitation Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1156-9\"> </a>\u00a0\u00a0<code>1156-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Prenatal Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1157-7\"> </a>\u00a0\u00a0<code>1157-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pulmonary Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1158-5\"> </a>\u00a0\u00a0<code>1158-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Speech Therapy Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1159-3\"> </a>\u00a0\u00a0<code>1159-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Wound Ostomy Continence Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1160-1\"> </a>\u00a0\u00a0<code>1160-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Urgent Care Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1161-9\"> </a>\u00a0\u00a0<code>1161-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Holistic Medicine Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1162-7\"> </a>\u00a0\u00a0<code>1162-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>24-Hour Observation Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1164-3\"> </a>\u00a0\u00a0<code>1164-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ventilator Dependent Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1165-0\"> </a>\u00a0\u00a0<code>1165-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Inpatient Hospice</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1169-2\"> </a>\u00a0\u00a0<code>1169-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Post-Anesthesia Care Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1170-0\"> </a>\u00a0\u00a0<code>1170-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>School or Prison Infirmary</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1171-8\"> </a>\u00a0\u00a0<code>1171-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Jail Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1172-6\"> </a>\u00a0\u00a0<code>1172-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>School Infirmary</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1174-2\"> </a>\u00a0\u00a0<code>1174-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Mobile Emergency Services/EMS</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1175-9\"> </a>\u00a0\u00a0<code>1175-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Mobile MRI/CT</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1176-7\"> </a>\u00a0\u00a0<code>1176-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Mobile Blood Collection center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1178-3\"> </a>\u00a0\u00a0<code>1178-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Transport Service</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1179-1\"> </a>\u00a0\u00a0<code>1179-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pharmacy</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1180-9\"> </a>\u00a0\u00a0<code>1180-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Public Area in Facility</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1181-7\"> </a>\u00a0\u00a0<code>1181-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Physical Plant Operations Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1182-5\"> </a>\u00a0\u00a0<code>1182-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Housekeeping/Environmental Services</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1183-3\"> </a>\u00a0\u00a0<code>1183-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Laundry Room</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1184-1\"> </a>\u00a0\u00a0<code>1184-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Administrative Areas</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1185-8\"> </a>\u00a0\u00a0<code>1185-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Blood Bank</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1186-6\"> </a>\u00a0\u00a0<code>1186-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Central Sterile Supply</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1187-4\"> </a>\u00a0\u00a0<code>1187-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Central Trash Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1188-2\"> </a>\u00a0\u00a0<code>1188-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Facility Grounds</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1189-0\"> </a>\u00a0\u00a0<code>1189-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Morgue/Autopsy Room</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1190-8\"> </a>\u00a0\u00a0<code>1190-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Soiled Utility Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1192-4\"> </a>\u00a0\u00a0<code>1192-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Home Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1194-0\"> </a>\u00a0\u00a0<code>1194-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Home-based Hospice</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1195-7\"> </a>\u00a0\u00a0<code>1195-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Blood Collection (Blood Drive Campaign)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1196-5\"> </a>\u00a0\u00a0<code>1196-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Specimen Collection Area (Community)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1198-1\"> </a>\u00a0\u00a0<code>1198-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Dialysis Specialty Care Area</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1200-5\"> </a>\u00a0\u00a0<code>1200-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Hematology-Oncology Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1202-1\"> </a>\u00a0\u00a0<code>1202-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Physical Therapy Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1203-9\"> </a>\u00a0\u00a0<code>1203-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Interventional Radiology</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1204-7\"> </a>\u00a0\u00a0<code>1204-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Location outside facility</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1205-4\"> </a>\u00a0\u00a0<code>1205-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Antenatal Care Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1207-0\"> </a>\u00a0\u00a0<code>1207-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Therapeutic Apheresis Clinic</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1208-8\"> </a>\u00a0\u00a0<code>1208-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Telemetry Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1209-6\"> </a>\u00a0\u00a0<code>1209-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Treatment Room</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1210-4\"> </a>\u00a0\u00a0<code>1210-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Adult Mixed Acuity Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1211-2\"> </a>\u00a0\u00a0<code>1211-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Mixed Acuity Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1212-0\"> </a>\u00a0\u00a0<code>1212-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Mixed Age Mixed Acuity Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1214-6\"> </a>\u00a0\u00a0<code>1214-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Acute Care Pediatric Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1217-9\"> </a>\u00a0\u00a0<code>1217-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Rehabilitation Ward (within freestanding Inpatient Rehabilitation Facility)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1218-7\"> </a>\u00a0\u00a0<code>1218-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Rehabilitation Ward (within freestanding Inpatient Rehabilitation Facility)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1219-5\"> </a>\u00a0\u00a0<code>1219-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Hemodialysis Clinic (in Inpatient Facility)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1220-3\"> </a>\u00a0\u00a0<code>1220-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Acute Care Intensive Care Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1221-1\"> </a>\u00a0\u00a0<code>1221-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Acute Care Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1222-9\"> </a>\u00a0\u00a0<code>1222-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Acute Care Pediatric Intensive Care Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1223-7\"> </a>\u00a0\u00a0<code>1223-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Medical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1224-5\"> </a>\u00a0\u00a0<code>1224-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Surgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1225-2\"> </a>\u00a0\u00a0<code>1225-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Medical-Surgical Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1226-0\"> </a>\u00a0\u00a0<code>1226-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Leukemia Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1227-8\"> </a>\u00a0\u00a0<code>1227-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Step Down Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1228-6\"> </a>\u00a0\u00a0<code>1228-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Lymphoma Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1229-4\"> </a>\u00a0\u00a0<code>1229-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Leukemia-Lymphoma Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1230-2\"> </a>\u00a0\u00a0<code>1230-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Solid Tumor Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1231-0\"> </a>\u00a0\u00a0<code>1231-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Hematopoietic Stem Cell Transplant Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1232-8\"> </a>\u00a0\u00a0<code>1232-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology General Hematology-Oncology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1233-6\"> </a>\u00a0\u00a0<code>1233-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Pediatric Critical Care</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1234-4\"> </a>\u00a0\u00a0<code>1234-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Pediatric Hematopoietic Stem Cell Transplant Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1235-1\"> </a>\u00a0\u00a0<code>1235-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Pediatric General Hematology-Oncology Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1236-9\"> </a>\u00a0\u00a0<code>1236-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Oncology Mixed Acuity Unit (all ages)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1242-7\"> </a>\u00a0\u00a0<code>1242-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Operating Room/Suite (Attached)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1243-5\"> </a>\u00a0\u00a0<code>1243-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ambulatory Surgery Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1244-3\"> </a>\u00a0\u00a0<code>1244-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Operating Room/Suite (Detached)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1245-0\"> </a>\u00a0\u00a0<code>1245-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Ambulatory Surgery Recovery Room</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1246-8\"> </a>\u00a0\u00a0<code>1246-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Ambulatory Pediatric Surgery Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1247-6\"> </a>\u00a0\u00a0<code>1247-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Ambulatory Plastic Surgery Center</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1248-4\"> </a>\u00a0\u00a0<code>1248-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Outpatient Operating Room/Suite (Attached)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1249-2\"> </a>\u00a0\u00a0<code>1249-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Pediatric Outpatient Operating Room/Suite (Detached)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1254-2\"> </a>\u00a0\u00a0<code>1254-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility Inpatient Hospice Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1255-9\"> </a>\u00a0\u00a0<code>1255-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility Dementia Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1256-7\"> </a>\u00a0\u00a0<code>1256-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility Psychiatric Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1257-5\"> </a>\u00a0\u00a0<code>1257-5</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility Skilled Nursing-Short Term Rehabilitation Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1258-3\"> </a>\u00a0\u00a0<code>1258-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility General Nursing Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1259-1\"> </a>\u00a0\u00a0<code>1259-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility Ventilator Dependent Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1260-9\"> </a>\u00a0\u00a0<code>1260-9</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Long Term Care Facility Bariatric Unit</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1261-7\"> </a>\u00a0\u00a0<code>1261-7</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Centralized Transfusion Service</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1262-1\"> </a>\u00a0\u00a0<code>1262-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Home Hemodialysis</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1263-3\"> </a>\u00a0\u00a0<code>1263-3</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Non-CMS Hospital Unit(s)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1264-1\"> </a>\u00a0\u00a0<code>1264-1</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Inpatient Rehabilitation Facility Unit(s)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1265-8\"> </a>\u00a0\u00a0<code>1265-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Inpatient Psychiatric Facility Unit(s)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1268-2\"> </a>\u00a0\u00a0<code>1268-2</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Outpatient Hemodialysis Clinic - Acute Kidney Injury</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1269-0\"> </a>\u00a0\u00a0<code>1269-0</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Neonatal Critical Care (Level IV)</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1270-8\"> </a>\u00a0\u00a0<code>1270-8</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Chemical Dependency Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1271-6\"> </a>\u00a0\u00a0<code>1271-6</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Onsite Overflow Ward</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html-1272-4\"> </a>\u00a0\u00a0<code>1272-4</code></td><td>https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html</td><td>Onsite Overflow Critical Care</td><td><div/></td></tr></table></div>"
+      },
+      "url" : "http://terminology.hl7.org/ValueSet/us-core-location-type",
+      "version" : "0.0.0",
+      "name" : "USCoreLocationType",
+      "title" : "US Core Location Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-10-24",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1b0bc99e-4bcc-411e-a66c-c5d769ff981f",
+        "timestamp" : "2024-11-02T03:26:18.082Z",
+        "total" : 349,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType|3.0.0"
+        },
+        {
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275|20240606"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275|20240606"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "abstract" : true,
+          "code" : "_DedicatedServiceDeliveryLocationRoleType",
+          "display" : "DedicatedServiceDeliveryLocationRoleType"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "abstract" : true,
+          "code" : "_DedicatedClinicalLocationRoleType",
+          "display" : "DedicatedClinicalLocationRoleType"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "DX",
+          "display" : "Diagnostics or therapeutics unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CVDX",
+          "display" : "Cardiovascular diagnostics or therapeutics unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CATH",
+          "display" : "Cardiac catheterization lab"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ECHO",
+          "display" : "Echocardiography lab"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GIDX",
+          "display" : "Gastroenterology diagnostics or therapeutics lab"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ENDOS",
+          "display" : "Endoscopy lab"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RADDX",
+          "display" : "Radiology diagnostics or therapeutics unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RADO",
+          "display" : "Radiation oncology unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RNEU",
+          "display" : "Neuroradiology unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HOSP",
+          "display" : "Hospital"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CHR",
+          "display" : "Chronic Care Facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GACH",
+          "display" : "Hospitals; General Acute Care Hospital"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MHSP",
+          "display" : "Military Hospital"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PSYCHF",
+          "display" : "Psychatric Care Facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RH",
+          "display" : "Rehabilitation hospital"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHAT",
+          "display" : "addiction treatment center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHII",
+          "display" : "intellectual impairment center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHMAD",
+          "display" : "parents with adjustment difficulties center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHPI",
+          "display" : "physical impairment center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHPIH",
+          "display" : "physical impairment - hearing center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHPIMS",
+          "display" : "physical impairment - motor skills center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHPIVS",
+          "display" : "physical impairment - visual skills center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHYAD",
+          "display" : "youths with adjustment difficulties center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HU",
+          "display" : "Hospital unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "BMTU",
+          "display" : "Bone marrow transplant unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CCU",
+          "display" : "Coronary care unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CHEST",
+          "display" : "Chest unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "EPIL",
+          "display" : "Epilepsy unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ER",
+          "display" : "Emergency room"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ETU",
+          "display" : "Emergency trauma unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HD",
+          "display" : "Hemodialysis unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HLAB",
+          "display" : "hospital laboratory"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "INLAB",
+          "display" : "inpatient laboratory"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OUTLAB",
+          "display" : "outpatient laboratory"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HRAD",
+          "display" : "radiology unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HUSCS",
+          "display" : "specimen collection site"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ICU",
+          "display" : "Intensive care unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDICU",
+          "display" : "Pediatric intensive care unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDNICU",
+          "display" : "Pediatric neonatal intensive care unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "INPHARM",
+          "display" : "inpatient pharmacy"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MBL",
+          "display" : "medical laboratory"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "NCCS",
+          "display" : "Neurology critical care and stroke unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "NS",
+          "display" : "Neurosurgery unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OUTPHARM",
+          "display" : "outpatient pharmacy"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDU",
+          "display" : "Pediatric unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PHU",
+          "display" : "Psychiatric hospital unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHU",
+          "display" : "Rehabilitation hospital unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SLEEP",
+          "display" : "Sleep disorders unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "NCCF",
+          "display" : "Nursing or custodial care facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SNF",
+          "display" : "Skilled nursing facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OF",
+          "display" : "Outpatient facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ALL",
+          "display" : "Allergy clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "AMPUT",
+          "display" : "Amputee clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "BMTC",
+          "display" : "Bone marrow transplant clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "BREAST",
+          "display" : "Breast clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CANC",
+          "display" : "Child and adolescent neurology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CAPC",
+          "display" : "Child and adolescent psychiatry clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CARD",
+          "display" : "Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDCARD",
+          "display" : "Pediatric cardiology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "COAG",
+          "display" : "Coagulation clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CRS",
+          "display" : "Colon and rectal surgery clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "DERM",
+          "display" : "Dermatology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ENDO",
+          "display" : "Endocrinology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDE",
+          "display" : "Pediatric endocrinology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ENT",
+          "display" : "Otorhinolaryngology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "FMC",
+          "display" : "Family medicine clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GI",
+          "display" : "Gastroenterology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDGI",
+          "display" : "Pediatric gastroenterology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GIM",
+          "display" : "General internal medicine clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GYN",
+          "display" : "Gynecology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HEM",
+          "display" : "Hematology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDHEM",
+          "display" : "Pediatric hematology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HTN",
+          "display" : "Hypertension clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "IEC",
+          "display" : "Impairment evaluation center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "INFD",
+          "display" : "Infectious disease clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDID",
+          "display" : "Pediatric infectious disease clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "INV",
+          "display" : "Infertility clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "LYMPH",
+          "display" : "Lympedema clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MGEN",
+          "display" : "Medical genetics clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "NEPH",
+          "display" : "Nephrology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDNEPH",
+          "display" : "Pediatric nephrology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "NEUR",
+          "display" : "Neurology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OB",
+          "display" : "Obstetrics clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OMS",
+          "display" : "Oral and maxillofacial surgery clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ONCL",
+          "display" : "Medical oncology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDHO",
+          "display" : "Pediatric oncology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OPH",
+          "display" : "Opthalmology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "OPTC",
+          "display" : "optometry clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ORTHO",
+          "display" : "Orthopedics clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "HAND",
+          "display" : "Hand clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PAINCL",
+          "display" : "Pain clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PC",
+          "display" : "Primary care clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDC",
+          "display" : "Pediatrics clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PEDRHEUM",
+          "display" : "Pediatric rheumatology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "POD",
+          "display" : "Podiatry clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PREV",
+          "display" : "Preventive medicine clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PROCTO",
+          "display" : "Proctology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PROFF",
+          "display" : "Provider's Office"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PROS",
+          "display" : "Prosthodontics clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PSI",
+          "display" : "Psychology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PSY",
+          "display" : "Psychiatry clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RHEUM",
+          "display" : "Rheumatology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SPMED",
+          "display" : "Sports medicine clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SU",
+          "display" : "Surgery clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PLS",
+          "display" : "Plastic surgery clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "URO",
+          "display" : "Urology clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "TR",
+          "display" : "Transplant clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "TRAVEL",
+          "display" : "Travel and geographic medicine clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "WND",
+          "display" : "Wound clinic"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "RTF",
+          "display" : "Residential treatment facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PRC",
+          "display" : "Pain rehabilitation center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SURF",
+          "display" : "Substance use rehabilitation facility"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "abstract" : true,
+          "code" : "_DedicatedNonClinicalLocationRoleType",
+          "display" : "DedicatedNonClinicalLocationRoleType"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "DADDR",
+          "display" : "Delivery Address"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MOBL",
+          "display" : "Mobile Unit"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "AMB",
+          "display" : "Ambulance"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PHARM",
+          "display" : "Pharmacy"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "abstract" : true,
+          "code" : "_IncidentalServiceDeliveryLocationRoleType",
+          "display" : "IncidentalServiceDeliveryLocationRoleType"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "ACC",
+          "display" : "accident site"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "COMM",
+          "display" : "Community Location"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "CSC",
+          "display" : "community service center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "PTRES",
+          "display" : "Patient's Residence"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SCHOOL",
+          "display" : "school"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "UPC",
+          "display" : "underage protection center"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "WORK",
+          "display" : "work site"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1005-8",
+          "display" : "Cardiac Catheterization Room/Suite"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1007-4",
+          "display" : "Endoscopy Suite"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1008-2",
+          "display" : "Radiology"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1009-0",
+          "display" : "Pulmonary Function Testing"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1010-8",
+          "display" : "General Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1011-6",
+          "display" : "Clinical Chemistry Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1012-4",
+          "display" : "Hematology Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1013-2",
+          "display" : "Histology-Surgical Pathology Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1014-0",
+          "display" : "Microbiology Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1015-7",
+          "display" : "Serology Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1016-5",
+          "display" : "Virology Laboratory"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1017-3",
+          "display" : "Hyperbaric Oxygen Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1018-1",
+          "display" : "Infusion Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1019-9",
+          "display" : "Specimen Collection Area (Healthcare)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1020-7",
+          "display" : "Sleep Study Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1025-6",
+          "display" : "Trauma Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1026-4",
+          "display" : "Burn Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1027-2",
+          "display" : "Medical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1028-0",
+          "display" : "Medical Cardiac Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1029-8",
+          "display" : "Medical-Surgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1030-6",
+          "display" : "Surgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1031-4",
+          "display" : "Neurosurgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1032-2",
+          "display" : "Surgical Cardiothoracic Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1033-0",
+          "display" : "Respiratory Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1034-8",
+          "display" : "Prenatal Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1035-5",
+          "display" : "Neurologic Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1038-9",
+          "display" : "Well Newborn Nursery (Level I)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1039-7",
+          "display" : "Neonatal Critical Care (Level II/III)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1040-5",
+          "display" : "Neonatal Critical Care (Level III)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1041-3",
+          "display" : "Special Care Nursery (Level II)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1042-1",
+          "display" : "Pediatric Burn Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1043-9",
+          "display" : "Pediatric Surgical Cardiothoracic Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1044-7",
+          "display" : "Pediatric Medical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1045-4",
+          "display" : "Pediatric Medical-Surgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1046-2",
+          "display" : "Pediatric Neurosurgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1047-0",
+          "display" : "Pediatric Respiratory Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1048-8",
+          "display" : "Pediatric Surgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1049-6",
+          "display" : "Pediatric Trauma Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1051-2",
+          "display" : "Behavioral Health/Psych Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1052-0",
+          "display" : "Burn Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1053-8",
+          "display" : "Ear, Nose, Throat Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1054-6",
+          "display" : "Gastrointestinal Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1055-3",
+          "display" : "Genitourinary Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1056-1",
+          "display" : "Gerontology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1057-9",
+          "display" : "Gynecology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1058-7",
+          "display" : "Labor and Delivery Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1059-5",
+          "display" : "Labor, Delivery, Recovery, Postpartum Suite"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1060-3",
+          "display" : "Medical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1061-1",
+          "display" : "Medical-Surgical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1062-9",
+          "display" : "Neurology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1063-7",
+          "display" : "Neurosurgical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1064-5",
+          "display" : "Ophthalmology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1065-2",
+          "display" : "Orthopedic Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1066-0",
+          "display" : "Orthopedic Trauma Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1067-8",
+          "display" : "Plastic Surgery Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1068-6",
+          "display" : "Postpartum Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1069-4",
+          "display" : "Pulmonary Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1070-2",
+          "display" : "Rehabilitation Ward (within Hospital)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1071-0",
+          "display" : "Stroke (Acute) Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1072-8",
+          "display" : "Surgical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1073-6",
+          "display" : "Vascular Surgery Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1075-1",
+          "display" : "Adolescent Behavioral Health Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1076-9",
+          "display" : "Pediatric Medical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1077-7",
+          "display" : "Pediatric Behavioral Health Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1078-5",
+          "display" : "Pediatric Burn Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1079-3",
+          "display" : "Pediatric Ear, Nose, Throat Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1080-1",
+          "display" : "Pediatric Genitourinary Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1081-9",
+          "display" : "Pediatric Medical-Surgical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1082-7",
+          "display" : "Pediatric Neurology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1083-5",
+          "display" : "Pediatric Neurosurgical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1084-3",
+          "display" : "Pediatric Orthopedic Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1085-0",
+          "display" : "Pediatric Rehabilitation Ward (within Hospital)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1086-8",
+          "display" : "Pediatric Surgical Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1091-8",
+          "display" : "Pediatric Dialysis Specialty Care Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1092-6",
+          "display" : "Solid Organ Transplant Specialty Care Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1093-4",
+          "display" : "Pediatric Solid Organ Transplant Specialty Care Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1095-9",
+          "display" : "Cesarean Section Room/Suite"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1096-7",
+          "display" : "Operating Room/Suite"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1097-5",
+          "display" : "Post-Anesthesia Care Unit/Recovery Room"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1099-1",
+          "display" : "Adult Step Down Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1100-7",
+          "display" : "Pediatric Step Down Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1102-3",
+          "display" : "Chronic Care Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1103-1",
+          "display" : "Chronic Alzheimer's Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1104-9",
+          "display" : "Chronic Behavioral Health/Psych Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1105-6",
+          "display" : "Chronic Rehabilitation Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1106-4",
+          "display" : "Assisted Living Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1108-0",
+          "display" : "Emergency Department"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1109-8",
+          "display" : "Pediatric Emergency Department"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1110-6",
+          "display" : "Allergy Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1112-2",
+          "display" : "Cardiac Rehabilitation Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1113-0",
+          "display" : "Cardiology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1115-5",
+          "display" : "Dermatology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1116-3",
+          "display" : "Diabetes-Endocrinology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1117-1",
+          "display" : "Family Medicine Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1118-9",
+          "display" : "Gastrointestinal Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1119-7",
+          "display" : "Pediatric Gastrointestinal Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1120-5",
+          "display" : "Medical Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1121-3",
+          "display" : "Gynecology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1122-1",
+          "display" : "Genetics Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1123-9",
+          "display" : "Neurology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1124-7",
+          "display" : "Ophthalmology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1125-4",
+          "display" : "Orthopedic Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1126-2",
+          "display" : "Ear, Nose, Throat Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1127-0",
+          "display" : "Pain Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1128-8",
+          "display" : "Pediatric Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1129-6",
+          "display" : "Pediatric Cardiology Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1130-4",
+          "display" : "Pediatric Dental Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1131-2",
+          "display" : "Pediatric Dermatology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1132-0",
+          "display" : "Pediatric Diabetes-Endocrinology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1133-8",
+          "display" : "Pediatric Orthopedic Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1134-6",
+          "display" : "Pediatric Scoliosis Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1136-1",
+          "display" : "Pediatric Hematology-Oncology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1137-9",
+          "display" : "Pediatric Nephrology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1138-7",
+          "display" : "Pediatric Rheumatology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1139-5",
+          "display" : "Well Baby Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1140-3",
+          "display" : "Podiatry Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1141-1",
+          "display" : "Physician's Office"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1142-9",
+          "display" : "Rheumatology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1143-7",
+          "display" : "Surgical Services Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1144-5",
+          "display" : "Wound Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1145-2",
+          "display" : "Behavioral Health Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1146-0",
+          "display" : "Pediatric Behavioral Health Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1147-8",
+          "display" : "Blood Collection Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1148-6",
+          "display" : "Continence Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1149-4",
+          "display" : "Ostomy Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1150-2",
+          "display" : "Dental Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1151-0",
+          "display" : "Occupational Health Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1152-8",
+          "display" : "Occupational Therapy Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1153-6",
+          "display" : "Outpatient Hemodialysis Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1154-4",
+          "display" : "HIV Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1155-1",
+          "display" : "Rehabilitation Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1156-9",
+          "display" : "Prenatal Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1157-7",
+          "display" : "Pulmonary Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1158-5",
+          "display" : "Speech Therapy Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1159-3",
+          "display" : "Wound Ostomy Continence Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1160-1",
+          "display" : "Urgent Care Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1161-9",
+          "display" : "Holistic Medicine Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1162-7",
+          "display" : "24-Hour Observation Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1164-3",
+          "display" : "Ventilator Dependent Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1165-0",
+          "display" : "Inpatient Hospice"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1169-2",
+          "display" : "Post-Anesthesia Care Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1170-0",
+          "display" : "School or Prison Infirmary"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1171-8",
+          "display" : "Jail Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1172-6",
+          "display" : "School Infirmary"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1174-2",
+          "display" : "Mobile Emergency Services/EMS"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1175-9",
+          "display" : "Mobile MRI/CT"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1176-7",
+          "display" : "Mobile Blood Collection center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1178-3",
+          "display" : "Transport Service"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1179-1",
+          "display" : "Pharmacy"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1180-9",
+          "display" : "Public Area in Facility"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1181-7",
+          "display" : "Physical Plant Operations Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1182-5",
+          "display" : "Housekeeping/Environmental Services"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1183-3",
+          "display" : "Laundry Room"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1184-1",
+          "display" : "Administrative Areas"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1185-8",
+          "display" : "Blood Bank"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1186-6",
+          "display" : "Central Sterile Supply"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1187-4",
+          "display" : "Central Trash Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1188-2",
+          "display" : "Facility Grounds"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1189-0",
+          "display" : "Morgue/Autopsy Room"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1190-8",
+          "display" : "Soiled Utility Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1192-4",
+          "display" : "Home Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1194-0",
+          "display" : "Home-based Hospice"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1195-7",
+          "display" : "Blood Collection (Blood Drive Campaign)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1196-5",
+          "display" : "Specimen Collection Area (Community)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1198-1",
+          "display" : "Dialysis Specialty Care Area"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1200-5",
+          "display" : "Hematology-Oncology Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1202-1",
+          "display" : "Physical Therapy Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1203-9",
+          "display" : "Interventional Radiology"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1204-7",
+          "display" : "Location outside facility"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1205-4",
+          "display" : "Antenatal Care Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1207-0",
+          "display" : "Therapeutic Apheresis Clinic"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1208-8",
+          "display" : "Telemetry Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1209-6",
+          "display" : "Treatment Room"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1210-4",
+          "display" : "Adult Mixed Acuity Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1211-2",
+          "display" : "Pediatric Mixed Acuity Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1212-0",
+          "display" : "Mixed Age Mixed Acuity Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1214-6",
+          "display" : "Long Term Acute Care Pediatric Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1217-9",
+          "display" : "Rehabilitation Ward (within freestanding Inpatient Rehabilitation Facility)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1218-7",
+          "display" : "Pediatric Rehabilitation Ward (within freestanding Inpatient Rehabilitation Facility)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1219-5",
+          "display" : "Outpatient Hemodialysis Clinic (in Inpatient Facility)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1220-3",
+          "display" : "Long Term Acute Care Intensive Care Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1221-1",
+          "display" : "Long Term Acute Care Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1222-9",
+          "display" : "Long Term Acute Care Pediatric Intensive Care Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1223-7",
+          "display" : "Oncology Medical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1224-5",
+          "display" : "Oncology Surgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1225-2",
+          "display" : "Oncology Medical-Surgical Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1226-0",
+          "display" : "Oncology Leukemia Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1227-8",
+          "display" : "Oncology Step Down Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1228-6",
+          "display" : "Oncology Lymphoma Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1229-4",
+          "display" : "Oncology Leukemia-Lymphoma Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1230-2",
+          "display" : "Oncology Solid Tumor Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1231-0",
+          "display" : "Oncology Hematopoietic Stem Cell Transplant Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1232-8",
+          "display" : "Oncology General Hematology-Oncology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1233-6",
+          "display" : "Oncology Pediatric Critical Care"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1234-4",
+          "display" : "Oncology Pediatric Hematopoietic Stem Cell Transplant Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1235-1",
+          "display" : "Oncology Pediatric General Hematology-Oncology Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1236-9",
+          "display" : "Oncology Mixed Acuity Unit (all ages)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1242-7",
+          "display" : "Outpatient Operating Room/Suite (Attached)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1243-5",
+          "display" : "Ambulatory Surgery Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1244-3",
+          "display" : "Outpatient Operating Room/Suite (Detached)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1245-0",
+          "display" : "Ambulatory Surgery Recovery Room"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1246-8",
+          "display" : "Outpatient Ambulatory Pediatric Surgery Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1247-6",
+          "display" : "Outpatient Ambulatory Plastic Surgery Center"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1248-4",
+          "display" : "Pediatric Outpatient Operating Room/Suite (Attached)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1249-2",
+          "display" : "Pediatric Outpatient Operating Room/Suite (Detached)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1254-2",
+          "display" : "Long Term Care Facility Inpatient Hospice Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1255-9",
+          "display" : "Long Term Care Facility Dementia Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1256-7",
+          "display" : "Long Term Care Facility Psychiatric Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1257-5",
+          "display" : "Long Term Care Facility Skilled Nursing-Short Term Rehabilitation Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1258-3",
+          "display" : "Long Term Care Facility General Nursing Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1259-1",
+          "display" : "Long Term Care Facility Ventilator Dependent Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1260-9",
+          "display" : "Long Term Care Facility Bariatric Unit"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1261-7",
+          "display" : "Centralized Transfusion Service"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1262-1",
+          "display" : "Home Hemodialysis"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1263-3",
+          "display" : "Non-CMS Hospital Unit(s)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1264-1",
+          "display" : "Inpatient Rehabilitation Facility Unit(s)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1265-8",
+          "display" : "Inpatient Psychiatric Facility Unit(s)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1268-2",
+          "display" : "Outpatient Hemodialysis Clinic - Acute Kidney Injury"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1269-0",
+          "display" : "Neonatal Critical Care (Level IV)"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1270-8",
+          "display" : "Chemical Dependency Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1271-6",
+          "display" : "Onsite Overflow Ward"
+        },
+        {
+          "system" : "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html",
+          "version" : "2022",
+          "code" : "1272-4",
+          "display" : "Onsite Overflow Critical Care"
         }]
       }
     }

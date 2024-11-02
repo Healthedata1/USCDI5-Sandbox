@@ -4,46 +4,62 @@
   "meta" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
-      "valueString" : "ADI Observation Example"
+      "valueString" : "ADI Observation Presence ADI Example"
     },
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
-      "valueMarkdown" : "This is a Observation example for the USCDI5 ADI Observation Data Element"
+      "valueMarkdown" : "This is a Observation example for the USCDI5 ADI Observation Data Element to show whether and location of a patient has an advance directive using a new code = \"45473-6\" - (Advance directive/living will completed) and and value of \"Yes\"/\"No\"/\"Unknown\" (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"
     }],
-    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"]
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ADI-example</b></p><a name=\"ADI-example\"> </a><a name=\"hcADI-example\"> </a><a name=\"ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 42348-3}\">Advance directives</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>focus</b>: <a href=\"DocumentReference-example-patient-adi.html\">Person-Authored Advance Directive</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: </p><ul><li><a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">??</a></li><li>Dr Smith</li></ul><p><b>value</b>: <span title=\"Codes:{http://loinc.org 81334-5}\">Patient Personal advance care plan</span></p></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ADI-example</b></p><a name=\"ADI-example\"> </a><a name=\"hcADI-example\"> </a><a name=\"ADI-example-en-US\"> </a><p><b>Supporting info</b>: <a href=\"DocumentReference-polst.html\">POLST</a></p><p><b>Supporting info</b>: <a href=\"DocumentReference-adi-intubation.html\">ADI DNI</a></p><p><b>Supporting info</b>: <a href=\"DocumentReference-living-will.html\">Living Will</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number:\u00a01032702\u00a0(use:\u00a0usual,\u00a0))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.us.core.3.1.1@3.1.1&amp;canonical=http://hl7.org/fhir/us/core/Practitioner/practitioner-1\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Yes (qualifier value)</span></p></div>"
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+    "valueReference" : {
+      "reference" : "DocumentReference/polst",
+      "display" : "POLST"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+    "valueReference" : {
+      "reference" : "DocumentReference/adi-intubation",
+      "display" : "ADI DNI"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+    "valueReference" : {
+      "reference" : "DocumentReference/living-will",
+      "display" : "Living Will"
+    }
+  }],
   "status" : "final",
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "42348-3",
-      "display" : "Advance directives"
+      "code" : "45473-6",
+      "display" : "Advance directive/living will completed"
     }]
   },
   "subject" : {
     "reference" : "Patient/example"
   },
-  "focus" : [{
-    "reference" : "DocumentReference/example-patient-adi",
-    "display" : "Person-Authored Advance Directive"
-  }],
-  "effectiveDateTime" : "2024-05-16T01:06:06.393000+00:00",
-  "issued" : "2024-05-16T01:06:06.393000+00:00",
+  "effectiveDateTime" : "2024-05-16T01:06:06.393Z",
+  "issued" : "2024-05-16T01:06:06.393Z",
   "performer" : [{
-    "reference" : "http://hl7.org/fhir/us/core/Practitioner/practitioner-1"
-  },
-  {
+    "reference" : "http://hl7.org/fhir/us/core/Practitioner/practitioner-1",
     "display" : "Dr Smith"
   }],
   "valueCodeableConcept" : {
     "coding" : [{
-      "system" : "http://loinc.org",
-      "code" : "81334-5",
-      "display" : "Patient Personal advance care plan"
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/731000124108",
+      "code" : "373066001",
+      "display" : "Yes (qualifier value)"
     }]
   }
 }

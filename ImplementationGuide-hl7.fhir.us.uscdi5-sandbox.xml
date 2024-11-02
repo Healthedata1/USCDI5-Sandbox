@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-10-16T15:48:15+00:00"/>
+  <date value="2024-11-02T03:23:22+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -56,9 +56,19 @@
     <packageId value="hl7.terminology.r4"/>
     <version value="6.0.2"/>
   </dependsOn>
-  <dependsOn id="uscore">
+  <dependsOn id="uscore3">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core.3.1.1"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <dependsOn id="uscore6">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
     <packageId value="hl7.fhir.us.core"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+  <dependsOn id="uscore7">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core.v700"/>
     <version value="7.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_smart_app_launch">
@@ -630,20 +640,9 @@
       <reference>
         <reference value="Observation/ADI-example"/>
       </reference>
-      <name value="ADI Observation Example"/>
-      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ADI-example2"/>
-      </reference>
-      <name value="ADI Observation Presence ADI Example2"/>
+      <name value="ADI Observation Presence ADI Example"/>
       <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show whether and location of a patient has an advance directive using a new code = &quot;45473-6&quot; - (Advance directive/living will completed) and and value of &quot;Yes&quot;/&quot;No&quot;/&quot;Unknown&quot; (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -654,18 +653,7 @@
       </reference>
       <name value="ADI Observation Presence No ADI Example"/>
       <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = &quot;45473-6&quot; - (Advance directive/living will completed) and and value of &quot;Yes&quot;/&quot;No&quot;/&quot;Unknown&quot; (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/no-ADI-example2"/>
-      </reference>
-      <name value="ADI Observation Presence No ADI Example2"/>
-      <description value="This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = &quot;45473-6&quot; - (Advance directive/living will completed) and and value of &quot;Yes&quot;/&quot;No&quot;/&quot;Unknown&quot; (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -746,17 +734,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="DocumentReference"/>
-      </extension>
-      <reference>
-        <reference value="DocumentReference/example-patient-adi"/>
-      </reference>
-      <name value="Example Patient Adi"/>
-      <description value="This is a DocumentReference example for the USCDI5 ADI Observation Data Element"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Immunization"/>
       </extension>
       <reference>
@@ -790,16 +767,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/negation-example-code"/>
-      </reference>
-      <name value="negation-example-code"/>
-      <exampleCanonical value="http://www.fhir.org/guides/uscdi5-sandbox/StructureDefinition/us-core-servicerequest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -811,24 +778,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/79614"/>
-      </reference>
-      <name value="Provenance Example"/>
-      <description value="This is a Provenance example for the *US Core Patient Profile*."/>
-      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/us-core-adi-documentreference"/>
       </reference>
       <name value="US Core ADI DocumentReference Profile"/>
-      <description value="The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Presence Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. This profile sets minimum expectations for searching and fetching patient ADI documents including Clinical Notes using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document itseld, it communicates the types of advance directive documents, the author, verifier, and other properties. To communicates whether any advance directive documents exist for a patient, see the [US Core Observation ADI Documentation2 Profile]. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile."/>
+      <description value="The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the US Core Observation ADI Documentation Profile. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -899,6 +855,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/us-core-location-type"/>
+      </reference>
+      <name value="US Core Location Type"/>
+      <description value="Concepts representing locations and settings where healthcare services are provided."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -916,7 +883,7 @@
         <reference value="StructureDefinition/us-core-medicationrequest"/>
       </reference>
       <name value="US Core MedicationRequest Profile"/>
-      <description value="The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <description value="The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -927,29 +894,7 @@
         <reference value="StructureDefinition/us-core-observation-adi-documentation"/>
       </reference>
       <name value="US Core Observation ADI Documentation Profile"/>
-      <description value="The US Core Observation ADI Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Presence Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. It is used to communicate the types of advance directive documents for a patient, the document location, and other properties. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicates whether any advance directive documents exist for a patient, see the [US Core Observation ADI Presence Profile]. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about advance directive documents. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-observation-adi-documentation2"/>
-      </reference>
-      <name value="US Core Observation ADI Documentation Profile2"/>
-      <description value="The US Core Observation ADI Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. It is used to communicate the presence of advance directive documents for a patient. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicate the types of advance directive documents, the document location, and other properties, see the [US Core Observation ADI Documentation Profile]. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about the presence of a patient's advance directives. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/us-core-observation-adi-presence"/>
-      </reference>
-      <name value="US Core Observation ADI Presence Profile"/>
-      <description value="The US Core Observation ADI Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile] together meet the requirements of the U.S. Core Data for Interoperability (USCDI) *Advance Directive Observation* Data Element. It is used to communicate the presence of advance directive documents for a patient. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicate the types of advance directive documents, the document location, and other properties, see the [US Core Observation ADI Documentation Profile]. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about the presence of a patient's advance directives. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <description value="The US Core Observation ADI Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI DocumentationReference Profile](StructureDefinition-us-core-adi-documentreference.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It is used to communicate the presence and location of advance directive documents for a patient. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicate the type of advance directive document, the author, the verifier, and other properties, see the US Core Observation ADI Documentation Profile. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about the presence of a patient's advance directives. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -960,7 +905,7 @@
         <reference value="StructureDefinition/us-core-patient"/>
       </reference>
       <name value="US Core Patient Profile"/>
-      <description value="The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <description value="The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1032,10 +977,10 @@
             <valueCode value="informative"/>
           </extension>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="subscription.html"/>
+            <valueUrl value="must-support.html"/>
           </extension>
-          <nameUrl value="subscription.html"/>
-          <title value="Subscription"/>
+          <nameUrl value="must-support.html"/>
+          <title value="Must Support"/>
           <generation value="markdown"/>
         </page>
       </page>
@@ -1058,6 +1003,28 @@
           </extension>
           <nameUrl value="uscdi.html"/>
           <title value="Uscdi"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="basic-provenance.html"/>
+          </extension>
+          <nameUrl value="basic-provenance.html"/>
+          <title value="Basic Provenance"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+            <valueCode value="informative"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="changes-between-versions.html"/>
+          </extension>
+          <nameUrl value="changes-between-versions.html"/>
+          <title value="Changes Between Versions"/>
           <generation value="markdown"/>
         </page>
         <page>

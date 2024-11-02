@@ -1,0 +1,1871 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Basic Provenance - UCSDI5 Sandbox v0.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="http://hl7.org">
+            <img src="assets/images/hl7-logo-header.png" alt="Visit the HL7 website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">UCSDI5 Sandbox</span>
+            <br/>
+            <span style="display:inline-block;">0.0.0 - CI Build
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">General Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="changes-between-versions.html">Changes Between Versions</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="spcu.html">Sex Parameters for Clinical Use</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifact Index</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes.html">Change Log</a>
+  </li>
+  <li>
+    <a href="ImplementationGuide.html">IG Page</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="guidance.html"><b>Guidance</b></a></li><li><b>Basic Provenance</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">UCSDI5 Sandbox - Local Development build (v0.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Basic Provenance</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#basic-provenance" id="markdown-toc-basic-provenance">Basic Provenance</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+  <li><a href="#element-level-provenance" id="markdown-toc-element-level-provenance">Element Level Provenance</a></li>
+</ul>
+
+</div>
+
+<p>​This section provides implementers with important definitions to create and share the Provenance Resource<sup role="doc-noteref" id="fnref:1"><a rel="footnote" href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<h3 id="basic-provenance">Basic Provenance</h3>
+
+<p>The FHIR <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a> Resource provides a foundation for assessing authenticity, enabling trust, and allowing reproducibility. It is not scoped to a specific use case nor limits the number of Provenance records associated with a Resource. The primary guidance here, and in the <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>, focuses on a key subset of elements, the 'last hop', and specific use cases. The guidance here does not preclude more advanced use cases or additional elements.</p>
+
+<p>Full Provenance of a Resource requires details from the original resource creator and all intermediary actors that updated the Resource. Members of the Argonaut community and the HL7 security working group discussed the current sharing approaches and end-user display.  They agreed the most important information is the last organization making a meaningful clinical update to the data and the prior system providing it - the 'last hop'.  Participants didn't dispute the potential need to recreate the entire chain but didn't see this as relevant to the immediate end-user.</p>
+
+<h4 id="key-provenance-elements">Key Provenance Elements</h4>
+
+<p>The guidance for Provenance in US Core focuses on six key elements: Timestamp, the Target Resource, Author, Author Organization, Transmitter, and Transmitter Organization. The Timestamp is the date and time the author created, updated, or deleted the data. The Target Resource is the Resource the Provenance record supports. The Author represents the person(s) responsible for the information. The Author Organization defines the organization the author is associated with when they created, updated, or deleted the data. The Transmitter represents the system responsible for transmitting the information. Finally, the Transmitter Organization defines the organization responsible for the transmission.</p>
+
+<p><strong>Key Provenance elements:</strong></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Required</th>
+      <th>Must Support</th>
+      <th>Optional</th>
+      <th>FHIR Element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target</td>
+      <td>Resource Provenance <br/>record supports</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.target</code></td>
+    </tr>
+    <tr>
+      <td>Timestamp</td>
+      <td>Date</td>
+      <td>&nbsp;</td>
+      <td>Time with timezone offset</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.recorded</code></td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td>&nbsp;</td>
+      <td>Name<br/>Identifier</td>
+      <td>NPI recommended, additional identifiers allowed</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.who</code></td>
+    </tr>
+    <tr>
+      <td>Author Organization</td>
+      <td>&nbsp;</td>
+      <td>Name<br/>Identifier</td>
+      <td>NPI recommended, additional identifiers allowed</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.onBehalfOf</code></td>
+    </tr>
+    <tr>
+      <td>Transmitter</td>
+      <td>&nbsp;</td>
+      <td>Name<br/>Identifier</td>
+      <td>NPI recommended, additional identifiers allowed</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.who</code></td>
+    </tr>
+    <tr>
+      <td>Transmitter Organization</td>
+      <td>&nbsp;</td>
+      <td>Name<br/>Identifier</td>
+      <td>NPI recommended, additional identifiers allowed</td>
+      <td><code class="language-plaintext highlighter-rouge">Provenance.agent.onBehalfOf</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<p>The HL7 Basic Provenance Informative implementation guide outlines four use cases: Fax, Health Information Exchange (HIE) redistribution, HIE transformation, and Clinical Information Reconciliation and Incorporation (CIRI). While these use cases may have FHIR implications in the future, CIRI and HIE are the key use cases and are covered in detail here.</p>
+
+<h4 id="clinical-information-reconciliation-and-incorporation">Clinical Information Reconciliation and Incorporation</h4>
+  <!-- [Clinical Information Reconciliation and Incorporation (CIRI)] is when a user reviews and updates or accepts information into their system. The data could come from a Health Information Exchange (HIE), a 3rd-party FHIR server, or a patient providing information. Figure 1 represents information from Good Health and Sunshine Health Organization. Dr. Reconciled reviews the data in Figure 1, updates the reaction to hives, and stores it in the Future Health Organization system. When a mobile app requests the information, it receives Dr. Reconciled as the Author and Future Health as the organization. This type of authorship change is only relevant for data suitable for reconciliation, such as medications, allergies, and problems. If Dr. Accepted had saved other clinical content into his EHR that is not reconciled but stored, such as clinical notes, that content must retain its original author.
+
+The Figure below represents information from two different organizations to a clinician for reconciliation:
+
+{% include img.html img="Provenance_Recon_Workflow_Step2.svg" caption="Figure 1: Clinical Information Reconciliation and Incorporation (CIRI) from two Organizations" %}
+
+ Dr. Reconciled is the latest author after updating the reaction on 5/15/2019 and accepting it to the local data store. By accepting the information, Dr. Reconciled is taking over the responsibility.
+
+ `GET /AllergyIntolerance?patient=[ID]&_revinclude=Provenance:target`
+
+Good Health Organization Provenance
+{% include examplebutton_default.html example="get-all-allergy-provenance-good-health" b_title = "Click Here to See 'Get Allergy Information for a Patient at Good Health' Example" %}
+
+Sunshine Health Organization Provenance
+{% include examplebutton_default.html example="get-all-allergy-provenance-sunshine-health" b_title = "Click Here to See 'Get Allergy Information for a Patient at Sunshine Health' Example" %}
+
+After reconciliation, the Future Health Organization Provenance contains the latest information.
+{% include examplebutton_default.html example="get-all-allergy-provenance-future-health" b_title = "Click Here to See 'Get Allergy Information for a Patient at Future Health' Example" %} -->
+
+<h4 id="accepting-information-from-a-single-site">Accepting information from a single site</h4>
+  <!-- The Figure below represents information after a provider accepted data from a single site:
+
+{% include img.html img="Provenance_Recon_Single_Organization.svg" caption="Figure 2: CIRI After Accepting Reconciliation, No Changes" %}
+
+Dr. Accepted is the latest author after verifying the problem on 5/2018 and accepting the problem data into their local data store since it went through an interactive reconciliation process. -->
+<h4 id="hie-redistribution">HIE Redistribution</h4>
+  <!-- A Health Information Exchange (HIE) is an organization and technology that facilitates information exchange between one and many partners. In specific HIE scenarios, they only redistribute information, while in others, they store, transform, and redistribute information. The HIE must maintain the clinical content fidelity (original author, author organization, and timestamp). In addition, the HIE must keep track of who sent them the information for auditing; however, they are not required to include the original transmitter when redistributing content.
+
+{% include img.html img="Provenance_HIE_Single_Org_Device.svg" caption="Figure 3: HIE Redistribution - No clinical content transformation" %}
+
+Since no clinical content is changed in the HIE redistribution, the best scenario is a Provenance Record with:
+- `Provenance.agent.type` = author
+  - `Provenance.agent.who` set to the practitioner who authored the content (i.e., not the HIE)
+  - `Provenance.agent.onBehalfOf` set to the organization that the author acted on behalf of before sharing with the HIE
+- `Provenance.agent.type` = transmitter
+  - `Provenance.agent.who` set to the HIE organization
+
+ The timestamp and pointer (i.e., target) to the appropriate Resource are required in all cases and must be included. This IG would note these as **SHALL** constraints if systems always had the Author and Author Organizations available. Participants in the development of this guide reported that the Author information provided to HIEs needs to be more consistent and reliable. -->
+<h4 id="hie-transformation">HIE Transformation</h4>
+  <!-- Unlike Use Case 3 - HIE Redistribution, Use Case 4 includes data transformation. Information is received (e.g., v2 lab, other CDs), transformed by a HIE, stored, and passed in a new format (e.g., CCD or FHIR).
+
+{% include img.html img="Provenance_HIE_Multi_Org_Device.svg" caption="Figure 4: HIE Transformation - Clinical content is transformed" %}
+
+Transformation of data from one format to another **MAY** change the authorship of the information, where the HIE is the author/author organization. The HIE must maintain the original data source. An `agent.type`="assembler", `agent.type`="transmitter", or other agents from [Provenance Agent Type] value set **MAY** also be included. Due to insufficient implementer guidance, the Basic Provenance guidance here does not specify how to assign authorship for this use case. HL7 plans to gather additional input and include it in the HL7 Basic Provenance Informative guide for C-CDA and FHIR. -->
+<h3 id="element-level-provenance">Element Level Provenance</h3>
+
+<div class="stu-note">
+  <p>This section is informative and not a requirement for systems conforming to the US Core Provenance Profile.</p>
+</div>
+  <!-- stu-note -->
+
+  <!-- Using the FHIR Extension [Target Element], Provenance can target a particular element or set of elements. For example, to document how and who supplied patient demographic data such as Race and Ethnicity (R/E), gender identity, and sexual orientation.
+
+Example:
+
+In this [US Core Patient Profile] example, the patient demographic data such as Race and Ethnicity (R/E), gender identity, etc., have *individual element ids* within a resource for internal and external referencing:
+
+{% include examplebutton_default.html example="Patient-example-targeted-provenance.json" b_title = "Click Here to See Individual Element Ids Within a Patient Resource Example" %}
+
+This [US Core Provenance Profile] resource communicates who, how, and when elements such as Race and Ethnicity (R/E), gender identity, etc., were collected. Note that the [Target Element] Extension references the element ids within the Patient resource:
+
+{% include examplebutton_default.html example="Provenance-example-targeted-provenance.json" b_title = "Click Here to See an Element Level Provenance Example" %} -->
+
+<p><br/></p>
+
+<h4 id="proposed-mappings-to-incorporate-into-guidance">Proposed Mappings to Incorporate into Guidance</h4>
+
+<p><em>New strawman proposal:** Because systems typically do not represent this information for patients and practitioners in FHIR using "big-P" Provenance, use the various FHIR resources' existing elements that track the "small p" provenance</em> at the <em>individual level</em>. Propose adding a mapping table to the <a href="#">Provenance page</a> that documents these "small-p" provenance data elements.  The author role is typically implied by the resource type referenced (e.g. Patient, Practitioner/PractitionerRole, RelatedPerson, Device). Except for Device, more details about the role are contained the resource contents (e.g.RelatedPerson.relationship).</p>
+
+<p>State that the resources elements provide additional "small -p" provenance  Mappings identify the author and author roles.</p>
+
+<p>:point_right:<a href="https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g">"Small-p" Provenance Table for all US Core Profiles</a>:point_left:</p>
+
+<p>not in table - US Core Profiles that are Out of Scope:</p>
+
+<ul>
+  <li>US Core Encounter ( US Core use big P Provenance - for org)</li>
+  <li>US Core Location</li>
+  <li>US Core Organization</li>
+  <li>US Core Practitioner</li>
+  <li>US Core PractitionerRole</li>
+  <li>US Core RelatedPerson</li>
+  <li>US Core Medication</li>
+  <li>US Core Provenance</li>
+  <li>US Core CareTeam</li>
+  <li>US Core Coverage</li>
+  <li>US Core Specimen</li>
+</ul>
+
+<p>(note: meddisp =&gt; performer)</p>
+
+<p>Next Steps:</p>
+
+<ul>
+  <li>Discuss:
+    <ul>
+      <li>Which elements should be added  as <em>Must Support/Add'l USCDI</em></li>
+      <li>Which target resources should be added as <em>Must Support/Add'l USCDI</em>
+        <ul>
+          <li>US Core Patient</li>
+          <li>US Core Practitioner</li>
+          <li>US Core PractitionerRole</li>
+          <li>US Core RelatedPerson</li>
+          <li>US Core Organization</li>
+          <li>US Core Device</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>If not adding <em>Must Support/Add'l USCDI</em> then what guidance do we give to meet the requirement?</li>
+</ul>
+
+<h5 id="small-p-author-and-author-role-data-elements"><em>Small-p</em> Author and Author Role Data Elements</h5>
+
+  <!-- This liquid script creates a US Core provenance requirements table using input data from input/data/provenance-elements.csv
+with the following columns:
+- Row
+- Is_Source : boolean flag if is provenance source element
+- Observation_grouping: tag for grouping profiles together like ADI or vitals
+- polled_vendors: boolean flag if vendors surveyed on their use of the provenance source element for this profile
+- US_Core_Profile: title of US Core Profile (secondary sort parameter)
+- URL: Canonical URL of US Core Profile
+- Path: relative path of US Core Profile
+- Type: resource type of US Core Profile (primary sort parameter)
+- FiveWs_author: provenance source element choice based on FiveWs mapping (one per row)
+- FiveWs_source: provenance source element choice based on FiveWs mapping (one per row)
+- FiveWs_actor: provenance source element choice based on FiveWs mapping (one per row)
+- is_MS: boolean flag if provenance source element is US Core Must Support
+- vendor_support_element: boolean flag if vendors surveyed on their use of the provenance source element
+- Target_Resource_1: provenance source element target resource (can be up to 7)
+- Target_Resource_1_is_MS: boolean flag if provenance source element target resource is US Core Must Support
+- vendor_support_Target_Resource_1: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_2: provenance source element target resource (can be up to 7)
+- Target_Resource_2_is_MS: boolean flag if provenance source element target resource is US Core Must Support
+- vendor_support_Target_Resource_2: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_3: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_3: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_4: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_4: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_5: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_5: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_6: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_6: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_7: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Comments
+-  no include parameters: -->
+
+<table class="grid">
+<thead>
+<tr>
+  <!-- <th>Row #</th> -->
+<th>US Core Profile</th>
+<th>Data Element Corresponding to Author Provenance</th>
+<th>Target Resource Types Corresponding to Author Role Provenance</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>1</td> -->
+<td><a name="l737">​</a><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
+<td><code>AllergyIntolerance.asserter</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>3</td> -->
+<td><a name="l753">​</a><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td>
+<td><code>CarePlan.contributor</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>6</td> -->
+<td><a name="l769">​</a><a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a></td>
+<td><code>Condition.asserter</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>8</td> -->
+<td><a name="l785">​</a><a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a></td>
+<td><code>Condition.asserter</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>13</td> -->
+<td><a name="l801">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><code><strong>DiagnosticReport.performer*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>14</td> -->
+<td><a name="l820">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><code>DiagnosticReport.resultsInterpreter</code></td>
+<td>Practitioner, Organization, PractitionerRole, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>15</td> -->
+<td><a name="l836">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><code><strong>DiagnosticReport.performer*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>16</td> -->
+<td><a name="l855">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><code>DiagnosticReport.resultsInterpreter</code></td>
+<td>Practitioner, Organization, PractitionerRole, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>17</td> -->
+<td><a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a></td>
+<td><code><strong>DocumentReference.author*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>18</td> -->
+<td><a name="l890">​</a><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td>
+<td><code><strong>DocumentReference.author*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>19</td> -->
+<td><a name="l909">​</a><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td>
+<td><code>Goal.expressedBy</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>20</td> -->
+<td><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></td>
+<td><code>Immunization.reportOrigin</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>21</td> -->
+<td><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></td>
+<td><code>Immunization.performer.actor</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>24</td> -->
+<td><a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a></td>
+<td><code><strong>MedicationDispense.performer.actor*</strong></code></td>
+<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>25</td> -->
+<td><a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
+<td><code><strong>MedicationRequest.requester*</strong></code></td>
+<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>26</td> -->
+<td><a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
+<td><code><strong>MedicationRequest.reportedReference*</strong></code></td>
+<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>28</td> -->
+<td><a name="l1023">​</a><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>29</td> -->
+<td><a name="l1039">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>30</td> -->
+<td><a name="l1055">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>31</td> -->
+<td><a name="l1071">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>32</td> -->
+<td><a name="l1087">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>33</td> -->
+<td><a name="l1103">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>34</td> -->
+<td><a name="l1119">​</a><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>35</td> -->
+<td><a name="l1135">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>36</td> -->
+<td><a name="l1151">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>37</td> -->
+<td><a name="l1167">​</a><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>38</td> -->
+<td><a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>39</td> -->
+<td><a name="l1202">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>40</td> -->
+<td><a name="l1218">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>41</td> -->
+<td><a name="l1234">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>42</td> -->
+<td><a name="l1250">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>43</td> -->
+<td><a name="l1266">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>44</td> -->
+<td><a name="l1283">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>45</td> -->
+<td><a name="l1299">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>46</td> -->
+<td><a name="l1315">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>47</td> -->
+<td><a name="l1331">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>48</td> -->
+<td><a name="l1347">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>49</td> -->
+<td><a name="l1363">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>50</td> -->
+<td><a name="l1379">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>51</td> -->
+<td><a name="l1396">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>52</td> -->
+<td><a name="l1412">​</a><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>53</td> -->
+<td><a name="l1428">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>55</td> -->
+<td><a name="l1444">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td><code>Procedure.asserter</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>56</td> -->
+<td><a name="l1460">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td><code>Procedure.performer.actor</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>60</td> -->
+<td><a name="l1476">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td><code><strong>QuestionnaireResponse.author*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>61</td> -->
+<td><a name="l1495">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td><code>QuestionnaireResponse.source</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>66</td> -->
+<td><a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a></td>
+<td><code><strong>ServiceRequest.requester*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody>
+</table>
+
+<p>* US Core <em>Must Support</em> or <em>Additional USCDI</em> element</p>
+
+<p>** US Core <em>Must Support</em> Target Resource Type</p>
+
+<p>(source excel file is here: https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g)</p>
+
+<p>create links to derived tables</p>
+
+<hr/>
+<p>Footnotes</p>
+
+<div role="doc-endnotes" class="footnotes">
+  <ol>
+    <li role="doc-endnote" id="fn:1">
+      <p>This Basic Provenance guidance and <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a> are provisional and may change in future releases. Although it is based on feedback from the HL7 and Argonaut communities, there was only preliminary testing of this approach before publication.&nbsp;<a role="doc-backlink" href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 2, 2024 03:23+0000">2024-11-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" href="http://hl7.org/fhir/us/uscdi5-sandbox/history.html" target="_blank">Version History</a> |
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a> |
+                   <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" href="http://hl7.org/fhir-issues" target="_blank">Propose a change</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

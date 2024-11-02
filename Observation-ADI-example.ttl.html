@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ADI Observation Example - TTL Representation - UCSDI5 Sandbox v0.0.0</title>
+    <title>ADI Observation Presence ADI Example - TTL Representation - UCSDI5 Sandbox v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.17"}
-    h3,h4,h5,h6{--heading-prefix:"7.17"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.16"}
+    h3,h4,h5,h6{--heading-prefix:"7.16"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -106,7 +106,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="subscription.html">Subscription</a>
+        <a href="must-support.html">Must Support</a>
       </li>
     </ul>
   </li>
@@ -117,6 +117,12 @@
     <ul class="dropdown-menu">
       <li>
         <a href="uscdi.html">USCDI</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="changes-between-versions.html">Changes Between Versions</a>
       </li>
       <li>
         <a href="clinical-notes.html">Clinical Notes</a>
@@ -150,7 +156,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ADI Observation Example</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ADI Observation Presence ADI Example</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -197,7 +203,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: ADI Observation Example - TTL Representation</h2>
+<h2 id="root">: ADI Observation Presence ADI Example - TTL Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -225,6 +231,7 @@
 @prefix loinc: &lt;https://loinc.org/rdf/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
@@ -235,47 +242,62 @@
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/instance-name&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADI Observation Example&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADI Observation Presence ADI Example&quot; ]     ] [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/instance-description&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;This is a Observation example for the USCDI5 ADI Observation Data Element&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;This is a Observation example for the USCDI5 ADI Observation Data Element to show whether and location of a patient has an advance directive using a new code = \&quot;45473-6\&quot; - (Advance directive/living will completed) and and value of \&quot;Yes\&quot;/\&quot;No\&quot;/\&quot;Unknown\&quot; (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation&gt;     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2&gt;     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ADI-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ADI-example-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 42348-3}\&quot;&gt;Advance directives&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;DocumentReference-example-patient-adi.html\&quot;&gt;Person-Authored Advance Directive&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\&quot;&gt;??&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Dr Smith&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 81334-5}\&quot;&gt;Patient Personal advance care plan&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ADI-example&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcADI-example\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ADI-example-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Supporting info&lt;/b&gt;: &lt;a href=\&quot;DocumentReference-polst.html\&quot;&gt;POLST&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Supporting info&lt;/b&gt;: &lt;a href=\&quot;DocumentReference-adi-intubation.html\&quot;&gt;ADI DNI&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Supporting info&lt;/b&gt;: &lt;a href=\&quot;DocumentReference-living-will.html\&quot;&gt;Living Will&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 45473-6}\&quot;&gt;Advance directive/living will completed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-example.html\&quot;&gt;Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;issued&lt;/b&gt;: 2024-05-16 01:06:06+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;https://simplifier.net/resolve?scope=hl7.fhir.us.core.3.1.1@3.1.1&amp;amp;canonical=http://hl7.org/fhir/us/core/Practitioner/practitioner-1\&quot;&gt;Dr Smith&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 373066001}\&quot;&gt;Yes (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/polst&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;POLST&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/adi-intubation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ADI DNI&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference">a</a> fhir:Reference ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/living-will&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Living Will&quot; ]     ]
+  ] ) ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:42348-3 ;
+a loinc:45473-6 ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;42348-3&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Advance directives&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;45473-6&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Advance directive/living will completed&quot; ]     ] )
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/example&quot; ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.focus">fhir:focus</a> ( [
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/example-patient-adi&quot; ] ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Person-Authored Advance Directive&quot; ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-05-16T01:06:06.393000+00:00&quot;^^xsd:dateTime] ; # 
-  <a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2024-05-16T01:06:06.393000+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-05-16T01:06:06.393Z&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.issued">fhir:issued</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2024-05-16T01:06:06.393Z&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">fhir:performer</a> ( [
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core/Practitioner/practitioner-1&gt; ;
-<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://hl7.org/fhir/us/core/Practitioner/practitioner-1&quot; ]
-  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://hl7.org/fhir/us/core/Practitioner/practitioner-1&quot; ] ;
 <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Dr Smith&quot; ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-a loinc:81334-5 ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;81334-5&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient Personal advance care plan&quot; ]     ] )
+a sct:373066001 ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://snomed.info/sct/731000124108&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;373066001&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Yes (qualifier value)&quot; ]     ] )
   ] . # 
 
 &lt;http://hl7.org/fhir/us/core/Practitioner/practitioner-1&gt; a fhir:us .
@@ -305,7 +327,7 @@ a loinc:81334-5 ;
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 16, 2024 15:48+0000">2024-10-16</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 2, 2024 03:23+0000">2024-11-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

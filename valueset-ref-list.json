@@ -41,8 +41,23 @@
       "sources" : ["2.16.840.1.113762.1.4.1099.57"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile",
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20275",
+      "version" : "20240606",
+      "status" : "active",
+      "name" : "HealthcareServiceLocation",
+      "title" : "HealthcareServiceLocation",
+      "description" : "A comprehensive classification of locations and settings where healthcare services are provided. This value set is based on the National Healthcare Safety Network (NHSN) location code system that has been developed over a number of years through CDC's interaction with a variety of healthcare facilities and is intended to serve a variety of reporting needs where coding of healthcare service locations is required.\nValue Set: HealthcareServiceLocation 2.16.840.1.113883.1.11.20275 DYNAMIC\nCode System(s):\tHealthcareServiceLocation 2.16.840.1.113883.6.259\n\nCode\tCode System\tPrint Name\n1024-9\tHealthcareServiceLocation\tCritical Care Unit\n1117-1\tHealthcareServiceLocation\tFamily Medicine Clinic\n1128-8\tHealthcareServiceLocation\tPediatric Clinic\n1160-1\tHealthcareServiceLocation\tUrgent Care Center",
+      "systems" : [
+        "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.20275"],
+      "sources" : ["2.16.840.1.113883.1.11.20275"],
+      "uses" : {
+      },
+      "ValueSet-us-core-location-type.html" : "US Core Location Type"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.12.1",
@@ -392,6 +407,18 @@
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
+      "url" : "http://terminology.hl7.org/ValueSet/us-core-location-type",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreLocationType",
+      "title" : "US Core Location Type",
+      "description" : "Concepts representing locations and settings where healthcare services are provided.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"
+      ]
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",
       "version" : "3.0.0",
       "status" : "active",
@@ -423,16 +450,18 @@
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
-      "url" : "http://terminology.hl7.org/ValueSet/yes-no-unknown-not-asked",
-      "version" : "1.0.0",
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
       "status" : "active",
-      "name" : "YesNoUnknownNotAsked",
-      "title" : "Yes No Unknown NotAsked",
-      "description" : "This value set contains 4 concepts commonly used as answers to items in a questionnaire.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-presence.html" : "US Core Observation ADI Presence Profile"
+      "ValueSet-us-core-location-type.html" : "US Core Location Type"
     }
   ]
 }

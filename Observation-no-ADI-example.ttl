@@ -19,13 +19,13 @@
        fhir:value [ fhir:v "This is a Observation example for the USCDI5 ADI Observation Data Element to show whether a patient has an advance directive using a new code = \"45473-6\" - (Advance directive/living will completed) and and value of \"Yes\"/\"No\"/\"Unknown\" (TODO: pick a convenient value set  LOINC answer list ll50-6, Snomed, hl7 (https://terminology.hl7.org/ValueSet-yes-no-unknown-not-asked.html))" ]
      ] ) ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence>
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-ADI-example</b></p><a name=\"no-ADI-example\"> </a><a name=\"hcno-ADI-example\"> </a><a name=\"no-ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"http://hl7.org/fhir/us/core/STU7/Practitioner-practitioner-1.html\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation no-ADI-example</b></p><a name=\"no-ADI-example\"> </a><a name=\"hcno-ADI-example\"> </a><a name=\"no-ADI-example-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 45473-6}\">Advance directive/living will completed</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>effective</b>: 2024-05-16 01:06:06+0000</p><p><b>issued</b>: 2024-05-16 01:06:06+0000</p><p><b>performer</b>: <a href=\"https://simplifier.net/resolve?scope=hl7.fhir.us.core.3.1.1@3.1.1&amp;canonical=http://hl7.org/fhir/us/core/Practitioner/practitioner-1\">Dr Smith</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373067005}\">No (qualifier value)</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -52,6 +52,7 @@
      fhir:coding ( [
        a sct:373067005 ;
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
        fhir:code [ fhir:v "373067005" ] ;
        fhir:display [ fhir:v "No (qualifier value)" ]
      ] )

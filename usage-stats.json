@@ -48,14 +48,6 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation",
         "title": "US Core Observation ADI Documentation Profile"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2",
-        "title": "US Core Observation ADI Documentation Profile2"
-      },
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence",
-        "title": "US Core Observation ADI Presence Profile"
       }
     ],
     "Patient": [
@@ -135,8 +127,7 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Observation.meta",
-      "Patient.meta",
-      "Provenance.meta"
+      "Patient.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "Bundle.meta",
@@ -146,8 +137,7 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Observation.meta",
-      "Patient.meta",
-      "Provenance.meta"
+      "Patient.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
       "Patient"

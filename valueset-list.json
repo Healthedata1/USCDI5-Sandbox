@@ -17,6 +17,18 @@
       "title" : "US Core Clinical Note Type",
       "description" : "The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",
       "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/us-core-location-type",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreLocationType",
+      "title" : "US Core Location Type",
+      "description" : "Concepts representing locations and settings where healthcare services are provided.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"
+      ]
     }
   ]
 }

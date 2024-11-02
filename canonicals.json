@@ -42,20 +42,6 @@
     "name" : "USCoreObservationADIDocumentationProfile"
   },
   {
-    "id" : "us-core-observation-adi-documentation2",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation2",
-    "version" : "0.0.0",
-    "name" : "USCoreObservationADIDocumentationProfile2"
-  },
-  {
-    "id" : "us-core-observation-adi-presence",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-presence",
-    "version" : "0.0.0",
-    "name" : "USCoreObservationADIPresenceProfile"
-  },
-  {
     "id" : "us-core-patient",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
@@ -110,6 +96,13 @@
     "url" : "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-interpreter-required",
     "version" : "0.0.0",
     "name" : "USCoreInterpreterRequiredExtension"
+  },
+  {
+    "id" : "us-core-location-type",
+    "type" : "ValueSet",
+    "url" : "http://terminology.hl7.org/ValueSet/us-core-location-type",
+    "version" : "0.0.0",
+    "name" : "USCoreLocationType"
   },
   {
     "id" : "us-core-servicerequest",
