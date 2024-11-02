@@ -38,10 +38,20 @@ description: This is a sandbox IG for drafting USCDI5 profiles, examples and doc
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
+  hl7.fhir.us.core.3.1.1:
+    version: 3.1.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore3
+    
   hl7.fhir.us.core:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore6
+
+  hl7.fhir.us.core.v700:
     version: 7.0.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-    id: uscore
+    id: uscore7
   hl7.fhir.uv.smart-app-launch: 2.0.0
   us.nlm.vsac:
     uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
@@ -71,7 +81,8 @@ pages:
           http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: draft 
   conformance.md:
-    subscription.md:
+    # subscription.md:
+    must-support.md:
 
   # background.md:
   # # specification.md:
@@ -81,6 +92,8 @@ pages:
     uscdi.md:
     #   title: USCDI
     # general-guidance.md:
+    basic-provenance.md:
+    changes-between-versions.md:
     clinical-notes.md:
     spcu.md:
       title: Sex Parameters for Clinical Use
@@ -139,9 +152,12 @@ releaseLabel: CI Build
 menu:
   IG Home: index.html
   Conformance: #conformance.html
-    Subscription: subscription.html
+    # Subscription: subscription.html
+    Must Support: must-support.html
   General Guidance: #guidance.html
     USCDI: uscdi.html
+    Basic Provenance: basic-provenance.html
+    Changes Between Versions: changes-between-versions.html
     Clinical Notes: clinical-notes.html
     Sex Parameters for Clinical Use: spcu.html
   #Table of Contents: toc.html

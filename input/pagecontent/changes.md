@@ -12,19 +12,93 @@ This ballot addresses the following:
 
   - For the USCDI Immunization Lot Number data element, we added `Immunization.lotNumber` to the [US Core Immunization Profile](StructureDefinition-us-core-immunization.html) as a *Must Support* element.
 
-  - For the USCDI Route of Administration data element, we added `MedicationRequest.dosageInstruction.route` to the [US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.html) and `MedicationDispense.dosageInstruction.route` to the [US Core MedicationDispense Profile](StructureDefinition-us-core-medicationdispense.html) as *Must Support* elements.
+  - For the USCDI Route of Administration data element, we added `MedicationRequest.dosageInstruction.route` to the [US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.html) and `MedicationDispense.dosageInstruction.route` to the [US Core MedicationDispense Profile](StructureDefinition-us-core-medicationdispense.html) as *Must Support* elements and use an extensible value set of SNOMED CT and NCI Thesaurus SPL codes.
 
   - For the USCDI Orders data class:
     - The [US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.html) supports the USCDI Medication Order data element.
     - To support the USCDI Laboratory Order, Diagnostic Imaging Order, Clinical Test Order, and Procedure Order data element, we provide detailed guidance on terminology for the [US Core ServiceRequest Profile](StructureDefinition-us-core-servicerequest.html) `ServiceRequest.category` and `ServiceRequest.code` elements.
 
   - For the USCDI Patient Demographics/Information data class:
-    - The [US Core Patient Profile](StructureDefinition-us-core-patient.html) `Patient.name.use` element supports the USCDI Name to Use data element.
+    - The [US Core Patient Profile](StructureDefinition-us-core-patient.html) `Patient.name.use` *Additional USCDI* element supports the USCDI Name to Use data element.
     - To support the USCDI Pronouns data element, we added the FHIR standard [Individual Pronouns Extension] to the [US Core Patient Profile](StructureDefinition-us-core-patient.html)  as an *Additional USCDI* element.
-    - To support the USCDI Interpreter Needed data element, we added the [US Core Interpreter Required Extension](StructureDefinition-us-core-interpreter-required.html) to the [US Core Patient Profile](StructureDefinition-us-core-patient.html) and [US Core Encounter Profile](StructureDefinition-us-core-encounter.html) as *Additional USCDI* elements. (Note that the version 5.1.0 FHIR standard [Patient Interpreter Required](https://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-interpreterRequired.html) extension does not meet the USCDI terminology requirement or the multiple context needed. Change request [FHIR-47587](https://jira.hl7.org/browse/FHIR-47587) was submitted to address these limitations.)
+    - To support the USCDI Interpreter -Needed data element, we added the [US Core Interpreter Required Extension](StructureDefinition-us-core-interpreter-required.html) to the [US Core Patient Profile](StructureDefinition-us-core-patient.html) and [US Core Encounter Profile](StructureDefinition-us-core-encounter.html) as *Additional USCDI* elements. (Note that the version 5.1.0 FHIR standard [Patient Interpreter Required](https://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-interpreterRequired.html) extension does not meet the USCDI terminology requirement or the multiple context needed. Change request [FHIR-47587](https://jira.hl7.org/browse/FHIR-47587) was submitted to address these limitations.)
   
   - For the USCDI Observation data class:
     - To support the Sex Parameter for Clinical Use data element, we added the 5.1.0 FHIR standard [Patient Sex Parameter for Clinical Use Extension](https://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-sexParameterForClinicalUse.html) to the [US Core Patient Profile](StructureDefinition-us-core-patient.html) as an *Additional USCDI* element, and document its use on other US Core Profiles for specific clinical contexts.
+     - To support the Advance Directive Observation data element, we added the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html), [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.html), and [US Core Authentication Time Extension](StructureDefinition-us-core-authentication-time.html).
+  
+  - For the USCDI Provenance Author and Author Role data elements, we detailed the individual US Core Profile elements representing these provenance data elements in a table on the [Basic Provenance] page.
+
+  - Other USCDI changes:
+     - Added National Healthcare Safety Network (NHSN) Healthcare Facility Patient Care Location (HSLOC) and SNOMED CT location type codes to the [US Core Location Profile](StructureDefinition-us-core-location.html) `Location.type` binding.
+
+- Implementers submitted over 60 trackers since the publication of US Core ver 7.0.0. We have addressed them and applied over 50 changes listed below:
+
+ **Tracker Status**: **Summary** **Jira Issue** **Link to Updated Content**
+1. **Resolved - change required:** (Confusing for commercial vendor.  Reads very confusing.) FHIR-30783 [153067]
+2. **Resolved - change required:** (AllergyIntolerance does not show constraint) FHIR-34636 [173880]
+3. **Resolved - change required:** (Add link in history page to approved pages) FHIR-42950 [218544]
+4. **Resolved - change required:** (Override built-in examples for address elements) FHIR-43054 [219078]
+5. **Triaged:** (All lab orders and results across all FHIR IGs need to indicate the performing laboratory test order name and/or performing laboratory test result name) FHIR-43301 [219534]
+6. **Resolved - change required:** (Seems like observation-category CodeSystem needs to be extended to include a concept for care-experience-preference) FHIR-43541 [223591]
+7. **Resolved - change required:** (Smoking Status Max Binding addition) FHIR-43589 [223689]
+8. **Triaged:** (Create new section in Guidance on Sex and Gender in USCore) FHIR-44115 [225007]
+9. **Triaged:** (US Core Coverage Profile) FHIR-44122 [225018]
+10. **Triaged:** (US Core Coverage.Type Code Link Update ) FHIR-44124 [225024]
+11. **Triaged:** (US Core Terminology Reference List # 62) FHIR-44138 [225049]
+12. **Triaged:** (Source of Payment Typology (SOPT) references and information are incorrect) FHIR-44145 [225066]
+13. **Resolved - change required:** (Make Must Support Reference Table more visible) FHIR-44977 [229822]
+14. **Triaged:** (ValueSet for Condition.code ICD9 link does not resolve) FHIR-45136 [230134]
+15. **Triaged:** (Add requirements for client reference resolution) FHIR-45179 [230253]
+16. **Resolved - change required:** (Clarify Clinical Information Reconciliation and Incorporation (CIRI) description) FHIR-45267 [230508]
+17. **Resolved - change required:** (Remove dated footnote from Provenance page.) FHIR-45283 [232568]
+18. **Triaged:** (add link to Da Vinci SNOMED NUCC mapping to practionerrole page as additional guidance) FHIR-45286 [232582]
+19. **Resolved - change required:** (Clarify Observation Screening Assessment category must support) FHIR-45319 [232641]
+20. **Triaged:** (Clarify must-support requirements for requestors, especially for dateTime) FHIR-45448 [232885]
+21. **Triaged:** (Spelling errors in US Core Server Capability Statement) FHIR-45451 [232888]
+22. **Triaged:** (PHINVADS links broken) FHIR-45494 [232949]
+23. **Resolved - change required:** (Change Average Blood Pressure Profile minimum from 0 to 1) FHIR-45724 [233380]
+24. **Resolved - change required:** (Move ""time-period"" from Must Support to Must Have section in introduction.) FHIR-45726 [233383]
+25. **Resolved - change required:** (Align the Sig description in the medication profile introductions.) FHIR-45951 [235310]
+26. **Triaged:** (Typo in Condition's granular scope) FHIR-45961 [235320]
+27. **Triaged:** (clarify expectations for US@ for health systems) FHIR-46020 [235471]
+28. **Triaged:** (""Must Support"" should be ""Additional USCDI"" for Simple Observation) FHIR-46028 [235481]
+29. **Resolved - change required:** (Derive composite search parameters for derived normal parameters) FHIR-46036 [235493]
+30. **Resolved - change required:** (Procedure.code should be Procedure.performed) FHIR-46037 [235495]
+31. **Triaged:** (US Core Screening Assessment Observation Category in US Core v7) FHIR-46052 [235524]
+32. **Resolved - change required:** (Deprecate every version before 3.1.1 ) FHIR-46065 [235542]
+33. **Triaged:** (Is the Provenance Quick Start API Correct?) FHIR-46077 [235562]
+34. **Resolved - change required:** (Incorrect Examples) FHIR-46099 [235597]
+35. **Triaged:** (Continue to harmonize/share value sets used in US Core and C-CDA in the US Core 8.0 ballot and C-CDA 4.0 ballot) FHIR-46181 [235730]
+36. **Triaged:** (NAIC Code Number Identifier system not registered in THO) FHIR-46185 [235737]
+37. **Triaged:** (Discharge Disposition - US Core and C-CDA need to change to point to THO set ) FHIR-46194 [235749]
+38. **Resolved - change required:** (Clarify (reduce) the media.link requirements for DiagnosticReport (Report and Notes)) FHIR-46240 [235819]
+39. **Resolved - change required:** (Update and Corrections to 2 sets contained in Medication Clinical Drug) FHIR-46255 [235845]
+40. **Resolved - change required:** (Change US Core Pregnancy Status Codes to a soon to be created new value set in VSAC with CLD US Core current defintion) FHIR-46257 [235850]
+41. **Resolved - change required:** (Allow CMS Place of Service codes @location.type in US Core Location Profile) FHIR-46258 [235851]
+42. **Triaged:** (Align Encounter Type between C-CDA and FHIR US Core) FHIR-46259 [235852]
+43. **Resolved - change required:** (Change Binding at observation.value in Pregnancy Intention to VSAC set) FHIR-46263 [236066]
+44. **Resolved - change required:** (Add SDOH Goals value set as ""Additional Binding"" in Goal Profile) FHIR-46266 [236069]
+45. **Triaged:** (US Core Survey Codes expansion error) FHIR-46272 [236076]
+46. **Resolved - change required:** (Clarify the level of granular scopes server shall support) FHIR-46277 [236081]
+47. **Resolved - change required:** (Conflict requirements for SMART App Launch) FHIR-46279 [236083]
+48. **Resolved - change required:** (Survey Codes Set - Refine and change binding to VSAC set) FHIR-46347 [236250]
+49. **Resolved - change required:** (reference specific version of USCDI for each version of USCore) FHIR-46466 [236427]
+50. **Resolved - change required:** (change page status) FHIR-46514 [236498]
+51. **Triaged:** (US Core detailed ethnicity expansion error) FHIR-46638 [237270]
+52. **Resolved - change required:** (how to handle overlapping granular scopes overlap? How can US Core better anticipate UX impact of scopes?) FHIR-46748 [240801]
+53. **Triaged:** (Fix the US Core History Page) FHIR-46749 [240803]
+54. **Triaged:** (Create SCT Specimen Condition concept value set to be use as an additional binding) FHIR-47061 [241469]
+55. **Resolved - change required:** (clarify conformance requirements for structured assessments) FHIR-47139 [241624]
+56. **Resolved - change required:** (Point to new THO Discharge Disposition (NUBC) instead of US Core based set) FHIR-47416 [242738]
+57. **Resolved - change required:** (Tighten constraint on name.use to support better patient matching ) FHIR-48416 [247128]
+58. **Resolved - change required:** (RelatedPerson ""active"" is required) FHIR-48439 [247157]
+59. **Triaged:** (Update Must Support Resource References section in general and for Observation.performer targets) FHIR-48442 [247160]
+60. **Resolved - change required:** (Add USCDI v5 Data Elements to US Core) FHIR-48443 [247161]
+61. **Resolved - change required:** (Remove contradictory guidance on reference resolution in US Core) FHIR-48446 [247164]
+62. **Triaged:** (Update last_updated SHOULDS to SHALLS) FHIR-48542 [247336]
+63. **Triaged:** (Update US Core Clinical Note Type Valueset to align with Clinical Note Guidance) FHIR-48607 [247411]
+64. **Triaged:** (Update Terminology guidance to align with USCDI) FHIR-48668 [247519]
 
 
 #### Changes:

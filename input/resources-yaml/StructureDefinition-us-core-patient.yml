@@ -6,7 +6,7 @@ title: US Core Patient Profile
 status: active
 experimental: false
 date: 2023-10-17
-description: 'The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.'
+description: 'The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.'
 fhirVersion: 4.0.1
 kind: resource
 abstract: false
@@ -104,12 +104,12 @@ differential:
 
 #USCDI5
 
-  - id: Patient.extension:spcu
+  - id: Patient.extension:sexParameterForClinicalUse
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.extension
-    sliceName: spcu
+    sliceName: sexParameterForClinicalUse
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
       \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Sex Parameters for Clinical Use Extension"
     min: 0
@@ -157,12 +157,12 @@ differential:
     mustSupport: false
 
 # ========================== USCDI5 ============================
-  - id: Patient.extension:us-core-interpreter-required
+  - id: Patient.extension:interpreterRequired
     extension:
     - url: http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement
       valueBoolean: true
     path: Patient.extension
-    sliceName: us-core-interpreter-required
+    sliceName: interpreterRequired
     short: "\U0001D5D4\U0001D5D7\U0001D5D7\U0001D5DC\U0001D5E7\U0001D5DC\U0001D5E2\U0001D5E1\U0001D5D4\U0001D5DF
       \U0001D5E8\U0001D5E6\U0001D5D6\U0001D5D7\U0001D5DC: Whether the patient needs an interpreter"
     min: 0

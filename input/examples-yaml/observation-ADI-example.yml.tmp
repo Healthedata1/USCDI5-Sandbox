@@ -1,0 +1,33 @@
+resourceType: Observation
+id: ADI-example
+meta:
+
+  extension:
+  - url: http://hl7.org/fhir/StructureDefinition/instance-name
+    valueString: ADI Observation Example
+  - url: http://hl7.org/fhir/StructureDefinition/instance-description
+    valueMarkdown: This is a Observation example for the USCDI5 ADI Observation Data Element
+  profile:
+      - http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation
+
+status: final
+code:
+  coding:
+    - system: 'http://loinc.org'
+      code: 42348-3
+      display: Advance directives
+subject:
+  reference: Patient/example
+effectiveDateTime: 2024-05-16T01:06:06.393Z
+issued: 2024-05-16T01:06:06.393Z
+performer:
+  - reference: http://hl7.org/fhir/us/core/Practitioner/practitioner-1
+  - display: Dr Smith
+valueCodeableConcept:
+  coding:
+    - system: 'http://loinc.org'
+      code: '81334-5'
+      display: Patient Personal advance care plan
+focus: 
+  - reference: DocumentReference/example-patient-adi
+    display: Person-Authored Advance Directive 

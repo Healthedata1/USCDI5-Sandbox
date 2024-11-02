@@ -22,7 +22,18 @@
                 "mustSupport": false
             },
             {
-                "id": "Encounter.extension:us-core-interpreter-required",
+                "id": "Encounter.meta",
+                "path": "Encounter.meta",
+                "mustSupport": true
+            },
+            {
+                "id": "Encounter.meta.lastUpdated",
+                "path": "Encounter.meta.lastUpdated",
+                "short": "When the resource last changed",
+                "mustSupport": true
+            },
+            {
+                "id": "Encounter.extension:interpreterRequired",
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
@@ -30,7 +41,7 @@
                     }
                 ],
                 "path": "Encounter.extension",
-                "sliceName": "us-core-interpreter-required",
+                "sliceName": "interpreterRequired",
                 "short": "\ud835\uddd4\ud835\uddd7\ud835\uddd7\ud835\udddc\ud835\udde7\ud835\udddc\ud835\udde2\ud835\udde1\ud835\uddd4\ud835\udddf \ud835\udde8\ud835\udde6\ud835\uddd6\ud835\uddd7\ud835\udddc: Whether the patient needs an interpreter",
                 "min": 0,
                 "max": "1",
@@ -43,17 +54,6 @@
                     }
                 ],
                 "mustSupport": false
-            },
-            {
-                "id": "Encounter.meta",
-                "path": "Encounter.meta",
-                "mustSupport": true
-            },
-            {
-                "id": "Encounter.meta.lastUpdated",
-                "path": "Encounter.meta.lastUpdated",
-                "short": "When the resource last changed",
-                "mustSupport": true
             },
             {
                 "id": "Encounter.identifier",
