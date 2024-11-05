@@ -31,17 +31,21 @@
 - vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
 - Comments
 -  no include parameters:  -->
-{% assign rows = site.data.provenance-elements %}
-{% assign author = '' %}
-{% for item in rows %}
+{% assign rows = site.data.provenance-elements -%}
+{% assign author = '' -%}
+{% for item in rows -%}
+  {% if item.Is_Source == "TRUE" -%}
   {% if item.Path == page.path -%}
    {% assign author = author | append: item.FiveWs_author | append: item.FiveWs_source | append: item.FiveWs_actor -%}
-   {% assign author = author | append: ', ' -%}
+   {% assign author = author | append: "," -%}
+    {% endif -%}
     {% endif -%}
 {% endfor -%}
 {% for item in site.data.provenance-elements -%}
+  {% if item.Is_Source == "TRUE" -%}
   {% if item.Path == page.path -%}
- - <span class="bg-success" markdown="1">* The profile elements, `{{author}} ` communicate the "small-p provenance" author corresponding to the U.S. Core Data for Interoperability (USCDI) Provenance Author Data Elements.<!-- new-content -->
+ - <span class="bg-success" markdown="1">The profile elements `{{ author | split: "," | join: " and " }}` communicate the ["small-p provenance"] author data corresponding to the U.S. Core Data for Interoperability (USCDI) Provenance Author Data Elements.<!-- new-content -->
        {% break -%}
+    {% endif -%}
     {% endif -%}
 {% endfor %}

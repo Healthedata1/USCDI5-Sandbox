@@ -24,3 +24,4 @@
 [www.loinc.org/usage/orders]: https://loinc.org/usage/orders/
 [element ids]: {{site.data.fhir.path}}element-definitions.html#Element.id)
 [Using Provenance To Target Resource Elements]: element-level-provenance.html
+["small-p provenance"]: basic-provenance.html#individual-level-provenance

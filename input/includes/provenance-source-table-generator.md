@@ -79,13 +79,12 @@ with the following columns:
 {% if item.Target_Resource_7 %}
   {% assign targets = targets | append: "Device," %}
 {% endif %}
-{% assign targets = targets | split: "," %}
 
 <tr>
 <!-- <td>{{forloop.index}}</td> -->
 <td><a href="{{item.Path}}">{{item.US_Core_Profile}}</a></td>
 <td><code>{% if item.is_MS == "TRUE" %}<strong>{% elsif item.vendor_support_element == "TRUE" %}<span style="color: red;">{% endif %}{{item.FiveWs_author | append: item.FiveWs_source | append: item.FiveWs_actor}}{% if item.is_MS == "TRUE" %}*</strong>{% elsif item.vendor_support_element == "TRUE" %}</span>{% endif %}</code></td>
-<td>{{ targets | join: ", " }}</td>
+<td>{{ targets | split: "," | join: ", " }}</td>
 </tr>
 {% endif %}
 
