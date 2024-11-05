@@ -1,11 +1,13 @@
 
-​This section provides implementers with important definitions to create and share the Provenance Resource[^1].
+### Provenance in US Core
+<div class="bg-success" markdown="1">
+typically do not use the Provenance Resource to represent this information at an *individual level* (in other words, activities by the patient or provider), various FHIR resource elements are identified that track the "small p provenance" information at the individual level. The guidance here does not preclude more advanced use cases.
 
-### Basic Provenance
+</div><!-- new-content -->
 
-The FHIR [Provenance] Resource provides a foundation for assessing authenticity, enabling trust, and allowing reproducibility. It is not scoped to a specific use case nor limits the number of Provenance records associated with a Resource. The primary guidance here, and in the [US Core Provenance Profile], focuses on a key subset of elements, the 'last hop', and specific use cases. The guidance here does not preclude more advanced use cases or additional elements.
+### <span class="bg-success" markdown="1">Organizational Level</span><!-- new-content --> Provenance
 
-Full Provenance of a Resource requires details from the original resource creator and all intermediary actors that updated the Resource. Members of the Argonaut community and the HL7 security working group discussed the current sharing approaches and end-user display.  They agreed the most important information is the last organization making a meaningful clinical update to the data and the prior system providing it - the 'last hop'.  Participants didn't dispute the potential need to recreate the entire chain but didn't see this as relevant to the immediate end-user.
+<span class="bg-success" markdown="1">The [US Core Provenance Profile] focuses on a key subset of elements, the "last hop", and specific use cases used to assert changes to the record at the organizational level.<!-- new-content --> Full Provenance of a Resource requires details from the original resource creator and all intermediary actors that updated the Resource. Members of the Argonaut community and the HL7 security working group discussed the current sharing approaches and end-user display. They agreed the most important information is the last organization making a meaningful clinical update to the data and the prior system providing it - the 'last hop'. Participants didn't dispute the potential need to recreate the entire chain but didn't see this as relevant to the immediate end-user.
 
 #### Key Provenance Elements
 
@@ -23,11 +25,11 @@ Transmitter | | Name<br>Identifier | NPI recommended, additional identifiers all
 Transmitter Organization | | Name<br>Identifier  | NPI recommended, additional identifiers allowed |`Provenance.agent.onBehalfOf`
 {: .grid}
 
-### Use Cases
+#### Use Cases
 
 The HL7 Basic Provenance Informative implementation guide outlines four use cases: Fax, Health Information Exchange (HIE) redistribution, HIE transformation, and Clinical Information Reconciliation and Incorporation (CIRI). While these use cases may have FHIR implications in the future, CIRI and HIE are the key use cases and are covered in detail here.
 
-#### Clinical Information Reconciliation and Incorporation
+##### Clinical Information Reconciliation and Incorporation
 <!-- {% raw %} 
 [Clinical Information Reconciliation and Incorporation (CIRI)] is when a user reviews and updates or accepts information into their system. The data could come from a Health Information Exchange (HIE), a 3rd-party FHIR server, or a patient providing information. Figure 1 represents information from Good Health and Sunshine Health Organization. Dr. Reconciled reviews the data in Figure 1, updates the reaction to hives, and stores it in the Future Health Organization system. When a mobile app requests the information, it receives Dr. Reconciled as the Author and Future Health as the organization. This type of authorship change is only relevant for data suitable for reconciliation, such as medications, allergies, and problems. If Dr. Accepted had saved other clinical content into his EHR that is not reconciled but stored, such as clinical notes, that content must retain its original author.
 
@@ -48,7 +50,7 @@ Sunshine Health Organization Provenance
 After reconciliation, the Future Health Organization Provenance contains the latest information.
 {% include examplebutton_default.html example="get-all-allergy-provenance-future-health" b_title = "Click Here to See 'Get Allergy Information for a Patient at Future Health' Example" %} {% endraw %} -->
 
-#### Accepting information from a single site
+##### Accepting information from a single site
 <!-- {% raw %} 
 The Figure below represents information after a provider accepted data from a single site:
 
@@ -56,7 +58,7 @@ The Figure below represents information after a provider accepted data from a si
 
 Dr. Accepted is the latest author after verifying the problem on 5/2018 and accepting the problem data into their local data store since it went through an interactive reconciliation process.
  {% endraw %} -->
-#### HIE Redistribution
+##### HIE Redistribution
 <!-- {% raw %} 
 A Health Information Exchange (HIE) is an organization and technology that facilitates information exchange between one and many partners. In specific HIE scenarios, they only redistribute information, while in others, they store, transform, and redistribute information. The HIE must maintain the clinical content fidelity (original author, author organization, and timestamp). In addition, the HIE must keep track of who sent them the information for auditing; however, they are not required to include the original transmitter when redistributing content.
 
@@ -72,7 +74,7 @@ Since no clinical content is changed in the HIE redistribution, the best scenari
  The timestamp and pointer (i.e., target) to the appropriate Resource are required in all cases and must be included. This IG would note these as **SHALL** constraints if systems always had the Author and Author Organizations available. Participants in the development of this guide reported that the Author information provided to HIEs needs to be more consistent and reliable.  
 
  {% endraw %} -->
-#### HIE Transformation
+##### HIE Transformation
 <!-- {% raw %} 
 Unlike Use Case 3 - HIE Redistribution, Use Case 4 includes data transformation. Information is received (e.g., v2 lab, other CDs), transformed by a HIE, stored, and passed in a new format (e.g., CCD or FHIR).
 
@@ -81,7 +83,8 @@ Unlike Use Case 3 - HIE Redistribution, Use Case 4 includes data transformation.
 Transformation of data from one format to another **MAY** change the authorship of the information, where the HIE is the author/author organization. The HIE must maintain the original data source. An `agent.type`="assembler", `agent.type`="transmitter", or other agents from [Provenance Agent Type] value set **MAY** also be included. Due to insufficient implementer guidance, the Basic Provenance guidance here does not specify how to assign authorship for this use case. HL7 plans to gather additional input and include it in the HL7 Basic Provenance Informative guide for C-CDA and FHIR.
 
  {% endraw %} -->
-### Element Level Provenance
+
+### Element Level Provenance  (TODO: create a separate page and link to it or remove it)
 
 <div class="stu-note" markdown="1">
 This section is informative and not a requirement for systems conforming to the US Core Provenance Profile.
@@ -98,21 +101,33 @@ In this [US Core Patient Profile] example, the patient demographic data such as 
 This [US Core Provenance Profile] resource communicates who, how, and when elements such as Race and Ethnicity (R/E), gender identity, etc., were collected. Note that the [Target Element] Extension references the element ids within the Patient resource:
 
 {% include examplebutton_default.html example="Provenance-example-targeted-provenance.json" b_title = "Click Here to See an Element Level Provenance Example" %} {% endraw %} -->
-
 <br />
 
-#### Proposed Mappings to Incorporate into Guidance
+### <span class="bg-success" markdown="1">Individual Level Provenance</span><!-- new-content -->
 
-*New strawman proposal:** Because systems typically do not represent this information for patients and practitioners in FHIR using "big-P" Provenance, use the various FHIR resources' existing elements that track the "small p" provenance* at the *individual level*. Propose adding a mapping table to the [Provenance page](#) that documents these "small-p" provenance data elements.  The author role is typically implied by the resource type referenced (e.g. Patient, Practitioner/PractitionerRole, RelatedPerson, Device). Except for Device, more details about the role are contained the resource contents (e.g.RelatedPerson.relationship).
+<div class="bg-warning" markdown="1">
+- Discuss:
+  - Which elements should be added  as *Must Support/Add'l USCDI*
+  - Which target resources should be added as *Must Support/Add'l USCDI*
+    - US Core Patient
+    - US Core Practitioner
+    - US Core PractitionerRole
+    - US Core RelatedPerson
+    - US Core Organization
+    - US Core Device
+  - If not adding *Must Support/Add'l USCDI* then what guidance do we give to meet the requirement?
 
-State that the resources elements provide additional "small -p" provenance  Mappings identify the author and author roles. 
+(source excel file is here: https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g)
+</div><!-- new-content --> 
+<div class="bg-success" markdown="1">
 
+US Core Profiles contain elements that represent "small-p provenance" information about how the resource was obtained, which overlaps with the functionality of the Provenance resource discussed above. The table below identifies the author and author roles that meet the [U.S. Core Data for Interoperability (USCDI)] Provenance Author and Author Role Data Elements requirements for individuals. In addition, they are listed in each US Core Profile page's "Profile Specific Implementation Guidance" section. The author is communicated by the elements and the author's role by the target resource type referenced by it (for example, Patient, Practitioner/PractitionerRole, RelatedPerson, Device). Details about the author's role are contained in the target resource's contents. The **bold font** indicates the elements and target resources that are labeled as *Must Support* in the respective US Core Profiles. Elements and target resources not labeled as *Must Support* **SHOULD** be supported in the profiles when the system captures the data.  
 
-:point_right:["Small-p" Provenance Table for all US Core Profiles](https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g):point_left:
+##### Author and Author Role Data Elements
 
-not in table - US Core Profiles that are Out of Scope:
+This table excludes these US Core Profiles, which are not typically associated with individual authorship:
 
-- US Core Encounter ( US Core use big P Provenance - for org)
+- US Core Encounter
 - US Core Location
 - US Core Organization
 - US Core Practitioner
@@ -124,36 +139,15 @@ not in table - US Core Profiles that are Out of Scope:
 - US Core Coverage
 - US Core Specimen
 
-(note: meddisp => performer)
+<span style="color: red;">Red text</span> indicates proposed new *Must Support* elements and targets
 
-Next Steps:
-
-- Discuss:
-  - Which elements should be added  as *Must Support/Add'l USCDI*
-  - Which target resources should be added as *Must Support/Add'l USCDI*
-    - US Core Patient
-    - US Core Practitioner
-    - US Core PractitionerRole
-    - US Core RelatedPerson
-    - US Core Organization
-    - US Core Device
-- If not adding *Must Support/Add'l USCDI* then what guidance do we give to meet the requirement?
-
-##### *Small-p* Author and Author Role Data Elements
+This information is also available as a [csv](tables/provenance-elements.csv) or [excel](tables/provenance-elements.xlsx) file:
 
 {% include provenance-source-table-generator.md %}
 
 \* US Core *Must Support* or *Additional USCDI* element
 
 \** US Core *Must Support* Target Resource Type
-
-(source excel file is here: https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g)
-
-create links to derived tables
-
----
-Footnotes
-
-[^1]: This Basic Provenance guidance and [US Core Provenance Profile] are provisional and may change in future releases. Although it is based on feedback from the HL7 and Argonaut communities, there was only preliminary testing of this approach before publication.
+</div><!-- new-content -->
 
 {% include link-list.md %}

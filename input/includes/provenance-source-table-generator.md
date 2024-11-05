@@ -52,18 +52,22 @@ with the following columns:
 {% assign targets= '' %}
 {% if item.Target_Resource_1 %}
   {% if item.Target_Resource_1_is_MS == "TRUE" %}{% assign targets = "<strong>Practitioner**</strong>," %}
+  {% elsif item.vendor_support_Target_Resource_1 == "TRUE" %}{% assign targets = '<span style="color: red;">Practitioner</span>,' %}
   {% else %}{% assign targets = "Practitioner," %}{% endif %}
 {% endif %}
 {% if item.Target_Resource_2 %}
   {% if item.Target_Resource_2_is_MS == "TRUE" %}{% assign targets = targets | append: "<strong>Organization**</strong>," %}
+  {% elsif item.vendor_support_Target_Resource_2 == "TRUE" %}{% assign targets = '<span style="color: red;">Organization</span>,' %}
   {% else %}{% assign targets = targets | append: "Organization," %}{% endif %}
 {% endif %}
 {% if item.Target_Resource_3 %}
   {% if item.Target_Resource_3_is_MS == "TRUE" %}{% assign targets = targets | append: "<strong>PractitionerRole**</strong>," %}
+  {% elsif item.vendor_support_Target_Resource_3 == "TRUE" %}{% assign targets = '<span style="color: red;">PractitionerRole</span>,' %}
   {% else %}{% assign targets = targets | append: "PractitionerRole," %}{% endif %}
 {% endif %}
 {% if item.Target_Resource_4 %}
   {% if item.Target_Resource_4_is_MS == "TRUE" %}{% assign targets = targets | append: "<strong>Patient**</strong>," %}
+  {% elsif item.vendor_support_Target_Resource_4 == "TRUE" %}{% assign targets = '<span style="color: red;">Patient</span>,' %}
   {% else %}{% assign targets = targets | append: "Patient," %}{% endif %}
 {% endif %}
 {% if item.Target_Resource_5 %}
@@ -80,7 +84,7 @@ with the following columns:
 <tr>
 <!-- <td>{{forloop.index}}</td> -->
 <td><a href="{{item.Path}}">{{item.US_Core_Profile}}</a></td>
-<td><code>{% if item.is_MS == "TRUE" %}<strong>{% endif %}{{item.FiveWs_author | append: item.FiveWs_source | append: item.FiveWs_actor}}{% if item.is_MS == "TRUE" %}*</strong>{% endif %}</code></td>
+<td><code>{% if item.is_MS == "TRUE" %}<strong>{% elsif item.vendor_support_element == "TRUE" %}<span style="color: red;">{% endif %}{{item.FiveWs_author | append: item.FiveWs_source | append: item.FiveWs_actor}}{% if item.is_MS == "TRUE" %}*</strong>{% elsif item.vendor_support_element == "TRUE" %}</span>{% endif %}</code></td>
 <td>{{ targets | join: ", " }}</td>
 </tr>
 {% endif %}
