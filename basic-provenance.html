@@ -204,20 +204,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#basic-provenance" id="markdown-toc-basic-provenance">Basic Provenance</a></li>
-  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
-  <li><a href="#element-level-provenance" id="markdown-toc-element-level-provenance">Element Level Provenance</a></li>
+  <li><a href="#provenance-in-us-core" id="markdown-toc-provenance-in-us-core">Provenance in US Core</a></li>
+  <li><a href="#organizational-level-provenance" id="markdown-toc-organizational-level-provenance"><span class="bg-success">Organizational Level</span>  <!-- new-content --> Provenance</a></li>
+  <li><a href="#element-level-provenance--todo-create-a-separate-page-and-link-to-it-or-remove-it" id="markdown-toc-element-level-provenance--todo-create-a-separate-page-and-link-to-it-or-remove-it">Element Level Provenance  (TODO: create a separate page and link to it or remove it)</a></li>
+  <li><a href="#individual-level-provenance" id="markdown-toc-individual-level-provenance"><span class="bg-success">Individual Level Provenance</span>  <!-- new-content --></a></li>
 </ul>
 
 </div>
 
-<p>​This section provides implementers with important definitions to create and share the Provenance Resource<sup role="doc-noteref" id="fnref:1"><a rel="footnote" href="#fn:1" class="footnote">1</a></sup>.</p>
+<h3 id="provenance-in-us-core">Provenance in US Core</h3>
+<div class="bg-success">
+  <p>typically do not use the Provenance Resource to represent this information at an <em>individual level</em> (in other words, activities by the patient or provider), various FHIR resource elements are identified that track the "small p provenance" information at the individual level. The guidance here does not preclude more advanced use cases.</p>
 
-<h3 id="basic-provenance">Basic Provenance</h3>
+</div>
+  <!-- new-content -->
 
-<p>The FHIR <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a> Resource provides a foundation for assessing authenticity, enabling trust, and allowing reproducibility. It is not scoped to a specific use case nor limits the number of Provenance records associated with a Resource. The primary guidance here, and in the <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>, focuses on a key subset of elements, the 'last hop', and specific use cases. The guidance here does not preclude more advanced use cases or additional elements.</p>
+<h3 id="organizational-level-provenance"><span class="bg-success">Organizational Level</span>  <!-- new-content --> Provenance</h3>
 
-<p>Full Provenance of a Resource requires details from the original resource creator and all intermediary actors that updated the Resource. Members of the Argonaut community and the HL7 security working group discussed the current sharing approaches and end-user display.  They agreed the most important information is the last organization making a meaningful clinical update to the data and the prior system providing it - the 'last hop'.  Participants didn't dispute the potential need to recreate the entire chain but didn't see this as relevant to the immediate end-user.</p>
+<p><span class="bg-success">The <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a> focuses on a key subset of elements, the "last hop", and specific use cases used to assert changes to the record at the organizational level.  <!-- new-content --> Full Provenance of a Resource requires details from the original resource creator and all intermediary actors that updated the Resource. Members of the Argonaut community and the HL7 security working group discussed the current sharing approaches and end-user display. They agreed the most important information is the last organization making a meaningful clinical update to the data and the prior system providing it - the 'last hop'. Participants didn't dispute the potential need to recreate the entire chain but didn't see this as relevant to the immediate end-user.</span></p>
 
 <h4 id="key-provenance-elements">Key Provenance Elements</h4>
 
@@ -281,11 +285,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="use-cases">Use Cases</h3>
+<h4 id="use-cases">Use Cases</h4>
 
 <p>The HL7 Basic Provenance Informative implementation guide outlines four use cases: Fax, Health Information Exchange (HIE) redistribution, HIE transformation, and Clinical Information Reconciliation and Incorporation (CIRI). While these use cases may have FHIR implications in the future, CIRI and HIE are the key use cases and are covered in detail here.</p>
 
-<h4 id="clinical-information-reconciliation-and-incorporation">Clinical Information Reconciliation and Incorporation</h4>
+<h5 id="clinical-information-reconciliation-and-incorporation">Clinical Information Reconciliation and Incorporation</h5>
   <!-- [Clinical Information Reconciliation and Incorporation (CIRI)] is when a user reviews and updates or accepts information into their system. The data could come from a Health Information Exchange (HIE), a 3rd-party FHIR server, or a patient providing information. Figure 1 represents information from Good Health and Sunshine Health Organization. Dr. Reconciled reviews the data in Figure 1, updates the reaction to hives, and stores it in the Future Health Organization system. When a mobile app requests the information, it receives Dr. Reconciled as the Author and Future Health as the organization. This type of authorship change is only relevant for data suitable for reconciliation, such as medications, allergies, and problems. If Dr. Accepted had saved other clinical content into his EHR that is not reconciled but stored, such as clinical notes, that content must retain its original author.
 
 The Figure below represents information from two different organizations to a clinician for reconciliation:
@@ -305,13 +309,13 @@ Sunshine Health Organization Provenance
 After reconciliation, the Future Health Organization Provenance contains the latest information.
 {% include examplebutton_default.html example="get-all-allergy-provenance-future-health" b_title = "Click Here to See 'Get Allergy Information for a Patient at Future Health' Example" %} -->
 
-<h4 id="accepting-information-from-a-single-site">Accepting information from a single site</h4>
+<h5 id="accepting-information-from-a-single-site">Accepting information from a single site</h5>
   <!-- The Figure below represents information after a provider accepted data from a single site:
 
 {% include img.html img="Provenance_Recon_Single_Organization.svg" caption="Figure 2: CIRI After Accepting Reconciliation, No Changes" %}
 
 Dr. Accepted is the latest author after verifying the problem on 5/2018 and accepting the problem data into their local data store since it went through an interactive reconciliation process. -->
-<h4 id="hie-redistribution">HIE Redistribution</h4>
+<h5 id="hie-redistribution">HIE Redistribution</h5>
   <!-- A Health Information Exchange (HIE) is an organization and technology that facilitates information exchange between one and many partners. In specific HIE scenarios, they only redistribute information, while in others, they store, transform, and redistribute information. The HIE must maintain the clinical content fidelity (original author, author organization, and timestamp). In addition, the HIE must keep track of who sent them the information for auditing; however, they are not required to include the original transmitter when redistributing content.
 
 {% include img.html img="Provenance_HIE_Single_Org_Device.svg" caption="Figure 3: HIE Redistribution - No clinical content transformation" %}
@@ -324,13 +328,14 @@ Since no clinical content is changed in the HIE redistribution, the best scenari
   - `Provenance.agent.who` set to the HIE organization
 
  The timestamp and pointer (i.e., target) to the appropriate Resource are required in all cases and must be included. This IG would note these as **SHALL** constraints if systems always had the Author and Author Organizations available. Participants in the development of this guide reported that the Author information provided to HIEs needs to be more consistent and reliable. -->
-<h4 id="hie-transformation">HIE Transformation</h4>
+<h5 id="hie-transformation">HIE Transformation</h5>
   <!-- Unlike Use Case 3 - HIE Redistribution, Use Case 4 includes data transformation. Information is received (e.g., v2 lab, other CDs), transformed by a HIE, stored, and passed in a new format (e.g., CCD or FHIR).
 
 {% include img.html img="Provenance_HIE_Multi_Org_Device.svg" caption="Figure 4: HIE Transformation - Clinical content is transformed" %}
 
 Transformation of data from one format to another **MAY** change the authorship of the information, where the HIE is the author/author organization. The HIE must maintain the original data source. An `agent.type`="assembler", `agent.type`="transmitter", or other agents from [Provenance Agent Type] value set **MAY** also be included. Due to insufficient implementer guidance, the Basic Provenance guidance here does not specify how to assign authorship for this use case. HL7 plans to gather additional input and include it in the HL7 Basic Provenance Informative guide for C-CDA and FHIR. -->
-<h3 id="element-level-provenance">Element Level Provenance</h3>
+
+<h3 id="element-level-provenance--todo-create-a-separate-page-and-link-to-it-or-remove-it">Element Level Provenance  (TODO: create a separate page and link to it or remove it)</h3>
 
 <div class="stu-note">
   <p>This section is informative and not a requirement for systems conforming to the US Core Provenance Profile.</p>
@@ -348,59 +353,60 @@ In this [US Core Patient Profile] example, the patient demographic data such as 
 This [US Core Provenance Profile] resource communicates who, how, and when elements such as Race and Ethnicity (R/E), gender identity, etc., were collected. Note that the [Target Element] Extension references the element ids within the Patient resource:
 
 {% include examplebutton_default.html example="Provenance-example-targeted-provenance.json" b_title = "Click Here to See an Element Level Provenance Example" %} -->
-
 <p><br/></p>
 
-<h4 id="proposed-mappings-to-incorporate-into-guidance">Proposed Mappings to Incorporate into Guidance</h4>
+<h3 id="individual-level-provenance"><span class="bg-success">Individual Level Provenance</span>  <!-- new-content --></h3>
 
-<p><em>New strawman proposal:** Because systems typically do not represent this information for patients and practitioners in FHIR using "big-P" Provenance, use the various FHIR resources' existing elements that track the "small p" provenance</em> at the <em>individual level</em>. Propose adding a mapping table to the <a href="#">Provenance page</a> that documents these "small-p" provenance data elements.  The author role is typically implied by the resource type referenced (e.g. Patient, Practitioner/PractitionerRole, RelatedPerson, Device). Except for Device, more details about the role are contained the resource contents (e.g.RelatedPerson.relationship).</p>
+<div class="bg-warning">
+  <ul>
+    <li>Discuss:
+      <ul>
+        <li>Which elements should be added  as <em>Must Support/Add'l USCDI</em></li>
+        <li>Which target resources should be added as <em>Must Support/Add'l USCDI</em>
+          <ul>
+            <li>US Core Patient</li>
+            <li>US Core Practitioner</li>
+            <li>US Core PractitionerRole</li>
+            <li>US Core RelatedPerson</li>
+            <li>US Core Organization</li>
+            <li>US Core Device</li>
+          </ul>
+        </li>
+        <li>If not adding <em>Must Support/Add'l USCDI</em> then what guidance do we give to meet the requirement?</li>
+      </ul>
+    </li>
+  </ul>
 
-<p>State that the resources elements provide additional "small -p" provenance  Mappings identify the author and author roles.</p>
+  <p>(source excel file is here: https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g)</p>
+</div>
+  <!-- new-content -->
+<div class="bg-success">
 
-<p>:point_right:<a href="https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g">"Small-p" Provenance Table for all US Core Profiles</a>:point_left:</p>
+  <p>US Core Profiles contain elements that represent "small-p provenance" information about how the resource was obtained, which overlaps with the functionality of the Provenance resource discussed above. The table below identifies the author and author roles that meet the <a href="https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">U.S. Core Data for Interoperability (USCDI)</a> Provenance Author and Author Role Data Elements requirements for individuals. In addition, they are listed in each US Core Profile page's "Profile Specific Implementation Guidance" section. The author is communicated by the elements and the author's role by the target resource type referenced by it (for example, Patient, Practitioner/PractitionerRole, RelatedPerson, Device). Details about the author's role are contained in the target resource's contents. The <strong>bold font</strong> indicates the elements and target resources that are labeled as <em>Must Support</em> in the respective US Core Profiles. Elements and target resources not labeled as <em>Must Support</em> <strong>SHOULD</strong> be supported in the profiles when the system captures the data.</p>
 
-<p>not in table - US Core Profiles that are Out of Scope:</p>
+  <h5 id="author-and-author-role-data-elements">Author and Author Role Data Elements</h5>
 
-<ul>
-  <li>US Core Encounter ( US Core use big P Provenance - for org)</li>
-  <li>US Core Location</li>
-  <li>US Core Organization</li>
-  <li>US Core Practitioner</li>
-  <li>US Core PractitionerRole</li>
-  <li>US Core RelatedPerson</li>
-  <li>US Core Medication</li>
-  <li>US Core Provenance</li>
-  <li>US Core CareTeam</li>
-  <li>US Core Coverage</li>
-  <li>US Core Specimen</li>
-</ul>
+  <p>This table excludes these US Core Profiles, which are not typically associated with individual authorship:</p>
 
-<p>(note: meddisp =&gt; performer)</p>
+  <ul>
+    <li>US Core Encounter</li>
+    <li>US Core Location</li>
+    <li>US Core Organization</li>
+    <li>US Core Practitioner</li>
+    <li>US Core PractitionerRole</li>
+    <li>US Core RelatedPerson</li>
+    <li>US Core Medication</li>
+    <li>US Core Provenance</li>
+    <li>US Core CareTeam</li>
+    <li>US Core Coverage</li>
+    <li>US Core Specimen</li>
+  </ul>
 
-<p>Next Steps:</p>
+  <p><span style="color: red;">Red text</span> indicates proposed new <em>Must Support</em> elements and targets</p>
 
-<ul>
-  <li>Discuss:
-    <ul>
-      <li>Which elements should be added  as <em>Must Support/Add'l USCDI</em></li>
-      <li>Which target resources should be added as <em>Must Support/Add'l USCDI</em>
-        <ul>
-          <li>US Core Patient</li>
-          <li>US Core Practitioner</li>
-          <li>US Core PractitionerRole</li>
-          <li>US Core RelatedPerson</li>
-          <li>US Core Organization</li>
-          <li>US Core Device</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>If not adding <em>Must Support/Add'l USCDI</em> then what guidance do we give to meet the requirement?</li>
-</ul>
+  <p><a name="l736">​</a>This information is also available as a <a href="tables/provenance-elements.csv">csv</a> or <a href="tables/provenance-elements.xlsx">excel</a> file:</p>
 
-<h5 id="small-p-author-and-author-role-data-elements"><em>Small-p</em> Author and Author Role Data Elements</h5>
-
-  <!-- This liquid script creates a US Core provenance requirements table using input data from input/data/provenance-elements.csv
+    <!-- This liquid script creates a US Core provenance requirements table using input data from input/data/provenance-elements.csv
 with the following columns:
 - Row
 - Is_Source : boolean flag if is provenance source element
@@ -434,7 +440,7 @@ with the following columns:
 - Comments
 -  no include parameters: -->
 
-<table class="grid">
+  <table class="grid">
 <thead>
 <tr>
   <!-- <th>Row #</th> -->
@@ -460,7 +466,7 @@ with the following columns:
 
 <tr>
   <!-- <td>1</td> -->
-<td><a name="l737">​</a><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
+<td><a name="l772">​</a><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
 <td><code>AllergyIntolerance.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -490,7 +496,7 @@ with the following columns:
 
 <tr>
   <!-- <td>3</td> -->
-<td><a name="l753">​</a><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td>
+<td><a name="l788">​</a><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td>
 <td><code>CarePlan.contributor</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
 </tr>
@@ -526,7 +532,7 @@ with the following columns:
 
 <tr>
   <!-- <td>6</td> -->
-<td><a name="l769">​</a><a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a></td>
+<td><a name="l804">​</a><a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a></td>
 <td><code>Condition.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -556,7 +562,7 @@ with the following columns:
 
 <tr>
   <!-- <td>8</td> -->
-<td><a name="l785">​</a><a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a></td>
+<td><a name="l820">​</a><a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a></td>
 <td><code>Condition.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -604,7 +610,7 @@ with the following columns:
 
 <tr>
   <!-- <td>13</td> -->
-<td><a name="l801">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><a name="l836">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
 <td><code><strong>DiagnosticReport.performer*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, CareTeam</td>
 </tr>
@@ -628,7 +634,7 @@ with the following columns:
 
 <tr>
   <!-- <td>14</td> -->
-<td><a name="l820">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><a name="l855">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
 <td><code>DiagnosticReport.resultsInterpreter</code></td>
 <td>Practitioner, Organization, PractitionerRole, CareTeam</td>
 </tr>
@@ -652,7 +658,7 @@ with the following columns:
 
 <tr>
   <!-- <td>15</td> -->
-<td><a name="l836">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><a name="l871">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
 <td><code><strong>DiagnosticReport.performer*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, CareTeam</td>
 </tr>
@@ -676,7 +682,7 @@ with the following columns:
 
 <tr>
   <!-- <td>16</td> -->
-<td><a name="l855">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><a name="l890">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
 <td><code>DiagnosticReport.resultsInterpreter</code></td>
 <td>Practitioner, Organization, PractitionerRole, CareTeam</td>
 </tr>
@@ -724,7 +730,7 @@ with the following columns:
 
 <tr>
   <!-- <td>18</td> -->
-<td><a name="l890">​</a><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td>
+<td><a name="l925">​</a><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td>
 <td><code><strong>DocumentReference.author*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
 </tr>
@@ -748,7 +754,7 @@ with the following columns:
 
 <tr>
   <!-- <td>19</td> -->
-<td><a name="l909">​</a><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td>
+<td><a name="l944">​</a><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td>
 <td><code>Goal.expressedBy</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -910,9 +916,9 @@ with the following columns:
 
 <tr>
   <!-- <td>28</td> -->
-<td><a name="l1023">​</a><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1058">​</a><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -934,9 +940,9 @@ with the following columns:
 
 <tr>
   <!-- <td>29</td> -->
-<td><a name="l1039">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1077">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -958,9 +964,9 @@ with the following columns:
 
 <tr>
   <!-- <td>30</td> -->
-<td><a name="l1055">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1096">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -982,9 +988,9 @@ with the following columns:
 
 <tr>
   <!-- <td>31</td> -->
-<td><a name="l1071">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1115">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1006,9 +1012,9 @@ with the following columns:
 
 <tr>
   <!-- <td>32</td> -->
-<td><a name="l1087">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1134">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1030,9 +1036,9 @@ with the following columns:
 
 <tr>
   <!-- <td>33</td> -->
-<td><a name="l1103">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1153">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1054,7 +1060,7 @@ with the following columns:
 
 <tr>
   <!-- <td>34</td> -->
-<td><a name="l1119">​</a><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
+<td><a name="l1172">​</a><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1078,7 +1084,7 @@ with the following columns:
 
 <tr>
   <!-- <td>35</td> -->
-<td><a name="l1135">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
+<td><a name="l1188">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1102,7 +1108,7 @@ with the following columns:
 
 <tr>
   <!-- <td>36</td> -->
-<td><a name="l1151">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
+<td><a name="l1204">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1126,7 +1132,7 @@ with the following columns:
 
 <tr>
   <!-- <td>37</td> -->
-<td><a name="l1167">​</a><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
+<td><a name="l1220">​</a><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1174,7 +1180,7 @@ with the following columns:
 
 <tr>
   <!-- <td>39</td> -->
-<td><a name="l1202">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
+<td><a name="l1255">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1198,7 +1204,7 @@ with the following columns:
 
 <tr>
   <!-- <td>40</td> -->
-<td><a name="l1218">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
+<td><a name="l1271">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1222,7 +1228,7 @@ with the following columns:
 
 <tr>
   <!-- <td>41</td> -->
-<td><a name="l1234">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
+<td><a name="l1287">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1246,7 +1252,7 @@ with the following columns:
 
 <tr>
   <!-- <td>42</td> -->
-<td><a name="l1250">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
+<td><a name="l1303">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1270,7 +1276,7 @@ with the following columns:
 
 <tr>
   <!-- <td>43</td> -->
-<td><a name="l1266">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
+<td><a name="l1319">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
 <td><code><strong>Observation.performer*</strong></code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1294,7 +1300,7 @@ with the following columns:
 
 <tr>
   <!-- <td>44</td> -->
-<td><a name="l1283">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
+<td><a name="l1336">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1318,9 +1324,9 @@ with the following columns:
 
 <tr>
   <!-- <td>45</td> -->
-<td><a name="l1299">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1352">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1342,9 +1348,9 @@ with the following columns:
 
 <tr>
   <!-- <td>46</td> -->
-<td><a name="l1315">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1371">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1366,9 +1372,9 @@ with the following columns:
 
 <tr>
   <!-- <td>47</td> -->
-<td><a name="l1331">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1390">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
+<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1390,7 +1396,7 @@ with the following columns:
 
 <tr>
   <!-- <td>48</td> -->
-<td><a name="l1347">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
+<td><a name="l1409">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1414,7 +1420,7 @@ with the following columns:
 
 <tr>
   <!-- <td>49</td> -->
-<td><a name="l1363">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
+<td><a name="l1425">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1438,7 +1444,7 @@ with the following columns:
 
 <tr>
   <!-- <td>50</td> -->
-<td><a name="l1379">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
+<td><a name="l1441">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
 <td><code><strong>Observation.performer*</strong></code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1462,7 +1468,7 @@ with the following columns:
 
 <tr>
   <!-- <td>51</td> -->
-<td><a name="l1396">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
+<td><a name="l1458">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1486,7 +1492,7 @@ with the following columns:
 
 <tr>
   <!-- <td>52</td> -->
-<td><a name="l1412">​</a><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
+<td><a name="l1474">​</a><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1510,7 +1516,7 @@ with the following columns:
 
 <tr>
   <!-- <td>53</td> -->
-<td><a name="l1428">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
+<td><a name="l1490">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1540,7 +1546,7 @@ with the following columns:
 
 <tr>
   <!-- <td>55</td> -->
-<td><a name="l1444">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td><a name="l1506">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
 <td><code>Procedure.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -1564,9 +1570,9 @@ with the following columns:
 
 <tr>
   <!-- <td>56</td> -->
-<td><a name="l1460">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
-<td><code>Procedure.performer.actor</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><a name="l1522">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td><code><span style="color: red;">Procedure.performer.actor</span></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
 </tr>
 
 
@@ -1606,7 +1612,7 @@ with the following columns:
 
 <tr>
   <!-- <td>60</td> -->
-<td><a name="l1476">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td><a name="l1541">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
 <td><code><strong>QuestionnaireResponse.author*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
 </tr>
@@ -1630,7 +1636,7 @@ with the following columns:
 
 <tr>
   <!-- <td>61</td> -->
-<td><a name="l1495">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td><a name="l1560">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
 <td><code>QuestionnaireResponse.source</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -1796,24 +1802,12 @@ with the following columns:
 </tbody>
 </table>
 
-<p>* US Core <em>Must Support</em> or <em>Additional USCDI</em> element</p>
+  <p>* US Core <em>Must Support</em> or <em>Additional USCDI</em> element</p>
 
-<p>** US Core <em>Must Support</em> Target Resource Type</p>
-
-<p>(source excel file is here: https://1drv.ms/x/c/deea5e002be8d274/EazOGawVCEBBjJmfJXcI5DQBKbAXNqHGcHr4ioRM6s2m0g)</p>
-
-<p>create links to derived tables</p>
-
-<hr/>
-<p>Footnotes</p>
-
-<div role="doc-endnotes" class="footnotes">
-  <ol>
-    <li role="doc-endnote" id="fn:1">
-      <p>This Basic Provenance guidance and <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a> are provisional and may change in future releases. Although it is based on feedback from the HL7 and Argonaut communities, there was only preliminary testing of this approach before publication.&nbsp;<a role="doc-backlink" href="#fnref:1" class="reversefootnote">↩</a></p>
-    </li>
-  </ol>
+  <p>** US Core <em>Must Support</em> Target Resource Type</p>
 </div>
+  <!-- new-content -->
+
 
 
 
@@ -1833,7 +1827,7 @@ with the following columns:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 2, 2024 03:23+0000">2024-11-02</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 5, 2024 05:27+0000">2024-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

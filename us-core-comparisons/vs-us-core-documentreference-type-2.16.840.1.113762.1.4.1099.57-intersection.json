@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "77787499-fa15-467c-95da-5d92d546f92a-6",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/77787499-fa15-467c-95da-5d92d546f92a-6",
+  "id" : "784fe860-324f-4e4e-8560-5e3720fb884e-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/784fe860-324f-4e4e-8560-5e3720fb884e-6",
   "name" : "IntersectionUSCoreDocumentReferenceTypeAndAdvanceDirectivesContentType",
   "title" : "Intersection of US Core DocumentReference Type And Advance Directives Content Type",
   "status" : "active",
-  "date" : "2024-11-02T03:23:56+00:00",
+  "date" : "2024-11-05T05:27:37+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
