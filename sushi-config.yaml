@@ -93,6 +93,8 @@ pages:
     #   title: USCDI
     # general-guidance.md:
     basic-provenance.md:
+      element-level-provenance.md:
+        title: Using Provenance To Target Resource Elements
     changes-between-versions.md:
     clinical-notes.md:
     spcu.md:

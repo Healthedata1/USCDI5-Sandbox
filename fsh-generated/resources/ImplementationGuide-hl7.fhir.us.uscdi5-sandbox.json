@@ -382,7 +382,14 @@
             {
               "nameUrl": "basic-provenance.html",
               "title": "Basic Provenance",
-              "generation": "markdown"
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "element-level-provenance.html",
+                  "title": "Using Provenance To Target Resource Elements",
+                  "generation": "markdown"
+                }
+              ]
             },
             {
               "nameUrl": "changes-between-versions.html",

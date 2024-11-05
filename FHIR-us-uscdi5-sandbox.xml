@@ -48,4 +48,5 @@
 <page key="spcu" name="Sex Parameters for Clinical Use"/>
 <page key="toc" name="Table of Contents"/>
 <page key="uscdi" name="Uscdi"/>
+<page key="element-level-provenance" name="Using Provenance To Target Resource Elements"/>
 </specification>

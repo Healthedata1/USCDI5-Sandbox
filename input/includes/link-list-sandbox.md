@@ -22,3 +22,5 @@
 [US Core Interpreter Required Extension]: StructureDefinition-us-core-interpreter-required.html
 [US Core Observation ADI Documentation Profile]: StructureDefinition-us-core-observation-adi-documentation.html
 [www.loinc.org/usage/orders]: https://loinc.org/usage/orders/
+[element ids]: {{site.data.fhir.path}}element-definitions.html#Element.id)
+[Using Provenance To Target Resource Elements]: element-level-provenance.html

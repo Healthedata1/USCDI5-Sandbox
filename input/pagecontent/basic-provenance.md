@@ -1,7 +1,10 @@
 
 ### Provenance in US Core
 <div class="bg-success" markdown="1">
-typically do not use the Provenance Resource to represent this information at an *individual level* (in other words, activities by the patient or provider), various FHIR resource elements are identified that track the "small p provenance" information at the individual level. The guidance here does not preclude more advanced use cases.
+
+The FHIR [Provenance] Resource tracks information about the activity about a version of a resource, describing the entities and agents involved. FHIR resources also contain elements that represent "small-p provenance" information about how the resource was obtained which overlap with the functionality of the Provenance resource.
+
+​This page is divided into two section documenting how the [US Core Provenance Profile] records changes at the *organizational level*, and how the US Core Profiles' "small-p provenance" elements record changes at the *individual level*. The US Core Provenance Profile asserts where the data came from at an organizational or system level.  Because systems typically do not use the Provenance Resource to represent this information at an *individual level* (in other words, activities by the patient or provider), various FHIR resource elements are identified that track the "small p provenance" information at the individual level. The baseline rules and guidance here do not preclude more advanced use cases such as [Using Provenance To Target Resource Elements].
 
 </div><!-- new-content -->
 
@@ -25,7 +28,7 @@ Transmitter | | Name<br>Identifier | NPI recommended, additional identifiers all
 Transmitter Organization | | Name<br>Identifier  | NPI recommended, additional identifiers allowed |`Provenance.agent.onBehalfOf`
 {: .grid}
 
-#### Use Cases
+#### Use Cases <span class="warning" markdown="1">  NOTE THAT THE "USE CASES" SECTIONS HAVE ALL BEEN COMMENTED OUT.</span><!-- warning -->
 
 The HL7 Basic Provenance Informative implementation guide outlines four use cases: Fax, Health Information Exchange (HIE) redistribution, HIE transformation, and Clinical Information Reconciliation and Incorporation (CIRI). While these use cases may have FHIR implications in the future, CIRI and HIE are the key use cases and are covered in detail here.
 
@@ -83,25 +86,6 @@ Unlike Use Case 3 - HIE Redistribution, Use Case 4 includes data transformation.
 Transformation of data from one format to another **MAY** change the authorship of the information, where the HIE is the author/author organization. The HIE must maintain the original data source. An `agent.type`="assembler", `agent.type`="transmitter", or other agents from [Provenance Agent Type] value set **MAY** also be included. Due to insufficient implementer guidance, the Basic Provenance guidance here does not specify how to assign authorship for this use case. HL7 plans to gather additional input and include it in the HL7 Basic Provenance Informative guide for C-CDA and FHIR.
 
  {% endraw %} -->
-
-### Element Level Provenance  (TODO: create a separate page and link to it or remove it)
-
-<div class="stu-note" markdown="1">
-This section is informative and not a requirement for systems conforming to the US Core Provenance Profile.
-</div><!-- stu-note -->
-
-<!-- {% raw %}  Using the FHIR Extension [Target Element], Provenance can target a particular element or set of elements. For example, to document how and who supplied patient demographic data such as Race and Ethnicity (R/E), gender identity, and sexual orientation.
-
-Example:
-
-In this [US Core Patient Profile] example, the patient demographic data such as Race and Ethnicity (R/E), gender identity, etc., have *individual element ids* within a resource for internal and external referencing:
-
-{% include examplebutton_default.html example="Patient-example-targeted-provenance.json" b_title = "Click Here to See Individual Element Ids Within a Patient Resource Example" %}
-
-This [US Core Provenance Profile] resource communicates who, how, and when elements such as Race and Ethnicity (R/E), gender identity, etc., were collected. Note that the [Target Element] Extension references the element ids within the Patient resource:
-
-{% include examplebutton_default.html example="Provenance-example-targeted-provenance.json" b_title = "Click Here to See an Element Level Provenance Example" %} {% endraw %} -->
-<br />
 
 ### <span class="bg-success" markdown="1">Individual Level Provenance</span><!-- new-content -->
 
