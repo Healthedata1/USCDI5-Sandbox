@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "784fe860-324f-4e4e-8560-5e3720fb884e-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/784fe860-324f-4e4e-8560-5e3720fb884e-50",
+  "id" : "1bc0c548-fb74-40e9-a536-f2e3a2a7778a-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-50",
   "name" : "UnionUSCoreLaboratoryResultObservationProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Laboratory Result Observation Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-11-05T05:27:37+00:00",
+  "date" : "2024-11-05T19:27:57+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -910,7 +910,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Laboratory LOINC Codes; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/784fe860-324f-4e4e-8560-5e3720fb884e-53"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-53"
       },
       "mapping" : [{
         "identity" : "workflow",

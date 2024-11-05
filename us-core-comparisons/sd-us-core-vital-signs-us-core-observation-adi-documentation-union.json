@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "784fe860-324f-4e4e-8560-5e3720fb884e-95",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/784fe860-324f-4e4e-8560-5e3720fb884e-95",
+  "id" : "1bc0c548-fb74-40e9-a536-f2e3a2a7778a-95",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-95",
   "name" : "UnionUSCoreVitalSignsProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Vital Signs Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-11-05T05:27:37+00:00",
+  "date" : "2024-11-05T19:27:57+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/784fe860-324f-4e4e-8560-5e3720fb884e-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-11"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1939,7 +1939,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/784fe860-324f-4e4e-8560-5e3720fb884e-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-11"
       },
       "mapping" : [{
         "identity" : "w5",

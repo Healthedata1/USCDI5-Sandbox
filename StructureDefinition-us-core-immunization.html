@@ -344,6 +344,43 @@ profile:</p>
   </li>
 </ul>
 
+  <!-- This liquid script creates context specific text for each pages author and author role implementer guidance using input data from input/data/provenance-elements.csv with the following columns:
+- Row
+- Is_Source : boolean flag if is provenance source element
+- Observation_grouping: tag for grouping profiles together like ADI or vitals
+- polled_vendors: boolean flag if vendors surveyed on their use of the provenance source element for this profile
+- US_Core_Profile: title of US Core Profile (secondary sort parameter)
+- URL: Canonical URL of US Core Profile
+- Path: relative path of US Core Profile
+- Type: resource type of US Core Profile (primary sort parameter)
+- FiveWs_author: provenance source element choice based on FiveWs mapping (one per row)
+- FiveWs_source: provenance source element choice based on FiveWs mapping (one per row)
+- FiveWs_actor: provenance source element choice based on FiveWs mapping (one per row)
+- is_MS: boolean flag if provenance source element is US Core Must Support
+- vendor_support_element: boolean flag if vendors surveyed on their use of the provenance source element
+- Target_Resource_1: provenance source element target resource (can be up to 7)
+- Target_Resource_1_is_MS: boolean flag if provenance source element target resource is US Core Must Support
+- vendor_support_Target_Resource_1: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_2: provenance source element target resource (can be up to 7)
+- Target_Resource_2_is_MS: boolean flag if provenance source element target resource is US Core Must Support
+- vendor_support_Target_Resource_2: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_3: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_3: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_4: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_4: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_5: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_5: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_6: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_6: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_7: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Comments
+-  no include parameters: -->
+
+<ul>
+  <li><span class="bg-success">* The profile elements, <code class="language-plaintext highlighter-rouge">Immunization.reportOrigin, Immunization.performer.actor, Immunization.primarySource,  </code> communicate the "small-p provenance" author corresponding to the U.S. Core Data for Interoperability (USCDI) Provenance Author Data Elements.  <!-- new-content --></span></li>
+</ul>
+
 
 </div>
 
@@ -2077,18 +2114,18 @@ Summary
 <p>Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions.  See the <a href="CapabilityStatement-us-core-server.html">US Core Server CapabilityStatement</a> for a complete list of supported RESTful interactions for this IG.</p>
 
 <ul>
-  <li><a name="l7939">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
-  <li><a name="l7945">​</a>See the <a href="subscription.html#scopes-format">Subscription</a> page for a description of the US Core subscription requirements.</li>
-  <li><a name="l7951">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
-  <li><a name="l7957">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
-  <li><a name="l7963">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
+  <li><a name="l7952">​</a>See the <a href="scopes.html#scopes-format">Scopes Format</a> section for a description of the SMART scopes syntax.</li>
+  <li><a name="l7958">​</a>See the <a href="subscription.html#scopes-format">Subscription</a> page for a description of the US Core subscription requirements.</li>
+  <li><a name="l7964">​</a>See the <a href="general-guidance.html#search-syntax">Search Syntax</a> section for a description of the US Core search syntax.</li>
+  <li><a name="l7970">​</a>See the <a href="general-requirements.html">General Requirements</a> section for additional rules and expectations when a server requires status parameters.</li>
+  <li><a name="l7976">​</a>See the <a href="general-guidance.html" title="General Guidance Page">General Guidance</a> section for additional guidance on searching for multiple patients.</li>
 </ul>
 
 <h4 id="us-core-scopes">US Core Scopes</h4>
 
   <!-- {% assign scope_string = scope | inspect %} -->
 
-<p><a name="l7975">​</a>Servers providing access to immunization data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
+<p><a name="l7988">​</a>Servers providing access to immunization data <strong>SHALL</strong> support these <a href="scopes.html#smart-scopes">US Core SMART Scopes</a>:</p>
 <ul>
   <li><a href="http://hl7.org/fhir/smart-app-launch/STU2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data">resource level scopes</a>: <code class="language-plaintext highlighter-rouge">&lt;patient|user|system&gt;/Immunization.rs</code></li>
 </ul>
@@ -2097,7 +2134,7 @@ Summary
 
 <p>Servers providing access to immunization data <strong>SHALL</strong> support this [US Core SubscriptionTopic]:</p>
 <ul>
-  <li><a name="l8005">​</a><a href="SubscriptionTopic-us-core-immunization.html&quot;">US Core Immunization</a> <code><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></code></li>
+  <li><a name="l8018">​</a><a href="SubscriptionTopic-us-core-immunization.html&quot;">US Core Immunization</a> <code><span class="copy-text">http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization<button data-clipboard-text="http://hl7.org/fhir/us/core/SubscriptionTopic/us-core-immunization" title="Click to copy URL" class="btn-copy" data-original-title="Click to copy URL"></button></span></code></li>
 </ul>
 
 <h4 id="mandatory-search-parameters">Mandatory Search Parameters:</h4>
@@ -2106,7 +2143,7 @@ Summary
 
 <ol>
   <li>
-    <p><strong>SHALL</strong> support searching for all immunizations for a patient using the <strong><a name="l8029">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
+    <p><strong>SHALL</strong> support searching for all immunizations for a patient using the <strong><a name="l8042">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> search parameter:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Immunization?patient={Type/}[id]</code></p>
 
@@ -2125,7 +2162,7 @@ Summary
 <p>The following search parameter combinations <strong>SHOULD</strong> be supported:</p>
 
 <ol>
-  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8073">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8078">​</a><a href="SearchParameter-us-core-immunization-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
+  <li><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8086">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8091">​</a><a href="SearchParameter-us-core-immunization-date.html"><code class="language-plaintext highlighter-rouge">date</code></a></strong> search parameters:
     <ul>
       <li>including support for these <code class="language-plaintext highlighter-rouge">date</code> comparators: <code class="language-plaintext highlighter-rouge">gt,lt,ge,le</code></li>
       <li>including optional support for <em>AND</em> search on <code class="language-plaintext highlighter-rouge">date</code> (e.g.<code class="language-plaintext highlighter-rouge">date=[date]&amp;date=[date]]&amp;...</code>)</li>
@@ -2142,7 +2179,7 @@ Summary
     <p><em>Implementation Notes:</em> Fetches a bundle of all Immunization resources for the specified patient and date (<a href="http://hl7.org/fhir/R4/search.html#date">how to search by date</a> and <a href="http://hl7.org/fhir/R4/search.html#reference">how to search by reference</a>)</p>
   </li>
   <li>
-    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8137">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8142">​</a><a href="SearchParameter-us-core-immunization-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:</p>
+    <p><strong>SHOULD</strong> support searching using the combination of the <strong><a name="l8150">​</a><a href="SearchParameter-us-core-immunization-patient.html"><code class="language-plaintext highlighter-rouge">patient</code></a></strong> and <strong><a name="l8155">​</a><a href="SearchParameter-us-core-immunization-status.html"><code class="language-plaintext highlighter-rouge">status</code></a></strong> search parameters:</p>
 
     <p><code class="language-plaintext highlighter-rouge">GET [base]/Immunization?patient={Type/}[id]&amp;status={system|}[code]</code></p>
 
@@ -2185,7 +2222,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 5, 2024 05:27+0000">2024-11-05</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 5, 2024 19:27+0000">2024-11-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

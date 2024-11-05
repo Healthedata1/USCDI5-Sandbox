@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "784fe860-324f-4e4e-8560-5e3720fb884e-75",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/784fe860-324f-4e4e-8560-5e3720fb884e-75",
+  "id" : "1bc0c548-fb74-40e9-a536-f2e3a2a7778a-75",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-75",
   "name" : "IntersectionUSCorePulseOximetryProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Intersection of US Core Pulse Oximetry Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-11-05T05:27:37+00:00",
+  "date" : "2024-11-05T19:27:57+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "784fe860-324f-4e4e-8560-5e3720fb884e-65",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/784fe860-324f-4e4e-8560-5e3720fb884e-65",
+  "id" : "1bc0c548-fb74-40e9-a536-f2e3a2a7778a-65",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-65",
   "name" : "UnionUSCoreObservationScreeningAssessmentProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Observation Screening Assessment Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-11-05T05:27:37+00:00",
+  "date" : "2024-11-05T19:27:57+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -627,7 +627,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/784fe860-324f-4e4e-8560-5e3720fb884e-68"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1bc0c548-fb74-40e9-a536-f2e3a2a7778a-68"
       },
       "mapping" : [{
         "identity" : "workflow",
