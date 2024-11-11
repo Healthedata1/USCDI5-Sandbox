@@ -8,6 +8,7 @@
 [polst]: DocumentReference-polst.html
 [example-1]: Encounter-example-1.html
 [imm-1]: Immunization-imm-1.html
+[example-serum-lipemic]: Specimen-example-serum-lipemic.html
 [medicationdispense-example]: MedicationDispense-medicationdispense-example.html
 [medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html
 [example]: Patient-example.html
@@ -26,3 +27,5 @@
 [USCoreProvenance]: StructureDefinition-us-core-provenance.html
 [UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
 [USCoreServiceRequestProfile]: StructureDefinition-us-core-servicerequest.html
+[USCoreSpecimenCondition]: ValueSet-us-core-specimen-condition.html
+[USCoreSpecimenProfile]: StructureDefinition-us-core-specimen.html

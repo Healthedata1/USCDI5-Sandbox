@@ -29,6 +29,8 @@ with the following columns:
 - vendor_support_Target_Resource_6: boolean flag if vendors surveyed on their use of the provenance source element target resource
 - Target_Resource_7: provenance source element target resource (can be up to 7)
 - vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_8: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
 - Comments
 -  no include parameters:  -->
 
@@ -40,6 +42,7 @@ with the following columns:
 <tr>
 <!-- <th>Row #</th> -->
 <th>US Core Profile</th>
+<th>Surveyed?</th>
 <th>Data Element Corresponding to Author Provenance</th>
 <th>Target Resource Types Corresponding to Author Role Provenance</th>
 </tr>
@@ -79,10 +82,14 @@ with the following columns:
 {% if item.Target_Resource_7 %}
   {% assign targets = targets | append: "Device," %}
 {% endif %}
+{% if item.Target_Resource_7 %}
+  {% assign targets = targets | append: "DeviceMetric," %}
+{% endif %}
 
 <tr>
 <!-- <td>{{forloop.index}}</td> -->
 <td><a href="{{item.Path}}">{{item.US_Core_Profile}}</a></td>
+<td style="text-align: center;">{% if item.Surveyed == "TRUE"%}<strong>✓</strong>{% endif %}</td>
 <td><code>{% if item.is_MS == "TRUE" %}<strong>{% elsif item.vendor_support_element == "TRUE" %}<span style="color: red;">{% endif %}{{item.FiveWs_author | append: item.FiveWs_source | append: item.FiveWs_actor}}{% if item.is_MS == "TRUE" %}*</strong>{% elsif item.vendor_support_element == "TRUE" %}</span>{% endif %}</code></td>
 <td>{{ targets | split: "," | join: ", " }}</td>
 </tr>

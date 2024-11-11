@@ -14,6 +14,7 @@
 <artifact id="Bundle/docref-example-2" key="Bundle-docref-example-2" name="Docref Example 2"/>
 <artifact id="Encounter/example-1" key="Encounter-example-1" name="Encounter 1 Example"/>
 <artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Immunization Example 1"/>
+<artifact id="Specimen/example-serum-lipemic" key="Specimen-example-serum-lipemic" name="Lipemic Serum Specimen Example"/>
 <artifact id="MedicationDispense/medicationdispense-example" key="MedicationDispense-medicationdispense-example" name="Medication Dispense Example"/>
 <artifact id="MedicationRequest/medicationrequest-coded-oral-axid" key="MedicationRequest-medicationrequest-coded-oral-axid" name="MedicationRequest Coded Oral Axid Example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
@@ -32,6 +33,8 @@
 <artifact id="StructureDefinition/us-core-provenance" key="StructureDefinition-us-core-provenance" name="US Core Provenance Profile"/>
 <artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>
 <artifact id="StructureDefinition/us-core-servicerequest" key="StructureDefinition-us-core-servicerequest" name="US Core ServiceRequest Profile"/>
+<artifact id="ValueSet/us-core-specimen-condition" key="ValueSet-us-core-specimen-condition" name="US Core Specimen Condition"/>
+<artifact id="StructureDefinition/us-core-specimen" key="StructureDefinition-us-core-specimen" name="US Core Specimen Profile"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
