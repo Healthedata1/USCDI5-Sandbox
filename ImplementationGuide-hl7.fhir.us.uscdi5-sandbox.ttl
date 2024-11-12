@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "UCSDI5Sandbox"] ; # 
   fhir:title [ fhir:v "UCSDI5 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-11-05T23:34:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-11-12T19:07:56+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -878,6 +878,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Specimen/example-serum-lipemic> ;
+         fhir:reference [ fhir:v "Specimen/example-serum-lipemic" ]
+       ] ;
+       fhir:name [ fhir:v "Lipemic Serum Specimen Example" ] ;
+       fhir:description [ fhir:v "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition using SNOMED CT codes" ] ;
+       fhir:example [
+         fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "MedicationDispense" ]
        ] ) ;
        fhir:reference [
@@ -1099,6 +1114,30 @@
        ] ;
        fhir:name [ fhir:v "US Core ServiceRequest Profile" ] ;
        fhir:description [ fhir:v "The US Core ServiceRequest Profile inherits from the FHIR [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for recording, searching, and fetching the ServiceRequest information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/us-core-specimen-condition> ;
+         fhir:reference [ fhir:v "ValueSet/us-core-specimen-condition" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Specimen Condition" ] ;
+       fhir:description [ fhir:v "This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-specimen> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-specimen" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Specimen Profile" ] ;
+       fhir:description [ fhir:v "The US Core Specimen Profile inherits from the FHIR [Specimen](https://hl7.org/fhir/R4/specimen.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Specimen resource to record, search, and fetch information about substances associated with a patient being sampled or tested (such as nasopharyngeal swab, whole blood,  or serum). It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
@@ -1328,6 +1367,8 @@
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/Immunization/imm-1> a fhir:us .
 
+<http://hl7.org/fhir/us/uscdi5-sandbox/Specimen/example-serum-lipemic> a fhir:us .
+
 <http://hl7.org/fhir/us/uscdi5-sandbox/MedicationDispense/medicationdispense-example> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/MedicationRequest/medicationrequest-coded-oral-axid> a fhir:us .
@@ -1363,6 +1404,10 @@
 <http://hl7.org/fhir/us/uscdi5-sandbox/CapabilityStatement/us-core-server> a fhir:us .
 
 <http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-servicerequest> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/ValueSet/us-core-specimen-condition> a fhir:us .
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-specimen> a fhir:us .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,4 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding,0.0.0,active,,USCoreADIFinding,US Core ADI Finding,"The US Core ADI Finding Value Set is a 'starter set' of findings used for fetching and storing advanced directives.",,"SCT"
 http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type,0.0.0,active,,USCoreClinicalNoteType,US Core Clinical Note Type,"The US Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",,"LOINC"
+http://hl7.org/fhir/us/core/ValueSet/us-core-specimen-condition,0.0.0,active,,USCoreSpecimenCondition,US Core Specimen Condition,"This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability.",,
 http://terminology.hl7.org/ValueSet/us-core-location-type,0.0.0,active,,USCoreLocationType,US Core Location Type,"Concepts representing locations and settings where healthcare services are provided.",,

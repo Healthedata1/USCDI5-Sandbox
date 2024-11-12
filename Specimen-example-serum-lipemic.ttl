@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Specimen/example-serum-lipemic> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-serum-lipemic"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Lipemic Serum Specimen Example" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition using SNOMED CT codes" ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen example-serum-lipemic</b></p><a name=\"example-serum-lipemic\"> </a><a name=\"hcexample-serum-lipemic\"> </a><a name=\"example-serum-lipemic-en-US\"> </a><p><b>identifier</b>: <code>http://acme.com/labs/accession-ids</code>/20241105-00124</p><p><b>accessionIdentifier</b>: <code>http://acme.com/labs/accession-ids</code>/20241105-00124</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 119364003}, {http://terminology.hl7.org/CodeSystem/v2-0487 SER}\">Serum sample</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><h3>Containers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Serum Separator Tube</span></td></tr></table><p><b>condition</b>: <span title=\"Codes:{http://snomed.info/sct 118127007}\">Lipemic</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://acme.com/labs/accession-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20241105-00124" ]
+  ] ) ; # 
+  fhir:accessionIdentifier [
+     fhir:system [ fhir:v "http://acme.com/labs/accession-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "20241105-00124" ]
+  ] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:119364003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/731000124108" ] ;
+       fhir:code [ fhir:v "119364003" ] ;
+       fhir:display [ fhir:v "Serum sample" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0487"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SER" ] ;
+       fhir:display [ fhir:v "Serum" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:container ( [
+     fhir:type [
+       fhir:text [ fhir:v "Serum Separator Tube" ]
+     ]
+  ] ) ; # 
+  fhir:condition ( [
+     fhir:coding ( [
+       a sct:118127007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "118127007" ] ;
+       fhir:display [ fhir:v "Sample lipemic (finding)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Lipemic" ]
+  ] ) . # 
+
+<http://hl7.org/fhir/us/uscdi5-sandbox/Patient/example> a fhir:us .
+
+# -------------------------------------------------------------------------------------
+

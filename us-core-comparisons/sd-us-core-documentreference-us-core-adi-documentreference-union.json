@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "278ad6e7-1ae5-4548-a5a4-99aba774d708-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/278ad6e7-1ae5-4548-a5a4-99aba774d708-2",
+  "id" : "1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-2",
   "name" : "UnionUSCoreDocumentReferenceProfileAndUSCoreADIDocumentReferenceProfile",
   "title" : "Union of US Core DocumentReference Profile And US Core ADI DocumentReference Profile",
   "status" : "active",
-  "date" : "2024-11-05T23:35:01+00:00",
+  "date" : "2024-11-12T19:08:35+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -563,7 +563,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: All LOINC  values whose SCALE is \"Doc\" in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'; right: Advance Directives Content Type",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/278ad6e7-1ae5-4548-a5a4-99aba774d708-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-5"
       },
       "mapping" : [{
         "identity" : "workflow",

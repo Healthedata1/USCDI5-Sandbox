@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -28,6 +28,20 @@
       "uses" : {
       },
       "StructureDefinition-us-core-immunization.html" : "US Core Immunization Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.54",
+      "version" : "20240606",
+      "status" : "active",
+      "name" : "SpecimenType",
+      "title" : "Specimen type",
+      "description" : null,
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113762.1.4.1099.54"],
+      "sources" : ["2.16.840.1.113762.1.4.1099.54"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-specimen.html" : "US Core Specimen Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.57",
@@ -112,6 +126,20 @@
       "uses" : {
       },
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-specimen.html" : "US Core Specimen Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -242,8 +270,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
@@ -255,8 +283,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
@@ -306,8 +334,8 @@
       "sources" : ["2.16.840.1.113883.4.642.40.2.48.21"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
-      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
+      "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile",
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-discharge-disposition",
@@ -393,6 +421,18 @@
       "StructureDefinition-us-core-servicerequest.html" : "US Core ServiceRequest Profile"
     },
     {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-specimen-condition",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreSpecimenCondition",
+      "title" : "US Core Specimen Condition",
+      "description" : "This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-specimen.html" : "US Core Specimen Profile"
+    },
+    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state",
       "version" : "7.0.0",
       "status" : "active",
@@ -417,6 +457,20 @@
         "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
         "https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html"
       ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenCondition",
+      "title" : "hl7VS-specimenCondition",
+      "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "oids" : ["2.16.840.1.113883.21.333"],
+      "sources" : ["2.16.840.1.113883.21.333"],
+      "uses" : {
+      },
+      "ValueSet-us-core-specimen-condition.html" : "US Core Specimen Condition"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",

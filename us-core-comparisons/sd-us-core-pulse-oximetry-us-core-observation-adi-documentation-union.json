@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "278ad6e7-1ae5-4548-a5a4-99aba774d708-74",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/278ad6e7-1ae5-4548-a5a4-99aba774d708-74",
+  "id" : "1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-74",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-74",
   "name" : "UnionUSCorePulseOximetryProfileAndUSCoreObservationADIDocumentationProfile",
   "title" : "Union of US Core Pulse Oximetry Profile And US Core Observation ADI Documentation Profile",
   "status" : "active",
-  "date" : "2024-11-05T23:35:01+00:00",
+  "date" : "2024-11-12T19:08:35+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -628,7 +628,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/278ad6e7-1ae5-4548-a5a4-99aba774d708-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-11"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2119,7 +2119,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "left: Vital sign result types; right: Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/278ad6e7-1ae5-4548-a5a4-99aba774d708-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-11"
       },
       "mapping" : [{
         "identity" : "w5",

@@ -179,13 +179,15 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
       "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
-      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding"
+      "ValueSet-us-core-adi-finding.html" : "US Core ADI Finding",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-servicerequest-category.html" : "US Core ServiceRequest Category Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1099.54/expansion" : "Specimen type",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
@@ -282,8 +284,8 @@
       "oids" : ["2.16.840.1.113883.6.12"],
       "uses" : {
       },
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type",
-      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes"
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-procedure-code.html" : "US Core Procedure Codes",
+      "http://hl7.org/fhir/us/core/STU7/ValueSet-us-core-encounter-type.html" : "US Core Encounter Type"
     },
     {
       "url" : "http://www.cms.gov/Medicare/Coding/ICD10",

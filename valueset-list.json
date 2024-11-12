@@ -19,6 +19,15 @@
       "systems" : ["http://loinc.org"]
     },
     {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-specimen-condition",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "USCoreSpecimenCondition",
+      "title" : "US Core Specimen Condition",
+      "description" : "This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"]
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/us-core-location-type",
       "version" : "0.0.0",
       "status" : "active",

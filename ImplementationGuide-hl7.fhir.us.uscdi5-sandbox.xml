@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-11-05T23:34:23+00:00"/>
+  <date value="2024-11-12T19:07:56+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -745,6 +745,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/example-serum-lipemic"/>
+      </reference>
+      <name value="Lipemic Serum Specimen Example"/>
+      <description value="This is a serum specimen example for the *US Core Specimen Profile*. It demonstrates the use of the USCDI requirements for specimen condition using SNOMED CT codes"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MedicationDispense"/>
       </extension>
       <reference>
@@ -939,6 +950,28 @@
       </reference>
       <name value="US Core ServiceRequest Profile"/>
       <description value="The US Core ServiceRequest Profile inherits from the FHIR [ServiceRequest](https://hl7.org/fhir/R4/servicerequest.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for recording, searching, and fetching the ServiceRequest information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/us-core-specimen-condition"/>
+      </reference>
+      <name value="US Core Specimen Condition"/>
+      <description value="This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-specimen"/>
+      </reference>
+      <name value="US Core Specimen Profile"/>
+      <description value="The US Core Specimen Profile inherits from the FHIR [Specimen](https://hl7.org/fhir/R4/specimen.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Specimen resource to record, search, and fetch information about substances associated with a patient being sampled or tested (such as nasopharyngeal swab, whole blood,  or serum). It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

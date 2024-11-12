@@ -56,6 +56,13 @@
     "name" : "USCoreProvenance"
   },
   {
+    "id" : "us-core-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
+    "version" : "0.0.0",
+    "name" : "USCoreSpecimenProfile"
+  },
+  {
     "id" : "us-core-adi-finding",
     "type" : "ValueSet",
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-adi-finding",
@@ -68,6 +75,13 @@
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-note-type",
     "version" : "0.0.0",
     "name" : "USCoreClinicalNoteType"
+  },
+  {
+    "id" : "us-core-specimen-condition",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-specimen-condition",
+    "version" : "0.0.0",
+    "name" : "USCoreSpecimenCondition"
   },
   {
     "id" : "hl7.fhir.us.uscdi5-sandbox",

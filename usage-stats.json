@@ -62,6 +62,12 @@
         "title": "US Core Provenance Profile"
       }
     ],
+    "Specimen": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
+        "title": "US Core Specimen Profile"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "http://hl7.org/fhir/us/uscdi5-sandbox/StructureDefinition/us-core-adi-documentreference",
@@ -127,7 +133,8 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Observation.meta",
-      "Patient.meta"
+      "Patient.meta",
+      "Specimen.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "Bundle.meta",
@@ -137,7 +144,8 @@
       "MedicationDispense.meta",
       "MedicationRequest.meta",
       "Observation.meta",
-      "Patient.meta"
+      "Patient.meta",
+      "Specimen.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
       "Patient"

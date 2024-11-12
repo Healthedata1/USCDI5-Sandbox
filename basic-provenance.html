@@ -419,6 +419,8 @@ with the following columns:
 - vendor_support_Target_Resource_6: boolean flag if vendors surveyed on their use of the provenance source element target resource
 - Target_Resource_7: provenance source element target resource (can be up to 7)
 - vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
+- Target_Resource_8: provenance source element target resource (can be up to 7)
+- vendor_support_Target_Resource_7: boolean flag if vendors surveyed on their use of the provenance source element target resource
 - Comments
 -  no include parameters: -->
 
@@ -427,6 +429,7 @@ with the following columns:
 <tr>
   <!-- <th>Row #</th> -->
 <th>US Core Profile</th>
+<th>Surveyed?</th>
 <th>Data Element Corresponding to Author Provenance</th>
 <th>Target Resource Types Corresponding to Author Role Provenance</th>
 </tr>
@@ -445,9 +448,11 @@ with the following columns:
 
 
 
+
 <tr>
   <!-- <td>1</td> -->
-<td><a name="l773">​</a><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
+<td><a name="l776">​</a><a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>AllergyIntolerance.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -474,12 +479,15 @@ with the following columns:
 
 
 
+
 <tr>
   <!-- <td>3</td> -->
-<td><a name="l789">​</a><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td>
+<td><a name="l794">​</a><a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>CarePlan.contributor</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -511,10 +519,12 @@ with the following columns:
 
 <tr>
   <!-- <td>6</td> -->
-<td><a name="l805">​</a><a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a></td>
+<td><a name="l812">​</a><a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
 <td><code>Condition.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
+
 
 
 
@@ -540,10 +550,12 @@ with the following columns:
 
 <tr>
   <!-- <td>8</td> -->
-<td><a name="l821">​</a><a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a></td>
+<td><a name="l832">​</a><a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
 <td><code>Condition.asserter</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
+
 
 
 
@@ -587,10 +599,12 @@ with the following columns:
 
 <tr>
   <!-- <td>13</td> -->
-<td><a name="l837">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><a name="l852">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>DiagnosticReport.performer*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, CareTeam</td>
 </tr>
+
 
 
 
@@ -610,7 +624,8 @@ with the following columns:
 
 <tr>
   <!-- <td>14</td> -->
-<td><a name="l856">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td><a name="l873">​</a><a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a></td>
+<td style="text-align: center;"></td>
 <td><code>DiagnosticReport.resultsInterpreter</code></td>
 <td>Practitioner, Organization, PractitionerRole, CareTeam</td>
 </tr>
@@ -631,9 +646,11 @@ with the following columns:
 
 
 
+
 <tr>
   <!-- <td>15</td> -->
-<td><a name="l872">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><a name="l891">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>DiagnosticReport.performer*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, CareTeam</td>
 </tr>
@@ -654,12 +671,15 @@ with the following columns:
 
 
 
+
 <tr>
   <!-- <td>16</td> -->
-<td><a name="l891">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td><a name="l912">​</a><a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note Exchange</a></td>
+<td style="text-align: center;"></td>
 <td><code>DiagnosticReport.resultsInterpreter</code></td>
 <td>Practitioner, Organization, PractitionerRole, CareTeam</td>
 </tr>
+
 
 
 
@@ -680,9 +700,11 @@ with the following columns:
 <tr>
   <!-- <td>17</td> -->
 <td><a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>DocumentReference.author*</strong></code></td>
-<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -702,10 +724,12 @@ with the following columns:
 
 <tr>
   <!-- <td>18</td> -->
-<td><a name="l926">​</a><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td>
+<td><a name="l951">​</a><a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>DocumentReference.author*</strong></code></td>
-<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -725,7 +749,8 @@ with the following columns:
 
 <tr>
   <!-- <td>19</td> -->
-<td><a name="l945">​</a><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td>
+<td><a name="l972">​</a><a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>Goal.expressedBy</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -746,12 +771,15 @@ with the following columns:
 
 
 
+
 <tr>
   <!-- <td>20</td> -->
 <td><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>Immunization.reportOrigin</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -772,9 +800,11 @@ with the following columns:
 <tr>
   <!-- <td>21</td> -->
 <td><a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>Immunization.performer.actor</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device</td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -807,9 +837,11 @@ with the following columns:
 <tr>
   <!-- <td>24</td> -->
 <td><a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>MedicationDispense.performer.actor*</strong></code></td>
-<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -830,9 +862,11 @@ with the following columns:
 <tr>
   <!-- <td>25</td> -->
 <td><a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
 <td><code><strong>MedicationRequest.requester*</strong></code></td>
-<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -853,9 +887,11 @@ with the following columns:
 <tr>
   <!-- <td>26</td> -->
 <td><a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
 <td><code><strong>MedicationRequest.reportedReference*</strong></code></td>
-<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><strong>Practitioner**</strong>, <strong>Organization**</strong>, PractitionerRole, Patient, RelatedPerson, Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -881,10 +917,12 @@ with the following columns:
 
 <tr>
   <!-- <td>28</td> -->
-<td><a name="l1059">​</a><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><a name="l1102">​</a><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
 <td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -904,10 +942,12 @@ with the following columns:
 
 <tr>
   <!-- <td>29</td> -->
-<td><a name="l1078">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1125">​</a><a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -927,10 +967,12 @@ with the following columns:
 
 <tr>
   <!-- <td>30</td> -->
-<td><a name="l1097">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><a name="l1145">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
 <td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -950,10 +992,12 @@ with the following columns:
 
 <tr>
   <!-- <td>31</td> -->
-<td><a name="l1116">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1168">​</a><a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -973,10 +1017,12 @@ with the following columns:
 
 <tr>
   <!-- <td>32</td> -->
-<td><a name="l1135">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
+<td><a name="l1188">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
 <td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -996,10 +1042,12 @@ with the following columns:
 
 <tr>
   <!-- <td>33</td> -->
-<td><a name="l1154">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1211">​</a><a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -1019,10 +1067,12 @@ with the following columns:
 
 <tr>
   <!-- <td>34</td> -->
-<td><a name="l1173">​</a><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1231">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -1042,10 +1092,12 @@ with the following columns:
 
 <tr>
   <!-- <td>35</td> -->
-<td><a name="l1189">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1254">​</a><a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -1065,10 +1117,12 @@ with the following columns:
 
 <tr>
   <!-- <td>36</td> -->
-<td><a name="l1205">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1274">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -1088,7 +1142,83 @@ with the following columns:
 
 <tr>
   <!-- <td>37</td> -->
-<td><a name="l1221">​</a><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
+<td><a name="l1297">​</a><a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>38</td> -->
+<td><a name="l1317">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>39</td> -->
+<td><a name="l1340">​</a><a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>40</td> -->
+<td><a name="l1360">​</a><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1109,9 +1239,186 @@ with the following columns:
 
 
 
+
 <tr>
-  <!-- <td>38</td> -->
+  <!-- <td>41</td> -->
+<td><a name="l1378">​</a><a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>42</td> -->
+<td><a name="l1396">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>43</td> -->
+<td><a name="l1419">​</a><a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>44</td> -->
+<td><a name="l1439">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>45</td> -->
+<td><a name="l1462">​</a><a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>46</td> -->
+<td><a name="l1482">​</a><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>47</td> -->
+<td><a name="l1500">​</a><a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>48</td> -->
 <td><a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>Observation.performer*</strong></code></td>
 <td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
@@ -1132,242 +1439,15 @@ with the following columns:
 
 
 
-<tr>
-  <!-- <td>39</td> -->
-<td><a name="l1256">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>40</td> -->
-<td><a name="l1272">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>41</td> -->
-<td><a name="l1288">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>42</td> -->
-<td><a name="l1304">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>43</td> -->
-<td><a name="l1320">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
-<td><code><strong>Observation.performer*</strong></code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>44</td> -->
-<td><a name="l1337">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>45</td> -->
-<td><a name="l1353">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>46</td> -->
-<td><a name="l1372">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>47</td> -->
-<td><a name="l1391">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
-<td><code><span style="color: red;">Observation.performer</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
-  <!-- <td>48</td> -->
-<td><a name="l1410">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
-</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <tr>
   <!-- <td>49</td> -->
-<td><a name="l1426">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -1387,10 +1467,12 @@ with the following columns:
 
 <tr>
   <!-- <td>50</td> -->
-<td><a name="l1442">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
-<td><code><strong>Observation.performer*</strong></code></td>
+<td><a name="l1557">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -1410,10 +1492,12 @@ with the following columns:
 
 <tr>
   <!-- <td>51</td> -->
-<td><a name="l1459">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1575">​</a><a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -1433,10 +1517,12 @@ with the following columns:
 
 <tr>
   <!-- <td>52</td> -->
-<td><a name="l1475">​</a><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
+<td><a name="l1593">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>Observation.performer</code></td>
 <td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -1456,15 +1542,36 @@ with the following columns:
 
 <tr>
   <!-- <td>53</td> -->
-<td><a name="l1491">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
-<td><code>Observation.performer</code></td>
-<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+<td><a name="l1611">​</a><a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>54</td> -->
+<td><a name="l1629">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
 
 
 
@@ -1485,10 +1592,12 @@ with the following columns:
 
 <tr>
   <!-- <td>55</td> -->
-<td><a name="l1507">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
-<td><code>Procedure.asserter</code></td>
-<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+<td><a name="l1647">​</a><a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
 </tr>
+
 
 
 
@@ -1508,9 +1617,10 @@ with the following columns:
 
 <tr>
   <!-- <td>56</td> -->
-<td><a name="l1523">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
-<td><code><span style="color: red;">Procedure.performer.actor</span></code></td>
-<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><a name="l1665">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
 
 
@@ -1529,6 +1639,64 @@ with the following columns:
 
 
 
+
+<tr>
+  <!-- <td>57</td> -->
+<td><a name="l1683">​</a><a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>58</td> -->
+<td><a name="l1701">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, <strong>Patient**</strong>, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>59</td> -->
+<td><a name="l1725">​</a><a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
 
 
 
@@ -1549,10 +1717,12 @@ with the following columns:
 
 <tr>
   <!-- <td>60</td> -->
-<td><a name="l1542">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
-<td><code><strong>QuestionnaireResponse.author*</strong></code></td>
-<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><a name="l1743">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
 </tr>
+
 
 
 
@@ -1572,7 +1742,582 @@ with the following columns:
 
 <tr>
   <!-- <td>61</td> -->
-<td><a name="l1561">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td><a name="l1761">​</a><a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>62</td> -->
+<td><a name="l1779">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>63</td> -->
+<td><a name="l1802">​</a><a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>64</td> -->
+<td><a name="l1822">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>65</td> -->
+<td><a name="l1845">​</a><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>66</td> -->
+<td><a name="l1865">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>67</td> -->
+<td><a name="l1888">​</a><a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>68</td> -->
+<td><a name="l1908">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>69</td> -->
+<td><a name="l1931">​</a><a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>70</td> -->
+<td><a name="l1951">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>71</td> -->
+<td><a name="l1974">​</a><a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>72</td> -->
+<td><a name="l1994">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, <strong>Patient**</strong>, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>73</td> -->
+<td><a name="l2018">​</a><a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>74</td> -->
+<td><a name="l2036">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>75</td> -->
+<td><a name="l2054">​</a><a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>76</td> -->
+<td><a name="l2072">​</a><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.performer</code></td>
+<td>Practitioner, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>77</td> -->
+<td><a name="l2090">​</a><a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>78</td> -->
+<td><a name="l2108">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Observation.performer*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, CareTeam</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>79</td> -->
+<td><a name="l2131">​</a><a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Observation.device</code></td>
+<td>Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>81</td> -->
+<td><a name="l2151">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code>Procedure.asserter</code></td>
+<td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>82</td> -->
+<td><a name="l2171">​</a><a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a></td>
+<td style="text-align: center;"><strong>✓</strong></td>
+<td><code><strong>Procedure.performer.actor*</strong></code></td>
+<td><span style="color: red;">Practitioner</span>, Organization, PractitionerRole, Patient, RelatedPerson, Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>86</td> -->
+<td><a name="l2194">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td style="text-align: center;"></td>
+<td><code><strong>QuestionnaireResponse.author*</strong></code></td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device, DeviceMetric</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+  <!-- <td>87</td> -->
+<td><a name="l2215">​</a><a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code>QuestionnaireResponse.source</code></td>
 <td>Practitioner, PractitionerRole, Patient, RelatedPerson</td>
 </tr>
@@ -1617,114 +2362,14 @@ with the following columns:
 
 
 
+
 <tr>
-  <!-- <td>66</td> -->
+  <!-- <td>92</td> -->
 <td><a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a></td>
+<td style="text-align: center;"></td>
 <td><code><strong>ServiceRequest.requester*</strong></code></td>
-<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device</td>
+<td><strong>Practitioner**</strong>, Organization, PractitionerRole, Patient, RelatedPerson, Device, DeviceMetric</td>
 </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1762,7 +2407,7 @@ with the following columns:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 5, 2024 23:34+0000">2024-11-05</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 12, 2024 19:07+0000">2024-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
