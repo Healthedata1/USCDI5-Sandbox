@@ -18,6 +18,7 @@
 <artifact id="MedicationDispense/medicationdispense-example" key="MedicationDispense-medicationdispense-example" name="Medication Dispense Example"/>
 <artifact id="MedicationRequest/medicationrequest-coded-oral-axid" key="MedicationRequest-medicationrequest-coded-oral-axid" name="MedicationRequest Coded Oral Axid Example"/>
 <artifact id="Patient/example" key="Patient-example" name="Patient Example"/>
+<artifact id="StructureDefinition/patient-sexParameterForClinicalUse" key="StructureDefinition-patient-sexParameterForClinicalUse" name="Patient Sex Parameter For Clinical Use"/>
 <artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="ValueSet/us-core-adi-finding" key="ValueSet-us-core-adi-finding" name="US Core ADI Finding"/>
 <artifact id="StructureDefinition/us-core-authentication-time" key="StructureDefinition-us-core-authentication-time" name="US Core Authentication Time Extension"/>

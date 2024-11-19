@@ -230,6 +230,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/patient-sexParameterForClinicalUse"
+        },
+        "description": "This extension is a modified from the FHIR Standard Patient Sex Parameter For Clinical Use Extension to show how the  `.code` element  which is defined as a \"code that has the same meaning as the element in a particular terminology\" can be used to fulfil   USCDI's Applicable Vocabulary Standard(s) = LOINC 99501-9 (Sex parameter for clinical use).  It also displays the element in the slice and uses the loinc in the URL so it can be seen in the instance.",
+        "exampleBoolean": false,
+        "name": "Patient Sex Parameter For Clinical Use"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/us-core-adi-documentreference"
         },
         "description": "The US Core ADI DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the US Core Observation ADI Documentation Profile. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",

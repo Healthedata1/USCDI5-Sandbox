@@ -1,0 +1,251 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "patient-sexParameterForClinicalUse",
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse",
+    "version": "5.1.0",
+    "name": "PatSexParameterForClinicalUse",
+    "title": "Patient Sex Parameter For Clinical Use",
+    "status": "draft",
+    "experimental": true,
+    "date": "2024-11-18",
+    "publisher": "HL7 International / Patient Administration",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://www.hl7.org/Special/committees/pafm"
+                }
+            ]
+        }
+    ],
+    "description": "This extension is a modified from the FHIR Standard Patient Sex Parameter For Clinical Use Extension to show how the  `.code` element  which is defined as a \"code that has the same meaning as the element in a particular terminology\" can be used to fulfil   USCDI's Applicable Vocabulary Standard(s) = LOINC 99501-9 (Sex parameter for clinical use).  It also displays the element in the slice and uses the loinc in the URL so it can be seen in the instance.",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
+    "fhirVersion": "5.0.0",
+    "mapping": [
+        {
+            "identity": "rim",
+            "uri": "http://hl7.org/v3",
+            "name": "RIM Mapping"
+        }
+    ],
+    "kind": "complex-type",
+    "abstract": false,
+    "context": [
+        {
+            "type": "element",
+            "expression": "Resource"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Extension",
+                "path": "Extension",
+                "short": "A context-specific sex parameter for clinical use",
+                "definition": "A parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc..",
+                "min": 0
+            },
+            {
+                "id": "Extension.extension:value",
+                "path": "Extension.extension",
+                "sliceName": "value",
+                "code": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "99501-9",
+                        "display": "Sex parameter for clinical use"
+                    }
+                ],
+                "short": "A context-specific sex parameter for clinical use",
+                "definition": "A parameter that provides guidance on how a recipient should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc..",
+                "comment": "Sex parameters for clinical use may be contexual. For example, the sex parameter for clinical use for mammogram health maintenance may by different than the sex parameter for clinical use for the purpose of selecting a reference range for a lab test.",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:value.extension",
+                "path": "Extension.extension.extension",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:value.url",
+                "path": "Extension.extension.url",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "http://loinc.org/99501-9/"
+            },
+            {
+                "id": "Extension.extension:value.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "binding": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+                            "valueString": "sexParameterForClinicalUse"
+                        }
+                    ],
+                    "strength": "required",
+                    "valueSet": "http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use"
+                }
+            },
+            {
+                "id": "Extension.extension:period",
+                "path": "Extension.extension",
+                "sliceName": "period",
+                "short": "When the sex for clinical use applies",
+                "definition": "The time period during which the sex parameter for clinical use applies",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:period.extension",
+                "path": "Extension.extension.extension",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:period.url",
+                "path": "Extension.extension.url",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "period"
+            },
+            {
+                "id": "Extension.extension:period.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "Period"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:comment",
+                "path": "Extension.extension",
+                "sliceName": "comment",
+                "short": "Comments about the sex parameter for clinical use",
+                "definition": "Further explanation about the choice, intention, or context of use for the sex parameter for clinical use",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:comment.extension",
+                "path": "Extension.extension.extension",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:comment.url",
+                "path": "Extension.extension.url",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "comment"
+            },
+            {
+                "id": "Extension.extension:comment.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:supportingInfo",
+                "path": "Extension.extension",
+                "sliceName": "supportingInfo",
+                "short": "Source of the sex for clincal use",
+                "definition": "Other clinical evidence or documentation that was used to determine the sex parameter for clincal use",
+                "comment": "For example, a patient with an initial diagnosis of an intersex condition could have supporting clinical observations specific to the diagnosis. Additional information may be provided in the comment attribute.",
+                "min": 0,
+                "type": [
+                    {
+                        "code": "Extension"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:supportingInfo.extension",
+                "path": "Extension.extension.extension",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:supportingInfo.url",
+                "path": "Extension.extension.url",
+                "type": [
+                    {
+                        "code": "uri"
+                    }
+                ],
+                "fixedUri": "supportingInfo"
+            },
+            {
+                "id": "Extension.extension:supportingInfo.value[x]",
+                "path": "Extension.extension.value[x]",
+                "min": 1,
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/StructureDefinition/Resource"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "min": 0,
+                "max": "0"
+            }
+        ]
+    }
+}

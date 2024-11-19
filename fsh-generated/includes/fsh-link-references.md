@@ -12,6 +12,7 @@
 [medicationdispense-example]: MedicationDispense-medicationdispense-example.html
 [medicationrequest-coded-oral-axid]: MedicationRequest-medicationrequest-coded-oral-axid.html
 [example]: Patient-example.html
+[PatSexParameterForClinicalUse]: StructureDefinition-patient-sexParameterForClinicalUse.html
 [USCoreADIDocumentReferenceProfile]: StructureDefinition-us-core-adi-documentreference.html
 [USCoreADIFinding]: ValueSet-us-core-adi-finding.html
 [USCoreAuthenticationTimeExtension]: StructureDefinition-us-core-authentication-time.html

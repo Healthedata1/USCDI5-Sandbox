@@ -451,3 +451,4 @@
 [Normative]: {{site.data.fhir.path}}versions.html#maturity
 [US Realm Steering Committee (USRSC)]: https://confluence.hl7.org/display/USR/US+Realm+Steering+Committee
 {% include link-list-sandbox.md %}
+{% include uscore-link-references.md %}

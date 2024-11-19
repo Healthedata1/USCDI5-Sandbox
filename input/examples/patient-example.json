@@ -133,7 +133,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse",
             "extension": [
                 {
-                    "url": "value",
+                    "url": "http://loinc.org/99501-9/",
                     "valueCodeableConcept": {
                         "coding": [
                             {
@@ -144,27 +144,6 @@
                         ],
                         "text": "Unknown"
                     }
-                },
-                {
-                    "url": "supportingInfo",
-                    "extension": [
-                        {
-                            "url": "_datatype",
-                            "valueString": "CodeableReference"
-                        },
-                        {
-                            "url": "concept",
-                            "valueCodeableConcept": {
-                                "text": "Some Document"
-                            }
-                        },
-                        {
-                            "url": "reference",
-                            "valueReference": {
-                                "display": "some DocumentReference"
-                            }
-                        }
-                    ]
                 }
             ]
         },
