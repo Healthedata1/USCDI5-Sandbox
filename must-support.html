@@ -221,6 +221,366 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>For querying and reading US Core Profiles, <em>Must Support</em> …</p>
 
+<p>MS MS Targets</p>
+
+<!--   This liquid script creates a ms target table using input data from input/data/csv files
+
+This file is created with the python jupyter script: https://github.com/Healthedata1/MyNotebooks/blob/master/CapStatement/target_profile-tabler.ipynb 
+with the following columns:
+- profile: The US Core Profile that has Must Support Reference elements
+- target1..target7: The  Must Support target profiles or resources (up to 7 for now may be more in future)
+-  include parameters: file = "ms_refs","addl_uscdi_refs", "ms_choice_refs", "adl_uscdi_choice_refs"
+
+example usage for MS MS Targets: {% include ms-target-table-generator.md file="ms_refs" %}
+ -->
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>US Core Profile</th>
+      <th>Must Support Target Profiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[US Core Pediatric Head Occipital Frontal Circumference Percentile Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Pediatric BMI for Age Observation Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Pediatric Weight for Height Observation Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core ADI DocumentReference Profile]</td>
+      <td>[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core AllergyIntolerance Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Average Blood Pressure Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Blood Pressure Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core BMI Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Body Height Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Body Temperature Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Body Weight Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Care Experience Preference Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core CarePlan Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core CareTeam Profile]</td>
+      <td>[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core PractitionerRole Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Condition Encounter Diagnosis Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Condition Problems and Health Concerns Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Coverage Profile]</td>
+      <td>[US Core Organization Profile]<br />[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core DiagnosticReport Profile for Laboratory Results Reporting]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Laboratory Result Observation Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core DiagnosticReport Profile for Report and Note Exchange]</td>
+      <td>[Media]<br />[US Core Encounter Profile]<br />[US Core Laboratory Result Observation Profile]<br />[US Core Observation Clinical Result Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core DocumentReference Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Encounter Profile]</td>
+      <td>[US Core Condition Encounter Diagnosis Profile]<br />[US Core Condition Problems and Health Concerns Profile]<br />[US Core Location Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Goal Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Head Circumference Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Heart Rate Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Immunization Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Location Profile]<br />[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Implantable Device Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Location Profile]</td>
+      <td>[US Core Organization Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core MedicationDispense Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Medication Profile]<br />[US Core MedicationRequest Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core MedicationRequest Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Medication Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation ADI Documentation Profile]</td>
+      <td>[US Core ADI DocumentReference Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation Clinical Result Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Laboratory Result Observation Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Patient Profile]<br />[US Core Specimen Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation Occupation Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation Pregnancy Intent Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation Pregnancy Status Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation Screening Assessment Profile]</td>
+      <td>[US Core Observation Screening Assessment Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core QuestionnaireResponse Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Observation Sexual Orientation Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core PractitionerRole Profile]</td>
+      <td>[Endpoint]<br />[US Core Location Profile]<br />[US Core Organization Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Procedure Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Provenance Profile]</td>
+      <td>[US Core Organization Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Pulse Oximetry Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core QuestionnaireResponse Profile]</td>
+      <td>[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core RelatedPerson Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Respiratory Rate Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core ServiceRequest Profile]</td>
+      <td>[US Core Encounter Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Simple Observation Profile]</td>
+      <td>[US Core Patient Profile]<br />[US Core Practitioner Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Smoking Status Observation Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Specimen Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Treatment Intervention Preference Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Vital Signs Profile]</td>
+      <td>[US Core Patient Profile]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>USCDI MS Targets</p>
+
+<!--   This liquid script creates a ms target table using input data from input/data/csv files
+
+This file is created with the python jupyter script: https://github.com/Healthedata1/MyNotebooks/blob/master/CapStatement/target_profile-tabler.ipynb 
+with the following columns:
+- profile: The US Core Profile that has Must Support Reference elements
+- target1..target7: The  Must Support target profiles or resources (up to 7 for now may be more in future)
+-  include parameters: file = "ms_refs","addl_uscdi_refs", "ms_choice_refs", "adl_uscdi_choice_refs"
+
+example usage for MS MS Targets: {% include ms-target-table-generator.md file="ms_refs" %}
+ -->
+
+<p class="grid">| US Core Profile | Choice of Target Profiles |
+|—|—|</p>
+
+<p>MS Choice Targets</p>
+
+<!--   This liquid script creates a ms target table using input data from input/data/csv files
+
+This file is created with the python jupyter script: https://github.com/Healthedata1/MyNotebooks/blob/master/CapStatement/target_profile-tabler.ipynb 
+with the following columns:
+- profile: The US Core Profile that has Must Support Reference elements
+- target1..target7: The  Must Support target profiles or resources (up to 7 for now may be more in future)
+-  include parameters: file = "ms_refs","addl_uscdi_refs", "ms_choice_refs", "adl_uscdi_choice_refs"
+
+example usage for MS MS Targets: {% include ms-target-table-generator.md file="ms_refs" %}
+ -->
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>US Core Profile</th>
+      <th>Must Support Target Profiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[US Core Pediatric Head Occipital Frontal Circumference Percentile Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Pediatric BMI for Age Observation Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Pediatric Weight for Height Observation Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Average Blood Pressure Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Blood Pressure Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core BMI Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Body Height Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Body Temperature Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Body Weight Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Head Circumference Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Heart Rate Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Pulse Oximetry Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Respiratory Rate Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core Vital Signs Profile]</td>
+      <td>[US Core CareTeam Profile]<br />[US Core Organization Profile]<br />[US Core Patient Profile]<br />[US Core Practitioner Profile]<br />[US Core RelatedPerson Profile]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>USCDI Choice Targets</p>
+
+<!--   This liquid script creates a ms target table using input data from input/data/csv files
+
+This file is created with the python jupyter script: https://github.com/Healthedata1/MyNotebooks/blob/master/CapStatement/target_profile-tabler.ipynb 
+with the following columns:
+- profile: The US Core Profile that has Must Support Reference elements
+- target1..target7: The  Must Support target profiles or resources (up to 7 for now may be more in future)
+-  include parameters: file = "ms_refs","addl_uscdi_refs", "ms_choice_refs", "adl_uscdi_choice_refs"
+
+example usage for MS MS Targets: {% include ms-target-table-generator.md file="ms_refs" %}
+ -->
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>US Core Profile</th>
+      <th>Choice of Target Profiles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[US Core MedicationRequest Profile]</td>
+      <td>[Observation]</td>
+    </tr>
+    <tr>
+      <td>[US Core Procedure Profile]</td>
+      <td>[DiagnosticReport]<br />[DocumentReference]<br />[Observation]<br />[Procedure]<br />[US Core CarePlan Profile]<br />[US Core ServiceRequest Profile]</td>
+    </tr>
+    <tr>
+      <td>[US Core ServiceRequest Profile]</td>
+      <td>[DiagnosticReport]<br />[DocumentReference]<br />[Observation]</td>
+    </tr>
+    <tr>
+      <td>[US Core Simple Observation Profile]</td>
+      <td>[Media]<br />[MolecularSequence]<br />[Observation]<br />[US Core DocumentReference Profile]<br />[US Core QuestionnaireResponse Profile]</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="additional-uscdi-requirements">Additional USCDI Requirements</h3>
 
 <p>The US Core Profiles include requirements from the [U.S. Core Data for Interoperability (USCDI)]. Some US Core Profile elements needed to represent USCDI Data Elements for [ONC Health IT Certification] (g(10) certification) are not <em>Mandatory</em> or <em>Must Support</em> because many non-certifying implementers do not need them for their use cases. US Core designates these elements <em>Additional USCDI Requirements</em>.</p>
@@ -575,7 +935,7 @@ For example:
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 12, 2024 19:07+0000">2024-11-12</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.uscdi5-sandbox#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 19, 2024 04:31+0000">2024-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

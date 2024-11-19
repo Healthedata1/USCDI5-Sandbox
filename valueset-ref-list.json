@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113762.1.4.1010.4"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6",
@@ -270,8 +270,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
@@ -283,8 +283,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile",
-      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
+      "StructureDefinition-us-core-medicationdispense.html" : "US Core MedicationDispense Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/simple-language",
@@ -445,6 +445,23 @@
       "uses" : {
       },
       "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "SexParameterForClinicalUse",
+      "title" : "Sex Parameter for Clinical Use",
+      "description" : "A summary parameter that provides guidance on how a receiver should apply settings or reference ranges that are derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc..",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.3181"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3181"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-sexParameterForClinicalUse.html" : "Patient Sex Parameter For Clinical Use"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/us-core-location-type",

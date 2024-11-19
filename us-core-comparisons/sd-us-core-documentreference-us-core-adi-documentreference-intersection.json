@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-3",
+  "id" : "15843cea-8ba6-4dc0-a705-1a6b0fc74514-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/15843cea-8ba6-4dc0-a705-1a6b0fc74514-3",
   "name" : "IntersectionUSCoreDocumentReferenceProfileAndUSCoreADIDocumentReferenceProfile",
   "title" : "Intersection of US Core DocumentReference Profile And US Core ADI DocumentReference Profile",
   "status" : "active",
-  "date" : "2024-11-12T19:08:35+00:00",
+  "date" : "2024-11-19T04:31:33+00:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -571,7 +571,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "left: All LOINC  values whose SCALE is \"Doc\" in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'; right: Advance Directives Content Type",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1b2fa6dd-6fbc-4ccc-9bd4-dfb4b3704e2a-6"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/15843cea-8ba6-4dc0-a705-1a6b0fc74514-6"
       },
       "mapping" : [{
         "identity" : "workflow",

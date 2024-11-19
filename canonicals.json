@@ -1,5 +1,12 @@
 [
   {
+    "id" : "patient-sexParameterForClinicalUse",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse",
+    "version" : "0.0.0",
+    "name" : "PatSexParameterForClinicalUse"
+  },
+  {
     "id" : "us-core-server",
     "type" : "CapabilityStatement",
     "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server",

@@ -17,7 +17,7 @@
   <name value="UCSDI5Sandbox"/>
   <title value="UCSDI5 Sandbox"/>
   <status value="active"/>
-  <date value="2024-11-12T19:07:56+00:00"/>
+  <date value="2024-11-19T04:31:12+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -54,7 +54,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.0.2"/>
+    <version value="6.1.0"/>
   </dependsOn>
   <dependsOn id="uscore3">
     <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -367,7 +367,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -786,6 +786,17 @@
       <name value="Patient Example"/>
       <description value="This is a patient example for the *US Core Patient Profile*."/>
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-sexParameterForClinicalUse"/>
+      </reference>
+      <name value="Patient Sex Parameter For Clinical Use"/>
+      <description value="This extension is a modified from the FHIR Standard Patient Sex Parameter For Clinical Use Extension to show how the  `.code` element  which is defined as a &quot;code that has the same meaning as the element in a particular terminology&quot; can be used to fulfil   USCDI's Applicable Vocabulary Standard(s) = LOINC 99501-9 (Sex parameter for clinical use).  It also displays the element in the slice and uses the loinc in the URL so it can be seen in the instance."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
